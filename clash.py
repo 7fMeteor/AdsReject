@@ -75,7 +75,7 @@ def generate_output(rules, output_file):
 
     try:
         with open(output_file, 'w', encoding='utf8') as f:
-            f.write(header)
+            f.write(header + "\n")
             f.write("payload:\n")
             for rule in sorted_rules:
                 f.write(f"  - '{rule}'\n")
