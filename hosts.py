@@ -102,7 +102,7 @@ def generate_output(top, middle, bottom, output_file):
     header = f"""# Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking.
 # --------------------------------------
-# Total lines: {total_count}
+# Total rules: {total_count}
 # Update time: {current_time}
 """
 
