@@ -88,7 +88,7 @@ def process_files(file_paths):
             print(f"[!] 读取文件出错: {filepath} -> {e}")
             
     print(f"info: 原始提取规则数: {raw_count}")
-    return top, middle, bottom
+    return top_lines, middle_lines, bottom_lines
 
 def generate_output(top, middle, bottom, output_file):
     """
