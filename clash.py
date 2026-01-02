@@ -66,10 +66,10 @@ def generate_output(rules, output_file):
     current_time = datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S UTC+8')
 
     # 构建头部信息
-    header = f"""# Title: Waster Ads Rule (Clash Meta)
-# Description: Combined and deduplicated ad-blocking rules for Clash Meta.
+    header = f"""# Title: Waster Ads Rule
+# Description: Combined and deduplicated ad-blocking rules for Clash Meta or Premium.
 # --------------------------------------
-# Total rules: {total_count}
+# Total lines: {total_count}
 # Update time: {current_time}
 """
 
