@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write      # 允许写入权限
+      contents: write
 
     steps:
     - name: Checkout code
@@ -23,15 +23,22 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+        # hosts.py 使用的是 python 自带库(urllib)，不需要额外安装依赖
 
-    - name: Run merge script
-      run: python main.py
+    - name: Run scripts
+      run: |
+        echo ">>> Running Clash Rule Script..."
+        python main.py
+        
+        echo ">>> Running Hosts Rule Script..."
+        python hosts.py
 
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add clash-ads-reject.yaml
-        # 如果文件无变化则不提交，避免报错
+        # 同时添加两个生成的文件
+        git add clash-ads-reject.yaml ads-rule-hosts.txt
+        # 提交 (如果有变化)
         git commit -m "Auto-update rules: $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
         git push
