@@ -10,7 +10,7 @@ OUTPUT_FILE = "ads-rule-hosts.txt"
 CACHE_DIR = "download_cache"
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://raw.githubusercontent.com/7fMeteor/AdsReject/main/ads-rule-hosts.txt",
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
     "https://raw.githubusercontent.com/lingeringsound/10007/main/reward"
 ]
 
