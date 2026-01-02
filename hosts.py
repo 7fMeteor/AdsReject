@@ -99,10 +99,10 @@ def generate_output(top, middle, bottom, output_file):
     tz = pytz.timezone('Asia/Shanghai')
     current_time = datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S UTC+8')
 
-    header = f"""# Title: Waster Ads Hosts
+    header = f"""# Title: Waster Ads Rule
 # Description: Modified hosts file for system-wide ad blocking.
 # --------------------------------------
-# Total rules: {total_count}
+# Total lines: {total_count}
 # Update time: {current_time}
 """
 
