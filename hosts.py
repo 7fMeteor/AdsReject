@@ -1,29 +1,30 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import urllib.request
 import os
 import shutil
+import pytz
+from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
-OUTPUT_FILE = "ads-rule-hosts.txt" 
+# 全局配置
+OUTPUT_FILE = "ads-rule-hosts.txt"
 CACHE_DIR = "download_cache"
-HEADER_TAG = "# Power by Waster"
-
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
+    "https://raw.githubusercontent.com/7fMeteor/AdsReject/main/ads-rule-hosts.txt",
     "https://raw.githubusercontent.com/lingeringsound/10007/main/reward"
 ]
 
-def download_file(url, index):
-    """并发下载"""
+def download_source(url, index):
+    """
+    下载单个源文件到缓存目录
+    """
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR, exist_ok=True)
-    filename = os.path.join(CACHE_DIR, f"list_{index}.txt")
+        
+    filename = os.path.join(CACHE_DIR, f"source_{index}.txt")
     print(f"[-] [下载中] {url}")
+    
     try:
-        # 添加 User-Agent 防止被拦截
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=30) as response:
             with open(filename, 'wb') as f:
@@ -34,41 +35,31 @@ def download_file(url, index):
         print(f"[x] [下载失败] {url}: {e}")
         return None
 
-def main():
-    # 1. 下载
-    print("=== Step 1: 并发下载订阅 ===")
-    files = []
-    # 使用线程池并发下载
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = {executor.submit(download_file, url, i): i for i, url in enumerate(URLS)}
-        for future in futures:
-            if future.result(): files.append(future.result())
-
-    # 2. 分类处理容器
-    top_lines = set()      # 127.0.0.1 等
-    middle_lines = set()   # 0.0.0.0 / :: 屏蔽规则
-    bottom_lines = set()   # ::1 等 IPv6 本地回环
+def process_files(file_paths):
+    """
+    解析下载的文件，提取域名并分类生成 Hosts 规则
+    """
+    top_lines = set()      # 自定义/本地回环
+    middle_lines = set()   # 0.0.0.0 & :: 屏蔽
+    bottom_lines = set()   # IPv6 回环
     
-    # 统计计数器
     raw_count = 0
-
-    print("\n=== Step 2: 解析、统计与转换 ===")
     
-    for filepath in files:
+    for filepath in file_paths:
         try:
             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                 for line in f:
                     line = line.strip()
-                    if not line or line.startswith(('!', '#', '[', '@@')): continue
+                    # 忽略空行、注释和特殊规则
+                    if not line or line.startswith(('!', '#', '[', '@@')):
+                        continue
 
                     parts = line.split()
                     
-                    # --- A. 识别原生 Hosts 格式 ---
+                    # 识别标准 Hosts 语法
                     if len(parts) >= 2 and ('.' in parts[0] or ':' in parts[0]):
                         ip = parts[0]
                         clean_line = line.split('#')[0].strip()
-
-                        # 计数
                         raw_count += 1
 
                         if ip == "0.0.0.0" or ip == "::":
@@ -79,7 +70,7 @@ def main():
                             top_lines.add(clean_line)
                         continue
 
-                    # --- B. 转换 ABP / 纯域名 ---
+                    # 识别 ABP / 纯域名语法并转换
                     domain = ""
                     if line.startswith('||'):
                         domain = line[2:].rstrip('^')
@@ -88,57 +79,66 @@ def main():
                     
                     if domain and '/' not in domain and '*' not in domain:
                         domain = domain.split('#')[0].strip()
-                        
-                        # 生成双栈规则 (计数 +2)
-                        v4_rule = f"0.0.0.0 {domain}"
-                        v6_rule = f":: {domain}"
-                        
+                        # 生成双栈规则
+                        middle_lines.add(f"0.0.0.0 {domain}")
+                        middle_lines.add(f":: {domain}")
                         raw_count += 2
-                        
-                        middle_lines.add(v4_rule)
-                        middle_lines.add(v6_rule)
 
         except Exception as e:
             print(f"[!] 读取文件出错: {filepath} -> {e}")
+            
+    print(f"info: 原始提取规则数: {raw_count}")
+    return top, middle, bottom
 
-    # 计算去重后的总数
-    final_count = len(top_lines) + len(middle_lines) + len(bottom_lines)
-
-    print(f"[-] 原始提取行数: {raw_count}")
-    print(f"[-] 去重后总行数: {final_count}")
-    print(f"[-] 重复规则数量: {raw_count - final_count}")
-
-    # 3. 排序与合并写入
-    print("\n=== Step 3: 按指定顺序写入文件 ===")
+def generate_output(top, middle, bottom, output_file):
+    """
+    写入最终 Hosts 文件并添加元数据头部
+    """
+    total_count = len(top) + len(middle) + len(bottom)
     
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        # A. 开头签名
-        f.write(f"{HEADER_TAG}\n\n")
-        
-        # B. 头部 (Top Lines)
-        f.write("# [Custom IPv4 / Localhost]\n")
-        for line in sorted(top_lines):
-            f.write(f"{line}\n")
-        f.write("\n")
+    tz = pytz.timezone('Asia/Shanghai')
+    current_time = datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S UTC+8')
 
-        # C. 中部 (Blocklist)
-        f.write("# [Blocklist / 0.0.0.0 & ::]\n")
-        for line in sorted(middle_lines):
-            f.write(f"{line}\n")
-        f.write("\n")
+    header = f"""# Title: Waster Ads Hosts
+# Description: Modified hosts file for system-wide ad blocking.
+# --------------------------------------
+# Total lines: {total_count}
+# Update time: {current_time}
+"""
 
-        # D. 尾部 (Bottom Lines)
-        f.write("# [Custom IPv6 / Loopback]\n")
-        for line in sorted(bottom_lines):
-            f.write(f"{line}\n")
-        f.write("\n")
-        
-        # E. 结尾签名
-        f.write(f"{HEADER_TAG}\n")
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(header + "\n")
+            
+            f.write("# [Custom IPv4 / Localhost]\n")
+            f.write("\n".join(sorted(top)) + "\n\n")
 
-    # 清理
-    if os.path.exists(CACHE_DIR): shutil.rmtree(CACHE_DIR)
-    print(f"[完成] 文件已保存为: {OUTPUT_FILE}")
+            f.write("# [Blocklist / 0.0.0.0 & ::]\n")
+            f.write("\n".join(sorted(middle)) + "\n\n")
+
+            f.write("# [Custom IPv6 / Loopback]\n")
+            f.write("\n".join(sorted(bottom)) + "\n")
+            
+        print(f"[完成] 文件已生成: {output_file}，去重后总行数: {total_count}")
+    except IOError as e:
+        print(f"[错误] 写入文件失败: {e}")
+    finally:
+        # 清理缓存
+        if os.path.exists(CACHE_DIR):
+            shutil.rmtree(CACHE_DIR)
 
 if __name__ == "__main__":
-    main()
+    # 并发下载
+    downloaded_files = []
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(download_source, url, i): i for i, url in enumerate(URLS)}
+        for future in futures:
+            result = future.result()
+            if result:
+                downloaded_files.append(result)
+
+    # 解析处理
+    top, middle, bottom = process_files(downloaded_files)
+
+    # 生成文件
+    generate_output(top, middle, bottom, OUTPUT_FILE)
