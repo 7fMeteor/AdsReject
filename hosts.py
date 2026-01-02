@@ -12,8 +12,8 @@ HEADER_TAG = "# Power by Waster"
 
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://anti-ad.net/adguard.txt",
-    "https://anti-ad.net/easylist.txt"
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
+    "https://raw.githubusercontent.com/lingeringsound/10007/main/reward"
 ]
 
 def download_file(url, index):
