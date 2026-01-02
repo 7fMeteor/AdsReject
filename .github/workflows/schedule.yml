@@ -2,8 +2,8 @@ name: Update Ads Rules
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # 每 4 小时运行一次
-  workflow_dispatch:      # 允许手动触发
+    - cron: '0 */4 * * *'  # 每 4 小时执行一次
+  workflow_dispatch:      # 允许手动点击触发
 
 jobs:
   build:
@@ -23,22 +23,24 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-        # hosts.py 使用的是 python 自带库(urllib)，不需要额外安装依赖
 
-    - name: Run scripts
+    - name: Generate Rules
       run: |
-        echo ">>> Running Clash Rule Script..."
-        python main.py
+        echo ">>> 正在运行 Clash 规则脚本..."
+        python clash.py
         
-        echo ">>> Running Hosts Rule Script..."
+        echo ">>> 正在运行 Hosts 规则脚本..."
         python hosts.py
 
-    - name: Commit and push changes
+    - name: Commit and Push Changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        # 同时添加两个生成的文件
+        
+        # 添加生成的文件
         git add clash-ads-reject.yaml ads-rule-hosts.txt
-        # 提交 (如果有变化)
+        
+        # 仅当有变化时提交
         git commit -m "Auto-update rules: $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
+        
         git push
