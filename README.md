@@ -1,1 +1,1 @@
-# AdsReject-for-Clash
+# AdsReject
