@@ -14,8 +14,8 @@ const createRuleProvider = (url, path, behavior = "domain", format = "yaml", int
   "path": path
 });
 
-// 图标基地址
-const iconBase = "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color";
+// 图标
+const iconBase = "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/main/docs/assets/icons";
 
 // 国内DNS服务器
 // 策略：阿里(稳定) + 腾讯(覆盖广) + 字节(速度快)
@@ -77,14 +77,14 @@ const dnsConfig = {
 
 // 地区定义 (用于自动分组)
 const regionDefinitions = [
-  { name: 'HK香港', regex: /港|🇭🇰|hk|hongkong|hong kong/i, icon: `${iconBase}/Hong_Kong.png` },
-  { name: 'US美国', regex: /(?!.*aus)(?=.*(美|🇺🇸|us(?!t)|usa|american|united states)).*/i, icon: `${iconBase}/United_States.png` },
-  { name: 'JP日本', regex: /日本|🇯🇵|jp|japan/i, icon: `${iconBase}/Japan.png` },
-  { name: 'SG新加坡', regex: /新加坡|🇸🇬|sg|singapore/i, icon: `${iconBase}/Singapore.png` },
-  { name: 'TW台湾省', regex: /台湾|🇹🇼|tw|taiwan|tai wan/i, icon: `${iconBase}/China.png` },
-  { name: 'KR韩国', regex: /韩|🇰🇷|kr|korea/i, icon: `${iconBase}/Korea.png` },
-  { name: 'DE德国', regex: /德国|🇩🇪|de|germany/i, icon: `${iconBase}/Germany.png` },
-  { name: 'GB英国', regex: /英|🇬🇧|uk|united kingdom|great britain/i, icon: `${iconBase}/United_Kingdom.png` },
+  { name: 'HK香港', regex: /港|🇭🇰|hk|hongkong|hong kong/i, icon: `${iconBase}/flags/hk.svg` },
+  { name: 'US美国', regex: /(?!.*aus)(?=.*(美|🇺🇸|us(?!t)|usa|american|united states)).*/i, icon: `${iconBase}/flags/us.svg` },
+  { name: 'JP日本', regex: /日本|🇯🇵|jp|japan/i, icon: `${iconBase}/flags/jp.svg` },
+  { name: 'SG新加坡', regex: /新加坡|🇸🇬|sg|singapore/i, icon: `${iconBase}/flags/sg.svg` },
+  { name: 'TW台湾', regex: /台湾|🇹🇼|tw|taiwan|tai wan/i, icon: `${iconBase}/flags/tw.svg` },
+  { name: 'KR韩国', regex: /韩|🇰🇷|kr|korea/i, icon: `${iconBase}/flags/kr.svg` },
+  { name: 'DE德国', regex: /德国|🇩🇪|de|germany/i, icon: `${iconBase}/flags/de.svg` },
+  { name: 'GB英国', regex: /英|🇬🇧|uk|united kingdom|great britain/i, icon: `${iconBase}/flags/gb.svg` },
 ];
 
 // 规则集配置
@@ -136,10 +136,10 @@ const rules = [
   "DOMAIN,v2rayse.com,🔰 模式选择",
   
   // AI 服务
-  "RULE-SET,openai,💸 ChatGPT-Gemini-XAI-Perplexity",
-  "RULE-SET,google-gemini,💸 ChatGPT-Gemini-XAI-Perplexity",
-  "RULE-SET,xai,💸 ChatGPT-Gemini-XAI-Perplexity",
-  "RULE-SET,perplexity,💸 ChatGPT-Gemini-XAI-Perplexity",
+  "RULE-SET,openai,💸 Ai",
+  "RULE-SET,google-gemini,💸 Ai",
+  "RULE-SET,xai,💸 Ai",
+  "RULE-SET,perplexity,💸 Ai",
   "RULE-SET,anthropic,💵 Claude",
   
   // 特定应用
@@ -198,6 +198,9 @@ const landingNodeProxies = [
 
 // 程序入口
 function main(config) {
+  // 防御性编程：确保 config 对象存在
+  if (!config) return config;
+  
   const originalProxies = config?.proxies ? [...config.proxies] : [];
   const originalProviders = config?.["proxy-providers"] || {};
   
@@ -214,7 +217,8 @@ function main(config) {
       "parse-pure-ip": true,
       "sniff": {
           "TLS": { "ports": [443, 8443] },
-          "HTTP": { "ports": [80, "8080-8880"], "override-destination": true }
+          "HTTP": { "ports": [80, "8080-8880"], "override-destination": true },
+          "QUIC": { "ports": [443, 8443] } // 开启 QUIC 流量嗅探
       }
   };
   
@@ -301,7 +305,7 @@ function main(config) {
             "🔗 全局直连",
             ...regionGroupNames // 注入地区组
         ],
-        "icon": `${iconBase}/Proxy.png`
+        "icon": `${iconBase}/link.svg`
     },
     {
       ...groupBaseOption,
@@ -310,14 +314,14 @@ function main(config) {
       "proxies": ["♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", ...regionGroupNames, ...otherProxies],
       "include-all": true,
       "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/Adjust.png`
+      "icon": `${iconBase}/adjust.svg`
     },
     {
       ...groupBaseOption,
       "name": "🕊️ 落地节点", 
       "type": "select",
       "proxies": landingNodeNames.length > 0 ? [...landingNodeNames] : ["REJECT"], // 如果没有落地节点，防空处理
-      "icon": `${iconBase}/Server.png`
+      "icon": `${iconBase}/openwrt.svg`
     },
     {
       ...groupBaseOption,
@@ -326,7 +330,7 @@ function main(config) {
       "tolerance": 50,
       "include-all": true,
       "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/Speed.png`
+      "icon": `${iconBase}/speed.svg`
     },
     {
       ...groupBaseOption,
@@ -334,7 +338,7 @@ function main(config) {
       "type": "fallback",
       "include-all": true,
       "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/Ambulance.png`
+      "icon": `${iconBase}/ambulance.svg`
     },
     {
       ...groupBaseOption,
@@ -343,7 +347,7 @@ function main(config) {
       "strategy": "consistent-hashing",
       "include-all": true,
       "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/Merry_Go.png`
+      "icon": `${iconBase}/merry_go.svg`
     },
     {
       ...groupBaseOption,
@@ -352,7 +356,7 @@ function main(config) {
       "strategy": "round-robin",
       "include-all": true,
       "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/Balance.png`
+      "icon": `${iconBase}/balance.svg`
     },
     {
       ...groupBaseOption,
@@ -360,119 +364,118 @@ function main(config) {
       "type": "select",
       "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
       "include-all": true,
-      "icon": `${iconBase}/YouTube.png`
+      "icon": `${iconBase}/youtube.svg`
     },
     {
       ...groupBaseOption,
-      "name": "💸 ChatGPT-Gemini-XAI-Perplexity",
+      "name": "💸 Ai",
       "type": "select",
-      // 智能筛选：优先使用美国/日本/新加坡等常用节点
-      "proxies": [...regionGroupNames.filter(n => /US|JP|SG|TW/.test(n)), "🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
       "exclude-filter": "(?i)港|hk|hongkong|hong kong|俄|ru|russia|澳|macao",
-      "icon": `${iconBase}/ChatGPT.png`
+      "icon": `${iconBase}/chatgpt.svg`
     },
     {
       ...groupBaseOption,
       "name": "💵 Claude",
       "type": "select",
-      "proxies": [...regionGroupNames.filter(n => /US|JP|SG|GB/.test(n)), "🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
-      "icon": `${iconBase}/Claude.png`
+      "icon": `${iconBase}/claude.svg`
     },
     {
       ...groupBaseOption,
       "name": "🪙 Bybit",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
-      "icon": `${iconBase}/Link.png`
+      "icon": `${iconBase}/link.svg`
     },
     {
       ...groupBaseOption,
       "name": "🅿️ PikPak",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
-      "icon": `${iconBase}/Link.png`
+      "icon": `${iconBase}/link.svg`
     },
     {
       ...groupBaseOption,
       "name": "📲 电报消息",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
       "include-all": true,
-      "icon": `${iconBase}/Telegram.png`
+      "icon": `${iconBase}/telegram.svg`
     },
     {
       ...groupBaseOption,
       "name": "📢 谷歌服务",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
       "include-all": true,
-      "icon": `${iconBase}/Google.png`
+      "icon": `${iconBase}/google.svg`
     },
     {
       ...groupBaseOption,
       "name": "🍎 苹果服务",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
       "include-all": true,
-      "icon": `${iconBase}/Apple.png`
+      "icon": `${iconBase}/apple.svg`
     },
     {
       ...groupBaseOption,
       "name": "Ⓜ️ 微软服务",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
-      "icon": `${iconBase}/Microsoft.png`
+      "icon": `${iconBase}/microsoft.svg`
     },
     {
       ...groupBaseOption,
       "name": "🥰 广告过滤",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": `${iconBase}/Bug.png`
+      "icon": `${iconBase}/bug.svg`
     },
     {
       ...groupBaseOption,
       "name": "🔗 全局直连",
       "type": "select",
-      "proxies": ["DIRECT", "⚙️ 节点选择", "♻️ 延迟选优", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
+      "proxies": ["DIRECT", "⚙️ 节点选择", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
-      "icon": `${iconBase}/Link.png`
+      "icon": `${iconBase}/link.svg`
     },
     {
       ...groupBaseOption,
       "name": "❌ 全局拦截",
       "type": "select",
       "proxies": ["REJECT", "DIRECT"],
-      "icon": `${iconBase}/Block.png`
+      "icon": `${iconBase}/block.svg`
     },
     {
       ...groupBaseOption,
       "name": "🐬 自定义直连",
       "type": "select",
       "include-all": true,
-      "proxies": ["🔗 全局直连", "🔰 模式选择", "⚙️ 节点选择", ...regionGroupNames],
-      "icon": `${iconBase}/Unknown.png`
+      "proxies": ["🔗 全局直连", "🔰 模式选择", "⚙️ 节点选择", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
+      "icon": `${iconBase}/unknown.svg`
     },
     {
       ...groupBaseOption,
       "name": "🐳 自定义代理",
       "type": "select",
       "include-all": true,
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", ...regionGroupNames],
-      "icon": `${iconBase}/Openwrt.png`
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
+      "icon": `${iconBase}/openwrt.svg`
     },
     {
       ...groupBaseOption,
       "name": "🐟 漏网之鱼",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
       "include-all": true,
-      "icon": `${iconBase}/Fish.png`
+      "icon": `${iconBase}/fish.svg`
     }
   ];
 
@@ -496,8 +499,8 @@ function main(config) {
   // 注入外部 Provider
   config["proxy-providers"] = {
     ...originalProviders,
-    // 示例订阅 (⚠️ 必须替换为真实链接)
-    "p1": {
+    // 示例订阅
+    /* "p1": {
       "type": "http",   // 订阅链接
       "url": "https://google.com", // ⚠️ 请替换此处 URL
       "interval": 86400,
@@ -506,6 +509,7 @@ function main(config) {
         "additional-prefix": "p1 |"
       }
     }
+    */
   };
 
   return config;
