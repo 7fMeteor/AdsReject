@@ -12,7 +12,7 @@ CACHE_DIR = "download_cache"
 # 使用 CDN 加速链接，提高 Github Action 成功率
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://fastly.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-hosts.txt"
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt"
 ]
 
 # 标准系统回环定义 (Best Practice)
