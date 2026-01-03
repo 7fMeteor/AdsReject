@@ -11,39 +11,26 @@ CACHE_DIR = "download_cache"
 
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
-    "https://raw.githubusercontent.com/lingeringsound/10007_auto/master/reward" 
+    "https://fastly.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-hosts.txt",
+    "https://raw.githubusercontent.com/lingeringsound/10007_auto/master/reward"
 ]
 
-# 系统回环 (Best Practice) ---
+# --- 标准系统回环定义 ---
 DEFAULT_V4_LOCALHOST = "127.0.0.1 localhost"
 DEFAULT_V6_LOCALHOST = "::1 localhost ip6-localhost ip6-loopback"
 
-# --- 需要强制清洗的垃圾关键词 ---
-# 如果源文件中的规则包含这些词，说明它是系统配置而非广告规则，直接过滤
+# --- 垃圾关键词清洗 ---
 IGNORE_KEYWORDS = {
-    'localhost', 
-    'ip6-localhost', 
-    'ip6-loopback', 
-    'broadcasthost', 
-    'hostname',
-    'local',
-    'ip6-localnet',
-    'ip6-mcastprefix',
-    'ip6-allnodes',
-    'ip6-allrouters'
+    'localhost', 'ip6-localhost', 'ip6-loopback', 'broadcasthost', 'hostname',
+    'local', 'ip6-localnet', 'ip6-mcastprefix', 'ip6-allnodes', 'ip6-allrouters'
 }
 
 def download_source(url, index):
-    """
-    下载单个源文件到缓存目录
-    """
+    """下载单个源文件到缓存目录"""
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR, exist_ok=True)
-
     filename = os.path.join(CACHE_DIR, f"source_{index}.txt")
     print(f"[-] [下载中] {url}")
-
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=30) as response:
@@ -56,12 +43,10 @@ def download_source(url, index):
         return None
 
 def process_files(file_paths):
-    """
-    解析下载的文件，提取域名并分类生成 Hosts 规则
-    """
-    top_lines = set()      # 自定义/本地回环
-    middle_lines = set()   # 0.0.0.0 & :: 屏蔽
-    bottom_lines = set()   # IPv6 回环
+    """解析下载的文件，提取域名并生成双栈规则"""
+    top_lines = set()      # 自定义 IPv4
+    middle_lines = set()   # 0.0.0.0 & :: 屏蔽 (存放生成的双栈规则)
+    bottom_lines = set()   # 自定义 IPv6
 
     raw_count = 0
 
@@ -70,41 +55,48 @@ def process_files(file_paths):
             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
                 for line in f:
                     line = line.strip()
-                    # 忽略空行、注释和特殊规则
                     if not line or line.startswith(('!', '#', '[', '@@')):
                         continue
 
                     parts = line.split()
 
-                    # --- A. 识别标准 Hosts 语法 ---
+                    # --- 逻辑 A: 识别标准 Hosts 语法 (IP Domain) ---
                     if len(parts) >= 2 and ('.' in parts[0] or ':' in parts[0]):
                         ip = parts[0]
-                        clean_line = line.split('#')[0].strip()
+                        # 提取域名部分
+                        domains = parts[1:] 
+
+                        # 垃圾清洗 (Localhost 相关直接跳过)
+                        if ip == "127.0.0.1" and "localhost" in line: continue
+                        if ip == "::1" and "localhost" in line: continue
                         
-                        # 提取这一行包含的所有域名/别名 (排除 IP 本身)
-                        aliases = parts[1:]
-                        
-                        # 强力清洗逻辑
                         is_garbage = False
-                        for alias in aliases:
-                            if alias.lower() in IGNORE_KEYWORDS:
+                        for d in domains:
+                            if d.lower() in IGNORE_KEYWORDS:
                                 is_garbage = True
                                 break
-                        
-                        if is_garbage:
-                            continue
+                        if is_garbage: continue
 
                         raw_count += 1
-
+                        
+                        # 如果是屏蔽规则，强制双栈
                         if ip == "0.0.0.0" or ip == "::":
-                            middle_lines.add(clean_line)
-                        elif ':' in ip:
+                            for d in domains:
+                                d = d.split('#')[0].strip() # 去除行尾注释
+                                if not d: continue
+                                middle_lines.add(f"0.0.0.0 {d}")
+                                middle_lines.add(f":: {d}") # 强制补全 IPv6
+                            continue
+                        
+                        # 如果是自定义 IP (如 bigota.d.miui.com)，保持原样
+                        clean_line = line.split('#')[0].strip()
+                        if ':' in ip:
                             bottom_lines.add(clean_line)
                         else:
                             top_lines.add(clean_line)
                         continue
 
-                    # --- B. 识别 ABP / 纯域名语法并转换 ---
+                    # --- 逻辑 B: 识别 ABP / 纯域名语法 ---
                     domain = ""
                     if line.startswith('||'):
                         domain = line[2:].rstrip('^')
@@ -113,10 +105,7 @@ def process_files(file_paths):
 
                     if domain and '/' not in domain and '*' not in domain:
                         domain = domain.split('#')[0].strip()
-                        
-                        # 同样对纯域名进行关键词检查
-                        if domain.lower() in IGNORE_KEYWORDS:
-                            continue
+                        if domain.lower() in IGNORE_KEYWORDS: continue
 
                         # 生成双栈规则
                         middle_lines.add(f"0.0.0.0 {domain}")
@@ -126,7 +115,7 @@ def process_files(file_paths):
         except Exception as e:
             print(f"[!] 读取文件出错: {filepath} -> {e}")
 
-    # 强制注入标准回环记录
+    # 强制注入标准回环
     top_lines.add(DEFAULT_V4_LOCALHOST)
     bottom_lines.add(DEFAULT_V6_LOCALHOST)
 
@@ -134,11 +123,8 @@ def process_files(file_paths):
     return top_lines, middle_lines, bottom_lines
 
 def generate_output(top, middle, bottom, output_file):
-    """
-    写入最终 Hosts 文件并添加元数据头部
-    """
+    """写入最终 Hosts 文件"""
     total_count = len(top) + len(middle) + len(bottom)
-
     tz = pytz.timezone('Asia/Shanghai')
     current_time = datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S UTC+8')
 
@@ -148,15 +134,14 @@ def generate_output(top, middle, bottom, output_file):
 # Total lines: {total_count}
 # Update time: {current_time}
 """
-
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(header + "\n")
-
             f.write("# [Custom IPv4 / Localhost]\n")
             f.write("\n".join(sorted(top)) + "\n\n")
 
             f.write("# [Blocklist / 0.0.0.0 & ::]\n")
+            # 这里 middle 已经包含了生成的成对 0.0.0.0 和 :: 规则
             f.write("\n".join(sorted(middle)) + "\n\n")
 
             f.write("# [Custom IPv6 / Loopback]\n")
@@ -166,12 +151,10 @@ def generate_output(top, middle, bottom, output_file):
     except IOError as e:
         print(f"[错误] 写入文件失败: {e}")
     finally:
-        # 清理缓存
         if os.path.exists(CACHE_DIR):
             shutil.rmtree(CACHE_DIR)
 
 if __name__ == "__main__":
-    # 并发下载
     downloaded_files = []
     with ThreadPoolExecutor(max_workers=5) as executor:
         futures = {executor.submit(download_source, url, i): i for i, url in enumerate(URLS)}
@@ -180,8 +163,5 @@ if __name__ == "__main__":
             if result:
                 downloaded_files.append(result)
 
-    # 解析处理
     top, middle, bottom = process_files(downloaded_files)
-
-    # 生成文件
     generate_output(top, middle, bottom, OUTPUT_FILE)
