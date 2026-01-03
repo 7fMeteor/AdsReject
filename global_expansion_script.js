@@ -193,7 +193,12 @@ const landingNodeProxies = [
       "udp": true,
       "dialer-proxy": "⚙️ 节点选择"
     },
-    // 如果没有落地节点，建议注释掉上方对象，保留空数组
+    // 如果有更多落地节点，在这里继续添加
+    // {
+    //   "name": "landing-node-2",
+    //   ...
+    //   "dialer-proxy": "⚙️ 节点选择"
+    // }
 ];
 
 // 程序入口
@@ -237,18 +242,32 @@ function main(config) {
       return proxy;
   }).filter(p => p !== null);
 
-  // 自动地区分组与高倍率过滤
+  // 辅助函数：检测高倍率节点 (大于 3.0x 排除，防止流量偷跑)
+  // 支持格式：x3.0, 3.0x, 3.0倍率, [3.0x] 等
+  const checkHighMultiplier = (name) => {
+      if (!name) return false;
+      // 匹配 "3.0x", "x3", "3倍率" 等组合
+      // 逻辑：匹配数字 + 紧邻的倍率符号，或者 倍率符号 + 紧邻的数字
+      const pattern = /(?:^|\s|\[|\()((?:0\.\d+|[1-9]\d*(?:\.\d+)?))\s*(?:x|X|倍|倍率)(?:$|\s|\]|\))/;
+      const patternReverse = /(?:x|X|倍|倍率)\s*((?:0\.\d+|[1-9]\d*(?:\.\d+)?))/;
+      
+      const m1 = name.match(pattern);
+      if (m1 && parseFloat(m1[1]) > 3.0) return true;
+      
+      const m2 = name.match(patternReverse);
+      if (m2 && parseFloat(m2[1]) > 3.0) return true;
+      
+      return false;
+  };
+
+  // 自动地区分组
   const regionGroups = {};
   const otherProxies = [];
-  // 倍率正则：匹配 x2.0, 3x, 5倍率 等格式
-  const multiplierRegex = /(?<=[xX✕✖⨉倍率])([1-9]+(\.\d+)*|0{1}\.\d+)(?=[xX✕✖⨉倍率])*/i;
-
   regionDefinitions.forEach(r => regionGroups[r.name] = { ...r, proxies: [] });
 
   processedProxies.forEach(proxy => {
-      // 过滤高倍率节点 (大于 3.0x 排除，防止流量偷跑)
-      const match = multiplierRegex.exec(proxy.name);
-      if (match && parseFloat(match[1]) > 3.0) return;
+      // 过滤高倍率节点
+      if (checkHighMultiplier(proxy.name)) return;
 
       // 地区匹配
       let matched = false;
@@ -320,7 +339,8 @@ function main(config) {
       ...groupBaseOption,
       "name": "🕊️ 落地节点", 
       "type": "select",
-      "proxies": landingNodeNames.length > 0 ? [...landingNodeNames] : ["REJECT"], // 如果没有落地节点，防空处理
+      // 如果没有有效落地节点，自动回退到“节点选择”和“直连”
+      "proxies": landingNodeNames.length > 0 ? [...landingNodeNames] : ["⚙️ 节点选择", "🔗 全局直连"], 
       "icon": `${iconBase}/openwrt.svg`
     },
     {
@@ -381,6 +401,8 @@ function main(config) {
       "type": "select",
       "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
+      // 增加地区过滤，防止 Claude 误连导致封号
+      "exclude-filter": "(?i)港|hk|hongkong|hong kong|俄|ru|russia|澳|macao|cn|china",
       "icon": `${iconBase}/claude.svg`
     },
     {
@@ -403,7 +425,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "📲 电报消息",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "🔗 全局直连"],
       "include-all": true,
       "icon": `${iconBase}/telegram.svg`
     },
@@ -411,7 +433,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "📢 谷歌服务",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "🔗 全局直连"],
       "include-all": true,
       "icon": `${iconBase}/google.svg`
     },
@@ -419,7 +441,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "🍎 苹果服务",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)", "🔗 全局直连"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "🔗 全局直连"],
       "include-all": true,
       "icon": `${iconBase}/apple.svg`
     },
@@ -427,7 +449,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "Ⓜ️ 微软服务",
       "type": "select",
-      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
+      "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移"],
       "include-all": true,
       "icon": `${iconBase}/microsoft.svg`
     },
