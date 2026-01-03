@@ -5,13 +5,19 @@ import pytz
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 
-# 全局配置
+# --- 全局配置 ---
 OUTPUT_FILE = "ads-rule-hosts.txt"
 CACHE_DIR = "download_cache"
+
+# 使用 CDN 加速链接，提高 Github Action 成功率
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt"
+    "https://fastly.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-hosts.txt"
 ]
+
+# 标准系统回环定义 (Best Practice)
+DEFAULT_V4_LOCALHOST = "127.0.0.1 localhost"
+DEFAULT_V6_LOCALHOST = "::1 localhost ip6-localhost ip6-loopback"
 
 def download_source(url, index):
     """
@@ -19,10 +25,10 @@ def download_source(url, index):
     """
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR, exist_ok=True)
-        
+
     filename = os.path.join(CACHE_DIR, f"source_{index}.txt")
     print(f"[-] [下载中] {url}")
-    
+
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=30) as response:
@@ -41,9 +47,9 @@ def process_files(file_paths):
     top_lines = set()      # 自定义/本地回环
     middle_lines = set()   # 0.0.0.0 & :: 屏蔽
     bottom_lines = set()   # IPv6 回环
-    
+
     raw_count = 0
-    
+
     for filepath in file_paths:
         try:
             with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
@@ -54,11 +60,18 @@ def process_files(file_paths):
                         continue
 
                     parts = line.split()
-                    
-                    # 识别标准 Hosts 语法
+
+                    # --- A. 识别标准 Hosts 语法 ---
                     if len(parts) >= 2 and ('.' in parts[0] or ':' in parts[0]):
                         ip = parts[0]
                         clean_line = line.split('#')[0].strip()
+
+                        # 过滤掉源文件中可能存在的“不完美”的回环记录
+                        if ip == "127.0.0.1" and "localhost" in clean_line:
+                            continue
+                        if ip == "::1" and "localhost" in clean_line:
+                            continue
+
                         raw_count += 1
 
                         if ip == "0.0.0.0" or ip == "::":
@@ -69,13 +82,13 @@ def process_files(file_paths):
                             top_lines.add(clean_line)
                         continue
 
-                    # 识别 ABP / 纯域名语法并转换
+                    # --- B. 识别 ABP / 纯域名语法并转换 ---
                     domain = ""
                     if line.startswith('||'):
                         domain = line[2:].rstrip('^')
                     elif len(parts) == 1 and '.' in line:
                         domain = line
-                    
+
                     if domain and '/' not in domain and '*' not in domain:
                         domain = domain.split('#')[0].strip()
                         # 生成双栈规则
@@ -85,7 +98,11 @@ def process_files(file_paths):
 
         except Exception as e:
             print(f"[!] 读取文件出错: {filepath} -> {e}")
-            
+
+    # 强制注入标准回环记录
+    top_lines.add(DEFAULT_V4_LOCALHOST)
+    bottom_lines.add(DEFAULT_V6_LOCALHOST)
+
     print(f"info: 原始提取规则数: {raw_count}")
     return top_lines, middle_lines, bottom_lines
 
@@ -94,11 +111,11 @@ def generate_output(top, middle, bottom, output_file):
     写入最终 Hosts 文件并添加元数据头部
     """
     total_count = len(top) + len(middle) + len(bottom)
-    
+
     tz = pytz.timezone('Asia/Shanghai')
     current_time = datetime.now(tz).strftime('%Y-%m-%d %H:%M:%S UTC+8')
 
-    header = f"""# Title: Waster Ads Rule
+    header = f"""# Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking.
 # --------------------------------------
 # Total lines: {total_count}
@@ -108,7 +125,7 @@ def generate_output(top, middle, bottom, output_file):
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(header + "\n")
-            
+
             f.write("# [Custom IPv4 / Localhost]\n")
             f.write("\n".join(sorted(top)) + "\n\n")
 
@@ -117,7 +134,7 @@ def generate_output(top, middle, bottom, output_file):
 
             f.write("# [Custom IPv6 / Loopback]\n")
             f.write("\n".join(sorted(bottom)) + "\n")
-            
+
         print(f"[完成] 文件已生成: {output_file}，去重后总行数: {total_count}")
     except IOError as e:
         print(f"[错误] 写入文件失败: {e}")
