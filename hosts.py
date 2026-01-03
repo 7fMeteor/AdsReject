@@ -11,7 +11,7 @@ CACHE_DIR = "download_cache"
 
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://fastly.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-hosts.txt",
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
     "https://raw.githubusercontent.com/lingeringsound/10007_auto/master/reward"
 ]
 
