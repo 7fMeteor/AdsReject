@@ -9,15 +9,30 @@ from concurrent.futures import ThreadPoolExecutor
 OUTPUT_FILE = "ads-rule-hosts.txt"
 CACHE_DIR = "download_cache"
 
-# 使用 CDN 加速链接，提高 Github Action 成功率
 URLS = [
     "https://anti-ad.net/domains.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt"
+    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
+    "https://raw.githubusercontent.com/lingeringsound/10007_auto/master/reward" 
 ]
 
-# 标准系统回环定义 (Best Practice)
+# 系统回环 (Best Practice) ---
 DEFAULT_V4_LOCALHOST = "127.0.0.1 localhost"
 DEFAULT_V6_LOCALHOST = "::1 localhost ip6-localhost ip6-loopback"
+
+# --- 需要强制清洗的垃圾关键词 ---
+# 如果源文件中的规则包含这些词，说明它是系统配置而非广告规则，直接过滤
+IGNORE_KEYWORDS = {
+    'localhost', 
+    'ip6-localhost', 
+    'ip6-loopback', 
+    'broadcasthost', 
+    'hostname',
+    'local',
+    'ip6-localnet',
+    'ip6-mcastprefix',
+    'ip6-allnodes',
+    'ip6-allrouters'
+}
 
 def download_source(url, index):
     """
@@ -65,11 +80,18 @@ def process_files(file_paths):
                     if len(parts) >= 2 and ('.' in parts[0] or ':' in parts[0]):
                         ip = parts[0]
                         clean_line = line.split('#')[0].strip()
-
-                        # 过滤掉源文件中可能存在的“不完美”的回环记录
-                        if ip == "127.0.0.1" and "localhost" in clean_line:
-                            continue
-                        if ip == "::1" and "localhost" in clean_line:
+                        
+                        # 提取这一行包含的所有域名/别名 (排除 IP 本身)
+                        aliases = parts[1:]
+                        
+                        # 强力清洗逻辑
+                        is_garbage = False
+                        for alias in aliases:
+                            if alias.lower() in IGNORE_KEYWORDS:
+                                is_garbage = True
+                                break
+                        
+                        if is_garbage:
                             continue
 
                         raw_count += 1
@@ -91,6 +113,11 @@ def process_files(file_paths):
 
                     if domain and '/' not in domain and '*' not in domain:
                         domain = domain.split('#')[0].strip()
+                        
+                        # 同样对纯域名进行关键词检查
+                        if domain.lower() in IGNORE_KEYWORDS:
+                            continue
+
                         # 生成双栈规则
                         middle_lines.add(f"0.0.0.0 {domain}")
                         middle_lines.add(f":: {domain}")
