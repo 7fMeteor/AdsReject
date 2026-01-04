@@ -14,6 +14,19 @@ const createRuleProvider = (url, path, behavior = "domain", format = "yaml", int
   "path": path
 });
 
+const skipIps = [
+  '10.0.0.0/8',
+  '100.64.0.0/10',
+  '169.254.0.0/16',
+  '172.16.0.0/12',
+  '192.0.0.0/24',
+  '192.168.0.0/16',
+  '198.18.0.0/15',
+  'FC00::/7',
+  'FE80::/10',
+  '::1/128',
+];
+
 // 图标
 const iconBase = "https://raw.githubusercontent.com/clash-verge-rev/clash-verge-rev.github.io/main/docs/assets/icons";
 
@@ -123,6 +136,20 @@ const ruleProviders = {
 
 // 规则
 const rules = [
+  // 远程控制与组网软件强制直连 (防卡顿) ---
+  "PROCESS-NAME-REGEX,(?i).*Oray.*,DIRECT", // 向日葵
+  "PROCESS-NAME-REGEX,(?i).*Sunlogin.*,DIRECT", // 向日葵
+  "PROCESS-NAME-REGEX,(?i).*AweSun.*,DIRECT", // 向日葵旗下
+  "PROCESS-NAME-REGEX,(?i).*ToDesk.*,DIRECT", // ToDesk
+  "PROCESS-NAME-REGEX,(?i).*TeamViewer.*,DIRECT", // TeamViewer
+  "PROCESS-NAME-REGEX,(?i).*AnyDesk.*,DIRECT", // AnyDesk
+  "PROCESS-NAME-REGEX,(?i).*Zerotier.*,DIRECT", // ZeroTier 组网
+  "PROCESS-NAME-REGEX,(?i).*Tailscaled.*,DIRECT", // Tailscale 组网
+  "PROCESS-NAME-REGEX,(?i).*frpc.*,DIRECT", // FRP 内网穿透
+  "PROCESS-NAME-REGEX,(?i).*frps.*,DIRECT",
+  "PROCESS-NAME-REGEX,(?i).*ngrok.*,DIRECT", // Ngrok
+  "PROCESS-NAME-REGEX,(?i).*vpn.*,DIRECT", // 各类 VPN 客户端防止回环
+
   // 自定义直连/代理 (最高优先级)
   "PROCESS-NAME,steam.exe,🐬 自定义直连",
   "DOMAIN-SUFFIX,immersivetranslate.com,🐳 自定义代理",
@@ -209,22 +236,63 @@ function main(config) {
   const originalProxies = config?.proxies ? [...config.proxies] : [];
   const originalProviders = config?.["proxy-providers"] || {};
   
-    // 全局内核参数优化
+  // 全局内核参数优化
   config["unified-delay"] = true; // 真实延迟显示
   config["tcp-concurrent"] = true; // 开启TCP并发，提升加载速度
   config["profile"] = {
       "store-selected": true,
       "store-fake-ip": true
   };
+  
+  // 内核深度优化 ---
+  config['find-process-mode'] = 'strict'; // 严格匹配进程名，让直连规则更准
+  config['geodata-loader'] = 'memconservative'; // 节省内存模式
+  config['keep-alive-interval'] = 1800; // 保持连接的间隔，省电/省资源
+  
+  // NTP 时间同步 (解决部分协议因时间误差无法连接的问题)
+  config['ntp'] = {
+    enable: true,
+    'write-to-system': false, // 不写入系统时间，只供内核使用
+    server: 'cn.ntp.org.cn', // 使用国内阿里/腾讯等 NTP 池
+  };
+
+  // 优化 TUN 模式下的 DNS 劫持 (防止 DNS 泄露)
+  if (!config['tun']) config['tun'] = {};
+  config['tun']['dns-hijack'] = ['any:53', 'tcp://any:53'];
+  // 将 skipIps 应用到 TUN 排除列表，防止回环
+  config['tun']['route-exclude-address'] = skipIps;
+
   // 开启流量嗅探，提升 Fake-IP 模式下的分流准确度
-  config["sniffer"] = {
-      "enable": true,
-      "parse-pure-ip": true,
-      "sniff": {
-          "TLS": { "ports": [443, 8443] },
-          "HTTP": { "ports": [80, "8080-8880"], "override-destination": true },
-          "QUIC": { "ports": [443, 8443] } // 开启 QUIC 流量嗅探
-      }
+  config['sniffer'] = {
+    enable: true,
+    'force-dns-mapping': true,
+    'parse-pure-ip': false,
+    'override-destination': true,
+    sniff: {
+      TLS: {
+        ports: [443, 8443],
+      },
+      HTTP: {
+        ports: [80, '8080-8880'],
+      },
+      QUIC: {
+        ports: [443, 8443],
+      },
+    },
+    'skip-src-address': skipIps,
+    'skip-dst-address': skipIps,
+    'force-domain': [
+      '+.google.com',
+      '+.googleapis.com',
+      '+.googleusercontent.com',
+      '+.youtube.com',
+      '+.facebook.com',
+      '+.messenger.com',
+      '+.fbcdn.net',
+      'fbcdn-a.akamaihd.net',
+    ],
+    // 强制跳过嗅探的域名/关键词
+    'skip-domain': ['Mijia Cloud', '+.oray.com', '+.push.apple.com', '+.apple.com', '+.google.com', '+.localhost', '*.local', '+.msftconnecttest.com', '+.msftncsi.com', '+.qq.com', '+.music.163.com', '+.steamcontent.com', 'xbox.*.microsoft.com', '+.battlenet.com.cn', '+.datarouter.cn', '+.game.rpg.qq.com'],
   };
   
   // 注入配置
@@ -401,7 +469,7 @@ function main(config) {
       "type": "select",
       "proxies": ["🔰 模式选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
       "include-all": true,
-      // 增加地区过滤，防止 Claude 误连导致封号
+      // 增加地区过滤，防止 Claude 误连香港节点导致封号
       "exclude-filter": "(?i)港|hk|hongkong|hong kong|俄|ru|russia|澳|macao|cn|china",
       "icon": `${iconBase}/claude.svg`
     },
