@@ -12,7 +12,7 @@
 | :--- | :--- | :--- | :--- |
 | **Hosts** | 通用 Hosts 规则 | 4小时 | `https://raw.githubusercontent.com/7fMeteor/AdsReject/main/ads-rule-hosts.txt` |
 | **Clash** | Clash 规则集 (Rule Provider) | 4小时 | `https://raw.githubusercontent.com/7fMeteor/AdsReject/main/clash-ads-reject.yaml` |
-| **Script** | Clash 覆写脚本 | 4小时 | `https://raw.githubusercontent.com/7fMeteor/AdsReject/main/global_expansion_script.js` |
+| **Script** | Clash 覆写脚本 | 作者手动更新 | `https://raw.githubusercontent.com/7fMeteor/AdsReject/main/global_expansion_script.js` |
 
 ---
 
