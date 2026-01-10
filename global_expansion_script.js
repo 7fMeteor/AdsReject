@@ -625,7 +625,7 @@ function main(config) {
         "🕊️ 落地节点",
         "🔗 全局直连"
       ],
-      icon: `${ASSETS.icons}/link.svg`,
+      icon: `${ASSETS.icons}/cloudflare.svg`,
       includeAll: false
     },
     // 节点选择组
