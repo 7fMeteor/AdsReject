@@ -4,7 +4,23 @@
  * Github：https://github.com/7fMeteor/AdsReject
  */
 
-// 辅助函数：创建远程规则集提供者 (Rule Provider)
+// 资源配置中心：统一管理远程资源根路径
+const ASSETS = {
+  // 远程图标仓库基地址
+  icons: "https://raw.githubusercontent.com/7fMeteor/AdsReject/main/icons",
+  // 规则集源路径配置
+  rules: {
+    // 广告拦截规则集
+    ads: "https://raw.githubusercontent.com/7fMeteor/AdsReject/main/clash-ads-reject.yaml",
+    // Loyalsoldier 规则仓库
+    loyal: "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release",
+    // MetaCubeX 规则仓库
+    meta: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical"
+  }
+};
+
+// 工厂函数：构建标准化规则集提供者
+// 默认 behavior 为 "domain"
 const createRuleProvider = (url, path, behavior = "domain", format = "yaml", interval = 86400) => ({
   "type": "http",
   "format": format,
@@ -14,31 +30,30 @@ const createRuleProvider = (url, path, behavior = "domain", format = "yaml", int
   "path": path
 });
 
-// 需要绕过代理的本地与保留 IP 列表 (用于防止回环与直连)
+// 本地保留网段列表：用于直连与路由环路规避 (CIDR)
 const skipIps = [
-  '10.0.0.0/8',
-  '100.64.0.0/10',
-  '169.254.0.0/16',
-  '172.16.0.0/12',
-  '192.0.0.0/24',
-  '192.168.0.0/16',
-  'FC00::/7',
-  'FE80::/10',
-  '::1/128',
+  '127.0.0.0/8',      // IPv4 Loopback (回环地址)
+  '10.0.0.0/8',       // LAN Class A (局域网)
+  '100.64.0.0/10',    // Carrier-Grade NAT (运营商保留)
+  '169.254.0.0/16',   // Link-Local (链路本地)
+  '172.16.0.0/12',    // LAN Class B (局域网)
+  '192.0.0.0/24',     // IETF Protocol Reserved (协议保留)
+  '192.168.0.0/16',   // LAN Class C (局域网)
+  '224.0.0.0/4',      // Multicast (组播/投屏)
+  'FC00::/7',         // IPv6 Unique Local (唯一本地)
+  'FE80::/10',        // IPv6 Link-Local (链路本地)
+  '::1/128',          // IPv6 Loopback (回环地址)
 ];
 
-// 图标基址
-const iconBase = "https://raw.githubusercontent.com/7fMeteor/AdsReject/main/icons";
-
-// 国内 DNS Over HTTPS (DoH) 服务器列表
+// 国内 DNS 服务器列表 (DoH)
 // 策略：阿里(稳定) + 腾讯(覆盖广) + 字节(速度快)
 const domesticNameservers = [
   "https://dns.alidns.com/dns-query", // 阿里DoH
-  "https://doh.pub/dns-query", // 腾讯DoH
-  "https://180.184.1.1/dns-query" // 字节跳动DoH，目前仅支持IPv4
+  "https://doh.pub/dns-query",        // 腾讯DoH
+  "https://180.184.1.1/dns-query"     // 字节跳动DoH，目前仅支持IPv4
 ];
 
-// 国外 DNS Over HTTPS (DoH) 服务器列表
+// 国外 DNS 服务器列表 (DoH)
 const foreignNameservers = [
   "https://cloudflare-dns.com/dns-query", // CloudflareDNS
   "https://common.dot.dns.yandex.net/dns-query", // YandexDNS
@@ -47,105 +62,211 @@ const foreignNameservers = [
   "https://dns.quad9.net/dns-query", // Quad9DNS
 ];
 
-// 内核 DNS 全局配置对象
+// Meta 内核 DNS 全局配置
 const dnsConfig = {
   "enable": true,
   "listen": "0.0.0.0:1053",
   // "ipv6": true, // 根据本地网络环境决定是否开启
-  "prefer-h3": true, // 开启 HTTP/3 支持，可能加速 DoH 查询
+  "prefer-h3": true, // 开启 HTTP/3 支持，加速查询
   "respect-rules": true,
-  "use-system-hosts": true, // 开启读取系统 hosts
+  "use-system-hosts": true, // 读取系统 Hosts
   "cache-algorithm": "arc",
   "enhanced-mode": "fake-ip",
   "fake-ip-range": "198.18.0.1/16",
   "fake-ip-filter": [
-    // 本地主机/设备
+    // 本地主机与设备
     "+.lan",
     "+.local",
-    // Windows网络出现小地球图标
+    // Windows 连接性检测
     "+.msftconnecttest.com",
     "+.msftncsi.com",
-    // QQ/微信快速登录检测
+    // 腾讯系本地进程
     "localhost.ptlogin2.qq.com",
     "localhost.sec.qq.com",
     "localhost.work.weixin.qq.com",
-    // 游戏平台与 P2P 相关 (防止 NAT 类型严格)
+    // 游戏 NAT 与 P2P 相关
     "+.stun.*",
     "+.steamcontent.com",
     "+.xboxlive.com",
-    // NTP 服务
+    // NTP 时间同步 (防止时间不同步导致证书错误)
     "+.pool.ntp.org",
-    "+.ntp.org"
+    "+.ntp.org",
+    "+.time.*.com",
+    "+.time.*.gov",
+    // 路由器后台管理
+    "router.asus.com",
+    "*.routerlogin.net",
+    "*.tplinkwifi.net",
+    // 兼容性优化补充
+    "connect.rom.miui.com", // 小米连接检测
+    "*.msftconnecttest.com", // Windows 连接检测
+    "time.apple.com" // 苹果对时
   ],
-  "default-nameserver": ["223.5.5.5", "119.29.29.29", "180.76.76.76", "1.2.4.8"], // Bootstrap DNS 使用国内高可用 IP
-  "nameserver": [...foreignNameservers],
-  "proxy-server-nameserver": [...domesticNameservers],
-  "direct-nameserver": [...domesticNameservers],
+  // Bootstrap DNS 使用国内高可用 IP (用于解析 DoH 域名)
+  "default-nameserver": [
+    "223.5.5.5",        // 阿里 DNS (主)
+    "223.6.6.6",        // 阿里 DNS (备)
+    "119.29.29.29",     // 腾讯 DNS
+    "114.114.114.114",  // 114 DNS (高可用保底)
+    "180.76.76.76",     // 百度 DNS（不推荐，仅做保底）
+    "1.2.4.8"           // CNNIC DNS（不推荐，仅做保底）
+  ],
+  "nameserver": [
+    ...foreignNameservers
+  ],
+  "proxy-server-nameserver": [
+    ...domesticNameservers
+  ],
+  "direct-nameserver": [
+    ...domesticNameservers
+  ],
   "direct-nameserver-follow-policy": false,
   "nameserver-policy": {
-    "geosite:cn,private": domesticNameservers,
-    "geosite:google,youtube,telegram,gfw,geolocation-!cn": foreignNameservers
+    "geosite:cn": domesticNameservers,
+    "geosite:private": domesticNameservers,
+    "geosite:google": foreignNameservers,
+    "geosite:youtube": foreignNameservers,
+    "geosite:telegram": foreignNameservers,
+    "geosite:gfw": foreignNameservers,
+    "geosite:geolocation-!cn": foreignNameservers
+  },
+  // 兜底过滤，防止国外域名被解析到国内保留 IP (DNS污染特征)
+  "fallback-filter": {
+    "geoip": true,
+    "geoip-code": "CN",
+    "ipcidr": [
+      "240.0.0.0/4",
+      "0.0.0.0/32" // 常见污染 IP
+    ]
   }
 };
 
-// 地区自动识别正则表达式与图标定义
+// 地区识别规则与图标路径定义
 const regionDefinitions = [
-  { name: 'HK香港', regex: /港|🇭🇰|hongkong|hong kong|(?:^|[^a-z])hk(?:[^a-z]|$)/i, icon: `${iconBase}/flags/hk.svg` },
-  { name: 'US美国', regex: /(?!.*aus)(?=.*(美|🇺🇸|usa|american|united states|(?:^|[^a-z])us(?:(?!t)|[^a-z]|$))).*/i, icon: `${iconBase}/flags/us.svg` },
-  { name: 'JP日本', regex: /日本|🇯🇵|japan|(?:^|[^a-z])jp(?:[^a-z]|$)/i, icon: `${iconBase}/flags/jp.svg` },
-  { name: 'SG新加坡', regex: /新加坡|🇸🇬|singapore|(?:^|[^a-z])sg(?:[^a-z]|$)/i, icon: `${iconBase}/flags/sg.svg` },
-  { name: 'TW台湾', regex: /台湾|🇹🇼|taiwan|tai wan|(?:^|[^a-z])tw(?:[^a-z]|$)/i, icon: `${iconBase}/flags/tw.svg` },
-  { name: 'KR韩国', regex: /韩|🇰🇷|korea|(?:^|[^a-z])kr(?:[^a-z]|$)/i, icon: `${iconBase}/flags/kr.svg` },
-  { name: 'DE德国', regex: /德国|🇩🇪|germany|(?:^|[^a-z])de(?:[^a-z]|$)/i, icon: `${iconBase}/flags/de.svg` },
-  { name: 'GB英国', regex: /英|🇬🇧|united kingdom|great britain|(?:^|[^a-z])uk(?:[^a-z]|$)/i, icon: `${iconBase}/flags/gb.svg` },
-  { name: 'FR法国', regex: /法|🇫🇷|france|(?:^|[^a-z])fr(?:[^a-z]|$)/i, icon: `${iconBase}/flags/fr.svg` },
-  { name: 'CA加拿大', regex: /加|🇨🇦|canada|(?:^|[^a-z])ca(?:[^a-z]|$)/i, icon: `${iconBase}/flags/ca.svg` },
-  { name: 'AU澳洲', regex: /澳|🇦🇺|australia|(?:^|[^a-z])au(?:[^a-z]|$)/i, icon: `${iconBase}/flags/au.svg` },
-  { name: 'NL荷兰', regex: /荷|🇳🇱|netherlands|(?:^|[^a-z])nl(?:[^a-z]|$)/i, icon: `${iconBase}/flags/nl.svg` },
-  { name: 'RU俄罗斯', regex: /俄|🇷🇺|russia|(?:^|[^a-z])ru(?:[^a-z]|$)/i, icon: `${iconBase}/flags/ru.svg` },
-  { name: 'IN印度', regex: /印|🇮🇳|india|(?:^|[^a-z])in(?:[^a-z]|$)/i, icon: `${iconBase}/flags/in.svg` },
+  {
+    name: 'HK香港',
+    regex: /港|🇭🇰|hongkong|hong kong|(?:^|[^a-z])hk(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/hk.svg`
+  },
+  {
+    name: 'US美国',
+    regex: /(?!.*aus)(?=.*(美|🇺🇸|usa|american|united states|(?:^|[^a-z])us(?:(?!t)|[^a-z]|$))).*/i,
+    icon: `${ASSETS.icons}/flags/us.svg`
+  },
+  {
+    name: 'JP日本',
+    regex: /日本|🇯🇵|japan|(?:^|[^a-z])jp(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/jp.svg`
+  },
+  {
+    name: 'SG新加坡',
+    regex: /新加坡|🇸🇬|singapore|(?:^|[^a-z])sg(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/sg.svg`
+  },
+  {
+    name: 'TW台湾',
+    regex: /台湾|🇹🇼|taiwan|tai wan|(?:^|[^a-z])tw(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/tw.svg`
+  },
+  {
+    name: 'KR韩国',
+    regex: /韩|🇰🇷|korea|(?:^|[^a-z])kr(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/kr.svg`
+  },
+  {
+    name: 'DE德国',
+    regex: /德国|🇩🇪|germany|(?:^|[^a-z])de(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/de.svg`
+  },
+  {
+    name: 'GB英国',
+    regex: /英|🇬🇧|united kingdom|great britain|(?:^|[^a-z])uk(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/gb.svg`
+  },
+  {
+    name: 'FR法国',
+    regex: /法|🇫🇷|france|(?:^|[^a-z])fr(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/fr.svg`
+  },
+  {
+    name: 'CA加拿大',
+    regex: /加|🇨🇦|canada|(?:^|[^a-z])ca(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/ca.svg`
+  },
+  {
+    name: 'AU澳洲',
+    regex: /澳|🇦🇺|australia|(?:^|[^a-z])au(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/au.svg`
+  },
+  {
+    name: 'NL荷兰',
+    regex: /荷|🇳🇱|netherlands|(?:^|[^a-z])nl(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/nl.svg`
+  },
+  {
+    name: 'RU俄罗斯',
+    regex: /俄|🇷🇺|russia|(?:^|[^a-z])ru(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/ru.svg`
+  },
+  {
+    name: 'IN印度',
+    regex: /印|🇮🇳|india|(?:^|[^a-z])in(?:[^a-z]|$)/i,
+    icon: `${ASSETS.icons}/flags/in.svg`
+  },
 ];
 
-// 规则集 (Rule Providers) 的源地址与存储配置
+// 自定义直连域名列表
+const DirectDomains = [
+  "apphot.cc",   // 烈火资源站
+  "wycad.com"    // 无忧软件网
+];
+
+
+// 规则集配置 (Rule Providers)
 const ruleProviders = {
   // 广告拦截
-  "reject": createRuleProvider("https://raw.githubusercontent.com/7fMeteor/AdsReject/main/clash-ads-reject.yaml", "./ruleset/loyalsoldier/reject.yaml"),
+  // 内容为纯网址列表 (如 - 'xycdn.com')，无前缀，必须用 domain
+  "reject": createRuleProvider(ASSETS.rules.ads, "./ruleset/loyalsoldier/reject.yaml"),
 
   // Loyalsoldier 基础规则
-  "icloud": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt", "./ruleset/loyalsoldier/icloud.yaml"),
-  "apple": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt", "./ruleset/loyalsoldier/apple.yaml"),
-  "google": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt", "./ruleset/loyalsoldier/google.yaml"),
-  "proxy": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt", "./ruleset/loyalsoldier/proxy.yaml"),
-  "direct": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt", "./ruleset/loyalsoldier/direct.yaml"),
-  "private": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt", "./ruleset/loyalsoldier/private.yaml"),
-  "gfw": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt", "./ruleset/loyalsoldier/gfw.yaml"),
-  "tld-not-cn": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt", "./ruleset/loyalsoldier/tld-not-cn.yaml"),
+  // 内容为纯网址列表 (如 - '+.0.myikas.com')，无前缀，必须用 domain
+  "icloud": createRuleProvider(`${ASSETS.rules.loyal}/icloud.txt`, "./ruleset/loyalsoldier/icloud.yaml"),
+  "apple": createRuleProvider(`${ASSETS.rules.loyal}/apple.txt`, "./ruleset/loyalsoldier/apple.yaml"),
+  "google": createRuleProvider(`${ASSETS.rules.loyal}/google.txt`, "./ruleset/loyalsoldier/google.yaml"),
+  "proxy": createRuleProvider(`${ASSETS.rules.loyal}/proxy.txt`, "./ruleset/loyalsoldier/proxy.yaml"),
+  "direct": createRuleProvider(`${ASSETS.rules.loyal}/direct.txt`, "./ruleset/loyalsoldier/direct.yaml"),
+  "private": createRuleProvider(`${ASSETS.rules.loyal}/private.txt`, "./ruleset/loyalsoldier/private.yaml"),
+  "gfw": createRuleProvider(`${ASSETS.rules.loyal}/gfw.txt`, "./ruleset/loyalsoldier/gfw.yaml"),
+  "tld-not-cn": createRuleProvider(`${ASSETS.rules.loyal}/tld-not-cn.txt`, "./ruleset/loyalsoldier/tld-not-cn.yaml"),
 
-  // IP段规则 (需配合 no-resolve)
-  "telegramcidr": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt", "./ruleset/loyalsoldier/telegramcidr.yaml", "ipcidr"),
-  "cncidr": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt", "./ruleset/loyalsoldier/cncidr.yaml", "ipcidr"),
-  "lancidr": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt", "./ruleset/loyalsoldier/lancidr.yaml", "ipcidr"),
+  // IP段规则 (CIDR)
+  // 内容为纯 IP 字符串 (如 - '10.0.0.0/8')，无前缀，必须用 ipcidr
+  "telegramcidr": createRuleProvider(`${ASSETS.rules.loyal}/telegramcidr.txt`, "./ruleset/loyalsoldier/telegramcidr.yaml", "ipcidr"),
+  "cncidr": createRuleProvider(`${ASSETS.rules.loyal}/cncidr.txt`, "./ruleset/loyalsoldier/cncidr.yaml", "ipcidr"),
+  "lancidr": createRuleProvider(`${ASSETS.rules.loyal}/lancidr.txt`, "./ruleset/loyalsoldier/lancidr.yaml", "ipcidr"),
 
-  // 经典行为规则
-  "applications": createRuleProvider("https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt", "./ruleset/loyalsoldier/applications.yaml", "classical"),
+  // 经典行为规则 (Loyalsoldier)
+  // 内容含规则类型前缀，必须用 classical
+  "applications": createRuleProvider(`${ASSETS.rules.loyal}/applications.txt`, "./ruleset/loyalsoldier/applications.yaml", "classical"),
 
-  // MetaCubeX 规则集
-  // 哔哩哔哩
-  "bilibili": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/bilibili.yaml", "./ruleset/MetaCubeX/bilibili.yaml", "classical"),
-  // AI 等规则集
-  "openai": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/openai.yaml", "./ruleset/MetaCubeX/openai.yaml", "classical"),
-  "bybit": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/bybit.yaml", "./ruleset/MetaCubeX/bybit.yaml", "classical"),
-  "pikpak": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/pikpak.yaml", "./ruleset/MetaCubeX/pikpak.yaml", "classical"),
-  "anthropic": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/anthropic.yaml", "./ruleset/MetaCubeX/anthropic.yaml", "classical"),
-  "google-gemini": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/google-gemini.yaml", "./ruleset/MetaCubeX/google-gemini.yaml", "classical"),
-  "xai": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/xai.yaml", "./ruleset/MetaCubeX/xai.yaml", "classical"),
-  "perplexity": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/perplexity.yaml", "./ruleset/MetaCubeX/perplexity.yaml", "classical"),
-  "microsoft": createRuleProvider("https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/microsoft.yaml", "./ruleset/MetaCubeX/microsoft.yaml", "classical"),
+  // MetaCubeX 规则集 (Meta 格式)
+  // 内容含 DOMAIN-SUFFIX 等前缀，必须用 classical
+  "bilibili": createRuleProvider(`${ASSETS.rules.meta}/bilibili.yaml`, "./ruleset/MetaCubeX/bilibili.yaml", "classical"),
+  "openai": createRuleProvider(`${ASSETS.rules.meta}/openai.yaml`, "./ruleset/MetaCubeX/openai.yaml", "classical"),
+  "bybit": createRuleProvider(`${ASSETS.rules.meta}/bybit.yaml`, "./ruleset/MetaCubeX/bybit.yaml", "classical"),
+  "pikpak": createRuleProvider(`${ASSETS.rules.meta}/pikpak.yaml`, "./ruleset/MetaCubeX/pikpak.yaml", "classical"),
+  "anthropic": createRuleProvider(`${ASSETS.rules.meta}/anthropic.yaml`, "./ruleset/MetaCubeX/anthropic.yaml", "classical"),
+  "google-gemini": createRuleProvider(`${ASSETS.rules.meta}/google-gemini.yaml`, "./ruleset/MetaCubeX/google-gemini.yaml", "classical"),
+  "xai": createRuleProvider(`${ASSETS.rules.meta}/xai.yaml`, "./ruleset/MetaCubeX/xai.yaml", "classical"),
+  "perplexity": createRuleProvider(`${ASSETS.rules.meta}/perplexity.yaml`, "./ruleset/MetaCubeX/perplexity.yaml", "classical"),
+  "microsoft": createRuleProvider(`${ASSETS.rules.meta}/microsoft.yaml`, "./ruleset/MetaCubeX/microsoft.yaml", "classical"),
 };
 
-// 流量分流静态规则列表 (按优先级排序)
+// 静态分流规则列表 (按优先级排序)
 const rules = [
-  // 远程控制与组网软件强制直连 (防卡顿) ---
+  // 动态生成自定义直连规则
+  ...DirectDomains.map(domain => `DOMAIN-SUFFIX,${domain},DIRECT`),
+  // 远程控制、组网软件、VPN等强制直连
   "PROCESS-NAME-REGEX,(?i).*Oray.*,DIRECT", // 向日葵
   "PROCESS-NAME-REGEX,(?i).*Sunlogin.*,DIRECT", // 向日葵
   "PROCESS-NAME-REGEX,(?i).*AweSun.*,DIRECT", // 向日葵旗下
@@ -160,15 +281,15 @@ const rules = [
   "PROCESS-NAME-REGEX,(?i).*vpn.*,DIRECT", // 各类 VPN 客户端防止回环
 
   // 自定义直连/代理
-  // Steam PC
-  "PROCESS-NAME,steam.exe,🐬 自定义直连",
-  // 喜马拉雅 PC 端
-  "PROCESS-NAME,喜马拉雅.exe,🐬 自定义直连",
+  // Steam
+  "PROCESS-NAME-REGEX,(?i)^steam,🐬 自定义直连",
+  // 喜马拉雅
+  "PROCESS-NAME-REGEX,(?i)^喜马拉雅,🐬 自定义直连",
   // 哔哩哔哩安卓端
   "PROCESS-NAME,tv.danmaku.bili,📺 哔哩哔哩",
   // 沉浸式翻译插件
   "DOMAIN-SUFFIX,immersivetranslate.com,🐳 自定义代理",
-  // Bing 搜索引擎
+  // Bing 搜索引擎 (按需开启)
   // "DOMAIN-SUFFIX,bing.com,🐳 自定义代理",
 
   // 谷歌服务优化
@@ -178,12 +299,18 @@ const rules = [
   "DOMAIN-SUFFIX,github.io,🔰 模式选择",
   "DOMAIN,v2rayse.com,🔰 模式选择",
 
+  // GitHub 强制走代理，因为 GitHub 已被微软收购，会影响微软服务分流
+  "GEOSITE,github,🔰 模式选择",
+
+  // 广告过滤，提高优先级
+  "RULE-SET,reject,🥰 广告过滤",
+
   // AI 服务
   "RULE-SET,openai,💸 Ai",
   "RULE-SET,google-gemini,💸 Ai",
   "RULE-SET,xai,💸 Ai",
   "RULE-SET,perplexity,💸 Ai",
-  "RULE-SET,anthropic,💵 Claude",
+  "RULE-SET,anthropic,💸 Ai",
 
   // 哔哩哔哩
   "RULE-SET,bilibili,📺 哔哩哔哩",
@@ -191,6 +318,7 @@ const rules = [
   // 特定应用
   "RULE-SET,pikpak,🅿️ PikPak",
   "RULE-SET,bybit,🪙 Bybit",
+  // ⚠️注意！微软服务包含 GitHub
   "RULE-SET,microsoft,Ⓜ️ 微软服务",
   "RULE-SET,icloud,🍎 苹果服务",
   "RULE-SET,apple,🍎 苹果服务",
@@ -199,7 +327,6 @@ const rules = [
   // 基础分类
   "RULE-SET,applications,🔗 全局直连",
   "RULE-SET,private,🔗 全局直连",
-  "RULE-SET,reject,🥰 广告过滤",
   "RULE-SET,proxy,🔰 模式选择",
   "RULE-SET,gfw,🔰 模式选择",
   "RULE-SET,tld-not-cn,🔰 模式选择",
@@ -214,22 +341,8 @@ const rules = [
   "MATCH,🐟 漏网之鱼"
 ];
 
-// 代理策略组通用基础配置 (测速、超时等参数)
-// 和手动测出来的差距大，是因为应用本身的测试去掉了握手等额外延迟
-// 此结果只用于“延迟选优”，建议自行手动测试
-const groupBaseOption = {
-  // 自动定时延迟检查，值：*分钟✖️60
-  "interval": 600,
-  "timeout": 3000,
-  // 如果使用 http 协议，可以避开加密握手延迟，但是有概率被劫持
-  "url": "https://www.gstatic.com/generate_204", // 这里使用 https 协议，自动测试结果也会更高
-  "lazy": true,
-  "max-failed-times": 3,
-  "hidden": false
-};
-
 // 落地节点 (Landing Node) 手动配置列表
-// ⚠️ 注意：如果没有落地节点，请保持数组为空，或不要填写空字符串，否则可能导致连接失败
+// ⚠️ 注意：如果没有落地节点，请保持数组为空
 const landingNodeProxies = [
   {
     "name": "webshare", // 给你的落地节点起个名字
@@ -253,46 +366,55 @@ const landingNodeProxies = [
 
 // 脚本主执行入口
 function main(config) {
-  // 防御性编程：确保 config 对象存在
+  // 配置完整性校验
   if (!config) return config;
 
-  // 原始代理节点列表备份
+  // 备份原始代理节点
   const originalProxies = config?.proxies ? [...config.proxies] : [];
 
-  // 原始代理提供者 (Proxy Providers) 备份
+  // 备份原始代理提供者
   const originalProviders = config?.["proxy-providers"] || {};
 
-  // 全局内核参数优化
-  config["unified-delay"] = true; // 真实延迟显示
-  config["tcp-concurrent"] = true; // 开启TCP并发，提升加载速度
+  // 全局内核参数调优
+  config["unified-delay"] = true; // 真实延迟
+  config["tcp-concurrent"] = true; // TCP 并发
+  
+  // 开启 TLS 指纹模拟 (Chrome) 以伪装流量特征
+  config["global-client-fingerprint"] = "chrome";
+
+  // Geodata 数据加载与自动更新配置
+  config['geodata-mode'] = true; // 强制使用 .dat 文件
+  config['geo-auto-update'] = true; // 开启 Geo 自动更新
+  config['geo-update-interval'] = 24; // Geo 更新间隔 (小时)
+
   config["profile"] = {
     "store-selected": true,
     "store-fake-ip": true
   };
 
-  // 内核深度优化
-  config['find-process-mode'] = 'strict'; // 严格匹配进程名，让直连规则更准
-  config['geodata-loader'] = 'memconservative'; // 节省内存模式
-  config['keep-alive-interval'] = 1800; // 保持连接的间隔，省电/省资源
+  // 进程匹配与内存优化
+  config['find-process-mode'] = 'strict';
+  config['geodata-loader'] = 'memconservative';
+  config['keep-alive-interval'] = 1800;
 
-  // NTP 时间同步 (解决部分协议因时间误差无法连接的问题)
+  // NTP 时间同步配置
   config['ntp'] = {
-    enable: true,
-    'write-to-system': false, // 不写入系统时间，只供内核使用
-    server: 'cn.ntp.org.cn', // 使用国内阿里/腾讯等 NTP 池
+  enable: true,
+  'write-to-system': false,
+  'dialer-proxy': "🔗 全局直连", // 明确指定直连，防止通过代理同步时间导致回环
+  server: 'ntp.aliyun.com',
   };
 
-  // 优化 TUN 模式下的 DNS 劫持 (防止 DNS 泄露)
+  // TUN 模式 DNS 劫持配置
   if (!config['tun']) config['tun'] = {};
   config['tun']['dns-hijack'] = ['any:53', 'tcp://any:53'];
-  // 将 skipIps 应用到 TUN 排除列表，防止回环
   config['tun']['route-exclude-address'] = skipIps;
 
-  // 开启流量嗅探，提升 Fake-IP 模式下的分流准确度
+  // 流量嗅探配置 (Sniffer)
   config['sniffer'] = {
     enable: true,
     'force-dns-mapping': true,
-    'parse-pure-ip': false,
+    'parse-pure-ip': false, // 不嗅探纯 IP 连接，自动过滤掉大部分 P2P/BT 流量
     'override-destination': true,
     sniff: {
       TLS: {
@@ -317,18 +439,47 @@ function main(config) {
       '+.fbcdn.net',
       'fbcdn-a.akamaihd.net',
     ],
-    // 强制跳过嗅探的域名/关键词
-    'skip-domain': ['Mijia Cloud', '+.oray.com', '+.push.apple.com', '+.apple.com', '+.google.com', '+.localhost', '*.local', '+.msftconnecttest.com', '+.msftncsi.com', '+.qq.com', '+.music.163.com', '+.steamcontent.com', 'xbox.*.microsoft.com', '+.battlenet.com.cn', '+.datarouter.cn', '+.game.rpg.qq.com'],
+    // 强制跳过嗅探的域名/关键词 (Skip Domain)
+    'skip-domain': [
+      // ⚠️ Google 服务：当 Google Home/Nest 等智能设备无法连接时，可以取消掉注释
+      // '+.google.com',
+
+      // 国内服务与智能家居
+      'Mijia Cloud',
+      '+.oray.com',
+      '+.push.apple.com',
+      '+.apple.com', // 保护 AppStore 和 iCloud 下载
+      '+.localhost',
+      '*.local',
+      '+.msftconnecttest.com',
+      '+.msftncsi.com',
+      '+.qq.com',
+      '+.music.163.com',
+      '+.datarouter.cn', // 小米系统服务
+
+      // 游戏平台 (防止 NAT 类型严格导致联机失败)
+      '+.steamcontent.com', // Steam 下载 CDN
+      'xbox.*.microsoft.com', // Xbox 联机
+      '+.battlenet.com.cn', // 暴雪战网
+      '+.game.rpg.qq.com', // 腾讯游戏
+      '+.nintendo.net', // 🆕 Switch 联机
+      '+.stun.playstation.net', // 🆕 PlayStation 联机探测
+      '+.sonyentertainmentnetwork.com', // 🆕 PSN 服务
+
+      // P2P 下载 (节省性能)
+      '+.tracker.3211000.com', // 常见 BT Tracker
+      '+.bittorrent.com'
+    ],
   };
 
-  // 注入配置
+  // 注入核心配置
   config["dns"] = dnsConfig;
   config["rule-providers"] = ruleProviders;
   config["rules"] = rules;
 
-  // 处理并提取所有原始代理节点 (强制开启 UDP)
+  // 代理节点处理：过滤无效节点并强制开启 UDP
   const processedProxies = originalProxies.map(proxy => {
-    if (proxy && typeof proxy === 'object' && proxy.name) {
+    if (proxy && typeof proxy === 'object' && proxy.name && proxy.server) {
       proxy.udp = true;
     } else {
       return null;
@@ -336,40 +487,28 @@ function main(config) {
     return proxy;
   }).filter(p => p !== null);
 
-  // 辅助方法：识别并过滤高倍率节点 (大于 3.0x 排除)
+  // 辅助函数：识别并过滤高倍率节点 (>3.0x)
   const checkHighMultiplier = (name) => {
     if (!name) return false;
-    // 逻辑：匹配数字 + 紧邻的倍率符号，或者 倍率符号 + 紧邻的数字
-    const pattern = /(?:^|\s|\[|\()((?:0\.\d+|[1-9]\d*(?:\.\d+)?))\s*(?:x|X|倍|倍率)(?:$|\s|\]|\))/;
-    const patternReverse = /(?:x|X|倍|倍率)\s*((?:0\.\d+|[1-9]\d*(?:\.\d+)?))/;
-
-    const m1 = name.match(pattern);
-    if (m1 && parseFloat(m1[1]) > 3.0) return true;
-
-    const m2 = name.match(patternReverse);
-    if (m2 && parseFloat(m2[1]) > 3.0) return true;
-
-    return false;
+    const regex = /(?:x|X|倍|倍率)\s*((?:0\.\d+|[1-9]\d*(?:\.\d+)?))/;
+    const match = name.match(regex);
+    return match && parseFloat(match[1]) > 3.0;
   };
 
-  // 地区分类存储对象
+  // 初始化地区分组容器
   const regionGroups = {};
 
-  // 初始化已定义的地区分组
+  // 初始化预定义地区
   regionDefinitions.forEach(r => regionGroups[r.name] = { ...r, proxies: [] });
 
-  // 未识别地区的默认分类组名
+  // 初始化其它地区
   const otherRegionName = '🏁 其它地区';
+  regionGroups[otherRegionName] = { name: otherRegionName, proxies: [], icon: `${ASSETS.icons}/flags/un.svg` };
 
-  // 初始化“其它地区”分组
-  regionGroups[otherRegionName] = { name: otherRegionName, proxies: [], icon: `${iconBase}/flags/un.svg` };
-
-  // 遍历节点进行地区归类
+  // 节点归类逻辑
   processedProxies.forEach(proxy => {
-    // 过滤高倍率节点
     if (checkHighMultiplier(proxy.name)) return;
 
-    // 地区正则匹配
     let matched = false;
     for (const region of regionDefinitions) {
       if (region.regex.test(proxy.name)) {
@@ -378,268 +517,361 @@ function main(config) {
         break;
       }
     }
-    // 未匹配节点归入其它
     if (!matched) {
       regionGroups[otherRegionName].proxies.push(proxy.name);
     }
   });
 
-  // 生成最终生效的具体地区代理组列表
-  const generatedRegionGroups = Object.values(regionGroups)
-    .filter(r => r.proxies.length > 0)
-    .map(r => ({
-      ...groupBaseOption,
-      "name": r.name,
-      "type": "url-test",
-      "tolerance": 50,
-      "proxies": r.proxies,
-      "icon": r.icon
-    }));
+  // 策略组通用配置 (测速与超时)
+  const groupBaseOption = {
+    "interval": 600,
+    "timeout": 3000,
+    "url": "https://www.gstatic.com/generate_204",
+    "lazy": true,
+    "max-failed-times": 3,
+    "hidden": false
+  };
 
-  // 提取生成的地区代理组名称
-  const regionGroupNames = generatedRegionGroups.map(g => g.name);
+  // 生成地区策略组 (嵌套逻辑：Select -> Auto)
+  const generatedRegionGroups = [];
+  
+  Object.values(regionGroups).filter(r => r.proxies.length > 0).forEach(r => {
+      // 创建该地区的自动测速组
+      const autoGroupName = `⚡ 自动选择 ${r.name}`;
+      generatedRegionGroups.push({
+          ...groupBaseOption,
+          "name": autoGroupName,
+          "type": "url-test",
+          "tolerance": 50,
+          "proxies": r.proxies,
+          "hidden": true
+      });
+  
+      // 创建该地区的对外展示组 (Select，允许手动或自动)
+      generatedRegionGroups.push({
+          ...groupBaseOption, // 保持基本配置
+          "name": r.name,
+          "type": "select",
+          "proxies": [autoGroupName, ...r.proxies],
+          "icon": r.icon
+      });
+  });
 
-  // 过滤并提取有效的落地节点
+  // 提取地区组名称 (仅提取暴露给用户的 Select 组)
+  const regionGroupNames = generatedRegionGroups
+    .filter(g => g.type === "select")
+    .map(g => g.name);
+
+  // 提取配置中有效的落地节点
   const validLandingNodes = landingNodeProxies.filter(p => p.server && p.server !== "");
 
-  // 更新全局代理列表 (包含处理后的原始节点与落地节点)
-  config["proxies"] = [...processedProxies, ...validLandingNodes];
+  // 更新全局代理列表
+  config["proxies"] = [
+    ...processedProxies,
+    ...validLandingNodes
+  ];
 
-  // 提取落地节点名称列表
+  // 提取落地节点名称
   const landingNodeNames = validLandingNodes.map(p => p.name);
 
-  // 辅助方法：对字符串进行正则转义处理
-  function escapeForRegExp(s) {
-    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
-
-  // 构造落地节点排除正则表达式 (用于自动选优组)
+  // 构建落地节点排除正则
+  const escapeForRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const excludeLandingFilter = landingNodeNames.length > 0
     ? `^(?:${landingNodeNames.map(escapeForRegExp).join('|')})$`
     : null;
 
-  // 构造基础业务策略组 (并在此处定义 Tab 视觉排序)
-  const proxyGroupsConfig = [
+  // 定义需要动态排除落地节点的策略组名单
+  // 这些组会自动合并原有的排除规则和落地节点排除规则
+  const groupsToExcludeLandingNodes = [
+    "⚙️ 节点选择",
+    "♻️ 延迟选优",
+    "🚑 故障转移",
+    "⚖️ 负载均衡(散列)",
+    "☁️ 负载均衡(轮询)"
+  ];
+
+  // 通用代理列表 (默认：代理优先)
+  // 适用：Google, Telegram, ChatGPT, GitHub 等被墙服务
+  const commonProxies = [
+    "🔰 模式选择",
+    "🌍 地区选择",
+    "⚙️ 节点选择",
+    "🕊️ 落地节点",
+    "♻️ 延迟选优",
+    "🚑 故障转移",
+    "🔗 全局直连"
+  ];
+
+  // 直连优先列表 (默认：直连优先)
+  // 适用：Bilibili, Apple, Microsoft 等国内有 CDN 但偶尔需代理的服务
+  const directFirstProxies = [
+    "🔗 全局直连",
+    "🔰 模式选择",
+    "🌍 地区选择",
+    "⚙️ 节点选择",
+    "♻️ 延迟选优",
+    "🚑 故障转移"
+  ];
+
+  // 策略组定义
+  const groupDefinitions = [
+    // 核心管理组 - 不包含具体节点，只做策略选择
     {
-      ...groupBaseOption,
-      "name": "🔰 模式选择",
-      "type": "select",
-      "proxies": ["⚙️ 节点选择", "🌍 地区选择", "🕊️ 落地节点", "🔗 全局直连"],
-      "icon": `${iconBase}/link.svg`
+      name: "🔰 模式选择",
+      type: "select",
+      proxies: [
+        "⚙️ 节点选择",
+        "🌍 地区选择",
+        "🕊️ 落地节点",
+        "🔗 全局直连"
+      ],
+      icon: `${ASSETS.icons}/link.svg`,
+      includeAll: false
+    },
+    // 节点选择组
+    {
+      name: "⚙️ 节点选择",
+      type: "select",
+      proxies: [
+        "♻️ 延迟选优",
+        "🌍 地区选择",
+        "🚑 故障转移",
+        "⚖️ 负载均衡(散列)",
+        "☁️ 负载均衡(轮询)"
+      ],
+      icon: `${ASSETS.icons}/adjust.svg`,
+      includeAll: true
+    },
+    // 地区选择入口
+    {
+      name: "🌍 地区选择",
+      type: "select",
+      proxies: [
+        "♻️ 延迟选优",
+        ...regionGroupNames
+      ],
+      condition: regionGroupNames.length > 0,
+      icon: `${ASSETS.icons}/global.svg`,
+      includeAll: false
+    },
+    // 落地节点入口
+    {
+      name: "🕊️ 落地节点",
+      type: "select",
+      proxies: landingNodeNames.length > 0 ? landingNodeNames : [
+        "⚙️ 节点选择",
+        "🔗 全局直连"
+      ],
+      icon: `${ASSETS.icons}/openwrt.svg`,
+      includeAll: false
+    },
+
+    // 自动选优与负载均衡
+    {
+      name: "♻️ 延迟选优",
+      type: "url-test",
+      tolerance: 50,
+      icon: `${ASSETS.icons}/speed.svg`,
+      includeAll: true
     },
     {
-      ...groupBaseOption,
-      "name": "⚙️ 节点选择",
-      "type": "select",
-      "proxies": ["♻️ 延迟选优", "🌍 地区选择", "🚑 故障转移", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"],
-      "include-all": true,
-      "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/adjust.svg`
+      name: "🚑 故障转移",
+      type: "fallback",
+      icon: `${ASSETS.icons}/ambulance.svg`,
+      includeAll: true
+    },
+    {
+      name: "⚖️ 负载均衡(散列)",
+      type: "load-balance",
+      strategy: "consistent-hashing",
+      icon: `${ASSETS.icons}/merry_go.svg`,
+      includeAll: true
+    },
+    {
+      name: "☁️ 负载均衡(轮询)",
+      type: "load-balance",
+      strategy: "round-robin",
+      icon: `${ASSETS.icons}/balance.svg`,
+      includeAll: true
+    },
+
+    // 业务策略组
+    {
+      name: "📺 哔哩哔哩",
+      type: "select",
+      proxies: directFirstProxies,
+      icon: `${ASSETS.icons}/bilibili.svg`,
+      includeAll: true
+    },
+    {
+      name: "🌍 国外媒体",
+      type: "select",
+      proxies: [
+        ...commonProxies,
+        "🚑 故障转移"
+      ],
+      icon: `${ASSETS.icons}/youtube.svg`,
+      includeAll: true
+    },
+    {
+      name: "💸 Ai",
+      type: "select",
+      proxies: commonProxies,
+      exclude: "(?i)(^|[^a-z])(港|hk|hongkong|澳|macao|俄|ru|russia|cn|china)([^a-z]|$)",
+      icon: `${ASSETS.icons}/chatgpt.svg`,
+      includeAll: true
+    },
+
+    // 特定应用组
+    {
+      name: "🪙 Bybit",
+      type: "select",
+      proxies: commonProxies,
+      icon: `${ASSETS.icons}/bybit.svg`,
+      includeAll: true
+    },
+    {
+      name: "🅿️ PikPak",
+      type: "select",
+      proxies: commonProxies,
+      icon: `${ASSETS.icons}/pikpak.svg`,
+      includeAll: true
+    },
+    {
+      name: "📲 电报消息",
+      type: "select",
+      proxies: commonProxies,
+      icon: `${ASSETS.icons}/telegram.svg`,
+      includeAll: true
+    },
+    {
+      name: "📢 谷歌服务",
+      type: "select",
+      proxies: commonProxies,
+      icon: `${ASSETS.icons}/google.svg`,
+      includeAll: true
+    },
+    {
+      name: "🍎 苹果服务",
+      type: "select",
+      proxies: directFirstProxies,
+      icon: `${ASSETS.icons}/apple.svg`,
+      includeAll: true
+    },
+    {
+      name: "Ⓜ️ 微软服务",
+      type: "select",
+      proxies: directFirstProxies,
+      icon: `${ASSETS.icons}/microsoft.svg`,
+      includeAll: true
+    },
+
+    // 拦截、直连、代理
+    {
+      name: "🥰 广告过滤",
+      type: "select",
+      proxies: [
+        "REJECT",
+        "DIRECT"
+      ],
+      icon: `${ASSETS.icons}/bug.svg`,
+      includeAll: false
+    },
+    {
+      name: "🔗 全局直连",
+      type: "select",
+      proxies: [
+        "DIRECT",
+        "⚙️ 节点选择",
+        "🌍 地区选择",
+        "♻️ 延迟选优"
+      ],
+      icon: `${ASSETS.icons}/link.svg`,
+      includeAll: false
+    },
+    {
+      name: "❌ 全局拦截",
+      type: "select",
+      proxies: [
+        "REJECT",
+        "DIRECT"
+      ],
+      icon: `${ASSETS.icons}/block.svg`,
+      includeAll: false
+    },
+    {
+      name: "🐬 自定义直连",
+      type: "select",
+      proxies: directFirstProxies,
+      icon: `${ASSETS.icons}/unknown.svg`,
+      includeAll: true
+    },
+    {
+      name: "🐳 自定义代理",
+      type: "select",
+      proxies: commonProxies,
+      icon: `${ASSETS.icons}/openwrt.svg`,
+      includeAll: true
+    },
+    {
+      name: "🐟 漏网之鱼",
+      type: "select",
+      proxies: commonProxies,
+      icon: `${ASSETS.icons}/fish.svg`,
+      includeAll: true
     }
   ];
 
-  if (regionGroupNames.length > 0) {
-    proxyGroupsConfig.push({
-      ...groupBaseOption,
-      "name": "🌍 地区选择",
-      "type": "select",
-      "proxies": ["♻️ 延迟选优", ...regionGroupNames],
-      "icon": `${iconBase}/global.svg`
+  // 构建最终策略组 (引入动态正则合并逻辑)
+  const finalProxyGroups = groupDefinitions
+    .filter(g => g.condition !== false)
+    .map(g => {
+      // 确保 proxies 始终为数组
+      const currentProxies = g.proxies || [];
+      const group = {
+        ...groupBaseOption,
+        name: g.name,
+        type: g.type,
+        proxies: currentProxies,
+        icon: g.icon
+      };
+      if (g.strategy) group.strategy = g.strategy;
+
+      // 动态逻辑：判断当前组是否需要排除落地节点
+      const shouldAppendLandingExclude = groupsToExcludeLandingNodes.includes(g.name) && excludeLandingFilter;
+      
+      // 获取当前组已有的排除规则 (例如 AI 组的地区排除)
+      const currentExclude = g.exclude || "";
+
+      // 智能合并排除规则
+      // 如果需要排除落地节点，则将其追加到现有规则中 (使用 | 运算符)
+      let finalFilter = currentExclude;
+      if (shouldAppendLandingExclude) {
+        finalFilter = currentExclude 
+          ? `(${currentExclude})|(${excludeLandingFilter})` 
+          : excludeLandingFilter;
+      }
+
+      // 仅当最终规则有效时写入配置
+      if (finalFilter && finalFilter !== "") {
+        group["exclude-filter"] = finalFilter;
+      }
+
+      // 仅当显式指定为 true 时开启 include-all
+      if (g.includeAll === true) {
+        group["include-all"] = true;
+      }
+
+      return group;
     });
-  }
 
-  proxyGroupsConfig.push(
-    {
-      ...groupBaseOption,
-      "name": "🕊️ 落地节点",
-      "type": "select",
-      // 如果没有有效落地节点，自动回退到“节点选择”和“直连”
-      "proxies": landingNodeNames.length > 0 ? [...landingNodeNames] : ["⚙️ 节点选择", "🔗 全局直连"],
-      "icon": `${iconBase}/openwrt.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "♻️ 延迟选优",
-      "type": "url-test",
-      "tolerance": 50,
-      "include-all": true,
-      "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/speed.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🚑 故障转移",
-      "type": "fallback",
-      "include-all": true,
-      "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/ambulance.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "⚖️ 负载均衡(散列)",
-      "type": "load-balance",
-      "strategy": "consistent-hashing",
-      "include-all": true,
-      "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/merry_go.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "☁️ 负载均衡(轮询)",
-      "type": "load-balance",
-      "strategy": "round-robin",
-      "include-all": true,
-      "exclude-filter": excludeLandingFilter,
-      "icon": `${iconBase}/balance.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "📺 哔哩哔哩",
-      "type": "select",
-      "proxies": ["🔗 全局直连", "🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "♻️ 延迟选优"],
-      "icon": `${iconBase}/bilibili.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🌍 国外媒体",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🚑 故障转移", "🔗 全局直连"],
-      "include-all": true,
-      "icon": `${iconBase}/youtube.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "💸 Ai",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优"],
-      "include-all": true,
-      "exclude-filter": "(?i)港|hk|hongkong|hong kong|俄|ru|russia|澳|macao",
-      "icon": `${iconBase}/chatgpt.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "💵 Claude",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优"],
-      "include-all": true,
-      // 增加地区过滤，防止 Claude 误连香港节点导致封号
-      "exclude-filter": "(?i)港|hk|hongkong|hong kong|俄|ru|russia|澳|macao|cn|china",
-      "icon": `${iconBase}/claude.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🪙 Bybit",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优"],
-      "include-all": true,
-      "icon": `${iconBase}/bybit.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🅿️ PikPak",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优"],
-      "include-all": true,
-      "icon": `${iconBase}/pikpak.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "📲 电报消息",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🔗 全局直连"],
-      "include-all": true,
-      "icon": `${iconBase}/telegram.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "📢 谷歌服务",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🔗 全局直连"],
-      "include-all": true,
-      "icon": `${iconBase}/google.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🍎 苹果服务",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🔗 全局直连"],
-      "include-all": true,
-      "icon": `${iconBase}/apple.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "Ⓜ️ 微软服务",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "🔗 全局直连", "♻️ 延迟选优"],
-      "include-all": true,
-      "icon": `${iconBase}/microsoft.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🥰 广告过滤",
-      "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
-      "icon": `${iconBase}/bug.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🔗 全局直连",
-      "type": "select",
-      "proxies": ["DIRECT", "⚙️ 节点选择", "🌍 地区选择", "♻️ 延迟选优"],
-      "include-all": true,
-      "icon": `${iconBase}/link.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "❌ 全局拦截",
-      "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
-      "icon": `${iconBase}/block.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🐬 自定义直连",
-      "type": "select",
-      "include-all": true,
-      "proxies": ["🔗 全局直连", "🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择"],
-      "icon": `${iconBase}/unknown.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🐳 自定义代理",
-      "type": "select",
-      "include-all": true,
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🔗 全局直连"],
-      "icon": `${iconBase}/openwrt.svg`
-    },
-    {
-      ...groupBaseOption,
-      "name": "🐟 漏网之鱼",
-      "type": "select",
-      "proxies": ["🔰 模式选择", "🌍 地区选择", "⚙️ 节点选择", "🕊️ 落地节点", "♻️ 延迟选优", "🔗 全局直连"],
-      "include-all": true,
-      "icon": `${iconBase}/fish.svg`
-    }
-  );
+  // 合并所有策略组
+  config["proxy-groups"] = [
+    ...finalProxyGroups,
+    ...generatedRegionGroups
+  ];
 
-  // 遍历所有生成的代理组，应用落地节点排除过滤器 (exclude-filter)
-  const finalProxyGroups = proxyGroupsConfig.map(group => {
-    // 检查当前组名是否在需要排除落地节点的列表中
-    const groupsToExcludeLandingNodes = ["⚙️ 节点选择", "♻️ 延迟选优", "⚖️ 负载均衡(散列)", "☁️ 负载均衡(轮询)"];
-
-    if (groupsToExcludeLandingNodes.includes(group.name) && excludeLandingFilter) {
-      const existingFilter = group["exclude-filter"];
-      group["exclude-filter"] = existingFilter
-        ? `(${existingFilter})|(${excludeLandingFilter})`
-        : excludeLandingFilter;
-    }
-    return group;
-  });
-
-  // 合并功能组、地区选择入口组以及具体的地区选优组
-  config["proxy-groups"] = [...finalProxyGroups, ...generatedRegionGroups];
-
-  // 注入并合并外部代理提供者 (Proxy Providers)
+  // 合并外部代理提供者
   config["proxy-providers"] = {
     ...originalProviders,
     // 示例订阅
@@ -655,6 +887,6 @@ function main(config) {
     */
   };
 
-  // 返回最终生成的配置对象
+  // 返回最终配置
   return config;
 }
