@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 241267
-# Update time: 2026-01-27 10:25:16 UTC+8
+# Total lines: 241273
+# Update time: 2026-01-28 10:21:26 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.22 api.individual.githubcopilot.com
+140.82.112.21 education.github.com
+140.82.112.22 collector.github.com
 140.82.112.26 live.github.com
-140.82.114.17 github.community
-140.82.114.21 central.github.com
-140.82.114.21 collector.github.com
-140.82.114.22 education.github.com
-140.82.114.25 alive.github.com
+140.82.113.26 alive.github.com
+140.82.114.18 github.community
+140.82.114.22 api.individual.githubcopilot.com
+140.82.114.22 central.github.com
 151.101.193.194 github.global.ssl.fastly.net
-16.15.176.110 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.186.245 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.207.129 github-com.s3.amazonaws.com
-16.182.100.105 github-cloud.s3.amazonaws.com
-185.199.108.153 github.io
-185.199.108.153 githubstatus.com
-185.199.109.133 avatars.githubusercontent.com
-185.199.109.133 avatars0.githubusercontent.com
-185.199.109.133 avatars1.githubusercontent.com
-185.199.109.133 avatars2.githubusercontent.com
-185.199.109.133 avatars3.githubusercontent.com
-185.199.109.133 avatars4.githubusercontent.com
-185.199.109.133 avatars5.githubusercontent.com
-185.199.109.133 camo.githubusercontent.com
-185.199.109.133 cloud.githubusercontent.com
-185.199.109.133 desktop.githubusercontent.com
-185.199.109.133 favicons.githubusercontent.com
-185.199.109.133 github.map.fastly.net
-185.199.109.133 media.githubusercontent.com
-185.199.109.133 objects.githubusercontent.com
-185.199.109.133 private-user-images.githubusercontent.com
-185.199.109.133 raw.githubusercontent.com
-185.199.109.133 user-images.githubusercontent.com
-185.199.110.154 github.githubassets.com
+16.15.199.53 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.201.180 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.201.4 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.207.203 github-cloud.s3.amazonaws.com
+16.182.32.249 github-com.s3.amazonaws.com
+185.199.108.154 github.githubassets.com
+185.199.109.153 github.io
+185.199.109.153 githubstatus.com
+185.199.110.133 avatars.githubusercontent.com
+185.199.110.133 avatars0.githubusercontent.com
+185.199.110.133 avatars1.githubusercontent.com
+185.199.110.133 avatars2.githubusercontent.com
+185.199.110.133 avatars3.githubusercontent.com
+185.199.110.133 avatars4.githubusercontent.com
+185.199.110.133 avatars5.githubusercontent.com
+185.199.110.133 camo.githubusercontent.com
+185.199.110.133 cloud.githubusercontent.com
+185.199.110.133 desktop.githubusercontent.com
+185.199.110.133 favicons.githubusercontent.com
+185.199.110.133 github.map.fastly.net
+185.199.110.133 media.githubusercontent.com
+185.199.110.133 objects.githubusercontent.com
+185.199.110.133 private-user-images.githubusercontent.com
+185.199.110.133 raw.githubusercontent.com
+185.199.110.133 user-images.githubusercontent.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
 20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-54.231.198.105 github-production-release-asset-2e65be.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -8621,6 +8621,7 @@
 0.0.0.0 ad.wavu.hu
 0.0.0.0 ad.weatherbug.com
 0.0.0.0 ad.webdice.jp
+0.0.0.0 ad.weibo.com
 0.0.0.0 ad.weixin.qq.com
 0.0.0.0 ad.weplayer.cc
 0.0.0.0 ad.where.com
@@ -12969,6 +12970,7 @@
 0.0.0.0 adx-sg.ads.heytapmobi.com
 0.0.0.0 adx-sg.ads.heytapmobile.com
 0.0.0.0 adx-static.ksosoft.com
+0.0.0.0 adx-strategy-api-cn.statisticslinks.com
 0.0.0.0 adx-th.ads.heytapmobile.com
 0.0.0.0 adx-tk.rayjump.com
 0.0.0.0 adx-tw.ads.heytapmobile.com
@@ -99596,6 +99598,7 @@
 0.0.0.0 tagsoviet.com
 0.0.0.0 tagsrvcs.com
 0.0.0.0 tagstaticx.com
+0.0.0.0 tagtic.cn
 0.0.0.0 tagtoo.co
 0.0.0.0 tagtracking.vibescm.com
 0.0.0.0 tahrqfbavxmxf.site
@@ -129234,6 +129237,7 @@
 :: ad.wavu.hu
 :: ad.weatherbug.com
 :: ad.webdice.jp
+:: ad.weibo.com
 :: ad.weixin.qq.com
 :: ad.weplayer.cc
 :: ad.where.com
@@ -133582,6 +133586,7 @@
 :: adx-sg.ads.heytapmobi.com
 :: adx-sg.ads.heytapmobile.com
 :: adx-static.ksosoft.com
+:: adx-strategy-api-cn.statisticslinks.com
 :: adx-th.ads.heytapmobile.com
 :: adx-tk.rayjump.com
 :: adx-tw.ads.heytapmobile.com
@@ -220209,6 +220214,7 @@
 :: tagsoviet.com
 :: tagsrvcs.com
 :: tagstaticx.com
+:: tagtic.cn
 :: tagtoo.co
 :: tagtracking.vibescm.com
 :: tahrqfbavxmxf.site
