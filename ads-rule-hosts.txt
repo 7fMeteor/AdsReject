@@ -1,22 +1,27 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 247181
-# Update time: 2026-02-24 10:45:17 UTC+8
+# Total lines: 247251
+# Update time: 2026-02-25 10:46:10 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.18 github.community
-140.82.112.21 central.github.com
-140.82.112.22 api.individual.githubcopilot.com
+140.82.112.22 central.github.com
+140.82.113.17 github.community
+140.82.113.21 api.individual.githubcopilot.com
 140.82.113.21 education.github.com
-140.82.113.26 live.github.com
+140.82.113.25 alive.github.com
 140.82.114.22 collector.github.com
-140.82.114.25 alive.github.com
+140.82.114.26 live.github.com
 151.101.193.194 github.global.ssl.fastly.net
-16.15.218.200 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.193.168 github-cloud.s3.amazonaws.com
+16.182.101.177 github-production-user-asset-6210df.s3.amazonaws.com
+16.182.68.233 github-production-release-asset-2e65be.s3.amazonaws.com
+16.182.96.17 github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.108.154 github.githubassets.com
+185.199.109.153 github.io
+185.199.109.153 githubstatus.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -34,17 +39,12 @@
 185.199.110.133 private-user-images.githubusercontent.com
 185.199.110.133 raw.githubusercontent.com
 185.199.110.133 user-images.githubusercontent.com
-185.199.111.153 github.io
-185.199.111.153 githubstatus.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
 20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-52.216.213.209 github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.217.133.209 github-cloud.s3.amazonaws.com
-52.217.141.209 github-com.s3.amazonaws.com
-52.217.206.73 github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.135.217 github-com.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -2776,7 +2776,6 @@
 0.0.0.0 9735476.sender.skyscanner.com
 0.0.0.0 9735476.sender.skyscanner.net
 0.0.0.0 9735476.test.skyscanner.net
-0.0.0.0 9743adc5.liftmyresume.com
 0.0.0.0 976caebe7b.com
 0.0.0.0 9786.pandasuite.io
 0.0.0.0 97bike.com
@@ -9073,7 +9072,6 @@
 0.0.0.0 adat.videa.hu
 0.0.0.0 adatrix.com
 0.0.0.0 adavideo.baidu.com
-0.0.0.0 adaytowingservice.com
 0.0.0.0 adb-analytics.live-now.com
 0.0.0.0 adb-secured.kijk.nl
 0.0.0.0 adb.fling.com
@@ -21098,6 +21096,7 @@
 0.0.0.0 beltcological.com
 0.0.0.0 beltenefloit.com
 0.0.0.0 beludicolor.com
+0.0.0.0 belvaronroad.pro
 0.0.0.0 belwrite.com
 0.0.0.0 bemobpath.com
 0.0.0.0 bemobtrcks.com
@@ -21591,7 +21590,12 @@
 0.0.0.0 biedadsd-pl.shop
 0.0.0.0 biedadsf-pl.shop
 0.0.0.0 biedadsg-pl.shop
+0.0.0.0 biedadsn-pl.shop
 0.0.0.0 biedadso-pl.shop
+0.0.0.0 biedadsy-pl.shop
+0.0.0.0 biedadsz-pl.shop
+0.0.0.0 biedadsza-pl.shop
+0.0.0.0 biedadszb-pl.shop
 0.0.0.0 biehuljjsllzf.website
 0.0.0.0 biejdy1d1.com
 0.0.0.0 biemedia.com
@@ -21729,6 +21733,7 @@
 0.0.0.0 birdmedia.com
 0.0.0.0 birdseyewings.co
 0.0.0.0 birlinnmirdha.shop
+0.0.0.0 birnhofer.pro
 0.0.0.0 birsleunhired.com
 0.0.0.0 birthdaybelief.com
 0.0.0.0 birthjeans.icu
@@ -23099,6 +23104,7 @@
 0.0.0.0 breixmdldvvfa.website
 0.0.0.0 bremphumz.com
 0.0.0.0 brene.site
+0.0.0.0 brentovarpoint.pro
 0.0.0.0 brespark.eccocar.com
 0.0.0.0 bretncqhxzygz.website
 0.0.0.0 brevitychestprocess.com
@@ -23674,6 +23680,7 @@
 0.0.0.0 bunnyassetsworn.com
 0.0.0.0 bunquaver.com
 0.0.0.0 bunth.net
+0.0.0.0 bunuge.pro
 0.0.0.0 bunzamxbtj.space
 0.0.0.0 buonasera.openapp.link
 0.0.0.0 buoyant-most.pro
@@ -26403,7 +26410,6 @@
 0.0.0.0 chuckstourte.shop
 0.0.0.0 chufckwmfnsiv.website
 0.0.0.0 chugrypsodu.com
-0.0.0.0 chuguadventures.co.tz
 0.0.0.0 chugveasoy.com
 0.0.0.0 chujstkfubpix.space
 0.0.0.0 chulreegrumoali.net
@@ -36092,6 +36098,7 @@
 0.0.0.0 dremlloves.com
 0.0.0.0 dremp.xyz
 0.0.0.0 drenchdeprivation.com
+0.0.0.0 drengstoff.pro
 0.0.0.0 drenix50kp.com
 0.0.0.0 dreport.meituan.net
 0.0.0.0 dressfatiguethrow.com
@@ -37976,6 +37983,7 @@
 0.0.0.0 ecookie.nl
 0.0.0.0 ecoqosydowmqd.online
 0.0.0.0 ecotdyhfgwcaa.space
+0.0.0.0 ecount.pro
 0.0.0.0 ecpm.tanx.com
 0.0.0.0 ecpqmnogqudks.site
 0.0.0.0 ecqobhgtpcpez.site
@@ -42746,7 +42754,6 @@
 0.0.0.0 flarevaultless.pro
 0.0.0.0 flarewehrd.pro
 0.0.0.0 flarewingless.pro
-0.0.0.0 flash-capital.com
 0.0.0.0 flash-counter.com
 0.0.0.0 flash.2144.com
 0.0.0.0 flash.cn
@@ -44088,6 +44095,7 @@
 0.0.0.0 fugmyxsdxx.com
 0.0.0.0 fugsslosher.com
 0.0.0.0 fuhcoupnmivfn.site
+0.0.0.0 fuhlkammer.pro
 0.0.0.0 fuhoftoajoabs.net
 0.0.0.0 fuhzuajqwcmyl.site
 0.0.0.0 fuicmy.hana-mail.jp
@@ -49028,7 +49036,6 @@
 0.0.0.0 headphonesshout.com
 0.0.0.0 heads-ak.spotify.com.edgesuite.net
 0.0.0.0 heads-fa.spotify.com
-0.0.0.0 headsturn.biz
 0.0.0.0 headydegree.com
 0.0.0.0 headyhook.com
 0.0.0.0 healflowers.com
@@ -59374,7 +59381,6 @@
 0.0.0.0 kyvtarjhvmjlt.website
 0.0.0.0 kywacuoeppmag.com
 0.0.0.0 kywivixcdwbsm.online
-0.0.0.0 kywuhio.pro
 0.0.0.0 kywunoy.pro
 0.0.0.0 kyxvadysubfeu.online
 0.0.0.0 kz.admaster.com.cn
@@ -62717,6 +62723,7 @@
 0.0.0.0 loweststernhaunting.com
 0.0.0.0 lowgxl.yokumoku.jp
 0.0.0.0 lowkeypalmtree.com
+0.0.0.0 lowlevelads.com
 0.0.0.0 lowlifewhateverspotless.com
 0.0.0.0 lowlyikfeaco.com
 0.0.0.0 lowmothandhadb.org
@@ -74934,6 +74941,7 @@
 0.0.0.0 ofdokmnalzu.com
 0.0.0.0 ofdoyluowkolk.website
 0.0.0.0 ofeetles.pro
+0.0.0.0 oferta-89125673-macbook-pro-m4-24gb.cfd
 0.0.0.0 ofettail.com
 0.0.0.0 offaces-butional.com
 0.0.0.0 offalsswelled.com
@@ -75447,6 +75455,7 @@
 0.0.0.0 olstats.onlylady.com
 0.0.0.0 olvnvahpunhya.online
 0.0.0.0 olwqxg.europcar.it
+0.0.0.0 olx.oferta-89125673-macbook-pro-m4-24gb.cfd
 0.0.0.0 olyglxgjaihwj.space
 0.0.0.0 olytics.omeda.com
 0.0.0.0 olyvuw.pro
@@ -79798,17 +79807,18 @@
 0.0.0.0 pkyeditdzyscv.space
 0.0.0.0 pkyrdvdcsuiua.site
 0.0.0.0 pkzxulxtgggxz.space
-0.0.0.0 pl-662714331166keskahsgadj826255238f34.sbs
 0.0.0.0 pl-go.experian.com
 0.0.0.0 pl-oferta127439-google-pixel-10-pro-xl.cfd
 0.0.0.0 pl-oferta12783612-ipad-m4-pro-512gb.cfd
 0.0.0.0 pl-oferta2105131-ipad-pro-m1-512gb.sbs
+0.0.0.0 pl-oferta2198749-apple-macbook-pro-m4.digital
 0.0.0.0 pl-oferta495307-playstation-5-1-pad.sbs
-0.0.0.0 pl-oferta50538-google-pixel-9-12-256-gb.sbs
+0.0.0.0 pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 0.0.0.0 pl-oferta5272695-playstation-5-pro-2tb.cfd
 0.0.0.0 pl-oferta6063669-ipad-m4-pro-512gb-pencil.cfd
 0.0.0.0 pl-oferta623123124-macbook-pro-m1-max-16.cfd
 0.0.0.0 pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+0.0.0.0 pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 0.0.0.0 pl-topgal.m-shop.me
 0.0.0.0 pl.1feed.app
 0.0.0.0 pl.ads.justpremium.com
@@ -83829,6 +83839,7 @@
 0.0.0.0 quarterlybeyond.com
 0.0.0.0 quarterlybeyond.pro
 0.0.0.0 quartic.pl
+0.0.0.0 quartolima.pro
 0.0.0.0 quartzgradient.net
 0.0.0.0 quaruzon.com
 0.0.0.0 quasicurrant.com
@@ -85706,6 +85717,7 @@
 0.0.0.0 resonantbrush.com
 0.0.0.0 resonantrock.com
 0.0.0.0 resort1266.fun
+0.0.0.0 resource-answers.pro
 0.0.0.0 resource.baomihua.com
 0.0.0.0 resourceedge.org
 0.0.0.0 resources-it.opentext.com
@@ -88670,6 +88682,7 @@
 0.0.0.0 samt.zkb.ch
 0.0.0.0 samtraitpesky.com
 0.0.0.0 samuraibots.com
+0.0.0.0 samuretto.pro
 0.0.0.0 samvinva.info
 0.0.0.0 samwjxrnttefu.space
 0.0.0.0 san-spr-01.net
@@ -96446,6 +96459,7 @@
 0.0.0.0 sortswoopmarrying.com
 0.0.0.0 sortuneven.com
 0.0.0.0 sorucall.com
+0.0.0.0 sorvanelane.pro
 0.0.0.0 sorxyx.vi.nl
 0.0.0.0 sosc.hrs.com
 0.0.0.0 sosdvvuhhte.net
@@ -104539,6 +104553,7 @@
 0.0.0.0 torropinto.viessmann.es
 0.0.0.0 toru0vane.com
 0.0.0.0 toruk.tanx.com
+0.0.0.0 torvalique.pro
 0.0.0.0 torvanelabs.pro
 0.0.0.0 torvitywhens.shop
 0.0.0.0 tosfeed.com
@@ -110576,7 +110591,6 @@
 0.0.0.0 user.tiankongzudui.com
 0.0.0.0 user.userguiding.com
 0.0.0.0 userballot.com
-0.0.0.0 usercentrics.eu
 0.0.0.0 usercollection.chinadaily.com.cn
 0.0.0.0 usercycle.com
 0.0.0.0 userdatatrust.com
@@ -111916,7 +111930,6 @@
 0.0.0.0 vegetablebleachdeprive.com
 0.0.0.0 vegetablechickendisqualify.com
 0.0.0.0 vegetarianrotperpetrator.com
-0.0.0.0 vegiloo.pro
 0.0.0.0 vegrultaucoa.net
 0.0.0.0 vehemenceoccupied.com
 0.0.0.0 vehemencepoint.com
@@ -112531,12 +112544,14 @@
 0.0.0.0 vinstigo.com
 0.0.0.0 vintagephilipnostrils.com
 0.0.0.0 vintagerespectful.com
-0.0.0.0 vinted.pl-662714331166keskahsgadj826255238f34.sbs
+0.0.0.0 vinted.oferta-89125673-macbook-pro-m4-24gb.cfd
 0.0.0.0 vinted.pl-oferta127439-google-pixel-10-pro-xl.cfd
 0.0.0.0 vinted.pl-oferta2105131-ipad-pro-m1-512gb.sbs
+0.0.0.0 vinted.pl-oferta2198749-apple-macbook-pro-m4.digital
 0.0.0.0 vinted.pl-oferta495307-playstation-5-1-pad.sbs
-0.0.0.0 vinted.pl-oferta50538-google-pixel-9-12-256-gb.sbs
+0.0.0.0 vinted.pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 0.0.0.0 vinted.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+0.0.0.0 vinted.pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 0.0.0.0 vinterfabel.pro
 0.0.0.0 vinub.com
 0.0.0.0 vinwtqpxijcfp.website
@@ -114129,6 +114144,7 @@
 0.0.0.0 wakonbhandar.shop
 0.0.0.0 wakratgr.com
 0.0.0.0 wal.wolfram.com
+0.0.0.0 waldprestige.pro
 0.0.0.0 wall.vgr.com
 0.0.0.0 walle.bayescom.com
 0.0.0.0 wallet-sollare.com
@@ -114353,7 +114369,6 @@
 0.0.0.0 wavedprincipal.com
 0.0.0.0 waveetiquette.com
 0.0.0.0 waveinverter.com
-0.0.0.0 wavelengthnews.pro
 0.0.0.0 waverdejection.com
 0.0.0.0 wavermiddayboundary.com
 0.0.0.0 wavesimple.com
@@ -115632,6 +115647,7 @@
 0.0.0.0 wikia-ads.wikia.com
 0.0.0.0 wikia-beacon.com
 0.0.0.0 wikiwhatwhere.com
+0.0.0.0 wild-leaf-trace.wildfern.ru
 0.0.0.0 wild0army.com
 0.0.0.0 wild8prey.com
 0.0.0.0 wildcard.aaxads.com.edgekey.net
@@ -115797,6 +115813,7 @@
 0.0.0.0 witnessjacket.com
 0.0.0.0 witnessportfoliolobes.com
 0.0.0.0 witssnoopacceleration.com
+0.0.0.0 witsuc.pro
 0.0.0.0 witticism19.top
 0.0.0.0 wittilyginnier.world
 0.0.0.0 wittyinternet.com
@@ -117066,7 +117083,6 @@
 0.0.0.0 www.93vitoo.com
 0.0.0.0 www.93vitui.com
 0.0.0.0 www.9565365.com
-0.0.0.0 www.9743adc5.liftmyresume.com
 0.0.0.0 www.9948000.com
 0.0.0.0 www.9ata.ero-advertising.com
 0.0.0.0 www.9llm.com
@@ -117125,7 +117141,6 @@
 0.0.0.0 www.ad8.api.ero-advertising.com
 0.0.0.0 www.ad8.banners.ero-advertising.com
 0.0.0.0 www.adadvisor.net
-0.0.0.0 www.adaytowingservice.com
 0.0.0.0 www.adclickservice.com
 0.0.0.0 www.adcolony.com
 0.0.0.0 www.adf.ero-advertising.com
@@ -117373,6 +117388,7 @@
 0.0.0.0 www.behe.com
 0.0.0.0 www.beilamusi.com
 0.0.0.0 www.beintoo.com
+0.0.0.0 www.belvaronroad.pro
 0.0.0.0 www.bemydate.mobi
 0.0.0.0 www.bestphoneapps.mobi
 0.0.0.0 www.bet36500050.com
@@ -117393,12 +117409,18 @@
 0.0.0.0 www.biedadsd-pl.shop
 0.0.0.0 www.biedadsf-pl.shop
 0.0.0.0 www.biedadsg-pl.shop
+0.0.0.0 www.biedadsn-pl.shop
 0.0.0.0 www.biedadso-pl.shop
+0.0.0.0 www.biedadsy-pl.shop
+0.0.0.0 www.biedadsz-pl.shop
+0.0.0.0 www.biedadsza-pl.shop
+0.0.0.0 www.biedadszb-pl.shop
 0.0.0.0 www.bigbangads.go2cloud.org
 0.0.0.0 www.bijiwii.pro
 0.0.0.0 www.billionfocus.com
 0.0.0.0 www.bingads.microsoft.com
 0.0.0.0 www.bingdianhuanyuan.cn
+0.0.0.0 www.birnhofer.pro
 0.0.0.0 www.bitcoin-millionaire-pro.com
 0.0.0.0 www.bitcoinup-pro.com
 0.0.0.0 www.biteti.com
@@ -117422,6 +117444,7 @@
 0.0.0.0 www.braventonhouse.pro
 0.0.0.0 www.bravotil.pro
 0.0.0.0 www.breakingstorieshub.pro
+0.0.0.0 www.brentovarpoint.pro
 0.0.0.0 www.bridghtsailer.pro
 0.0.0.0 www.brightadnetwork.com
 0.0.0.0 www.brightstardv.pro
@@ -117439,6 +117462,7 @@
 0.0.0.0 www.bulletads.com
 0.0.0.0 www.bumlaraless.pro
 0.0.0.0 www.bumlaratyder.pro
+0.0.0.0 www.bunuge.pro
 0.0.0.0 www.businessadversity.com
 0.0.0.0 www.buycheapadvertising.com
 0.0.0.0 www.buylike.pro
@@ -117617,6 +117641,7 @@
 0.0.0.0 www.dratio.com
 0.0.0.0 www.draxenmediagp.pro
 0.0.0.0 www.drazovek.pro
+0.0.0.0 www.drengstoff.pro
 0.0.0.0 www.drevilka.pro
 0.0.0.0 www.dropped-click.com
 0.0.0.0 www.dsads123a.is-best.net
@@ -117639,6 +117664,7 @@
 0.0.0.0 www.ebayadvertising.com
 0.0.0.0 www.echoleads.xyz
 0.0.0.0 www.echorixd.pro
+0.0.0.0 www.ecount.pro
 0.0.0.0 www.eddong.com
 0.0.0.0 www.ediuschina.com
 0.0.0.0 www.eduancm.com
@@ -117710,7 +117736,6 @@
 0.0.0.0 www.flarevaultless.pro
 0.0.0.0 www.flarewehrd.pro
 0.0.0.0 www.flarewingless.pro
-0.0.0.0 www.flash-capital.com
 0.0.0.0 www.flash.cn
 0.0.0.0 www.flashtest.ero-advertising.com
 0.0.0.0 www.flatdee.ero-advertising.com
@@ -117737,6 +117762,7 @@
 0.0.0.0 www.fpa.ero-advertising.com
 0.0.0.0 www.freedrive.cn
 0.0.0.0 www.fu68.com
+0.0.0.0 www.fuhlkammer.pro
 0.0.0.0 www.funshion.net.cn
 0.0.0.0 www.fusionforged.pro
 0.0.0.0 www.fusionnoded.pro
@@ -117816,7 +117842,6 @@
 0.0.0.0 www.hblinwei.com
 0.0.0.0 www.hdhkwl.com
 0.0.0.0 www.hdyzx.cn
-0.0.0.0 www.headsturn.biz
 0.0.0.0 www.health-partner.net
 0.0.0.0 www.helpdatabase.pro
 0.0.0.0 www.hengshui1.com
@@ -117982,7 +118007,6 @@
 0.0.0.0 www.kxid.cn
 0.0.0.0 www.kxmav2.com
 0.0.0.0 www.kyad88.com
-0.0.0.0 www.kywuhio.pro
 0.0.0.0 www.kywunoy.pro
 0.0.0.0 www.la61d.cn
 0.0.0.0 www.ladsblue.com
@@ -118028,6 +118052,7 @@
 0.0.0.0 www.lokp.79hr8ads.xyz
 0.0.0.0 www.lottery.ie
 0.0.0.0 www.lottery.olg.ca
+0.0.0.0 www.lowlevelads.com
 0.0.0.0 www.lp.trade360.com
 0.0.0.0 www.lucentio.pro
 0.0.0.0 www.luminaless.pro
@@ -118153,8 +118178,10 @@
 0.0.0.0 www.nvshenfan.com
 0.0.0.0 www.o7h.net
 0.0.0.0 www.oata.ero-advertising.com
+0.0.0.0 www.oferta-89125673-macbook-pro-m4-24gb.cfd
 0.0.0.0 www.oiwjcsh001.top
 0.0.0.0 www.ok365.com
+0.0.0.0 www.olx.oferta-89125673-macbook-pro-m4-24gb.cfd
 0.0.0.0 www.olyvuw.pro
 0.0.0.0 www.omgleads.com
 0.0.0.0 www.onclicktop.com
@@ -118221,16 +118248,17 @@
 0.0.0.0 www.pj550077.com
 0.0.0.0 www.pjbjzf.com
 0.0.0.0 www.pkkjxs.cn
-0.0.0.0 www.pl-662714331166keskahsgadj826255238f34.sbs
 0.0.0.0 www.pl-oferta127439-google-pixel-10-pro-xl.cfd
 0.0.0.0 www.pl-oferta12783612-ipad-m4-pro-512gb.cfd
 0.0.0.0 www.pl-oferta2105131-ipad-pro-m1-512gb.sbs
+0.0.0.0 www.pl-oferta2198749-apple-macbook-pro-m4.digital
 0.0.0.0 www.pl-oferta495307-playstation-5-1-pad.sbs
-0.0.0.0 www.pl-oferta50538-google-pixel-9-12-256-gb.sbs
+0.0.0.0 www.pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 0.0.0.0 www.pl-oferta5272695-playstation-5-pro-2tb.cfd
 0.0.0.0 www.pl-oferta6063669-ipad-m4-pro-512gb-pencil.cfd
 0.0.0.0 www.pl-oferta623123124-macbook-pro-m1-max-16.cfd
 0.0.0.0 www.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+0.0.0.0 www.pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 0.0.0.0 www.plaay-google.com
 0.0.0.0 www.plamedeznph.pro
 0.0.0.0 www.playy-google.com
@@ -118306,6 +118334,7 @@
 0.0.0.0 www.quantumgridty.pro
 0.0.0.0 www.quantumhorizond.pro
 0.0.0.0 www.quantumnoded.pro
+0.0.0.0 www.quartolima.pro
 0.0.0.0 www.quicklearnup.pro
 0.0.0.0 www.quiltstoryroadshow.org
 0.0.0.0 www.quirostega.pro
@@ -118332,6 +118361,7 @@
 0.0.0.0 www.remote88.com
 0.0.0.0 www.renminben.com
 0.0.0.0 www.rerevenue.pro
+0.0.0.0 www.resource-answers.pro
 0.0.0.0 www.reusableperiodpads.com
 0.0.0.0 www.riscaldone.pro
 0.0.0.0 www.rivonexisa-pro.com
@@ -118363,6 +118393,7 @@
 0.0.0.0 www.safekeepup.pro
 0.0.0.0 www.safetynews.pro
 0.0.0.0 www.saltovegna.pro
+0.0.0.0 www.samuretto.pro
 0.0.0.0 www.sartorelli.pro
 0.0.0.0 www.sb88b.com
 0.0.0.0 www.schlundig.pro
@@ -118421,6 +118452,7 @@
 0.0.0.0 www.somennew.com
 0.0.0.0 www.song001.com
 0.0.0.0 www.sorrentivka.pro
+0.0.0.0 www.sorvanelane.pro
 0.0.0.0 www.souid.com
 0.0.0.0 www.soundreportingdaily.pro
 0.0.0.0 www.sovria-pro.com
@@ -118543,6 +118575,7 @@
 0.0.0.0 www.topads.ero-advertising.com
 0.0.0.0 www.topitme.com
 0.0.0.0 www.toroadvertisingmedia.com
+0.0.0.0 www.torvalique.pro
 0.0.0.0 www.torvanelabs.pro
 0.0.0.0 www.touclick.com
 0.0.0.0 www.track.adsfast.com
@@ -118627,7 +118660,6 @@
 0.0.0.0 www.vangmobi.com
 0.0.0.0 www.vbnm888.com
 0.0.0.0 www.vegaschina.cn
-0.0.0.0 www.vegiloo.pro
 0.0.0.0 www.velastoria.pro
 0.0.0.0 www.velmorique.pro
 0.0.0.0 www.velnorainfrtructure.pro
@@ -118651,12 +118683,14 @@
 0.0.0.0 www.vertexpulseless.pro
 0.0.0.0 www.vertexskarnup.pro
 0.0.0.0 www.vertexsoapy.pro
-0.0.0.0 www.vinted.pl-662714331166keskahsgadj826255238f34.sbs
+0.0.0.0 www.vinted.oferta-89125673-macbook-pro-m4-24gb.cfd
 0.0.0.0 www.vinted.pl-oferta127439-google-pixel-10-pro-xl.cfd
 0.0.0.0 www.vinted.pl-oferta2105131-ipad-pro-m1-512gb.sbs
+0.0.0.0 www.vinted.pl-oferta2198749-apple-macbook-pro-m4.digital
 0.0.0.0 www.vinted.pl-oferta495307-playstation-5-1-pad.sbs
-0.0.0.0 www.vinted.pl-oferta50538-google-pixel-9-12-256-gb.sbs
+0.0.0.0 www.vinted.pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 0.0.0.0 www.vinted.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+0.0.0.0 www.vinted.pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 0.0.0.0 www.vinterfabel.pro
 0.0.0.0 www.vipads.cc
 0.0.0.0 www.vipads.live
@@ -118677,8 +118711,8 @@
 0.0.0.0 www.w4pma.cn
 0.0.0.0 www.wager.dm
 0.0.0.0 www.wakendorf.pro
+0.0.0.0 www.waldprestige.pro
 0.0.0.0 www.wancai.com
-0.0.0.0 www.wavelengthnews.pro
 0.0.0.0 www.wcnmd.top
 0.0.0.0 www.wdata.ero-advertising.com
 0.0.0.0 www.web.cellfun.mobi
@@ -118715,6 +118749,7 @@
 0.0.0.0 www.wingshalety.pro
 0.0.0.0 www.winterholm.pro
 0.0.0.0 www.wislametropolia.pro
+0.0.0.0 www.witsuc.pro
 0.0.0.0 www.wjxcdn.com
 0.0.0.0 www.wks.ero-advertising.com
 0.0.0.0 www.wofisey.pro
@@ -126346,7 +126381,6 @@
 :: 9735476.sender.skyscanner.com
 :: 9735476.sender.skyscanner.net
 :: 9735476.test.skyscanner.net
-:: 9743adc5.liftmyresume.com
 :: 976caebe7b.com
 :: 9786.pandasuite.io
 :: 97bike.com
@@ -132643,7 +132677,6 @@
 :: adat.videa.hu
 :: adatrix.com
 :: adavideo.baidu.com
-:: adaytowingservice.com
 :: adb-analytics.live-now.com
 :: adb-secured.kijk.nl
 :: adb.fling.com
@@ -144668,6 +144701,7 @@
 :: beltcological.com
 :: beltenefloit.com
 :: beludicolor.com
+:: belvaronroad.pro
 :: belwrite.com
 :: bemobpath.com
 :: bemobtrcks.com
@@ -145161,7 +145195,12 @@
 :: biedadsd-pl.shop
 :: biedadsf-pl.shop
 :: biedadsg-pl.shop
+:: biedadsn-pl.shop
 :: biedadso-pl.shop
+:: biedadsy-pl.shop
+:: biedadsz-pl.shop
+:: biedadsza-pl.shop
+:: biedadszb-pl.shop
 :: biehuljjsllzf.website
 :: biejdy1d1.com
 :: biemedia.com
@@ -145299,6 +145338,7 @@
 :: birdmedia.com
 :: birdseyewings.co
 :: birlinnmirdha.shop
+:: birnhofer.pro
 :: birsleunhired.com
 :: birthdaybelief.com
 :: birthjeans.icu
@@ -146669,6 +146709,7 @@
 :: breixmdldvvfa.website
 :: bremphumz.com
 :: brene.site
+:: brentovarpoint.pro
 :: brespark.eccocar.com
 :: bretncqhxzygz.website
 :: brevitychestprocess.com
@@ -147244,6 +147285,7 @@
 :: bunnyassetsworn.com
 :: bunquaver.com
 :: bunth.net
+:: bunuge.pro
 :: bunzamxbtj.space
 :: buonasera.openapp.link
 :: buoyant-most.pro
@@ -149973,7 +150015,6 @@
 :: chuckstourte.shop
 :: chufckwmfnsiv.website
 :: chugrypsodu.com
-:: chuguadventures.co.tz
 :: chugveasoy.com
 :: chujstkfubpix.space
 :: chulreegrumoali.net
@@ -159662,6 +159703,7 @@
 :: dremlloves.com
 :: dremp.xyz
 :: drenchdeprivation.com
+:: drengstoff.pro
 :: drenix50kp.com
 :: dreport.meituan.net
 :: dressfatiguethrow.com
@@ -161546,6 +161588,7 @@
 :: ecookie.nl
 :: ecoqosydowmqd.online
 :: ecotdyhfgwcaa.space
+:: ecount.pro
 :: ecpm.tanx.com
 :: ecpqmnogqudks.site
 :: ecqobhgtpcpez.site
@@ -166316,7 +166359,6 @@
 :: flarevaultless.pro
 :: flarewehrd.pro
 :: flarewingless.pro
-:: flash-capital.com
 :: flash-counter.com
 :: flash.2144.com
 :: flash.cn
@@ -167658,6 +167700,7 @@
 :: fugmyxsdxx.com
 :: fugsslosher.com
 :: fuhcoupnmivfn.site
+:: fuhlkammer.pro
 :: fuhoftoajoabs.net
 :: fuhzuajqwcmyl.site
 :: fuicmy.hana-mail.jp
@@ -172598,7 +172641,6 @@
 :: headphonesshout.com
 :: heads-ak.spotify.com.edgesuite.net
 :: heads-fa.spotify.com
-:: headsturn.biz
 :: headydegree.com
 :: headyhook.com
 :: healflowers.com
@@ -182944,7 +182986,6 @@
 :: kyvtarjhvmjlt.website
 :: kywacuoeppmag.com
 :: kywivixcdwbsm.online
-:: kywuhio.pro
 :: kywunoy.pro
 :: kyxvadysubfeu.online
 :: kz.admaster.com.cn
@@ -186287,6 +186328,7 @@
 :: loweststernhaunting.com
 :: lowgxl.yokumoku.jp
 :: lowkeypalmtree.com
+:: lowlevelads.com
 :: lowlifewhateverspotless.com
 :: lowlyikfeaco.com
 :: lowmothandhadb.org
@@ -198504,6 +198546,7 @@
 :: ofdokmnalzu.com
 :: ofdoyluowkolk.website
 :: ofeetles.pro
+:: oferta-89125673-macbook-pro-m4-24gb.cfd
 :: ofettail.com
 :: offaces-butional.com
 :: offalsswelled.com
@@ -199017,6 +199060,7 @@
 :: olstats.onlylady.com
 :: olvnvahpunhya.online
 :: olwqxg.europcar.it
+:: olx.oferta-89125673-macbook-pro-m4-24gb.cfd
 :: olyglxgjaihwj.space
 :: olytics.omeda.com
 :: olyvuw.pro
@@ -203368,17 +203412,18 @@
 :: pkyeditdzyscv.space
 :: pkyrdvdcsuiua.site
 :: pkzxulxtgggxz.space
-:: pl-662714331166keskahsgadj826255238f34.sbs
 :: pl-go.experian.com
 :: pl-oferta127439-google-pixel-10-pro-xl.cfd
 :: pl-oferta12783612-ipad-m4-pro-512gb.cfd
 :: pl-oferta2105131-ipad-pro-m1-512gb.sbs
+:: pl-oferta2198749-apple-macbook-pro-m4.digital
 :: pl-oferta495307-playstation-5-1-pad.sbs
-:: pl-oferta50538-google-pixel-9-12-256-gb.sbs
+:: pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 :: pl-oferta5272695-playstation-5-pro-2tb.cfd
 :: pl-oferta6063669-ipad-m4-pro-512gb-pencil.cfd
 :: pl-oferta623123124-macbook-pro-m1-max-16.cfd
 :: pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+:: pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 :: pl-topgal.m-shop.me
 :: pl.1feed.app
 :: pl.ads.justpremium.com
@@ -207399,6 +207444,7 @@
 :: quarterlybeyond.com
 :: quarterlybeyond.pro
 :: quartic.pl
+:: quartolima.pro
 :: quartzgradient.net
 :: quaruzon.com
 :: quasicurrant.com
@@ -209276,6 +209322,7 @@
 :: resonantbrush.com
 :: resonantrock.com
 :: resort1266.fun
+:: resource-answers.pro
 :: resource.baomihua.com
 :: resourceedge.org
 :: resources-it.opentext.com
@@ -212240,6 +212287,7 @@
 :: samt.zkb.ch
 :: samtraitpesky.com
 :: samuraibots.com
+:: samuretto.pro
 :: samvinva.info
 :: samwjxrnttefu.space
 :: san-spr-01.net
@@ -220016,6 +220064,7 @@
 :: sortswoopmarrying.com
 :: sortuneven.com
 :: sorucall.com
+:: sorvanelane.pro
 :: sorxyx.vi.nl
 :: sosc.hrs.com
 :: sosdvvuhhte.net
@@ -228109,6 +228158,7 @@
 :: torropinto.viessmann.es
 :: toru0vane.com
 :: toruk.tanx.com
+:: torvalique.pro
 :: torvanelabs.pro
 :: torvitywhens.shop
 :: tosfeed.com
@@ -234146,7 +234196,6 @@
 :: user.tiankongzudui.com
 :: user.userguiding.com
 :: userballot.com
-:: usercentrics.eu
 :: usercollection.chinadaily.com.cn
 :: usercycle.com
 :: userdatatrust.com
@@ -235486,7 +235535,6 @@
 :: vegetablebleachdeprive.com
 :: vegetablechickendisqualify.com
 :: vegetarianrotperpetrator.com
-:: vegiloo.pro
 :: vegrultaucoa.net
 :: vehemenceoccupied.com
 :: vehemencepoint.com
@@ -236101,12 +236149,14 @@
 :: vinstigo.com
 :: vintagephilipnostrils.com
 :: vintagerespectful.com
-:: vinted.pl-662714331166keskahsgadj826255238f34.sbs
+:: vinted.oferta-89125673-macbook-pro-m4-24gb.cfd
 :: vinted.pl-oferta127439-google-pixel-10-pro-xl.cfd
 :: vinted.pl-oferta2105131-ipad-pro-m1-512gb.sbs
+:: vinted.pl-oferta2198749-apple-macbook-pro-m4.digital
 :: vinted.pl-oferta495307-playstation-5-1-pad.sbs
-:: vinted.pl-oferta50538-google-pixel-9-12-256-gb.sbs
+:: vinted.pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 :: vinted.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+:: vinted.pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 :: vinterfabel.pro
 :: vinub.com
 :: vinwtqpxijcfp.website
@@ -237699,6 +237749,7 @@
 :: wakonbhandar.shop
 :: wakratgr.com
 :: wal.wolfram.com
+:: waldprestige.pro
 :: wall.vgr.com
 :: walle.bayescom.com
 :: wallet-sollare.com
@@ -237923,7 +237974,6 @@
 :: wavedprincipal.com
 :: waveetiquette.com
 :: waveinverter.com
-:: wavelengthnews.pro
 :: waverdejection.com
 :: wavermiddayboundary.com
 :: wavesimple.com
@@ -239202,6 +239252,7 @@
 :: wikia-ads.wikia.com
 :: wikia-beacon.com
 :: wikiwhatwhere.com
+:: wild-leaf-trace.wildfern.ru
 :: wild0army.com
 :: wild8prey.com
 :: wildcard.aaxads.com.edgekey.net
@@ -239367,6 +239418,7 @@
 :: witnessjacket.com
 :: witnessportfoliolobes.com
 :: witssnoopacceleration.com
+:: witsuc.pro
 :: witticism19.top
 :: wittilyginnier.world
 :: wittyinternet.com
@@ -240636,7 +240688,6 @@
 :: www.93vitoo.com
 :: www.93vitui.com
 :: www.9565365.com
-:: www.9743adc5.liftmyresume.com
 :: www.9948000.com
 :: www.9ata.ero-advertising.com
 :: www.9llm.com
@@ -240695,7 +240746,6 @@
 :: www.ad8.api.ero-advertising.com
 :: www.ad8.banners.ero-advertising.com
 :: www.adadvisor.net
-:: www.adaytowingservice.com
 :: www.adclickservice.com
 :: www.adcolony.com
 :: www.adf.ero-advertising.com
@@ -240943,6 +240993,7 @@
 :: www.behe.com
 :: www.beilamusi.com
 :: www.beintoo.com
+:: www.belvaronroad.pro
 :: www.bemydate.mobi
 :: www.bestphoneapps.mobi
 :: www.bet36500050.com
@@ -240963,12 +241014,18 @@
 :: www.biedadsd-pl.shop
 :: www.biedadsf-pl.shop
 :: www.biedadsg-pl.shop
+:: www.biedadsn-pl.shop
 :: www.biedadso-pl.shop
+:: www.biedadsy-pl.shop
+:: www.biedadsz-pl.shop
+:: www.biedadsza-pl.shop
+:: www.biedadszb-pl.shop
 :: www.bigbangads.go2cloud.org
 :: www.bijiwii.pro
 :: www.billionfocus.com
 :: www.bingads.microsoft.com
 :: www.bingdianhuanyuan.cn
+:: www.birnhofer.pro
 :: www.bitcoin-millionaire-pro.com
 :: www.bitcoinup-pro.com
 :: www.biteti.com
@@ -240992,6 +241049,7 @@
 :: www.braventonhouse.pro
 :: www.bravotil.pro
 :: www.breakingstorieshub.pro
+:: www.brentovarpoint.pro
 :: www.bridghtsailer.pro
 :: www.brightadnetwork.com
 :: www.brightstardv.pro
@@ -241009,6 +241067,7 @@
 :: www.bulletads.com
 :: www.bumlaraless.pro
 :: www.bumlaratyder.pro
+:: www.bunuge.pro
 :: www.businessadversity.com
 :: www.buycheapadvertising.com
 :: www.buylike.pro
@@ -241187,6 +241246,7 @@
 :: www.dratio.com
 :: www.draxenmediagp.pro
 :: www.drazovek.pro
+:: www.drengstoff.pro
 :: www.drevilka.pro
 :: www.dropped-click.com
 :: www.dsads123a.is-best.net
@@ -241209,6 +241269,7 @@
 :: www.ebayadvertising.com
 :: www.echoleads.xyz
 :: www.echorixd.pro
+:: www.ecount.pro
 :: www.eddong.com
 :: www.ediuschina.com
 :: www.eduancm.com
@@ -241280,7 +241341,6 @@
 :: www.flarevaultless.pro
 :: www.flarewehrd.pro
 :: www.flarewingless.pro
-:: www.flash-capital.com
 :: www.flash.cn
 :: www.flashtest.ero-advertising.com
 :: www.flatdee.ero-advertising.com
@@ -241307,6 +241367,7 @@
 :: www.fpa.ero-advertising.com
 :: www.freedrive.cn
 :: www.fu68.com
+:: www.fuhlkammer.pro
 :: www.funshion.net.cn
 :: www.fusionforged.pro
 :: www.fusionnoded.pro
@@ -241386,7 +241447,6 @@
 :: www.hblinwei.com
 :: www.hdhkwl.com
 :: www.hdyzx.cn
-:: www.headsturn.biz
 :: www.health-partner.net
 :: www.helpdatabase.pro
 :: www.hengshui1.com
@@ -241552,7 +241612,6 @@
 :: www.kxid.cn
 :: www.kxmav2.com
 :: www.kyad88.com
-:: www.kywuhio.pro
 :: www.kywunoy.pro
 :: www.la61d.cn
 :: www.ladsblue.com
@@ -241598,6 +241657,7 @@
 :: www.lokp.79hr8ads.xyz
 :: www.lottery.ie
 :: www.lottery.olg.ca
+:: www.lowlevelads.com
 :: www.lp.trade360.com
 :: www.lucentio.pro
 :: www.luminaless.pro
@@ -241723,8 +241783,10 @@
 :: www.nvshenfan.com
 :: www.o7h.net
 :: www.oata.ero-advertising.com
+:: www.oferta-89125673-macbook-pro-m4-24gb.cfd
 :: www.oiwjcsh001.top
 :: www.ok365.com
+:: www.olx.oferta-89125673-macbook-pro-m4-24gb.cfd
 :: www.olyvuw.pro
 :: www.omgleads.com
 :: www.onclicktop.com
@@ -241791,16 +241853,17 @@
 :: www.pj550077.com
 :: www.pjbjzf.com
 :: www.pkkjxs.cn
-:: www.pl-662714331166keskahsgadj826255238f34.sbs
 :: www.pl-oferta127439-google-pixel-10-pro-xl.cfd
 :: www.pl-oferta12783612-ipad-m4-pro-512gb.cfd
 :: www.pl-oferta2105131-ipad-pro-m1-512gb.sbs
+:: www.pl-oferta2198749-apple-macbook-pro-m4.digital
 :: www.pl-oferta495307-playstation-5-1-pad.sbs
-:: www.pl-oferta50538-google-pixel-9-12-256-gb.sbs
+:: www.pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 :: www.pl-oferta5272695-playstation-5-pro-2tb.cfd
 :: www.pl-oferta6063669-ipad-m4-pro-512gb-pencil.cfd
 :: www.pl-oferta623123124-macbook-pro-m1-max-16.cfd
 :: www.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+:: www.pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 :: www.plaay-google.com
 :: www.plamedeznph.pro
 :: www.playy-google.com
@@ -241876,6 +241939,7 @@
 :: www.quantumgridty.pro
 :: www.quantumhorizond.pro
 :: www.quantumnoded.pro
+:: www.quartolima.pro
 :: www.quicklearnup.pro
 :: www.quiltstoryroadshow.org
 :: www.quirostega.pro
@@ -241902,6 +241966,7 @@
 :: www.remote88.com
 :: www.renminben.com
 :: www.rerevenue.pro
+:: www.resource-answers.pro
 :: www.reusableperiodpads.com
 :: www.riscaldone.pro
 :: www.rivonexisa-pro.com
@@ -241933,6 +241998,7 @@
 :: www.safekeepup.pro
 :: www.safetynews.pro
 :: www.saltovegna.pro
+:: www.samuretto.pro
 :: www.sartorelli.pro
 :: www.sb88b.com
 :: www.schlundig.pro
@@ -241991,6 +242057,7 @@
 :: www.somennew.com
 :: www.song001.com
 :: www.sorrentivka.pro
+:: www.sorvanelane.pro
 :: www.souid.com
 :: www.soundreportingdaily.pro
 :: www.sovria-pro.com
@@ -242113,6 +242180,7 @@
 :: www.topads.ero-advertising.com
 :: www.topitme.com
 :: www.toroadvertisingmedia.com
+:: www.torvalique.pro
 :: www.torvanelabs.pro
 :: www.touclick.com
 :: www.track.adsfast.com
@@ -242197,7 +242265,6 @@
 :: www.vangmobi.com
 :: www.vbnm888.com
 :: www.vegaschina.cn
-:: www.vegiloo.pro
 :: www.velastoria.pro
 :: www.velmorique.pro
 :: www.velnorainfrtructure.pro
@@ -242221,12 +242288,14 @@
 :: www.vertexpulseless.pro
 :: www.vertexskarnup.pro
 :: www.vertexsoapy.pro
-:: www.vinted.pl-662714331166keskahsgadj826255238f34.sbs
+:: www.vinted.oferta-89125673-macbook-pro-m4-24gb.cfd
 :: www.vinted.pl-oferta127439-google-pixel-10-pro-xl.cfd
 :: www.vinted.pl-oferta2105131-ipad-pro-m1-512gb.sbs
+:: www.vinted.pl-oferta2198749-apple-macbook-pro-m4.digital
 :: www.vinted.pl-oferta495307-playstation-5-1-pad.sbs
-:: www.vinted.pl-oferta50538-google-pixel-9-12-256-gb.sbs
+:: www.vinted.pl-oferta5013582-apple-macbook-pro-m4-24gb.site
 :: www.vinted.pl-oferta6583198-google-pixel-10-pro-xl-512.cfd
+:: www.vinted.pl-oferta9651630-apple-macbook-pro-m4-24gb.pro
 :: www.vinterfabel.pro
 :: www.vipads.cc
 :: www.vipads.live
@@ -242247,8 +242316,8 @@
 :: www.w4pma.cn
 :: www.wager.dm
 :: www.wakendorf.pro
+:: www.waldprestige.pro
 :: www.wancai.com
-:: www.wavelengthnews.pro
 :: www.wcnmd.top
 :: www.wdata.ero-advertising.com
 :: www.web.cellfun.mobi
@@ -242285,6 +242354,7 @@
 :: www.wingshalety.pro
 :: www.winterholm.pro
 :: www.wislametropolia.pro
+:: www.witsuc.pro
 :: www.wjxcdn.com
 :: www.wks.ero-advertising.com
 :: www.wofisey.pro
