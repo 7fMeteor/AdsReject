@@ -628,7 +628,8 @@ function main(config) {
             type: "select",
             proxies: ["DIRECT"],
             icon: `${ASSETS.icons}/link.svg`,
-            includeAll: false
+            includeAll: false,
+            hidden: true
         },
         {
             name: "🛤️ 自定义直连",
