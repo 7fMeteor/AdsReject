@@ -2,23 +2,24 @@
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
 # Total lines: 251795
-# Update time: 2026-03-26 10:54:49 UTC+8
+# Update time: 2026-03-27 10:57:23 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.22 central.github.com
-140.82.112.25 live.github.com
-140.82.113.17 github.community
-140.82.113.21 education.github.com
-140.82.113.25 alive.github.com
-140.82.114.22 api.individual.githubcopilot.com
-140.82.114.22 collector.github.com
+140.82.112.18 github.community
+140.82.113.21 api.individual.githubcopilot.com
+140.82.113.21 collector.github.com
+140.82.113.25 live.github.com
+140.82.114.21 central.github.com
+140.82.114.21 education.github.com
+140.82.114.26 alive.github.com
 151.101.193.194 github.global.ssl.fastly.net
-16.15.192.97 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.199.147 github-com.s3.amazonaws.com
-16.15.223.217 github-production-release-asset-2e65be.s3.amazonaws.com
-185.199.108.154 github.githubassets.com
+16.15.199.87 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.200.151 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.202.34 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.203.199 github-cloud.s3.amazonaws.com
+185.199.109.154 github.githubassets.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -43,8 +44,7 @@
 20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-3.5.1.162 github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.216.41.193 github-cloud.s3.amazonaws.com
+52.216.56.153 github-com.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
