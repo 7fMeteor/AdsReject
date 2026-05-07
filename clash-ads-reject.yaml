@@ -1,8 +1,8 @@
 # Title: Waster Ads Rule
 # Description: Combined and deduplicated ad-blocking rules for Clash Meta or Premium.
 # --------------------------------------
-# Total lines: 200923
-# Update time: 2026-05-06 11:48:45 UTC+8
+# Total lines: 200924
+# Update time: 2026-05-07 11:47:17 UTC+8
 
 payload:
   - '+.0.avmarket.rs'
@@ -9314,6 +9314,7 @@ payload:
   - '+.admtpmp124.com'
   - '+.admulti.com'
   - '+.admusicpic.music.126.net'
+  - '+.adn-plus.com.cn'
   - '+.adn.bursadabugun.com'
   - '+.adn.ebay.com'
   - '+.adn.insight.ucweb.com'
