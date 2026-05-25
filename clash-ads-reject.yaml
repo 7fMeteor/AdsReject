@@ -2,7 +2,7 @@
 # Description: Combined and deduplicated ad-blocking rules for Clash Meta or Premium.
 # --------------------------------------
 # Total lines: 198413
-# Update time: 2026-05-24 12:13:52 UTC+8
+# Update time: 2026-05-25 12:25:06 UTC+8
 
 payload:
   - '+.0.avmarket.rs'
@@ -197639,6 +197639,7 @@ payload:
   - 'adsfilebssdlbig.ali.kugou.com'
   - 'adsfileretry.service.kugou.com'
   - 'adsfs-sdkconfig.heytapimage.com'
+  - 'adsfs.heytapimage.com'
   - 'adsfs.oppomobile.com'
   - 'adslvfile.qq.com'
   - 'adsmart.konka.com'
@@ -197857,7 +197858,6 @@ payload:
   - 'doubleclick-cn.net'
   - 'download.changhong.upgrade2.huan.tv'
   - 'downloadxml.changhong.upgrade2.huan.tv'
-  - 'drcn-weather.cloud.huawei.com'
   - 'dsp-x.jd.com'
   - 'dsp.fcbox.com'
   - 'dualstack-logs.amap.com'
