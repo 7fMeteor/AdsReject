@@ -1,24 +1,25 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 247883
-# Update time: 2026-05-26 12:11:01 UTC+8
+# Total lines: 247889
+# Update time: 2026-05-27 12:24:09 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.22 education.github.com
+140.82.112.21 collector.github.com
+140.82.112.22 api.individual.githubcopilot.com
 140.82.112.25 alive.github.com
-140.82.112.26 live.github.com
+140.82.113.26 live.github.com
 140.82.114.17 github.community
 140.82.114.21 central.github.com
-140.82.114.21 collector.github.com
-140.82.114.22 api.individual.githubcopilot.com
+140.82.114.22 education.github.com
 151.101.193.194 github.global.ssl.fastly.net
-16.15.183.117 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.228.163 github-cloud.s3.amazonaws.com
-16.15.252.112 github-com.s3.amazonaws.com
-16.15.255.106 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.191.2 github-cloud.s3.amazonaws.com
+16.15.191.66 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.207.10 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.212.212 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.213.38 github-com.s3.amazonaws.com
 185.199.108.153 github.io
 185.199.108.153 githubstatus.com
 185.199.110.133 avatars.githubusercontent.com
@@ -44,7 +45,6 @@
 20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-54.231.170.1 github-production-user-asset-6210df.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -18011,6 +18011,7 @@
 0.0.0.0 applog.lc.quark.cn
 0.0.0.0 applog.musical.ly
 0.0.0.0 applog.reader.qq.com
+0.0.0.0 applog.snssdk.com
 0.0.0.0 applog.ssgdfs.com
 0.0.0.0 applog.uc.cn
 0.0.0.0 applog.ucdns.uc.cn
@@ -41255,6 +41256,7 @@
 0.0.0.0 f30fpad7.xyz
 0.0.0.0 f34aabcc0e.com
 0.0.0.0 f351966262.com
+0.0.0.0 f3531.top
 0.0.0.0 f362.nola.com
 0.0.0.0 f3fea4450e3b.xzccie.com
 0.0.0.0 f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com
@@ -75608,6 +75610,7 @@
 0.0.0.0 orxitdetwa.com
 0.0.0.0 oryj8-jzbmc.ads.tremorhub.com
 0.0.0.0 orzukuzorpxvp.online
+0.0.0.0 os-mon.snssdk.com
 0.0.0.0 os.efax.es
 0.0.0.0 os.efax.nl
 0.0.0.0 os.efaxcorporate.com
@@ -141932,6 +141935,7 @@
 :: applog.lc.quark.cn
 :: applog.musical.ly
 :: applog.reader.qq.com
+:: applog.snssdk.com
 :: applog.ssgdfs.com
 :: applog.uc.cn
 :: applog.ucdns.uc.cn
@@ -165176,6 +165180,7 @@
 :: f30fpad7.xyz
 :: f34aabcc0e.com
 :: f351966262.com
+:: f3531.top
 :: f362.nola.com
 :: f3fea4450e3b.xzccie.com
 :: f3i5-0g49bgn-3h95-1324992141.cos.ap-jakarta.myqcloud.com
@@ -199529,6 +199534,7 @@
 :: orxitdetwa.com
 :: oryj8-jzbmc.ads.tremorhub.com
 :: orzukuzorpxvp.online
+:: os-mon.snssdk.com
 :: os.efax.es
 :: os.efax.nl
 :: os.efaxcorporate.com
