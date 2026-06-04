@@ -1,8 +1,8 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 250225
-# Update time: 2026-06-03 12:54:18 UTC+8
+# Total lines: 250255
+# Update time: 2026-06-04 12:48:03 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
@@ -8063,6 +8063,7 @@
 0.0.0.0 activemeter.com
 0.0.0.0 activemetering.com
 0.0.0.0 activenewsalert.pro
+0.0.0.0 activenewspulse.pro
 0.0.0.0 activepoststale.com
 0.0.0.0 activeprospects.com
 0.0.0.0 activeqq.3g.qq.com
@@ -13914,6 +13915,7 @@
 0.0.0.0 agilecrm.com
 0.0.0.0 agiledata7.com
 0.0.0.0 agileformer.com
+0.0.0.0 agilepressnetwork.pro
 0.0.0.0 agileskincareunrented.com
 0.0.0.0 agilesrv.com
 0.0.0.0 agillic.eu
@@ -19292,6 +19294,7 @@
 0.0.0.0 ausumqszhmg.com
 0.0.0.0 autchoog.net
 0.0.0.0 auteboon.net
+0.0.0.0 auth-google.netlify.app
 0.0.0.0 auth-google.site
 0.0.0.0 auth.carte-gr.total.fr
 0.0.0.0 auth.cityads.com
@@ -19310,6 +19313,7 @@
 0.0.0.0 author.bloggerads.net
 0.0.0.0 authorinsights.com
 0.0.0.0 authoritativegrandchildpause.com
+0.0.0.0 authoritativereport.pro
 0.0.0.0 authoritieswoundjoint.com
 0.0.0.0 authorized-minute.pro
 0.0.0.0 authorizedimmediate.com
@@ -24906,7 +24910,6 @@
 0.0.0.0 capitalistsplitting.com
 0.0.0.0 capitalstreamiqa.pro
 0.0.0.0 capitalstreamora.pro
-0.0.0.0 capitalupdatezone.pro
 0.0.0.0 capkkfuiticpo.space
 0.0.0.0 capmxofwswpbf.website
 0.0.0.0 capndr.com
@@ -26523,6 +26526,7 @@
 0.0.0.0 chubspagod.shop
 0.0.0.0 chuddergitter.shop
 0.0.0.0 chugrypsodu.com
+0.0.0.0 chuguadventures.co.tz
 0.0.0.0 chujstkfubpix.space
 0.0.0.0 chumpardale.com
 0.0.0.0 chunfuxie.cn
@@ -35843,7 +35847,6 @@
 0.0.0.0 dorsulachiplet.com
 0.0.0.0 dortmark.net
 0.0.0.0 dorvenitara365.pro
-0.0.0.0 dorvexarionaq.pro
 0.0.0.0 dorvexiaa.pro
 0.0.0.0 dorvienta.pro
 0.0.0.0 dosachen.com
@@ -36958,6 +36961,7 @@
 0.0.0.0 dynamic.ziftsolutions.com
 0.0.0.0 dynamic.zol.com.cn
 0.0.0.0 dynamicapl.com
+0.0.0.0 dynamicreporting.pro
 0.0.0.0 dynamitedata.com
 0.0.0.0 dynatrace-managed.com
 0.0.0.0 dynatrace.att.com
@@ -40464,6 +40468,7 @@
 0.0.0.0 essentialmost.com
 0.0.0.0 essentialnewsupdates.pro
 0.0.0.0 essentialsteadpaths.pro
+0.0.0.0 essentialtruthdaily.pro
 0.0.0.0 essmnx.edreams.ch
 0.0.0.0 essticjyuofwj.website
 0.0.0.0 establishedclevermatters.com
@@ -41333,6 +41338,7 @@
 0.0.0.0 expert-series.pro
 0.0.0.0 expertinfluence.pro
 0.0.0.0 expertise.logarithmicsolutions.com
+0.0.0.0 expertnewswatch.pro
 0.0.0.0 experts.actonservice.com
 0.0.0.0 experts.cutter.com
 0.0.0.0 expertsender.branch.rocks
@@ -46316,6 +46322,7 @@
 0.0.0.0 globalapi.ad.xiaomi.com
 0.0.0.0 globalbank.us
 0.0.0.0 globalbanking.wolterskluwer.com
+0.0.0.0 globalbitenews.pro
 0.0.0.0 globalcommunications.sc.com
 0.0.0.0 globale-analytics-sdk.global-e.com
 0.0.0.0 globaleloqua.americanexpress.com
@@ -49069,7 +49076,6 @@
 0.0.0.0 heartilyidle.com
 0.0.0.0 heartilyscales.com
 0.0.0.0 heartlessanthemantiquity.com
-0.0.0.0 heartmender.pro
 0.0.0.0 heartstring66.com
 0.0.0.0 hearty-text.pro
 0.0.0.0 heartymisspell.com
@@ -53346,6 +53352,7 @@
 0.0.0.0 infineon-community.com
 0.0.0.0 infinigraph.com
 0.0.0.0 infinite-ads.com
+0.0.0.0 infinitemediamonitor.pro
 0.0.0.0 infiniti.cityads.com
 0.0.0.0 infinity-tracking.com
 0.0.0.0 infinity-tracking.net
@@ -54138,6 +54145,7 @@
 0.0.0.0 information.skillsoft.com
 0.0.0.0 information43.com
 0.0.0.0 informedheadlinenow.pro
+0.0.0.0 informedpulseupdate.pro
 0.0.0.0 informer.yandex.ru
 0.0.0.0 informers.sinoptik.ua
 0.0.0.0 informexaa.pro
@@ -61657,6 +61665,7 @@
 0.0.0.0 lipsgig.com
 0.0.0.0 lipstat.com
 0.0.0.0 lipstickeducate.com
+0.0.0.0 liptonadventures.com
 0.0.0.0 lipubetoeiqg.com
 0.0.0.0 lipwesfzuidbk.club
 0.0.0.0 liqnkbkszalmy.site
@@ -72661,7 +72670,6 @@
 0.0.0.0 newsfeed-drcn.cloud.hihonorcloud.cn
 0.0.0.0 newsfeed-drcn.cloud.hihonorcloud.com
 0.0.0.0 newsflash.elliemae.com
-0.0.0.0 newsfluxdaily.pro
 0.0.0.0 newsformuse.com
 0.0.0.0 newsforyourmood.com
 0.0.0.0 newsfrompluto.com
@@ -73521,6 +73529,7 @@
 0.0.0.0 norvethalix.pro
 0.0.0.0 norvetria.pro
 0.0.0.0 norvexaelum.pro
+0.0.0.0 norvientor.pro
 0.0.0.0 noryxujuqcdwo.site
 0.0.0.0 nosemorgue.com
 0.0.0.0 nosenotch.com
@@ -75982,7 +75991,6 @@
 0.0.0.0 openercompetent.com
 0.0.0.0 openfpcdn.io
 0.0.0.0 openguid.org
-0.0.0.0 openheartup.pro
 0.0.0.0 openhit.com
 0.0.0.0 openingclutter.com
 0.0.0.0 openingfridayconsulting.com
@@ -77125,6 +77133,7 @@
 0.0.0.0 p.sdu8cvc.com
 0.0.0.0 p.shllhz.net
 0.0.0.0 p.skimresources.com
+0.0.0.0 p.smartads.tech
 0.0.0.0 p.spotidownloader.com
 0.0.0.0 p.store.qq.com
 0.0.0.0 p.sug.so.com
@@ -78617,7 +78626,6 @@
 0.0.0.0 permutive.com
 0.0.0.0 perniowillier.shop
 0.0.0.0 perobawrast.shop
-0.0.0.0 perolantirox.pro
 0.0.0.0 perolintaqa.pro
 0.0.0.0 peronemashier.shop
 0.0.0.0 perpetratoralimony.com
@@ -81849,7 +81857,6 @@
 0.0.0.0 pureapplication.pro
 0.0.0.0 purebloom.net
 0.0.0.0 pureenergyflow.com
-0.0.0.0 pureessenceup.pro
 0.0.0.0 pureeswincing.shop
 0.0.0.0 purevideo.com
 0.0.0.0 purfscdmrtk.com
@@ -84041,6 +84048,7 @@
 0.0.0.0 raphidewakener.com
 0.0.0.0 rapid-marketing.pro
 0.0.0.0 rapidcounter.com
+0.0.0.0 rapidfactchecker.pro
 0.0.0.0 rapidfoxengine.com
 0.0.0.0 rapidgear.pro
 0.0.0.0 rapidhits.net
@@ -84936,6 +84944,7 @@
 0.0.0.0 reliablebanners.com
 0.0.0.0 reliableceaseswat.com
 0.0.0.0 reliablecounter.com
+0.0.0.0 reliablefactchronicle.pro
 0.0.0.0 reliableguardianindifference.com
 0.0.0.0 reliablemore.com
 0.0.0.0 relicremote.com
@@ -92118,6 +92127,7 @@
 0.0.0.0 smart4ads.com
 0.0.0.0 smartad.10010.com
 0.0.0.0 smartads.statsperform.com
+0.0.0.0 smartads.tech
 0.0.0.0 smartadserver.com
 0.0.0.0 smartasset.com
 0.0.0.0 smartbn.ru
@@ -95688,7 +95698,6 @@
 0.0.0.0 solve.cranepi.com
 0.0.0.0 solvebots.com
 0.0.0.0 solvemilitaryconsulate.com
-0.0.0.0 solvireanox.pro
 0.0.0.0 som.abritel.fr
 0.0.0.0 som.aluguetemporada.com.br
 0.0.0.0 som.athenahealth.com
@@ -96459,6 +96468,7 @@
 0.0.0.0 spokentomatoestraumatic.com
 0.0.0.0 spokeoaffiliates.com
 0.0.0.0 spokesmanalientwentieth.com
+0.0.0.0 spomiedzymieszkan.pro
 0.0.0.0 spongecell.com
 0.0.0.0 spongeds.com
 0.0.0.0 spongerendercement.com
@@ -97568,6 +97578,7 @@
 0.0.0.0 st.preciousamber.com
 0.0.0.0 st.s-bahn-muenchen-magazin.de
 0.0.0.0 st.sawlive.tv
+0.0.0.0 st.smartads.tech
 0.0.0.0 st.targetix.net
 0.0.0.0 st.todesk.com
 0.0.0.0 st.tulastudio.se
@@ -99444,7 +99455,6 @@
 0.0.0.0 stratos.blue
 0.0.0.0 straussvip.pro
 0.0.0.0 strausszc.pro
-0.0.0.0 strausszt.pro
 0.0.0.0 strawberry.basf.com
 0.0.0.0 strawberryy14.top
 0.0.0.0 strawburn.com
@@ -101235,6 +101245,7 @@
 0.0.0.0 t.sjsuspartans.com
 0.0.0.0 t.sjuhawks.com
 0.0.0.0 t.skimresources.com
+0.0.0.0 t.smartads.tech
 0.0.0.0 t.smile.eu
 0.0.0.0 t.soec.ca
 0.0.0.0 t.soonersports.com
@@ -107712,7 +107723,6 @@
 0.0.0.0 truendo.com
 0.0.0.0 truepush.com
 0.0.0.0 trueselfkeys.com
-0.0.0.0 trueselfless.pro
 0.0.0.0 truevaultcdn.com
 0.0.0.0 truffeleveche.com
 0.0.0.0 truffle.bid
@@ -108000,6 +108010,7 @@
 0.0.0.0 tubfurryhen.com
 0.0.0.0 tubifermoneran.shop
 0.0.0.0 tubroaffs.org
+0.0.0.0 tucizyn.pro
 0.0.0.0 tuckbrows.com
 0.0.0.0 tuckedcurtain.com
 0.0.0.0 tuckedtransmitterwizards.com
@@ -108140,8 +108151,6 @@
 0.0.0.0 tutvp.com
 0.0.0.0 tuudibopjoxmy.site
 0.0.0.0 tuusjwrgtxigs.space
-0.0.0.0 tuv-wx.fit
-0.0.0.0 tuv-wx.work
 0.0.0.0 tuvevx.agent-sana.com
 0.0.0.0 tuvosjnz.in
 0.0.0.0 tux76afo5.com
@@ -117407,6 +117416,7 @@
 0.0.0.0 www.acloud.com
 0.0.0.0 www.acspaces.ero-advertising.com
 0.0.0.0 www.activenewsalert.pro
+0.0.0.0 www.activenewspulse.pro
 0.0.0.0 www.ad-center.com
 0.0.0.0 www.ad-cloud.jp
 0.0.0.0 www.ad-net.co.uk
@@ -117574,6 +117584,7 @@
 0.0.0.0 www.affinitychina.cn
 0.0.0.0 www.afj0.com
 0.0.0.0 www.afs.ero-advertising.com
+0.0.0.0 www.agilepressnetwork.pro
 0.0.0.0 www.agrant.cn
 0.0.0.0 www.agrantsem.com
 0.0.0.0 www.ahw3.com
@@ -117628,6 +117639,8 @@
 0.0.0.0 www.aurorapush.cn
 0.0.0.0 www.aurorapush.com
 0.0.0.0 www.ausaas.cn
+0.0.0.0 www.auth-google.netlify.app
+0.0.0.0 www.authoritativereport.pro
 0.0.0.0 www.autoads.asia
 0.0.0.0 www.avast-downloads.com
 0.0.0.0 www.avnads.com
@@ -117747,7 +117760,6 @@
 0.0.0.0 www.capitalanalysislinez.pro
 0.0.0.0 www.capitalstreamiqa.pro
 0.0.0.0 www.capitalstreamora.pro
-0.0.0.0 www.capitalupdatezone.pro
 0.0.0.0 www.cascadeless.pro
 0.0.0.0 www.casee.cn
 0.0.0.0 www.cash4downloads.com
@@ -117905,7 +117917,6 @@
 0.0.0.0 www.domeraliqa.pro
 0.0.0.0 www.dongmansoft.com
 0.0.0.0 www.dorvenitara365.pro
-0.0.0.0 www.dorvexarionaq.pro
 0.0.0.0 www.dorvexiaa.pro
 0.0.0.0 www.dorvienta.pro
 0.0.0.0 www.doubleclick.com
@@ -117945,6 +117956,7 @@
 0.0.0.0 www.durewou.pro
 0.0.0.0 www.dutils.com
 0.0.0.0 www.dvkbfj.cn
+0.0.0.0 www.dynamicreporting.pro
 0.0.0.0 www.e-hpaces.ero-advertising.com
 0.0.0.0 www.e-traffic.com
 0.0.0.0 www.e0n.cn
@@ -117986,6 +117998,7 @@
 0.0.0.0 www.esptj.com
 0.0.0.0 www.essentialnewsupdates.pro
 0.0.0.0 www.essentialsteadpaths.pro
+0.0.0.0 www.essentialtruthdaily.pro
 0.0.0.0 www.esteama.ecom-staging-nad.com
 0.0.0.0 www.etherealcore.pro
 0.0.0.0 www.evening-news-update.xyz
@@ -117994,6 +118007,7 @@
 0.0.0.0 www.exemplarventures.pro
 0.0.0.0 www.exit-ad.de
 0.0.0.0 www.exoltramis.pro
+0.0.0.0 www.expertnewswatch.pro
 0.0.0.0 www.extreme-dm.com
 0.0.0.0 www.factheads.com
 0.0.0.0 www.fajewuu.pro
@@ -118136,6 +118150,7 @@
 0.0.0.0 www.gl.ink
 0.0.0.0 www.glassygrovefy.pro
 0.0.0.0 www.glittering-backroads.com
+0.0.0.0 www.globalbitenews.pro
 0.0.0.0 www.globalpressnova.pro
 0.0.0.0 www.gmads.net
 0.0.0.0 www.go2cloud.org
@@ -118187,7 +118202,6 @@
 0.0.0.0 www.hdhkwl.com
 0.0.0.0 www.hdyzx.cn
 0.0.0.0 www.health-partner.net
-0.0.0.0 www.heartmender.pro
 0.0.0.0 www.hellbenderadventures.com
 0.0.0.0 www.hengshui1.com
 0.0.0.0 www.hg417.bet
@@ -118246,11 +118260,13 @@
 0.0.0.0 www.indiads.com
 0.0.0.0 www.ineffabletop.pro
 0.0.0.0 www.infinite-ads.com
+0.0.0.0 www.infinitemediamonitor.pro
 0.0.0.0 www.infinityads.com
 0.0.0.0 www.infolaventrion.pro
 0.0.0.0 www.infonelvia.pro
 0.0.0.0 www.information-update.dynamic-dns.net
 0.0.0.0 www.informedheadlinenow.pro
+0.0.0.0 www.informedpulseupdate.pro
 0.0.0.0 www.informexaa.pro
 0.0.0.0 www.infostreamorion.pro
 0.0.0.0 www.inmobi.com
@@ -118388,6 +118404,7 @@
 0.0.0.0 www.linkjg.cn
 0.0.0.0 www.links-and-traffic.com
 0.0.0.0 www.linksjg.cn
+0.0.0.0 www.liptonadventures.com
 0.0.0.0 www.liveescapeadventure.com
 0.0.0.0 www.lixonoe.pro
 0.0.0.0 www.lm.cccab.club
@@ -118499,7 +118516,6 @@
 0.0.0.0 www.networkbench.com
 0.0.0.0 www.newapi.com
 0.0.0.0 www.newhold.pro
-0.0.0.0 www.newsfluxdaily.pro
 0.0.0.0 www.newspulsevora.pro
 0.0.0.0 www.newsyoucanread24.com
 0.0.0.0 www.nextgenadvisors.lat
@@ -118519,6 +118535,7 @@
 0.0.0.0 www.norvethalix.pro
 0.0.0.0 www.norvetria.pro
 0.0.0.0 www.norvexaelum.pro
+0.0.0.0 www.norvientor.pro
 0.0.0.0 www.notepad2.com
 0.0.0.0 www.novaonads.com
 0.0.0.0 www.nowinydnia.pro
@@ -118550,7 +118567,6 @@
 0.0.0.0 www.opads.ero-advertising.com
 0.0.0.0 www.open-news-times.xyz
 0.0.0.0 www.open-uc.cn
-0.0.0.0 www.openheartup.pro
 0.0.0.0 www.optad360.com
 0.0.0.0 www.optaim.com
 0.0.0.0 www.optimix.cn
@@ -118584,7 +118600,6 @@
 0.0.0.0 www.perlonext365.pro
 0.0.0.0 www.perlonita.pro
 0.0.0.0 www.perlovania365.pro
-0.0.0.0 www.perolantirox.pro
 0.0.0.0 www.perolintaqa.pro
 0.0.0.0 www.perqelvion.pro
 0.0.0.0 www.perqoravinta365.pro
@@ -118668,7 +118683,6 @@
 0.0.0.0 www.pubyboka.pro
 0.0.0.0 www.puceciky.pro
 0.0.0.0 www.pure-upgrade.com
-0.0.0.0 www.pureessenceup.pro
 0.0.0.0 www.pushcfg.com
 0.0.0.0 www.pusure.com
 0.0.0.0 www.pyravii.pro
@@ -118704,6 +118718,7 @@
 0.0.0.0 www.rampidads.com
 0.0.0.0 www.rangzhuai.com
 0.0.0.0 www.rannabio.com
+0.0.0.0 www.rapidfactchecker.pro
 0.0.0.0 www.rapidleadstx.com
 0.0.0.0 www.rapidnewsservice.pro
 0.0.0.0 www.rapidtrendingstories.pro
@@ -118717,6 +118732,7 @@
 0.0.0.0 www.redirect.ero-advertising.com
 0.0.0.0 www.redrection.pro
 0.0.0.0 www.registrarads.com
+0.0.0.0 www.reliablefactchronicle.pro
 0.0.0.0 www.remote88.com
 0.0.0.0 www.renminben.com
 0.0.0.0 www.reportaliaa.pro
@@ -118801,7 +118817,6 @@
 0.0.0.0 www.smucdn.com
 0.0.0.0 www.smyfinancial.com
 0.0.0.0 www.softsmart.mobi
-0.0.0.0 www.solvireanox.pro
 0.0.0.0 www.somennew.com
 0.0.0.0 www.song001.com
 0.0.0.0 www.souid.com
@@ -118812,6 +118827,7 @@
 0.0.0.0 www.speedclics.ero-advertising.com
 0.0.0.0 www.speedlicks.ero-advertising.com
 0.0.0.0 www.speeuclicks.ero-advertising.com
+0.0.0.0 www.spomiedzymieszkan.pro
 0.0.0.0 www.sponsorads.de
 0.0.0.0 www.sportplus.pro
 0.0.0.0 www.srhuafeng.com
@@ -118831,7 +118847,6 @@
 0.0.0.0 www.straighttalknews.pro
 0.0.0.0 www.straussvip.pro
 0.0.0.0 www.strausszc.pro
-0.0.0.0 www.strausszt.pro
 0.0.0.0 www.streamgridmax.pro
 0.0.0.0 www.streamlinebriefing.pro
 0.0.0.0 www.streamlinebulletin.pro
@@ -118942,11 +118957,11 @@
 0.0.0.0 www.trendpulseora.pro
 0.0.0.0 www.trendstreamiq24.pro
 0.0.0.0 www.trourted.pro
-0.0.0.0 www.trueselfless.pro
 0.0.0.0 www.trueshelterju.pro
 0.0.0.0 www.ttcdn.cn
 0.0.0.0 www.ttnet.yandex.com.tr
 0.0.0.0 www.ttyyuuoo.com
+0.0.0.0 www.tucizyn.pro
 0.0.0.0 www.tui1999.com
 0.0.0.0 www.tuipenguin.com
 0.0.0.0 www.tuitiger.com
@@ -118955,8 +118970,6 @@
 0.0.0.0 www.tukexiu.com
 0.0.0.0 www.tunbraveli.pro
 0.0.0.0 www.turn.com
-0.0.0.0 www.tuv-wx.fit
-0.0.0.0 www.tuv-wx.work
 0.0.0.0 www.twilight-flash.com
 0.0.0.0 www.twilight-roads.com
 0.0.0.0 www.typo3.ero-advertising.com
@@ -119094,6 +119107,7 @@
 0.0.0.0 www.wykagyi.pro
 0.0.0.0 www.wywyseu.pro
 0.0.0.0 www.wzaigo.com
+0.0.0.0 www.xabivya.pro
 0.0.0.0 www.xadsmart.com
 0.0.0.0 www.xalberonax.pro
 0.0.0.0 www.xalorveta.pro
@@ -119618,6 +119632,7 @@
 0.0.0.0 xaaitpzcofwdm.site
 0.0.0.0 xabgltcxapxim.site
 0.0.0.0 xabgqnnjywsus.website
+0.0.0.0 xabivya.pro
 0.0.0.0 xabpahjkwqdcq.online
 0.0.0.0 xacdghbkbelxi.website
 0.0.0.0 xacthuc.autoads.asia
@@ -133155,6 +133170,7 @@
 :: activemeter.com
 :: activemetering.com
 :: activenewsalert.pro
+:: activenewspulse.pro
 :: activepoststale.com
 :: activeprospects.com
 :: activeqq.3g.qq.com
@@ -139006,6 +139022,7 @@
 :: agilecrm.com
 :: agiledata7.com
 :: agileformer.com
+:: agilepressnetwork.pro
 :: agileskincareunrented.com
 :: agilesrv.com
 :: agillic.eu
@@ -144384,6 +144401,7 @@
 :: ausumqszhmg.com
 :: autchoog.net
 :: auteboon.net
+:: auth-google.netlify.app
 :: auth-google.site
 :: auth.carte-gr.total.fr
 :: auth.cityads.com
@@ -144402,6 +144420,7 @@
 :: author.bloggerads.net
 :: authorinsights.com
 :: authoritativegrandchildpause.com
+:: authoritativereport.pro
 :: authoritieswoundjoint.com
 :: authorized-minute.pro
 :: authorizedimmediate.com
@@ -149998,7 +150017,6 @@
 :: capitalistsplitting.com
 :: capitalstreamiqa.pro
 :: capitalstreamora.pro
-:: capitalupdatezone.pro
 :: capkkfuiticpo.space
 :: capmxofwswpbf.website
 :: capndr.com
@@ -151615,6 +151633,7 @@
 :: chubspagod.shop
 :: chuddergitter.shop
 :: chugrypsodu.com
+:: chuguadventures.co.tz
 :: chujstkfubpix.space
 :: chumpardale.com
 :: chunfuxie.cn
@@ -160935,7 +160954,6 @@
 :: dorsulachiplet.com
 :: dortmark.net
 :: dorvenitara365.pro
-:: dorvexarionaq.pro
 :: dorvexiaa.pro
 :: dorvienta.pro
 :: dosachen.com
@@ -162050,6 +162068,7 @@
 :: dynamic.ziftsolutions.com
 :: dynamic.zol.com.cn
 :: dynamicapl.com
+:: dynamicreporting.pro
 :: dynamitedata.com
 :: dynatrace-managed.com
 :: dynatrace.att.com
@@ -165556,6 +165575,7 @@
 :: essentialmost.com
 :: essentialnewsupdates.pro
 :: essentialsteadpaths.pro
+:: essentialtruthdaily.pro
 :: essmnx.edreams.ch
 :: essticjyuofwj.website
 :: establishedclevermatters.com
@@ -166425,6 +166445,7 @@
 :: expert-series.pro
 :: expertinfluence.pro
 :: expertise.logarithmicsolutions.com
+:: expertnewswatch.pro
 :: experts.actonservice.com
 :: experts.cutter.com
 :: expertsender.branch.rocks
@@ -171408,6 +171429,7 @@
 :: globalapi.ad.xiaomi.com
 :: globalbank.us
 :: globalbanking.wolterskluwer.com
+:: globalbitenews.pro
 :: globalcommunications.sc.com
 :: globale-analytics-sdk.global-e.com
 :: globaleloqua.americanexpress.com
@@ -174161,7 +174183,6 @@
 :: heartilyidle.com
 :: heartilyscales.com
 :: heartlessanthemantiquity.com
-:: heartmender.pro
 :: heartstring66.com
 :: hearty-text.pro
 :: heartymisspell.com
@@ -178438,6 +178459,7 @@
 :: infineon-community.com
 :: infinigraph.com
 :: infinite-ads.com
+:: infinitemediamonitor.pro
 :: infiniti.cityads.com
 :: infinity-tracking.com
 :: infinity-tracking.net
@@ -179230,6 +179252,7 @@
 :: information.skillsoft.com
 :: information43.com
 :: informedheadlinenow.pro
+:: informedpulseupdate.pro
 :: informer.yandex.ru
 :: informers.sinoptik.ua
 :: informexaa.pro
@@ -186749,6 +186772,7 @@
 :: lipsgig.com
 :: lipstat.com
 :: lipstickeducate.com
+:: liptonadventures.com
 :: lipubetoeiqg.com
 :: lipwesfzuidbk.club
 :: liqnkbkszalmy.site
@@ -197753,7 +197777,6 @@
 :: newsfeed-drcn.cloud.hihonorcloud.cn
 :: newsfeed-drcn.cloud.hihonorcloud.com
 :: newsflash.elliemae.com
-:: newsfluxdaily.pro
 :: newsformuse.com
 :: newsforyourmood.com
 :: newsfrompluto.com
@@ -198613,6 +198636,7 @@
 :: norvethalix.pro
 :: norvetria.pro
 :: norvexaelum.pro
+:: norvientor.pro
 :: noryxujuqcdwo.site
 :: nosemorgue.com
 :: nosenotch.com
@@ -201074,7 +201098,6 @@
 :: openercompetent.com
 :: openfpcdn.io
 :: openguid.org
-:: openheartup.pro
 :: openhit.com
 :: openingclutter.com
 :: openingfridayconsulting.com
@@ -202217,6 +202240,7 @@
 :: p.sdu8cvc.com
 :: p.shllhz.net
 :: p.skimresources.com
+:: p.smartads.tech
 :: p.spotidownloader.com
 :: p.store.qq.com
 :: p.sug.so.com
@@ -203709,7 +203733,6 @@
 :: permutive.com
 :: perniowillier.shop
 :: perobawrast.shop
-:: perolantirox.pro
 :: perolintaqa.pro
 :: peronemashier.shop
 :: perpetratoralimony.com
@@ -206941,7 +206964,6 @@
 :: pureapplication.pro
 :: purebloom.net
 :: pureenergyflow.com
-:: pureessenceup.pro
 :: pureeswincing.shop
 :: purevideo.com
 :: purfscdmrtk.com
@@ -209133,6 +209155,7 @@
 :: raphidewakener.com
 :: rapid-marketing.pro
 :: rapidcounter.com
+:: rapidfactchecker.pro
 :: rapidfoxengine.com
 :: rapidgear.pro
 :: rapidhits.net
@@ -210028,6 +210051,7 @@
 :: reliablebanners.com
 :: reliableceaseswat.com
 :: reliablecounter.com
+:: reliablefactchronicle.pro
 :: reliableguardianindifference.com
 :: reliablemore.com
 :: relicremote.com
@@ -217210,6 +217234,7 @@
 :: smart4ads.com
 :: smartad.10010.com
 :: smartads.statsperform.com
+:: smartads.tech
 :: smartadserver.com
 :: smartasset.com
 :: smartbn.ru
@@ -220780,7 +220805,6 @@
 :: solve.cranepi.com
 :: solvebots.com
 :: solvemilitaryconsulate.com
-:: solvireanox.pro
 :: som.abritel.fr
 :: som.aluguetemporada.com.br
 :: som.athenahealth.com
@@ -221551,6 +221575,7 @@
 :: spokentomatoestraumatic.com
 :: spokeoaffiliates.com
 :: spokesmanalientwentieth.com
+:: spomiedzymieszkan.pro
 :: spongecell.com
 :: spongeds.com
 :: spongerendercement.com
@@ -222660,6 +222685,7 @@
 :: st.preciousamber.com
 :: st.s-bahn-muenchen-magazin.de
 :: st.sawlive.tv
+:: st.smartads.tech
 :: st.targetix.net
 :: st.todesk.com
 :: st.tulastudio.se
@@ -224536,7 +224562,6 @@
 :: stratos.blue
 :: straussvip.pro
 :: strausszc.pro
-:: strausszt.pro
 :: strawberry.basf.com
 :: strawberryy14.top
 :: strawburn.com
@@ -226327,6 +226352,7 @@
 :: t.sjsuspartans.com
 :: t.sjuhawks.com
 :: t.skimresources.com
+:: t.smartads.tech
 :: t.smile.eu
 :: t.soec.ca
 :: t.soonersports.com
@@ -232804,7 +232830,6 @@
 :: truendo.com
 :: truepush.com
 :: trueselfkeys.com
-:: trueselfless.pro
 :: truevaultcdn.com
 :: truffeleveche.com
 :: truffle.bid
@@ -233092,6 +233117,7 @@
 :: tubfurryhen.com
 :: tubifermoneran.shop
 :: tubroaffs.org
+:: tucizyn.pro
 :: tuckbrows.com
 :: tuckedcurtain.com
 :: tuckedtransmitterwizards.com
@@ -233232,8 +233258,6 @@
 :: tutvp.com
 :: tuudibopjoxmy.site
 :: tuusjwrgtxigs.space
-:: tuv-wx.fit
-:: tuv-wx.work
 :: tuvevx.agent-sana.com
 :: tuvosjnz.in
 :: tux76afo5.com
@@ -242499,6 +242523,7 @@
 :: www.acloud.com
 :: www.acspaces.ero-advertising.com
 :: www.activenewsalert.pro
+:: www.activenewspulse.pro
 :: www.ad-center.com
 :: www.ad-cloud.jp
 :: www.ad-net.co.uk
@@ -242666,6 +242691,7 @@
 :: www.affinitychina.cn
 :: www.afj0.com
 :: www.afs.ero-advertising.com
+:: www.agilepressnetwork.pro
 :: www.agrant.cn
 :: www.agrantsem.com
 :: www.ahw3.com
@@ -242720,6 +242746,8 @@
 :: www.aurorapush.cn
 :: www.aurorapush.com
 :: www.ausaas.cn
+:: www.auth-google.netlify.app
+:: www.authoritativereport.pro
 :: www.autoads.asia
 :: www.avast-downloads.com
 :: www.avnads.com
@@ -242839,7 +242867,6 @@
 :: www.capitalanalysislinez.pro
 :: www.capitalstreamiqa.pro
 :: www.capitalstreamora.pro
-:: www.capitalupdatezone.pro
 :: www.cascadeless.pro
 :: www.casee.cn
 :: www.cash4downloads.com
@@ -242997,7 +243024,6 @@
 :: www.domeraliqa.pro
 :: www.dongmansoft.com
 :: www.dorvenitara365.pro
-:: www.dorvexarionaq.pro
 :: www.dorvexiaa.pro
 :: www.dorvienta.pro
 :: www.doubleclick.com
@@ -243037,6 +243063,7 @@
 :: www.durewou.pro
 :: www.dutils.com
 :: www.dvkbfj.cn
+:: www.dynamicreporting.pro
 :: www.e-hpaces.ero-advertising.com
 :: www.e-traffic.com
 :: www.e0n.cn
@@ -243078,6 +243105,7 @@
 :: www.esptj.com
 :: www.essentialnewsupdates.pro
 :: www.essentialsteadpaths.pro
+:: www.essentialtruthdaily.pro
 :: www.esteama.ecom-staging-nad.com
 :: www.etherealcore.pro
 :: www.evening-news-update.xyz
@@ -243086,6 +243114,7 @@
 :: www.exemplarventures.pro
 :: www.exit-ad.de
 :: www.exoltramis.pro
+:: www.expertnewswatch.pro
 :: www.extreme-dm.com
 :: www.factheads.com
 :: www.fajewuu.pro
@@ -243228,6 +243257,7 @@
 :: www.gl.ink
 :: www.glassygrovefy.pro
 :: www.glittering-backroads.com
+:: www.globalbitenews.pro
 :: www.globalpressnova.pro
 :: www.gmads.net
 :: www.go2cloud.org
@@ -243279,7 +243309,6 @@
 :: www.hdhkwl.com
 :: www.hdyzx.cn
 :: www.health-partner.net
-:: www.heartmender.pro
 :: www.hellbenderadventures.com
 :: www.hengshui1.com
 :: www.hg417.bet
@@ -243338,11 +243367,13 @@
 :: www.indiads.com
 :: www.ineffabletop.pro
 :: www.infinite-ads.com
+:: www.infinitemediamonitor.pro
 :: www.infinityads.com
 :: www.infolaventrion.pro
 :: www.infonelvia.pro
 :: www.information-update.dynamic-dns.net
 :: www.informedheadlinenow.pro
+:: www.informedpulseupdate.pro
 :: www.informexaa.pro
 :: www.infostreamorion.pro
 :: www.inmobi.com
@@ -243480,6 +243511,7 @@
 :: www.linkjg.cn
 :: www.links-and-traffic.com
 :: www.linksjg.cn
+:: www.liptonadventures.com
 :: www.liveescapeadventure.com
 :: www.lixonoe.pro
 :: www.lm.cccab.club
@@ -243591,7 +243623,6 @@
 :: www.networkbench.com
 :: www.newapi.com
 :: www.newhold.pro
-:: www.newsfluxdaily.pro
 :: www.newspulsevora.pro
 :: www.newsyoucanread24.com
 :: www.nextgenadvisors.lat
@@ -243611,6 +243642,7 @@
 :: www.norvethalix.pro
 :: www.norvetria.pro
 :: www.norvexaelum.pro
+:: www.norvientor.pro
 :: www.notepad2.com
 :: www.novaonads.com
 :: www.nowinydnia.pro
@@ -243642,7 +243674,6 @@
 :: www.opads.ero-advertising.com
 :: www.open-news-times.xyz
 :: www.open-uc.cn
-:: www.openheartup.pro
 :: www.optad360.com
 :: www.optaim.com
 :: www.optimix.cn
@@ -243676,7 +243707,6 @@
 :: www.perlonext365.pro
 :: www.perlonita.pro
 :: www.perlovania365.pro
-:: www.perolantirox.pro
 :: www.perolintaqa.pro
 :: www.perqelvion.pro
 :: www.perqoravinta365.pro
@@ -243760,7 +243790,6 @@
 :: www.pubyboka.pro
 :: www.puceciky.pro
 :: www.pure-upgrade.com
-:: www.pureessenceup.pro
 :: www.pushcfg.com
 :: www.pusure.com
 :: www.pyravii.pro
@@ -243796,6 +243825,7 @@
 :: www.rampidads.com
 :: www.rangzhuai.com
 :: www.rannabio.com
+:: www.rapidfactchecker.pro
 :: www.rapidleadstx.com
 :: www.rapidnewsservice.pro
 :: www.rapidtrendingstories.pro
@@ -243809,6 +243839,7 @@
 :: www.redirect.ero-advertising.com
 :: www.redrection.pro
 :: www.registrarads.com
+:: www.reliablefactchronicle.pro
 :: www.remote88.com
 :: www.renminben.com
 :: www.reportaliaa.pro
@@ -243893,7 +243924,6 @@
 :: www.smucdn.com
 :: www.smyfinancial.com
 :: www.softsmart.mobi
-:: www.solvireanox.pro
 :: www.somennew.com
 :: www.song001.com
 :: www.souid.com
@@ -243904,6 +243934,7 @@
 :: www.speedclics.ero-advertising.com
 :: www.speedlicks.ero-advertising.com
 :: www.speeuclicks.ero-advertising.com
+:: www.spomiedzymieszkan.pro
 :: www.sponsorads.de
 :: www.sportplus.pro
 :: www.srhuafeng.com
@@ -243923,7 +243954,6 @@
 :: www.straighttalknews.pro
 :: www.straussvip.pro
 :: www.strausszc.pro
-:: www.strausszt.pro
 :: www.streamgridmax.pro
 :: www.streamlinebriefing.pro
 :: www.streamlinebulletin.pro
@@ -244034,11 +244064,11 @@
 :: www.trendpulseora.pro
 :: www.trendstreamiq24.pro
 :: www.trourted.pro
-:: www.trueselfless.pro
 :: www.trueshelterju.pro
 :: www.ttcdn.cn
 :: www.ttnet.yandex.com.tr
 :: www.ttyyuuoo.com
+:: www.tucizyn.pro
 :: www.tui1999.com
 :: www.tuipenguin.com
 :: www.tuitiger.com
@@ -244047,8 +244077,6 @@
 :: www.tukexiu.com
 :: www.tunbraveli.pro
 :: www.turn.com
-:: www.tuv-wx.fit
-:: www.tuv-wx.work
 :: www.twilight-flash.com
 :: www.twilight-roads.com
 :: www.typo3.ero-advertising.com
@@ -244186,6 +244214,7 @@
 :: www.wykagyi.pro
 :: www.wywyseu.pro
 :: www.wzaigo.com
+:: www.xabivya.pro
 :: www.xadsmart.com
 :: www.xalberonax.pro
 :: www.xalorveta.pro
@@ -244710,6 +244739,7 @@
 :: xaaitpzcofwdm.site
 :: xabgltcxapxim.site
 :: xabgqnnjywsus.website
+:: xabivya.pro
 :: xabpahjkwqdcq.online
 :: xacdghbkbelxi.website
 :: xacthuc.autoads.asia
