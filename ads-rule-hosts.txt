@@ -1,8 +1,8 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 246175
-# Update time: 2026-06-05 12:22:49 UTC+8
+# Total lines: 246173
+# Update time: 2026-06-06 12:05:20 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
@@ -82088,7 +82088,6 @@
 0.0.0.0 rddiqs.partyhallen.se
 0.0.0.0 rddywd.com
 0.0.0.0 rdedkdhyuyghl.online
-0.0.0.0 rdelivery.qq.com
 0.0.0.0 rderstartirrelea.com
 0.0.0.0 rdeswa1.com
 0.0.0.0 rdfeesvsxhsyn.online
@@ -205155,7 +205154,6 @@
 :: rddiqs.partyhallen.se
 :: rddywd.com
 :: rdedkdhyuyghl.online
-:: rdelivery.qq.com
 :: rderstartirrelea.com
 :: rdeswa1.com
 :: rdfeesvsxhsyn.online
