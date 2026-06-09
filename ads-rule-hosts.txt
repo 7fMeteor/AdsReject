@@ -2,7 +2,7 @@
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
 # Total lines: 247195
-# Update time: 2026-06-08 12:46:42 UTC+8
+# Update time: 2026-06-09 12:08:44 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
