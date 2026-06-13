@@ -1,8 +1,8 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 242169
-# Update time: 2026-06-12 12:45:04 UTC+8
+# Total lines: 242167
+# Update time: 2026-06-13 12:23:50 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
@@ -34763,7 +34763,6 @@
 0.0.0.0 dlsdk.appsflyer.com
 0.0.0.0 dlsw.baidu.com
 0.0.0.0 dlsw.br.baidu.com
-0.0.0.0 dlswbr.baidu.com
 0.0.0.0 dlsybe78o0.com
 0.0.0.0 dltehknrgvnjpf.com
 0.0.0.0 dlthst9q2beh8.cloudfront.net
@@ -155827,7 +155826,6 @@
 :: dlsdk.appsflyer.com
 :: dlsw.baidu.com
 :: dlsw.br.baidu.com
-:: dlswbr.baidu.com
 :: dlsybe78o0.com
 :: dltehknrgvnjpf.com
 :: dlthst9q2beh8.cloudfront.net
