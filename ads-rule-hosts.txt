@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 243333
-# Update time: 2026-06-30 12:10:59 UTC+8
+# Total lines: 243339
+# Update time: 2026-07-01 12:27:15 UTC+8
 
 # [Custom IPv4 / Localhost]
+108.160.165.8 github.global.ssl.fastly.net
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.22 education.github.com
-140.82.113.17 github.community
-140.82.113.22 collector.github.com
-140.82.113.25 alive.github.com
-140.82.114.21 api.individual.githubcopilot.com
-140.82.114.21 central.github.com
+140.82.112.17 github.community
+140.82.112.21 collector.github.com
+140.82.112.22 api.individual.githubcopilot.com
+140.82.114.22 central.github.com
+140.82.114.22 education.github.com
+140.82.114.25 alive.github.com
 140.82.114.26 live.github.com
-159.24.3.173 gist.github.com
-16.182.34.193 github-cloud.s3.amazonaws.com
-185.199.108.133 avatars.githubusercontent.com
-185.199.108.133 avatars0.githubusercontent.com
-185.199.108.133 avatars1.githubusercontent.com
-185.199.108.133 avatars2.githubusercontent.com
-185.199.108.133 avatars3.githubusercontent.com
-185.199.108.133 avatars4.githubusercontent.com
-185.199.108.133 avatars5.githubusercontent.com
-185.199.108.133 camo.githubusercontent.com
-185.199.108.133 cloud.githubusercontent.com
-185.199.108.133 desktop.githubusercontent.com
-185.199.108.133 favicons.githubusercontent.com
-185.199.108.133 github.map.fastly.net
-185.199.108.133 media.githubusercontent.com
-185.199.108.133 objects.githubusercontent.com
-185.199.108.133 private-user-images.githubusercontent.com
-185.199.108.133 raw.githubusercontent.com
-185.199.108.133 user-images.githubusercontent.com
-185.199.111.153 github.io
-185.199.111.153 githubstatus.com
-185.199.111.215 github.githubassets.com
+16.182.68.9 github-cloud.s3.amazonaws.com
+16.182.74.241 github-production-release-asset-2e65be.s3.amazonaws.com
+185.199.108.153 github.io
+185.199.108.153 githubstatus.com
+185.199.108.215 github.githubassets.com
+185.199.111.133 avatars.githubusercontent.com
+185.199.111.133 avatars0.githubusercontent.com
+185.199.111.133 avatars1.githubusercontent.com
+185.199.111.133 avatars2.githubusercontent.com
+185.199.111.133 avatars3.githubusercontent.com
+185.199.111.133 avatars4.githubusercontent.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 camo.githubusercontent.com
+185.199.111.133 cloud.githubusercontent.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.111.133 github.map.fastly.net
+185.199.111.133 media.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
+185.199.111.133 private-user-images.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
+185.199.111.133 user-images.githubusercontent.com
 192.0.66.2 github.blog
-199.16.158.12 github.global.ssl.fastly.net
 20.205.243.165 codeload.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-52.216.24.28 github-production-user-asset-6210df.s3.amazonaws.com
-52.217.118.185 github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.217.69.124 github-com.s3.amazonaws.com
-54.231.196.137 github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.123.177 github-production-user-asset-6210df.s3.amazonaws.com
+52.217.165.81 github-production-repository-file-5c1aeb.s3.amazonaws.com
+54.231.136.225 github-com.s3.amazonaws.com
+78.16.49.15 gist.github.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -16740,6 +16740,7 @@
 0.0.0.0 api.growthpush.com
 0.0.0.0 api.gzxiongwa.cn
 0.0.0.0 api.h4game.net
+0.0.0.0 api.haybet.ws
 0.0.0.0 api.hb8887.com
 0.0.0.0 api.hdbet.com
 0.0.0.0 api.hdtv.letv.com
@@ -37863,6 +37864,7 @@
 0.0.0.0 echoobywatelskie.pro
 0.0.0.0 echoportalowe.pro
 0.0.0.0 echowieczorne.pro
+0.0.0.0 echozblokowych.pro
 0.0.0.0 echozpodmorza.pro
 0.0.0.0 echozskweru.pro
 0.0.0.0 ecidjfjtiyxmg.website
@@ -43826,6 +43828,7 @@
 0.0.0.0 fuckyoucash.com
 0.0.0.0 fuclctdrjcvhs.online
 0.0.0.0 fucouselfship.shop
+0.0.0.0 fudelua.pro
 0.0.0.0 fudezz.bolasport.com
 0.0.0.0 fudezz.grid.id
 0.0.0.0 fudezz.gridoto.com
@@ -59436,7 +59439,6 @@
 0.0.0.0 letv.m.cn.miaozhen.com
 0.0.0.0 letvdbrwhbnhrs.com
 0.0.0.0 leue.cn
-0.0.0.0 leukoalbif.pro
 0.0.0.0 level.18huhu.com
 0.0.0.0 level.badlandgame.com
 0.0.0.0 level.turboads.de
@@ -89005,6 +89007,7 @@
 0.0.0.0 serasoo.direct.quickconnect.to
 0.0.0.0 sereanstanza.com
 0.0.0.0 serendipityecho.com
+0.0.0.0 serendiptyless.pro
 0.0.0.0 serene-pace.pro
 0.0.0.0 serenecascade.com
 0.0.0.0 serenechapter.pro
@@ -100784,6 +100787,7 @@
 0.0.0.0 tech.softchoice.com
 0.0.0.0 techadv.actonservice.com
 0.0.0.0 techain.baidu.com
+0.0.0.0 techartadverts.com
 0.0.0.0 techconverter.com
 0.0.0.0 techgifts.tradeshow.globalsources.com
 0.0.0.0 techiteration.com
@@ -107780,7 +107784,6 @@
 0.0.0.0 unaccountablepie.com
 0.0.0.0 unactkiosk.com
 0.0.0.0 unagedsarcous.com
-0.0.0.0 unagladst.shop
 0.0.0.0 unakinloggin.com
 0.0.0.0 unalytics.top
 0.0.0.0 unanimousinflammableboxing.com
@@ -114346,7 +114349,6 @@
 0.0.0.0 worldlogger.com
 0.0.0.0 worldlypolice.pro
 0.0.0.0 worldlyvisit.pro
-0.0.0.0 worldmediaiqora.pro
 0.0.0.0 worldmtcs.nhk.jp
 0.0.0.0 worldnaturenet.xyz
 0.0.0.0 worldnetpr.actonservice.com
@@ -115679,6 +115681,7 @@
 0.0.0.0 www.echoobywatelskie.pro
 0.0.0.0 www.echoportalowe.pro
 0.0.0.0 www.echowieczorne.pro
+0.0.0.0 www.echozblokowych.pro
 0.0.0.0 www.echozpodmorza.pro
 0.0.0.0 www.echozskweru.pro
 0.0.0.0 www.eddong.com
@@ -115784,6 +115787,7 @@
 0.0.0.0 www.frontlinepulsewire.pro
 0.0.0.0 www.frontlinevanguardalert.pro
 0.0.0.0 www.fu68.com
+0.0.0.0 www.fudelua.pro
 0.0.0.0 www.funshion.net.cn
 0.0.0.0 www.fwqekk.top
 0.0.0.0 www.fxadviceformeandyou.com
@@ -116041,7 +116045,6 @@
 0.0.0.0 www.layers.ero-advertising.com
 0.0.0.0 www.ldlwdsx.com
 0.0.0.0 www.lessplay.com
-0.0.0.0 www.leukoalbif.pro
 0.0.0.0 www.lewymyt.pro
 0.0.0.0 www.liangao.com
 0.0.0.0 www.linezing.com
@@ -116425,6 +116428,7 @@
 0.0.0.0 www.security-update.ocry.com
 0.0.0.0 www.security-update.qhigh.com
 0.0.0.0 www.seerpiu002.com
+0.0.0.0 www.serendiptyless.pro
 0.0.0.0 www.servedby-buysellads.com
 0.0.0.0 www.sesquipedaeie.pro
 0.0.0.0 www.seure-update.fartit.com
@@ -116521,6 +116525,7 @@
 0.0.0.0 www.tcxshop.com
 0.0.0.0 www.tddmp.com
 0.0.0.0 www.techadvisorpro.name
+0.0.0.0 www.techartadverts.com
 0.0.0.0 www.teieqlpdr.mobi
 0.0.0.0 www.tejeadventur.fit
 0.0.0.0 www.tejeadventur.luxe
@@ -116639,7 +116644,6 @@
 0.0.0.0 www.umtrack2.com
 0.0.0.0 www.umv0.com
 0.0.0.0 www.umv5.com
-0.0.0.0 www.unagladst.shop
 0.0.0.0 www.unionsy.com
 0.0.0.0 www.universal-traffic.com
 0.0.0.0 www.update-information.zzux.com
@@ -116719,7 +116723,6 @@
 0.0.0.0 www.wks.ero-advertising.com
 0.0.0.0 www.womenbaby.com
 0.0.0.0 www.wooboo.com.cn
-0.0.0.0 www.worldmediaiqora.pro
 0.0.0.0 www.worldpulseiq.pro
 0.0.0.0 www.worldtrendingalert.pro
 0.0.0.0 www.worldwideupdates.pro
@@ -138386,6 +138389,7 @@
 :: api.growthpush.com
 :: api.gzxiongwa.cn
 :: api.h4game.net
+:: api.haybet.ws
 :: api.hb8887.com
 :: api.hdbet.com
 :: api.hdtv.letv.com
@@ -159509,6 +159513,7 @@
 :: echoobywatelskie.pro
 :: echoportalowe.pro
 :: echowieczorne.pro
+:: echozblokowych.pro
 :: echozpodmorza.pro
 :: echozskweru.pro
 :: ecidjfjtiyxmg.website
@@ -165472,6 +165477,7 @@
 :: fuckyoucash.com
 :: fuclctdrjcvhs.online
 :: fucouselfship.shop
+:: fudelua.pro
 :: fudezz.bolasport.com
 :: fudezz.grid.id
 :: fudezz.gridoto.com
@@ -181082,7 +181088,6 @@
 :: letv.m.cn.miaozhen.com
 :: letvdbrwhbnhrs.com
 :: leue.cn
-:: leukoalbif.pro
 :: level.18huhu.com
 :: level.badlandgame.com
 :: level.turboads.de
@@ -210651,6 +210656,7 @@
 :: serasoo.direct.quickconnect.to
 :: sereanstanza.com
 :: serendipityecho.com
+:: serendiptyless.pro
 :: serene-pace.pro
 :: serenecascade.com
 :: serenechapter.pro
@@ -222430,6 +222436,7 @@
 :: tech.softchoice.com
 :: techadv.actonservice.com
 :: techain.baidu.com
+:: techartadverts.com
 :: techconverter.com
 :: techgifts.tradeshow.globalsources.com
 :: techiteration.com
@@ -229426,7 +229433,6 @@
 :: unaccountablepie.com
 :: unactkiosk.com
 :: unagedsarcous.com
-:: unagladst.shop
 :: unakinloggin.com
 :: unalytics.top
 :: unanimousinflammableboxing.com
@@ -235992,7 +235998,6 @@
 :: worldlogger.com
 :: worldlypolice.pro
 :: worldlyvisit.pro
-:: worldmediaiqora.pro
 :: worldmtcs.nhk.jp
 :: worldnaturenet.xyz
 :: worldnetpr.actonservice.com
@@ -237325,6 +237330,7 @@
 :: www.echoobywatelskie.pro
 :: www.echoportalowe.pro
 :: www.echowieczorne.pro
+:: www.echozblokowych.pro
 :: www.echozpodmorza.pro
 :: www.echozskweru.pro
 :: www.eddong.com
@@ -237430,6 +237436,7 @@
 :: www.frontlinepulsewire.pro
 :: www.frontlinevanguardalert.pro
 :: www.fu68.com
+:: www.fudelua.pro
 :: www.funshion.net.cn
 :: www.fwqekk.top
 :: www.fxadviceformeandyou.com
@@ -237687,7 +237694,6 @@
 :: www.layers.ero-advertising.com
 :: www.ldlwdsx.com
 :: www.lessplay.com
-:: www.leukoalbif.pro
 :: www.lewymyt.pro
 :: www.liangao.com
 :: www.linezing.com
@@ -238071,6 +238077,7 @@
 :: www.security-update.ocry.com
 :: www.security-update.qhigh.com
 :: www.seerpiu002.com
+:: www.serendiptyless.pro
 :: www.servedby-buysellads.com
 :: www.sesquipedaeie.pro
 :: www.seure-update.fartit.com
@@ -238167,6 +238174,7 @@
 :: www.tcxshop.com
 :: www.tddmp.com
 :: www.techadvisorpro.name
+:: www.techartadverts.com
 :: www.teieqlpdr.mobi
 :: www.tejeadventur.fit
 :: www.tejeadventur.luxe
@@ -238285,7 +238293,6 @@
 :: www.umtrack2.com
 :: www.umv0.com
 :: www.umv5.com
-:: www.unagladst.shop
 :: www.unionsy.com
 :: www.universal-traffic.com
 :: www.update-information.zzux.com
@@ -238365,7 +238372,6 @@
 :: www.wks.ero-advertising.com
 :: www.womenbaby.com
 :: www.wooboo.com.cn
-:: www.worldmediaiqora.pro
 :: www.worldpulseiq.pro
 :: www.worldtrendingalert.pro
 :: www.worldwideupdates.pro
