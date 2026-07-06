@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 231775
-# Update time: 2026-07-05 12:04:14 UTC+8
+# Total lines: 231769
+# Update time: 2026-07-06 12:10:43 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.21 education.github.com
-140.82.112.25 alive.github.com
-140.82.113.18 github.community
+140.82.112.26 live.github.com
 140.82.113.21 api.individual.githubcopilot.com
-140.82.113.21 central.github.com
-140.82.113.21 collector.github.com
-140.82.114.26 live.github.com
+140.82.114.18 github.community
+140.82.114.22 central.github.com
+140.82.114.22 collector.github.com
+140.82.114.22 education.github.com
+140.82.114.26 alive.github.com
 159.24.3.173 gist.github.com
-16.15.244.207 github-production-release-asset-2e65be.s3.amazonaws.com
-174.36.228.136 github.global.ssl.fastly.net
-185.199.108.133 avatars.githubusercontent.com
-185.199.108.133 avatars0.githubusercontent.com
-185.199.108.133 avatars1.githubusercontent.com
-185.199.108.133 avatars2.githubusercontent.com
-185.199.108.133 avatars3.githubusercontent.com
-185.199.108.133 avatars4.githubusercontent.com
-185.199.108.133 avatars5.githubusercontent.com
-185.199.108.133 camo.githubusercontent.com
-185.199.108.133 cloud.githubusercontent.com
-185.199.108.133 desktop.githubusercontent.com
-185.199.108.133 favicons.githubusercontent.com
-185.199.108.133 github.map.fastly.net
-185.199.108.133 media.githubusercontent.com
-185.199.108.133 objects.githubusercontent.com
-185.199.108.133 private-user-images.githubusercontent.com
-185.199.108.133 raw.githubusercontent.com
-185.199.108.133 user-images.githubusercontent.com
-185.199.109.153 github.io
-185.199.109.153 githubstatus.com
-185.199.110.215 github.githubassets.com
+16.15.183.112 github-production-user-asset-6210df.s3.amazonaws.com
+168.143.162.42 github.global.ssl.fastly.net
+185.199.110.153 github.io
+185.199.110.153 githubstatus.com
+185.199.111.133 avatars.githubusercontent.com
+185.199.111.133 avatars0.githubusercontent.com
+185.199.111.133 avatars1.githubusercontent.com
+185.199.111.133 avatars2.githubusercontent.com
+185.199.111.133 avatars3.githubusercontent.com
+185.199.111.133 avatars4.githubusercontent.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 camo.githubusercontent.com
+185.199.111.133 cloud.githubusercontent.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.111.133 github.map.fastly.net
+185.199.111.133 media.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
+185.199.111.133 private-user-images.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
+185.199.111.133 user-images.githubusercontent.com
+185.199.111.215 github.githubassets.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-52.216.51.161 github-com.s3.amazonaws.com
-52.216.54.105 github-cloud.s3.amazonaws.com
-54.231.132.49 github-production-repository-file-5c1aeb.s3.amazonaws.com
-54.231.193.153 github-production-user-asset-6210df.s3.amazonaws.com
+52.216.35.49 github-cloud.s3.amazonaws.com
+52.217.133.73 github-com.s3.amazonaws.com
+52.217.236.121 github-production-release-asset-2e65be.s3.amazonaws.com
+54.231.133.73 github-production-repository-file-5c1aeb.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -2571,6 +2571,7 @@
 0.0.0.0 7u7jwonbf.com
 0.0.0.0 7ue931y0gn.com
 0.0.0.0 7usgqu07mk.com
+0.0.0.0 7v8ver7f.1xgame.pro
 0.0.0.0 7w7kditsz.com
 0.0.0.0 7x-star.info
 0.0.0.0 7x4.fr
@@ -16133,8 +16134,6 @@
 0.0.0.0 api-c.dutils.com
 0.0.0.0 api-client.okvipworldcup.com
 0.0.0.0 api-d.dutils.com
-0.0.0.0 api-data-1234-s3-region-amazonaws-user.creampieoverload.com
-0.0.0.0 api-data-1234-s3-region-amazonaws-user.dayspring-store.com
 0.0.0.0 api-data-1234-s3-region-amazonaws-user.fitness-digest.com
 0.0.0.0 api-deal.kechenggezi.com
 0.0.0.0 api-devs.dutils.com
@@ -16448,7 +16447,6 @@
 0.0.0.0 api.htp.hubcloud.com.cn
 0.0.0.0 api.huq.io
 0.0.0.0 api.huqindustries.co.uk
-0.0.0.0 api.hypremia.com
 0.0.0.0 api.hzsanjiaomao.com
 0.0.0.0 api.ibeat-analytics.com
 0.0.0.0 api.idio.co
@@ -21203,6 +21201,7 @@
 0.0.0.0 bingads.microsoft.com
 0.0.0.0 bingdianhuanyuan.cn
 0.0.0.0 binitshartake.shop
+0.0.0.0 binkowski.pro
 0.0.0.0 binlayer.com
 0.0.0.0 binlayer.de
 0.0.0.0 binocule21c.merriam-webster.com
@@ -25212,6 +25211,9 @@
 0.0.0.0 changedadroitharassment.com
 0.0.0.0 changelessbleach.com
 0.0.0.0 changelesschoir.com
+0.0.0.0 changenow.com-bloom-hub.pro
+0.0.0.0 changenow.com-direct-hub.pro
+0.0.0.0 changenow.com-free-pro.cyou
 0.0.0.0 changepowder.xyz
 0.0.0.0 changmaoxinjzo.com
 0.0.0.0 chanmiraicd1.duckdns.org
@@ -25239,6 +25241,7 @@
 0.0.0.0 characteristicattractcheeky.com
 0.0.0.0 characterlinguinisnarl.com
 0.0.0.0 chargecracker.com
+0.0.0.0 chargenow.com-eco-io.pro
 0.0.0.0 chargeplatform.com
 0.0.0.0 charger44.com
 0.0.0.0 charhometown.com
@@ -32736,6 +32739,7 @@
 0.0.0.0 dexterrobbins.cf
 0.0.0.0 dextersolutions.actonservice.com
 0.0.0.0 dextroquaff.com
+0.0.0.0 dexyfui.pro
 0.0.0.0 deycppnevpjax.online
 0.0.0.0 deymalaise.com
 0.0.0.0 dezcom.com
@@ -36169,6 +36173,7 @@
 0.0.0.0 e6c5f295b4.com
 0.0.0.0 e6ui8pc.com
 0.0.0.0 e701.net
+0.0.0.0 e703cad0-1b37-4cd4-b3d6.tapscalafilepro.net
 0.0.0.0 e75liqii98.com
 0.0.0.0 e765b97f5b.com
 0.0.0.0 e779dae19c.com
@@ -41573,7 +41578,6 @@
 0.0.0.0 fota4.adups.cn
 0.0.0.0 fotacontrol.adfuture.cn
 0.0.0.0 fotao9.com
-0.0.0.0 fotocadvow.cyou
 0.0.0.0 fotwupmfmlace.space
 0.0.0.0 fouanalytics.com
 0.0.0.0 fouettbrauna.com
@@ -42249,7 +42253,6 @@
 0.0.0.0 fuokxmhzdvolq.website
 0.0.0.0 fuoo1.top
 0.0.0.0 fuooms.aetrex.com
-0.0.0.0 fuotcd3b.futshart.pro
 0.0.0.0 fuozidrjmtitj.space
 0.0.0.0 fupbtabgzyprm.space
 0.0.0.0 fupqitrviyhbf.space
@@ -48195,6 +48198,7 @@
 0.0.0.0 hutojzbran.com
 0.0.0.0 hutteddyinfluenced.com
 0.0.0.0 huupdnpsprrqk.website
+0.0.0.0 huvateo.pro
 0.0.0.0 huvehsszwdzkp.space
 0.0.0.0 huwgjgf.icu
 0.0.0.0 huwtkpcqaygow.online
@@ -56659,6 +56663,7 @@
 0.0.0.0 leche69.com
 0.0.0.0 lecqetptejakq.website
 0.0.0.0 lectureolympics.com
+0.0.0.0 lecypoe.pro
 0.0.0.0 ledgeviewpartners.actonservice.com
 0.0.0.0 ledgyplane.shop
 0.0.0.0 ledhenone.com
@@ -58241,7 +58246,6 @@
 0.0.0.0 ljyipz.nugnes1920.com
 0.0.0.0 ljypfykcofguz.fun
 0.0.0.0 ljzxdu.largus.fr
-0.0.0.0 lk-ssgroup.pro
 0.0.0.0 lk.brand.sogou.com
 0.0.0.0 lk.parisfoodies.fr
 0.0.0.0 lk.vrstories.com
@@ -66102,7 +66106,6 @@
 0.0.0.0 mltdiyzprltqk.website
 0.0.0.0 mltrapzhhfoir.space
 0.0.0.0 mluszz.eyelashgarage.jp
-0.0.0.0 mlvgwjn.1xforward.pro
 0.0.0.0 mlweb.dmlab.hu
 0.0.0.0 mlxniwjfsxefz.site
 0.0.0.0 mlxttftvd.com
@@ -68555,7 +68558,6 @@
 0.0.0.0 newslikemeds.com
 0.0.0.0 newsmaxfeednetwork.com
 0.0.0.0 newsnet.in.ua
-0.0.0.0 newsorbitnova.pro
 0.0.0.0 newspage.xilu.com
 0.0.0.0 newspaperpolite.com
 0.0.0.0 newspaperprohibited.com
@@ -75243,13 +75245,11 @@
 0.0.0.0 podslychanezzakretuulicylodzkiej.pro
 0.0.0.0 podslychanezzatokanki.pro
 0.0.0.0 podslyszaneo.pro
-0.0.0.0 podslyszanesrodka.pro
 0.0.0.0 podslyszanezautobusu.pro
 0.0.0.0 podslyszanezlawkii.pro
 0.0.0.0 podslyszanezparapetu3.pro
 0.0.0.0 podslyszanezparapetuobokdrzwisciany.pro
 0.0.0.0 podslyszanezpoczekalnilekarskiej.pro
-0.0.0.0 podslyszanezpodworka2.pro
 0.0.0.0 podslyszaneztramwaju.pro
 0.0.0.0 podslyszanezzamykanychdrzwi.pro
 0.0.0.0 podsolnu9hi10.com
@@ -76837,7 +76837,6 @@
 0.0.0.0 pulsemgr.com
 0.0.0.0 pulseonclick.com
 0.0.0.0 pulsigame.com
-0.0.0.0 pulslokalu.pro
 0.0.0.0 pulsportalowy.pro
 0.0.0.0 pulyxlgvrlqco.space
 0.0.0.0 puma-api.iqiyi.com
@@ -77382,6 +77381,7 @@
 0.0.0.0 q2fwgl4q8.com
 0.0.0.0 q2i8kd5n.de
 0.0.0.0 q2tqrsh02.com
+0.0.0.0 q3g84ost.22beet.pro
 0.0.0.0 q3rlg1flo.com
 0.0.0.0 q4173l5op.com
 0.0.0.0 q4l5gz6lqog6.www.eventus.io
@@ -84590,6 +84590,7 @@
 0.0.0.0 selfreliant-impact.com
 0.0.0.0 selfreliantsurgery.pro
 0.0.0.0 selftour.walk.in
+0.0.0.0 sell-ukaldi.cadsualblouses.com
 0.0.0.0 sellbuyads.cn
 0.0.0.0 sellerapp.musely.com
 0.0.0.0 sellerbittydraught.com
@@ -85903,6 +85904,7 @@
 0.0.0.0 sireimplement.com
 0.0.0.0 sireundermineoperative.com
 0.0.0.0 sirius.iad-03.braze.com
+0.0.0.0 siroamolten.pro
 0.0.0.0 sirsplajp.com
 0.0.0.0 sis.jpush.io
 0.0.0.0 sis8.premieremoisson.com
@@ -94744,6 +94746,7 @@
 0.0.0.0 syyynjvgdbmtj.online
 0.0.0.0 syzbh66.xyz
 0.0.0.0 syzjxz2018.cn
+0.0.0.0 syzygyiao.pro
 0.0.0.0 sz2xlvu6jq.com
 0.0.0.0 sz88.oss-cn-shenzhen.aliyuncs.com
 0.0.0.0 szakms.bygghemma.se
@@ -96496,7 +96499,6 @@
 0.0.0.0 terraclicks.com
 0.0.0.0 terradatum.actonservice.com
 0.0.0.0 terrapush.com
-0.0.0.0 terraqspark.pro
 0.0.0.0 terrasdsdstd.com
 0.0.0.0 terratraf.com
 0.0.0.0 terren.cntv.cn
@@ -104351,7 +104353,6 @@
 0.0.0.0 uurzdr.global-style.jp
 0.0.0.0 uusee.adsame.com
 0.0.0.0 uusimaa.viessmann.fi
-0.0.0.0 uusqctu.eurojet.pro
 0.0.0.0 uuuwxykgcvcgp.website
 0.0.0.0 uuvuuxi7z.com
 0.0.0.0 uuwjrmvavkgrs.site
@@ -108019,6 +108020,7 @@
 0.0.0.0 weoccn.bonito.pl
 0.0.0.0 weogtmzqssifi.website
 0.0.0.0 weownthetraffic.com
+0.0.0.0 wep-open.wpdevcloud.com
 0.0.0.0 wep016.top
 0.0.0.0 wepany.tripbeat.com
 0.0.0.0 weptnastyturmoil.com
@@ -108398,7 +108400,6 @@
 0.0.0.0 widowtea.com
 0.0.0.0 widtkuztxqrxe.website
 0.0.0.0 wiescinadrannych.pro
-0.0.0.0 wiescipl24.pro
 0.0.0.0 wiesciredakcja.pro
 0.0.0.0 wiezhjlxc.com
 0.0.0.0 wifelovers.com
@@ -109923,11 +109924,8 @@
 0.0.0.0 www.anyangruisi.com
 0.0.0.0 www.aodongjiaosu.com
 0.0.0.0 www.aombjl099.com
-0.0.0.0 www.api-data-1234-s3-region-amazonaws-user.creampieoverload.com
-0.0.0.0 www.api-data-1234-s3-region-amazonaws-user.dayspring-store.com
 0.0.0.0 www.api-data-1234-s3-region-amazonaws-user.fitness-digest.com
 0.0.0.0 www.api.axiatraders.com
-0.0.0.0 www.api.hypremia.com
 0.0.0.0 www.api.taboola.com
 0.0.0.0 www.appadhoc.com
 0.0.0.0 www.appadhoc.net
@@ -110016,6 +110014,7 @@
 0.0.0.0 www.billionfocus.com
 0.0.0.0 www.bingads.microsoft.com
 0.0.0.0 www.bingdianhuanyuan.cn
+0.0.0.0 www.binkowski.pro
 0.0.0.0 www.bit-prolexi-pro.com
 0.0.0.0 www.bitcoinsmarter-pro.com
 0.0.0.0 www.bitcoinup-pro.com
@@ -110183,6 +110182,7 @@
 0.0.0.0 www.deta.ero-advertising.com
 0.0.0.0 www.detailedanalysis.pro
 0.0.0.0 www.dewcoreaj.pro
+0.0.0.0 www.dexyfui.pro
 0.0.0.0 www.dgfggy.com
 0.0.0.0 www.dia-traffic.com
 0.0.0.0 www.dianjoy.com
@@ -110335,7 +110335,6 @@
 0.0.0.0 www.forum.ero-advertising.com
 0.0.0.0 www.forums.data2.ero-advertising.com
 0.0.0.0 www.forums.ero-advertising.com
-0.0.0.0 www.fotocadvow.cyou
 0.0.0.0 www.fpa.ero-advertising.com
 0.0.0.0 www.freedrive.cn
 0.0.0.0 www.frontlinebulletin.pro
@@ -110453,6 +110452,7 @@
 0.0.0.0 www.huishenghuiying.com
 0.0.0.0 www.huishenghuiying.com.cn
 0.0.0.0 www.hunpingou.com
+0.0.0.0 www.huvateo.pro
 0.0.0.0 www.hvdbeutysale.pro
 0.0.0.0 www.hxcav77.com
 0.0.0.0 www.hyfyuan.com
@@ -110607,6 +110607,7 @@
 0.0.0.0 www.layers.ero-advertising.com
 0.0.0.0 www.lazajuy.pro
 0.0.0.0 www.ldlwdsx.com
+0.0.0.0 www.lecypoe.pro
 0.0.0.0 www.lessplay.com
 0.0.0.0 www.lewymyt.pro
 0.0.0.0 www.liangao.com
@@ -110616,7 +110617,6 @@
 0.0.0.0 www.linksjg.cn
 0.0.0.0 www.lisimya.pro
 0.0.0.0 www.liverollads.com
-0.0.0.0 www.lk-ssgroup.pro
 0.0.0.0 www.lm.cccab.club
 0.0.0.0 www.lnk0.com
 0.0.0.0 www.lnk8.cn
@@ -110720,7 +110720,6 @@
 0.0.0.0 www.newhold.pro
 0.0.0.0 www.newlookstories.pro
 0.0.0.0 www.newsfluxion.pro
-0.0.0.0 www.newsorbitnova.pro
 0.0.0.0 www.newsyoucanread24.com
 0.0.0.0 www.nextlnk9.com
 0.0.0.0 www.ngads.com
@@ -110862,13 +110861,11 @@
 0.0.0.0 www.podslychanezzakretuulicylodzkiej.pro
 0.0.0.0 www.podslychanezzatokanki.pro
 0.0.0.0 www.podslyszaneo.pro
-0.0.0.0 www.podslyszanesrodka.pro
 0.0.0.0 www.podslyszanezautobusu.pro
 0.0.0.0 www.podslyszanezlawkii.pro
 0.0.0.0 www.podslyszanezparapetu3.pro
 0.0.0.0 www.podslyszanezparapetuobokdrzwisciany.pro
 0.0.0.0 www.podslyszanezpoczekalnilekarskiej.pro
-0.0.0.0 www.podslyszanezpodworka2.pro
 0.0.0.0 www.podslyszaneztramwaju.pro
 0.0.0.0 www.podslyszanezzamykanychdrzwi.pro
 0.0.0.0 www.poijugh.top
@@ -110903,7 +110900,6 @@
 0.0.0.0 www.proadscdn.com
 0.0.0.0 www.properrayam.pro
 0.0.0.0 www.pulchritueoa.pro
-0.0.0.0 www.pulslokalu.pro
 0.0.0.0 www.pulsportalowy.pro
 0.0.0.0 www.purnyagole.pro
 0.0.0.0 www.pushcfg.com
@@ -110991,6 +110987,7 @@
 0.0.0.0 www.security-update.ocry.com
 0.0.0.0 www.security-update.qhigh.com
 0.0.0.0 www.seerpiu002.com
+0.0.0.0 www.sell-ukaldi.cadsualblouses.com
 0.0.0.0 www.serendiptyless.pro
 0.0.0.0 www.servedby-buysellads.com
 0.0.0.0 www.sesquipedaeie.pro
@@ -111011,6 +111008,7 @@
 0.0.0.0 www.shuzilm.com
 0.0.0.0 www.silverpeakdeskv.pro
 0.0.0.0 www.sin.ero-advertising.com
+0.0.0.0 www.siroamolten.pro
 0.0.0.0 www.slimads.vn
 0.0.0.0 www.sluchajpl.pro
 0.0.0.0 www.smartadserver.com
@@ -111070,6 +111068,7 @@
 0.0.0.0 www.sygnalzredakcji.pro
 0.0.0.0 www.syndication.exdynsrv.com
 0.0.0.0 www.sytcyf.com
+0.0.0.0 www.syzygyiao.pro
 0.0.0.0 www.szshouzhai.com
 0.0.0.0 www.szxc868.com
 0.0.0.0 www.szyr474.com
@@ -111108,7 +111107,6 @@
 0.0.0.0 www.tenddata.com.cn
 0.0.0.0 www.tenddata.net
 0.0.0.0 www.tengyuncloud.cn
-0.0.0.0 www.terraqspark.pro
 0.0.0.0 www.tex.ero-advertising.com
 0.0.0.0 www.text-link-ads.com
 0.0.0.0 www.textlinkads.com
@@ -111270,6 +111268,7 @@
 0.0.0.0 www.wejuxee.pro
 0.0.0.0 www.wemamsdkkwioweioadi.site
 0.0.0.0 www.wenxuemi6.com
+0.0.0.0 www.wep-open.wpdevcloud.com
 0.0.0.0 www.weriadokweosdko.site
 0.0.0.0 www.wesewsisdofisdkiad.site
 0.0.0.0 www.westfieldfocus.pro
@@ -111281,7 +111280,6 @@
 0.0.0.0 www.whshangsha.com
 0.0.0.0 www.whxhhjx.com
 0.0.0.0 www.wiescinadrannych.pro
-0.0.0.0 www.wiescipl24.pro
 0.0.0.0 www.wiesciredakcja.pro
 0.0.0.0 www.wifijia.net
 0.0.0.0 www.wiki.ero-advertising.com
@@ -111336,6 +111334,7 @@
 0.0.0.0 www.xn--adspace-kvg.ero-advertising.com
 0.0.0.0 www.xn--i6qs37am6iwyqffc.com
 0.0.0.0 www.xn--wcsy74a6d835f5lf.com
+0.0.0.0 www.xoqyceo.pro
 0.0.0.0 www.xpjylc9977.com
 0.0.0.0 www.xqwiremesh.com
 0.0.0.0 www.xrain.net
@@ -111400,7 +111399,6 @@
 0.0.0.0 www.zhidian3g.cn
 0.0.0.0 www.zhuangjizhuli.net
 0.0.0.0 www.zhzzx.com
-0.0.0.0 www.zicodey.pro
 0.0.0.0 www.zijuqie.pro
 0.0.0.0 www.zinoair.pro
 0.0.0.0 www.zjjgtz.com
@@ -111422,7 +111420,6 @@
 0.0.0.0 www.zsasiadkiejlawy.pro
 0.0.0.0 www.zshacker.com
 0.0.0.0 www.zszkolnegokorytarza.pro
-0.0.0.0 www.zszkolnejlawy.pro
 0.0.0.0 www.zszkolnejszatni.pro
 0.0.0.0 www.zuhigyf.pro
 0.0.0.0 www.zunduarex.pro
@@ -112581,6 +112578,7 @@
 0.0.0.0 xopf.lhy1.xyz
 0.0.0.0 xopldz.icu
 0.0.0.0 xoqsxdpx.xyz
+0.0.0.0 xoqyceo.pro
 0.0.0.0 xosnteewpgzmh.website
 0.0.0.0 xoszyclagweyv.online
 0.0.0.0 xoubuywanqskg.website
@@ -114960,6 +114958,7 @@
 0.0.0.0 zgcsyhtcwozaw.site
 0.0.0.0 zgdtldkyevtdw.space
 0.0.0.0 zgegvpswvuaec.site
+0.0.0.0 zgfnygu.prozhe.download
 0.0.0.0 zgfubuaenxdzl.site
 0.0.0.0 zgfxehtgbrymi.website
 0.0.0.0 zgfyftltnhkgs.website
@@ -115088,7 +115087,6 @@
 0.0.0.0 ziccxwyfkathr.website
 0.0.0.0 zicgoi.emmiegray.de
 0.0.0.0 zichenit.com
-0.0.0.0 zicodey.pro
 0.0.0.0 zicwghowpuhbj.website
 0.0.0.0 zidaunsoud.net
 0.0.0.0 ziddichqrttva.online
@@ -115619,7 +115617,6 @@
 0.0.0.0 zsz8xljo8y.top
 0.0.0.0 zszgjiejuw.mobi
 0.0.0.0 zszkolnegokorytarza.pro
-0.0.0.0 zszkolnejlawy.pro
 0.0.0.0 zszkolnejszatni.pro
 0.0.0.0 zszwcp.cn
 0.0.0.0 zt.adsage.com
@@ -118438,6 +118435,7 @@
 :: 7u7jwonbf.com
 :: 7ue931y0gn.com
 :: 7usgqu07mk.com
+:: 7v8ver7f.1xgame.pro
 :: 7w7kditsz.com
 :: 7x-star.info
 :: 7x4.fr
@@ -132000,8 +131998,6 @@
 :: api-c.dutils.com
 :: api-client.okvipworldcup.com
 :: api-d.dutils.com
-:: api-data-1234-s3-region-amazonaws-user.creampieoverload.com
-:: api-data-1234-s3-region-amazonaws-user.dayspring-store.com
 :: api-data-1234-s3-region-amazonaws-user.fitness-digest.com
 :: api-deal.kechenggezi.com
 :: api-devs.dutils.com
@@ -132315,7 +132311,6 @@
 :: api.htp.hubcloud.com.cn
 :: api.huq.io
 :: api.huqindustries.co.uk
-:: api.hypremia.com
 :: api.hzsanjiaomao.com
 :: api.ibeat-analytics.com
 :: api.idio.co
@@ -137070,6 +137065,7 @@
 :: bingads.microsoft.com
 :: bingdianhuanyuan.cn
 :: binitshartake.shop
+:: binkowski.pro
 :: binlayer.com
 :: binlayer.de
 :: binocule21c.merriam-webster.com
@@ -141079,6 +141075,9 @@
 :: changedadroitharassment.com
 :: changelessbleach.com
 :: changelesschoir.com
+:: changenow.com-bloom-hub.pro
+:: changenow.com-direct-hub.pro
+:: changenow.com-free-pro.cyou
 :: changepowder.xyz
 :: changmaoxinjzo.com
 :: chanmiraicd1.duckdns.org
@@ -141106,6 +141105,7 @@
 :: characteristicattractcheeky.com
 :: characterlinguinisnarl.com
 :: chargecracker.com
+:: chargenow.com-eco-io.pro
 :: chargeplatform.com
 :: charger44.com
 :: charhometown.com
@@ -148603,6 +148603,7 @@
 :: dexterrobbins.cf
 :: dextersolutions.actonservice.com
 :: dextroquaff.com
+:: dexyfui.pro
 :: deycppnevpjax.online
 :: deymalaise.com
 :: dezcom.com
@@ -152036,6 +152037,7 @@
 :: e6c5f295b4.com
 :: e6ui8pc.com
 :: e701.net
+:: e703cad0-1b37-4cd4-b3d6.tapscalafilepro.net
 :: e75liqii98.com
 :: e765b97f5b.com
 :: e779dae19c.com
@@ -157440,7 +157442,6 @@
 :: fota4.adups.cn
 :: fotacontrol.adfuture.cn
 :: fotao9.com
-:: fotocadvow.cyou
 :: fotwupmfmlace.space
 :: fouanalytics.com
 :: fouettbrauna.com
@@ -158116,7 +158117,6 @@
 :: fuokxmhzdvolq.website
 :: fuoo1.top
 :: fuooms.aetrex.com
-:: fuotcd3b.futshart.pro
 :: fuozidrjmtitj.space
 :: fupbtabgzyprm.space
 :: fupqitrviyhbf.space
@@ -164062,6 +164062,7 @@
 :: hutojzbran.com
 :: hutteddyinfluenced.com
 :: huupdnpsprrqk.website
+:: huvateo.pro
 :: huvehsszwdzkp.space
 :: huwgjgf.icu
 :: huwtkpcqaygow.online
@@ -172526,6 +172527,7 @@
 :: leche69.com
 :: lecqetptejakq.website
 :: lectureolympics.com
+:: lecypoe.pro
 :: ledgeviewpartners.actonservice.com
 :: ledgyplane.shop
 :: ledhenone.com
@@ -174108,7 +174110,6 @@
 :: ljyipz.nugnes1920.com
 :: ljypfykcofguz.fun
 :: ljzxdu.largus.fr
-:: lk-ssgroup.pro
 :: lk.brand.sogou.com
 :: lk.parisfoodies.fr
 :: lk.vrstories.com
@@ -181969,7 +181970,6 @@
 :: mltdiyzprltqk.website
 :: mltrapzhhfoir.space
 :: mluszz.eyelashgarage.jp
-:: mlvgwjn.1xforward.pro
 :: mlweb.dmlab.hu
 :: mlxniwjfsxefz.site
 :: mlxttftvd.com
@@ -184422,7 +184422,6 @@
 :: newslikemeds.com
 :: newsmaxfeednetwork.com
 :: newsnet.in.ua
-:: newsorbitnova.pro
 :: newspage.xilu.com
 :: newspaperpolite.com
 :: newspaperprohibited.com
@@ -191110,13 +191109,11 @@
 :: podslychanezzakretuulicylodzkiej.pro
 :: podslychanezzatokanki.pro
 :: podslyszaneo.pro
-:: podslyszanesrodka.pro
 :: podslyszanezautobusu.pro
 :: podslyszanezlawkii.pro
 :: podslyszanezparapetu3.pro
 :: podslyszanezparapetuobokdrzwisciany.pro
 :: podslyszanezpoczekalnilekarskiej.pro
-:: podslyszanezpodworka2.pro
 :: podslyszaneztramwaju.pro
 :: podslyszanezzamykanychdrzwi.pro
 :: podsolnu9hi10.com
@@ -192704,7 +192701,6 @@
 :: pulsemgr.com
 :: pulseonclick.com
 :: pulsigame.com
-:: pulslokalu.pro
 :: pulsportalowy.pro
 :: pulyxlgvrlqco.space
 :: puma-api.iqiyi.com
@@ -193249,6 +193245,7 @@
 :: q2fwgl4q8.com
 :: q2i8kd5n.de
 :: q2tqrsh02.com
+:: q3g84ost.22beet.pro
 :: q3rlg1flo.com
 :: q4173l5op.com
 :: q4l5gz6lqog6.www.eventus.io
@@ -200457,6 +200454,7 @@
 :: selfreliant-impact.com
 :: selfreliantsurgery.pro
 :: selftour.walk.in
+:: sell-ukaldi.cadsualblouses.com
 :: sellbuyads.cn
 :: sellerapp.musely.com
 :: sellerbittydraught.com
@@ -201770,6 +201768,7 @@
 :: sireimplement.com
 :: sireundermineoperative.com
 :: sirius.iad-03.braze.com
+:: siroamolten.pro
 :: sirsplajp.com
 :: sis.jpush.io
 :: sis8.premieremoisson.com
@@ -210611,6 +210610,7 @@
 :: syyynjvgdbmtj.online
 :: syzbh66.xyz
 :: syzjxz2018.cn
+:: syzygyiao.pro
 :: sz2xlvu6jq.com
 :: sz88.oss-cn-shenzhen.aliyuncs.com
 :: szakms.bygghemma.se
@@ -212363,7 +212363,6 @@
 :: terraclicks.com
 :: terradatum.actonservice.com
 :: terrapush.com
-:: terraqspark.pro
 :: terrasdsdstd.com
 :: terratraf.com
 :: terren.cntv.cn
@@ -220218,7 +220217,6 @@
 :: uurzdr.global-style.jp
 :: uusee.adsame.com
 :: uusimaa.viessmann.fi
-:: uusqctu.eurojet.pro
 :: uuuwxykgcvcgp.website
 :: uuvuuxi7z.com
 :: uuwjrmvavkgrs.site
@@ -223886,6 +223884,7 @@
 :: weoccn.bonito.pl
 :: weogtmzqssifi.website
 :: weownthetraffic.com
+:: wep-open.wpdevcloud.com
 :: wep016.top
 :: wepany.tripbeat.com
 :: weptnastyturmoil.com
@@ -224265,7 +224264,6 @@
 :: widowtea.com
 :: widtkuztxqrxe.website
 :: wiescinadrannych.pro
-:: wiescipl24.pro
 :: wiesciredakcja.pro
 :: wiezhjlxc.com
 :: wifelovers.com
@@ -225790,11 +225788,8 @@
 :: www.anyangruisi.com
 :: www.aodongjiaosu.com
 :: www.aombjl099.com
-:: www.api-data-1234-s3-region-amazonaws-user.creampieoverload.com
-:: www.api-data-1234-s3-region-amazonaws-user.dayspring-store.com
 :: www.api-data-1234-s3-region-amazonaws-user.fitness-digest.com
 :: www.api.axiatraders.com
-:: www.api.hypremia.com
 :: www.api.taboola.com
 :: www.appadhoc.com
 :: www.appadhoc.net
@@ -225883,6 +225878,7 @@
 :: www.billionfocus.com
 :: www.bingads.microsoft.com
 :: www.bingdianhuanyuan.cn
+:: www.binkowski.pro
 :: www.bit-prolexi-pro.com
 :: www.bitcoinsmarter-pro.com
 :: www.bitcoinup-pro.com
@@ -226050,6 +226046,7 @@
 :: www.deta.ero-advertising.com
 :: www.detailedanalysis.pro
 :: www.dewcoreaj.pro
+:: www.dexyfui.pro
 :: www.dgfggy.com
 :: www.dia-traffic.com
 :: www.dianjoy.com
@@ -226202,7 +226199,6 @@
 :: www.forum.ero-advertising.com
 :: www.forums.data2.ero-advertising.com
 :: www.forums.ero-advertising.com
-:: www.fotocadvow.cyou
 :: www.fpa.ero-advertising.com
 :: www.freedrive.cn
 :: www.frontlinebulletin.pro
@@ -226320,6 +226316,7 @@
 :: www.huishenghuiying.com
 :: www.huishenghuiying.com.cn
 :: www.hunpingou.com
+:: www.huvateo.pro
 :: www.hvdbeutysale.pro
 :: www.hxcav77.com
 :: www.hyfyuan.com
@@ -226474,6 +226471,7 @@
 :: www.layers.ero-advertising.com
 :: www.lazajuy.pro
 :: www.ldlwdsx.com
+:: www.lecypoe.pro
 :: www.lessplay.com
 :: www.lewymyt.pro
 :: www.liangao.com
@@ -226483,7 +226481,6 @@
 :: www.linksjg.cn
 :: www.lisimya.pro
 :: www.liverollads.com
-:: www.lk-ssgroup.pro
 :: www.lm.cccab.club
 :: www.lnk0.com
 :: www.lnk8.cn
@@ -226587,7 +226584,6 @@
 :: www.newhold.pro
 :: www.newlookstories.pro
 :: www.newsfluxion.pro
-:: www.newsorbitnova.pro
 :: www.newsyoucanread24.com
 :: www.nextlnk9.com
 :: www.ngads.com
@@ -226729,13 +226725,11 @@
 :: www.podslychanezzakretuulicylodzkiej.pro
 :: www.podslychanezzatokanki.pro
 :: www.podslyszaneo.pro
-:: www.podslyszanesrodka.pro
 :: www.podslyszanezautobusu.pro
 :: www.podslyszanezlawkii.pro
 :: www.podslyszanezparapetu3.pro
 :: www.podslyszanezparapetuobokdrzwisciany.pro
 :: www.podslyszanezpoczekalnilekarskiej.pro
-:: www.podslyszanezpodworka2.pro
 :: www.podslyszaneztramwaju.pro
 :: www.podslyszanezzamykanychdrzwi.pro
 :: www.poijugh.top
@@ -226770,7 +226764,6 @@
 :: www.proadscdn.com
 :: www.properrayam.pro
 :: www.pulchritueoa.pro
-:: www.pulslokalu.pro
 :: www.pulsportalowy.pro
 :: www.purnyagole.pro
 :: www.pushcfg.com
@@ -226858,6 +226851,7 @@
 :: www.security-update.ocry.com
 :: www.security-update.qhigh.com
 :: www.seerpiu002.com
+:: www.sell-ukaldi.cadsualblouses.com
 :: www.serendiptyless.pro
 :: www.servedby-buysellads.com
 :: www.sesquipedaeie.pro
@@ -226878,6 +226872,7 @@
 :: www.shuzilm.com
 :: www.silverpeakdeskv.pro
 :: www.sin.ero-advertising.com
+:: www.siroamolten.pro
 :: www.slimads.vn
 :: www.sluchajpl.pro
 :: www.smartadserver.com
@@ -226937,6 +226932,7 @@
 :: www.sygnalzredakcji.pro
 :: www.syndication.exdynsrv.com
 :: www.sytcyf.com
+:: www.syzygyiao.pro
 :: www.szshouzhai.com
 :: www.szxc868.com
 :: www.szyr474.com
@@ -226975,7 +226971,6 @@
 :: www.tenddata.com.cn
 :: www.tenddata.net
 :: www.tengyuncloud.cn
-:: www.terraqspark.pro
 :: www.tex.ero-advertising.com
 :: www.text-link-ads.com
 :: www.textlinkads.com
@@ -227137,6 +227132,7 @@
 :: www.wejuxee.pro
 :: www.wemamsdkkwioweioadi.site
 :: www.wenxuemi6.com
+:: www.wep-open.wpdevcloud.com
 :: www.weriadokweosdko.site
 :: www.wesewsisdofisdkiad.site
 :: www.westfieldfocus.pro
@@ -227148,7 +227144,6 @@
 :: www.whshangsha.com
 :: www.whxhhjx.com
 :: www.wiescinadrannych.pro
-:: www.wiescipl24.pro
 :: www.wiesciredakcja.pro
 :: www.wifijia.net
 :: www.wiki.ero-advertising.com
@@ -227203,6 +227198,7 @@
 :: www.xn--adspace-kvg.ero-advertising.com
 :: www.xn--i6qs37am6iwyqffc.com
 :: www.xn--wcsy74a6d835f5lf.com
+:: www.xoqyceo.pro
 :: www.xpjylc9977.com
 :: www.xqwiremesh.com
 :: www.xrain.net
@@ -227267,7 +227263,6 @@
 :: www.zhidian3g.cn
 :: www.zhuangjizhuli.net
 :: www.zhzzx.com
-:: www.zicodey.pro
 :: www.zijuqie.pro
 :: www.zinoair.pro
 :: www.zjjgtz.com
@@ -227289,7 +227284,6 @@
 :: www.zsasiadkiejlawy.pro
 :: www.zshacker.com
 :: www.zszkolnegokorytarza.pro
-:: www.zszkolnejlawy.pro
 :: www.zszkolnejszatni.pro
 :: www.zuhigyf.pro
 :: www.zunduarex.pro
@@ -228448,6 +228442,7 @@
 :: xopf.lhy1.xyz
 :: xopldz.icu
 :: xoqsxdpx.xyz
+:: xoqyceo.pro
 :: xosnteewpgzmh.website
 :: xoszyclagweyv.online
 :: xoubuywanqskg.website
@@ -230827,6 +230822,7 @@
 :: zgcsyhtcwozaw.site
 :: zgdtldkyevtdw.space
 :: zgegvpswvuaec.site
+:: zgfnygu.prozhe.download
 :: zgfubuaenxdzl.site
 :: zgfxehtgbrymi.website
 :: zgfyftltnhkgs.website
@@ -230955,7 +230951,6 @@
 :: ziccxwyfkathr.website
 :: zicgoi.emmiegray.de
 :: zichenit.com
-:: zicodey.pro
 :: zicwghowpuhbj.website
 :: zidaunsoud.net
 :: ziddichqrttva.online
@@ -231486,7 +231481,6 @@
 :: zsz8xljo8y.top
 :: zszgjiejuw.mobi
 :: zszkolnegokorytarza.pro
-:: zszkolnejlawy.pro
 :: zszkolnejszatni.pro
 :: zszwcp.cn
 :: zt.adsage.com
