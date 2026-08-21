@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 237241
-# Update time: 2026-08-20 09:38:35 UTC+8
+# Total lines: 236665
+# Update time: 2026-08-21 09:43:41 UTC+8
 
 # [Custom IPv4 / Localhost]
-104.23.125.189 github.global.ssl.fastly.net
+108.160.169.171 github.global.ssl.fastly.net
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.25 alive.github.com
-140.82.112.25 live.github.com
+140.82.112.18 github.community
 140.82.113.21 api.individual.githubcopilot.com
-140.82.113.21 central.github.com
-140.82.113.21 collector.github.com
-140.82.113.21 education.github.com
-140.82.114.18 github.community
-16.15.183.241 github-cloud.s3.amazonaws.com
-16.15.237.197 github-production-user-asset-6210df.s3.amazonaws.com
-185.199.108.215 github.githubassets.com
-185.199.110.153 github.io
-185.199.110.153 githubstatus.com
-185.199.111.133 avatars.githubusercontent.com
-185.199.111.133 avatars0.githubusercontent.com
-185.199.111.133 avatars1.githubusercontent.com
-185.199.111.133 avatars2.githubusercontent.com
-185.199.111.133 avatars3.githubusercontent.com
-185.199.111.133 avatars4.githubusercontent.com
-185.199.111.133 avatars5.githubusercontent.com
-185.199.111.133 camo.githubusercontent.com
-185.199.111.133 cloud.githubusercontent.com
-185.199.111.133 desktop.githubusercontent.com
-185.199.111.133 favicons.githubusercontent.com
-185.199.111.133 github.map.fastly.net
-185.199.111.133 media.githubusercontent.com
-185.199.111.133 objects.githubusercontent.com
-185.199.111.133 private-user-images.githubusercontent.com
-185.199.111.133 raw.githubusercontent.com
-185.199.111.133 user-images.githubusercontent.com
+140.82.113.22 central.github.com
+140.82.113.22 education.github.com
+140.82.113.26 alive.github.com
+140.82.113.26 live.github.com
+140.82.114.22 collector.github.com
+185.199.108.153 github.io
+185.199.108.153 githubstatus.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
+185.199.109.133 avatars1.githubusercontent.com
+185.199.109.133 avatars2.githubusercontent.com
+185.199.109.133 avatars3.githubusercontent.com
+185.199.109.133 avatars4.githubusercontent.com
+185.199.109.133 avatars5.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
+185.199.109.133 cloud.githubusercontent.com
+185.199.109.133 desktop.githubusercontent.com
+185.199.109.133 favicons.githubusercontent.com
+185.199.109.133 github.map.fastly.net
+185.199.109.133 media.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.109.133 private-user-images.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
+185.199.109.215 github.githubassets.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
-20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-52.216.40.129 github-production-release-asset-2e65be.s3.amazonaws.com
-54.231.138.57 github-production-repository-file-5c1aeb.s3.amazonaws.com
-54.231.230.201 github-com.s3.amazonaws.com
+203.98.7.65 gist.github.com
+52.216.10.131 github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.216.33.153 github-cloud.s3.amazonaws.com
+52.216.37.169 github-production-user-asset-6210df.s3.amazonaws.com
+52.216.9.51 github-com.s3.amazonaws.com
+54.231.137.57 github-production-release-asset-2e65be.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -14238,7 +14238,6 @@
 0.0.0.0 aiojgikjbhzqe.website
 0.0.0.0 aip.actonservice.com
 0.0.0.0 aipmedia.com
-0.0.0.0 aiprofit-trade.pro
 0.0.0.0 aipu.mobi
 0.0.0.0 aiqidwcfrm.com
 0.0.0.0 aiqua-sdk.c.appier.net
@@ -14457,7 +14456,6 @@
 0.0.0.0 albanychicago.advancedtech.com
 0.0.0.0 albbwlhyjotcs.website
 0.0.0.0 albioncredmere-pro.com
-0.0.0.0 albioncredmere-pro.sbs
 0.0.0.0 albonsa.com
 0.0.0.0 alcatza.com
 0.0.0.0 alchemymatchesconnections.com
@@ -15908,7 +15906,6 @@
 0.0.0.0 andallthemise.org
 0.0.0.0 andbeyond.media
 0.0.0.0 andersenit.dk
-0.0.0.0 andexioai.pro
 0.0.0.0 andfauna.net
 0.0.0.0 andlache.com
 0.0.0.0 andmejs.com
@@ -16048,7 +16045,6 @@
 0.0.0.0 ans.mlb.com
 0.0.0.0 ans.worldbaseballclassic.com
 0.0.0.0 ans.yesnetwork.com
-0.0.0.0 ansimtradix.pro
 0.0.0.0 ansnxnkxsagnp.website
 0.0.0.0 ansuksar.com
 0.0.0.0 answerbook.com
@@ -16265,7 +16261,6 @@
 0.0.0.0 apexstats.com
 0.0.0.0 apextag.com
 0.0.0.0 apextwo.com
-0.0.0.0 apexwealthai.pro
 0.0.0.0 apfbrk.butorline.hu
 0.0.0.0 apfjzhkkbguoc.site
 0.0.0.0 apfqoakmqrpqv.site
@@ -18336,7 +18331,6 @@
 0.0.0.0 arena-quantum.co.uk
 0.0.0.0 arenaetango.shop
 0.0.0.0 areyouready.co.za
-0.0.0.0 argento-app.pro
 0.0.0.0 arglesmtn.com
 0.0.0.0 arglingpistole.com
 0.0.0.0 argos.citruserve.com
@@ -18550,7 +18544,6 @@
 0.0.0.0 ascentcrm.actonservice.com
 0.0.0.0 ascentlitigateunsaved.com
 0.0.0.0 ascertainowlbookkeeper.com
-0.0.0.0 ascesafundoria.pro
 0.0.0.0 ascmart.abphotos.link
 0.0.0.0 ascncuacdwh.in
 0.0.0.0 ascpqnj-oam.global.ssl.fastly.net
@@ -18700,7 +18693,6 @@
 0.0.0.0 assassinationapprenticeedible.com
 0.0.0.0 asscfpprqsurr.online
 0.0.0.0 assealsulfion.com
-0.0.0.0 asseevolaraai.pro
 0.0.0.0 assembleservers.com
 0.0.0.0 assemblyexchange.com
 0.0.0.0 assertedclosureseaman.com
@@ -18790,7 +18782,6 @@
 0.0.0.0 astonishlandmassnervy.com
 0.0.0.0 astonishmentfriedcount.com
 0.0.0.0 astonishmentfuneral.com
-0.0.0.0 astraaicapital.pro
 0.0.0.0 astragainlux.pro
 0.0.0.0 astral.nicovideo.jp
 0.0.0.0 astralhustle.com
@@ -19038,7 +19029,6 @@
 0.0.0.0 au.youmi.net
 0.0.0.0 au737.com
 0.0.0.0 auajhmhuyzfel.online
-0.0.0.0 auberevo.pro
 0.0.0.0 aubhgnoealbnx.space
 0.0.0.0 auburn9819.com
 0.0.0.0 auchoahy.net
@@ -19196,7 +19186,6 @@
 0.0.0.0 automaticturkey.com
 0.0.0.0 automation.pemco.com
 0.0.0.0 automationtest.pemco.com
-0.0.0.0 automindgr.pro
 0.0.0.0 automizely-analytics.com
 0.0.0.0 automobile-bk.de
 0.0.0.0 automobiledeem.com
@@ -19693,7 +19682,6 @@
 0.0.0.0 azgftoymwpszx.online
 0.0.0.0 azgvupab.in
 0.0.0.0 azhobfzcwtxvj.website
-0.0.0.0 azimcorevex.pro
 0.0.0.0 azjmp.com
 0.0.0.0 azklmoinajgb.com
 0.0.0.0 azknucfjdcecq.online
@@ -20378,7 +20366,6 @@
 0.0.0.0 bas.boshi.tv
 0.0.0.0 base.api.my7v.com
 0.0.0.0 baseboosters.com
-0.0.0.0 baseinvexus.pro
 0.0.0.0 baselinetoisolated.net
 0.0.0.0 basementyachtendorsement.com
 0.0.0.0 baseniao.com.cn
@@ -20408,7 +20395,6 @@
 0.0.0.0 bastardnonethelessuseless.com
 0.0.0.0 bastingart.com
 0.0.0.0 bastion1.top
-0.0.0.0 bastioncapridge.pro
 0.0.0.0 bastionwealthadvisors.pro
 0.0.0.0 bastitemomme.shop
 0.0.0.0 basuey.toyscenter.it
@@ -20454,7 +20440,6 @@
 0.0.0.0 baxt.mobi
 0.0.0.0 bay.xiawu.com
 0.0.0.0 bayancapital.pro
-0.0.0.0 bayassetholm.pro
 0.0.0.0 baycjars.com
 0.0.0.0 baycode.cn
 0.0.0.0 bayh.cdhenfan.com
@@ -21590,11 +21575,9 @@
 0.0.0.0 bison.actonservice.com
 0.0.0.0 bistoury55.com
 0.0.0.0 bit-ad.com
-0.0.0.0 bit-pro-reoproapp.com
 0.0.0.0 bit.beformance.com
 0.0.0.0 bitadx.one
 0.0.0.0 bitbeat7.com
-0.0.0.0 bitbenel.pro
 0.0.0.0 bitcast-a.v1.iad1.bitgravity.com
 0.0.0.0 bitclub.network
 0.0.0.0 bitclubnetwork.com
@@ -21607,9 +21590,7 @@
 0.0.0.0 bitcoin-pocket.de
 0.0.0.0 bitcoin-pocket.eu
 0.0.0.0 bitcoin-union.org
-0.0.0.0 bitcoineverest.pro
 0.0.0.0 bitcoingoldmineplatform.pro
-0.0.0.0 bitcoinquantumai.pro
 0.0.0.0 bitcoinup-pro.com
 0.0.0.0 bite.theta.sogoucdn.com
 0.0.0.0 biteanxiously.com
@@ -21918,7 +21899,6 @@
 0.0.0.0 blistest.xyz
 0.0.0.0 blitz-analytics-batch-server.blitz.gg
 0.0.0.0 blitzcampaigns.com
-0.0.0.0 blizonprecisie.pro
 0.0.0.0 blizzdata.site
 0.0.0.0 bllqbpgjkzqu.com
 0.0.0.0 blmjbp.casamundo.pl
@@ -22029,7 +22009,6 @@
 0.0.0.0 blueoyster.click
 0.0.0.0 blueparrot.media
 0.0.0.0 bluepontoons.com
-0.0.0.0 bluequbitai.pro
 0.0.0.0 blueridgeloop.com
 0.0.0.0 blueskyforest.com
 0.0.0.0 bluetoad.com
@@ -22396,12 +22375,10 @@
 0.0.0.0 boostbehavior.com
 0.0.0.0 boostcdn.net
 0.0.0.0 boostclic.com
-0.0.0.0 boostcormax.pro
 0.0.0.0 boostcpm.su
 0.0.0.0 booster-vax.com
 0.0.0.0 booster.osnova.io
 0.0.0.0 booster3d.com
-0.0.0.0 boostkapidex.pro
 0.0.0.0 boostlo.xyz
 0.0.0.0 boostog.net
 0.0.0.0 bootcdn.cn
@@ -22420,7 +22397,6 @@
 0.0.0.0 bopmkf.lolahome.es
 0.0.0.0 boqufs.2nn.jp
 0.0.0.0 boraerzutd.com
-0.0.0.0 borborygmuoa.pro
 0.0.0.0 bordeaux.futurecdn.net
 0.0.0.0 bordermotivation.com
 0.0.0.0 boreaddingobserve.com
@@ -22442,7 +22418,6 @@
 0.0.0.0 borrowedtransition.com
 0.0.0.0 borrowhourglass.com
 0.0.0.0 borsendental.com
-0.0.0.0 borsixgpt.pro
 0.0.0.0 borvens.com
 0.0.0.0 borzjournal.ru
 0.0.0.0 borzoishyp.com
@@ -22661,7 +22636,6 @@
 0.0.0.0 braised58.top
 0.0.0.0 brakiefissive.com
 0.0.0.0 bramerirent.eccocar.com
-0.0.0.0 bramridgetrust.pro
 0.0.0.0 bran.sightdots.com
 0.0.0.0 branch-4567w2a56q-test.salesfloor.net
 0.0.0.0 branch-4567w2a56q.salesfloor.net
@@ -22802,7 +22776,6 @@
 0.0.0.0 brandybison.com
 0.0.0.0 brascomarketing.actonservice.com
 0.0.0.0 brashgrandchild.com
-0.0.0.0 brasilrendagpt.pro
 0.0.0.0 brassstacker.com
 0.0.0.0 brat-online.ro
 0.0.0.0 brationalfilarded.com
@@ -22813,7 +22786,6 @@
 0.0.0.0 braverybreezebinding.com
 0.0.0.0 braverycavalryoats.com
 0.0.0.0 braveryriftraining.com
-0.0.0.0 bravexilini.pro
 0.0.0.0 bravo.israelweather.co.il
 0.0.0.0 bravotrk.com
 0.0.0.0 brawexstill.shop
@@ -22864,7 +22836,6 @@
 0.0.0.0 breezygrove.com
 0.0.0.0 breixmdldvvfa.website
 0.0.0.0 brekutiosai.pro
-0.0.0.0 brekutiossoftware.pro
 0.0.0.0 brespark.eccocar.com
 0.0.0.0 brevitychestprocess.com
 0.0.0.0 brevnet.eccocar.com
@@ -22904,7 +22875,6 @@
 0.0.0.0 brieflynimbleignition.com
 0.0.0.0 brieftrouble.com
 0.0.0.0 brigadedelegatesandbox.com
-0.0.0.0 brightcapitgate.pro
 0.0.0.0 brightcloudridge.com
 0.0.0.0 brightcoremind.com
 0.0.0.0 brightdata.com
@@ -22918,7 +22888,6 @@
 0.0.0.0 brightline.tv
 0.0.0.0 brightlygauntlet.com
 0.0.0.0 brightonclick.com
-0.0.0.0 brightpayplus.pro
 0.0.0.0 brightruin.pro
 0.0.0.0 brightshare.com
 0.0.0.0 brightskyridge.com
@@ -22938,7 +22907,6 @@
 0.0.0.0 brilliantoverhaulunshaken.com
 0.0.0.0 brilliantpiece.com
 0.0.0.0 brilllantsdates.net
-0.0.0.0 brimax-edge.pro
 0.0.0.0 bringg.actonservice.com
 0.0.0.0 bringmethehats.com
 0.0.0.0 brinkmarko.com
@@ -22947,7 +22915,6 @@
 0.0.0.0 brioletredeyes.com
 0.0.0.0 brionyamanist.com
 0.0.0.0 brioscoot.eccocar.com
-0.0.0.0 briovexaria.pro
 0.0.0.0 brirriek.com
 0.0.0.0 brisk-cold.pro
 0.0.0.0 brisk22001.net
@@ -23215,20 +23182,15 @@
 0.0.0.0 btagmedia.com
 0.0.0.0 btbeacdhrdt.com
 0.0.0.0 btbuckets.com
-0.0.0.0 btc-adverant-224-ai.com
-0.0.0.0 btc-adverant-ai.com
 0.0.0.0 btc-adverant-ai.live
 0.0.0.0 btc-adverant224-ai.live
 0.0.0.0 btc-belant17.pro
 0.0.0.0 btc-glamit-365.live
-0.0.0.0 btc-vindici11.pro
 0.0.0.0 btcadverant.digital
 0.0.0.0 btcadverantv10.de
 0.0.0.0 btcapnstad.pro
 0.0.0.0 btcblunex.pro
 0.0.0.0 btcfbr.mejshop.jp
-0.0.0.0 btcgenix9.pro
-0.0.0.0 btcmentralixv7.pro
 0.0.0.0 btcnexivolt-760.pro
 0.0.0.0 btcsolgreen-ai.pro
 0.0.0.0 btctraderai.pro
@@ -24234,7 +24196,6 @@
 0.0.0.0 cai75tp.com
 0.0.0.0 caihongxuan.com
 0.0.0.0 caing.adsame.com
-0.0.0.0 cairnphundholm.pro
 0.0.0.0 caitlinagathami.com
 0.0.0.0 caixin.adsame.com
 0.0.0.0 caixinimg.adsame.com
@@ -24435,8 +24396,6 @@
 0.0.0.0 canellecrazy.com
 0.0.0.0 canem-auris.com
 0.0.0.0 canesfederalnewspapers.com
-0.0.0.0 canfi.pro
-0.0.0.0 canfirst-pro.com
 0.0.0.0 canganzimbi.com
 0.0.0.0 cangshu.info
 0.0.0.0 canionscowshut.shop
@@ -24476,7 +24435,6 @@
 0.0.0.0 capeplayer.com
 0.0.0.0 caperedlevi.com
 0.0.0.0 capi.connatix.com
-0.0.0.0 capitalflux-system.pro
 0.0.0.0 capitalistsplitting.com
 0.0.0.0 capitalopera.com
 0.0.0.0 capkkfuiticpo.space
@@ -25413,7 +25371,6 @@
 0.0.0.0 cecmwtarwabtp.website
 0.0.0.0 ced.sascdn.com
 0.0.0.0 cedar-static.space
-0.0.0.0 cedarassetgrove.pro
 0.0.0.0 cedarcrozzle.com
 0.0.0.0 cedecancontemporary.com
 0.0.0.0 cedeimprovise.com
@@ -25532,7 +25489,6 @@
 0.0.0.0 cexofira.com
 0.0.0.0 cexucetum.com
 0.0.0.0 cexwqzqmrpjcw.site
-0.0.0.0 ceyloninvest.pro
 0.0.0.0 ceyreesdxgvkd.site
 0.0.0.0 ceztv.com
 0.0.0.0 cf-ad.ad-stir.com
@@ -25781,6 +25737,7 @@
 0.0.0.0 chebelsnigged.shop
 0.0.0.0 chebfqsmfwovu.online
 0.0.0.0 check-activity.com.ru
+0.0.0.0 check-konto.vercel.app
 0.0.0.0 check-tcp.rayjump.com
 0.0.0.0 check-tl-ver-294-2.com
 0.0.0.0 check.ddos-guard.net
@@ -26024,7 +25981,6 @@
 0.0.0.0 cidhafxjwxwjr.online
 0.0.0.0 cidont.xyz
 0.0.0.0 cidtunppinhi.in
-0.0.0.0 cielorendorio.pro
 0.0.0.0 cientch.360doc.cn
 0.0.0.0 ciewpsfxnt.com
 0.0.0.0 ciflyeoaawica.site
@@ -28622,7 +28578,6 @@
 0.0.0.0 coremetrics.com
 0.0.0.0 coremotives.com
 0.0.0.0 corepulsegen.pro
-0.0.0.0 corexsoftware.pro
 0.0.0.0 corgibeachday.com
 0.0.0.0 corkdeclarationfourteenth.com
 0.0.0.0 corksadly.com
@@ -29321,7 +29276,6 @@
 0.0.0.0 crengate.com
 0.0.0.0 crentexgate.com
 0.0.0.0 creosolcotoin.shop
-0.0.0.0 creotrax-pro.com
 0.0.0.0 crepemania.openapp.link
 0.0.0.0 crepeyfrogged.com
 0.0.0.0 crepgate.com
@@ -29329,7 +29283,6 @@
 0.0.0.0 crescentnoise.com
 0.0.0.0 crescentstocky.com
 0.0.0.0 cresfpho2ntesepapillo3.com
-0.0.0.0 crestyieldmere.pro
 0.0.0.0 cresvin.com
 0.0.0.0 cretgate.com
 0.0.0.0 crevicedepressingpumpkin.com
@@ -29515,6 +29468,7 @@
 0.0.0.0 crystalapp.miguvideo.com
 0.0.0.0 crystalbloom.bid
 0.0.0.0 crystalboulevard.com
+0.0.0.0 crystaldawn.pro
 0.0.0.0 crystalmart.cn
 0.0.0.0 crystalpvp.ru
 0.0.0.0 cryto.xyz
@@ -30269,14 +30223,12 @@
 0.0.0.0 czt4gnz57.com
 0.0.0.0 cztesoepklydo.online
 0.0.0.0 czujjs.crownandcaliber.com
-0.0.0.0 czujnyakcjant.pro
 0.0.0.0 czuwprnlhxpdh.site
 0.0.0.0 czvdlp.hgregoire.com
 0.0.0.0 czx5eyk0exbhwp43ya.biz
 0.0.0.0 czynhitkvjkkw.space
 0.0.0.0 d-1.co
 0.0.0.0 d-agency.net
-0.0.0.0 d-aloxi-200.pro
 0.0.0.0 d-app.progressive.com
 0.0.0.0 d-bi.fr
 0.0.0.0 d-cache.microad-cn.com
@@ -31718,7 +31670,6 @@
 0.0.0.0 dashboardbntest.branchcustom.xyz
 0.0.0.0 dashboardmortal.com
 0.0.0.0 dashingdrop.com
-0.0.0.0 daskljtitaskastvv.pro
 0.0.0.0 dasperdolus.com
 0.0.0.0 dasych.drmartypets.com
 0.0.0.0 dat.gtags.net
@@ -34711,6 +34662,7 @@
 0.0.0.0 dnruxsmbzfubm.website
 0.0.0.0 dns-analytics.com
 0.0.0.0 dns-info.dyndns.pro
+0.0.0.0 dns-loginssl.bausachverstaendiger-wiesbaden.de
 0.0.0.0 dns-upload.com
 0.0.0.0 dns.0pengl.com
 0.0.0.0 dns.chuzushijian.cn
@@ -34763,7 +34715,6 @@
 0.0.0.0 doceree.com
 0.0.0.0 dochase.com
 0.0.0.0 dochodmar.pro
-0.0.0.0 dochodnia.pro
 0.0.0.0 dockdigestion.com
 0.0.0.0 dockerverse.com
 0.0.0.0 doclec.supersmart.com
@@ -34854,7 +34805,6 @@
 0.0.0.0 domineehexer.com
 0.0.0.0 dominionclatterrounded.com
 0.0.0.0 dominioneastern.com
-0.0.0.0 dominionvalnex.pro
 0.0.0.0 dominocounter.net
 0.0.0.0 domipush.com
 0.0.0.0 domob.cn
@@ -35270,6 +35220,7 @@
 0.0.0.0 dratio.com
 0.0.0.0 drato.xyz
 0.0.0.0 drau.viessmann.si
+0.0.0.0 draventor.pro
 0.0.0.0 dravexoly-pro.com
 0.0.0.0 drawerexperienceletting.com
 0.0.0.0 drawers06.com
@@ -37386,7 +37337,6 @@
 0.0.0.0 eclick.baidu.com
 0.0.0.0 eclick.vn
 0.0.0.0 eclinerybelfast.org
-0.0.0.0 eclipsecorevix.pro
 0.0.0.0 eclkmpsa.com
 0.0.0.0 eclkspbn.com
 0.0.0.0 eclnqdlbtgokj.site
@@ -38127,7 +38077,6 @@
 0.0.0.0 elisans.novayonetim.com
 0.0.0.0 elite-s001.com
 0.0.0.0 eliteclng.ericksonbuilt.com
-0.0.0.0 elitenewssyndicate.pro
 0.0.0.0 elitics.com
 0.0.0.0 elizabethpertinent.com
 0.0.0.0 elizabethpunishhead.com
@@ -39253,7 +39202,6 @@
 0.0.0.0 epiclotemaxfin.pro
 0.0.0.0 epicmaxalt2u.pro
 0.0.0.0 epicmaxaltcap.pro
-0.0.0.0 epicmaxaltopt.pro
 0.0.0.0 epicoldschool.com
 0.0.0.0 epicoptiplex.pro
 0.0.0.0 epicstrings.com
@@ -40755,7 +40703,6 @@
 0.0.0.0 falsifymagpieopenminded.com
 0.0.0.0 falsifyprobable.com
 0.0.0.0 faltertshirt.com
-0.0.0.0 faltorexai.pro
 0.0.0.0 falxbps.shop
 0.0.0.0 falyterbzvxks.site
 0.0.0.0 fam-8.net
@@ -41262,7 +41209,6 @@
 0.0.0.0 feraciumus.com
 0.0.0.0 ferank.fr
 0.0.0.0 feresroom.com
-0.0.0.0 fergentex-pro.com
 0.0.0.0 ferias.usj.es
 0.0.0.0 ferlantora.pro
 0.0.0.0 fermolo.info
@@ -41270,13 +41216,13 @@
 0.0.0.0 ferntravelleddeduct.com
 0.0.0.0 ferocitycandour.com
 0.0.0.0 ferreirateixeira.adv.br
-0.0.0.0 ferrovaldenza.pro
 0.0.0.0 ferrypoemet.com
 0.0.0.0 fertilehybridsstep.com
 0.0.0.0 fertilisedconductiveplank.com
 0.0.0.0 fertilitywailceramic.com
 0.0.0.0 feruidospsdkosdpapp.site
 0.0.0.0 fervorsixtiesveteran.com
+0.0.0.0 ferygaclogam.pro
 0.0.0.0 ferziendfljud.site
 0.0.0.0 fesecrxmwowzq.site
 0.0.0.0 fespnfwrcdgpv.website
@@ -41459,7 +41405,6 @@
 0.0.0.0 fickle-association.com
 0.0.0.0 fictionbusinessmensoloist.com
 0.0.0.0 fidar.site
-0.0.0.0 fidatopaycore.pro
 0.0.0.0 fiddedmannas.shop
 0.0.0.0 fiddledtragion.com
 0.0.0.0 fiddlestructureparadise.com
@@ -41473,7 +41418,6 @@
 0.0.0.0 fiduciaryfirst.actonservice.com
 0.0.0.0 fieldconfig.com
 0.0.0.0 fieldtinypirate.com
-0.0.0.0 fielmercovia-app.pro
 0.0.0.0 fielmercovia.pro
 0.0.0.0 fiendchewing.com
 0.0.0.0 fierropropova.pro
@@ -41623,11 +41567,9 @@
 0.0.0.0 finlab5-ad18.sbs
 0.0.0.0 finley.fecinc.com
 0.0.0.0 finley.finleyusa.com
-0.0.0.0 finlockridge.pro
 0.0.0.0 finreporter.net
 0.0.0.0 fintecaai.pro
 0.0.0.0 fiordedreddled.shop
-0.0.0.0 fiorecolvento.pro
 0.0.0.0 fiorewonyhade.online
 0.0.0.0 fiowtf.hyggee.com
 0.0.0.0 fipnhbnfbwxhc.site
@@ -41662,7 +41604,6 @@
 0.0.0.0 fireworkswad.com
 0.0.0.0 fireworktv.com
 0.0.0.0 firm-twist.com
-0.0.0.0 firmeassetrix.pro
 0.0.0.0 firmwareout830.net
 0.0.0.0 firmwarrior.com
 0.0.0.0 firqacv.com
@@ -41836,7 +41777,6 @@
 0.0.0.0 fl4md7mm8.com
 0.0.0.0 fl5dpe.oui.sncf
 0.0.0.0 fl7i15bxzr.com
-0.0.0.0 flaeryx-ai-pro.com
 0.0.0.0 flagads.net
 0.0.0.0 flagcounter.com
 0.0.0.0 flaggynasi.com
@@ -42277,7 +42217,6 @@
 0.0.0.0 forbidcrenels.com
 0.0.0.0 forbidden.actonservice.com
 0.0.0.0 forbin.actonservice.com
-0.0.0.0 forcagainflux-pro.cyou
 0.0.0.0 force24.co.uk
 0.0.0.0 forcefulbeginning.com
 0.0.0.0 forcefulpacehauled.com
@@ -42675,7 +42614,6 @@
 0.0.0.0 frailfruit.com
 0.0.0.0 fraiymmrjeiwf.site
 0.0.0.0 frame.enet.com.cn
-0.0.0.0 frame2uava-pro.com
 0.0.0.0 frame2uavapro.pro
 0.0.0.0 frameavapro-2u.pro
 0.0.0.0 framebanana.com
@@ -42933,7 +42871,6 @@
 0.0.0.0 frtyh.com
 0.0.0.0 frtyl.com
 0.0.0.0 frugalfiestas.com
-0.0.0.0 fruiterresso.pro
 0.0.0.0 fruitflan.com
 0.0.0.0 fruitful-request.com
 0.0.0.0 fruitiesmatchina.org
@@ -43134,7 +43071,6 @@
 0.0.0.0 functionssubqueries.com
 0.0.0.0 functionswith5555.net
 0.0.0.0 fundamentalobjected.com
-0.0.0.0 fundektris.pro
 0.0.0.0 fundescended.com
 0.0.0.0 fundingchoicesmessages.google.com
 0.0.0.0 fundraiserprestigedescent.com
@@ -43217,7 +43153,6 @@
 0.0.0.0 futurebrand.actonservice.com
 0.0.0.0 futurehybrid.tech
 0.0.0.0 futureus.com
-0.0.0.0 futurio-ai-pro.com
 0.0.0.0 futuristicfifth.com
 0.0.0.0 futuristicframe.com
 0.0.0.0 futursalumnes.uic.es
@@ -43761,7 +43696,6 @@
 0.0.0.0 gargleunethicalthorough.com
 0.0.0.0 garglingably.com
 0.0.0.0 garlandcelaeno.shop
-0.0.0.0 garlenixai.pro
 0.0.0.0 garlopakites.shop
 0.0.0.0 garm9yuma.com
 0.0.0.0 garmentcivilizepitcher.com
@@ -45810,6 +45744,7 @@
 0.0.0.0 goldencomm.actonservice.com
 0.0.0.0 goldenhelix.actonservice.com
 0.0.0.0 goldenpaints.actonservice.com
+0.0.0.0 goldenphoenixless.pro
 0.0.0.0 goldenriverbend.com
 0.0.0.0 goldenriverway.com
 0.0.0.0 golderotica.com
@@ -46042,7 +45977,6 @@
 0.0.0.0 gpt.milftube.mobi
 0.0.0.0 gpt.throatbulge.com
 0.0.0.0 gpt.tubetruck.com
-0.0.0.0 gpt3vapp-pro.com
 0.0.0.0 gptcusnrxxawp.site
 0.0.0.0 gptzluojzguhq.online
 0.0.0.0 gpu2rbzpe.com
@@ -46119,6 +46053,7 @@
 0.0.0.0 gramombird.com
 0.0.0.0 gramyscarted.shop
 0.0.0.0 granbbkzs3.com
+0.0.0.0 grand-financeholm.pro
 0.0.0.0 grand-prix.cityads.com
 0.0.0.0 grand.ele.me
 0.0.0.0 grandchildenumerate.com
@@ -46578,7 +46513,6 @@
 0.0.0.0 guhmzgbwilvst.space
 0.0.0.0 guhwatazr.in
 0.0.0.0 guhyqz.hawesko.de
-0.0.0.0 guianovexis.pro
 0.0.0.0 guid.tpns.tencent.com
 0.0.0.0 guidecent.com
 0.0.0.0 guidelingerbeige.com
@@ -47649,6 +47583,7 @@
 0.0.0.0 hellospur.com
 0.0.0.0 hellounbox.com
 0.0.0.0 helltraffic.com
+0.0.0.0 helmmarginvale-pro.pages.dev
 0.0.0.0 helmmarginvale.pro
 0.0.0.0 helmorixy-app.pro
 0.0.0.0 helmsuction.com
@@ -50213,6 +50148,7 @@
 0.0.0.0 ikmmigvehmod.com
 0.0.0.0 ikneio.aquantindia.com
 0.0.0.0 ikoxmfjaxqbox.com
+0.0.0.0 ikquanearegiw.pro
 0.0.0.0 ikquaycaaygib.space
 0.0.0.0 ikqyazeadzqvo.space
 0.0.0.0 ikronzealu.com
@@ -52664,7 +52600,6 @@
 0.0.0.0 instantconservativedetect.com
 0.0.0.0 instantdeceived.com
 0.0.0.0 instantdollarz.com
-0.0.0.0 instantedexneo.pro
 0.0.0.0 instantfox.co
 0.0.0.0 instantimitrexark.pro
 0.0.0.0 instantlyounceclubhouse.com
@@ -53453,7 +53388,6 @@
 0.0.0.0 itponytaa.com
 0.0.0.0 itpsfqhnjlkwl.space
 0.0.0.0 itqseeh.icu
-0.0.0.0 itquant.pro
 0.0.0.0 itqyik.icu
 0.0.0.0 itraamelr.com
 0.0.0.0 itrac.it
@@ -54165,7 +54099,6 @@
 0.0.0.0 jeyttn.snipes.com
 0.0.0.0 jeyvhaskvbtbh.website
 0.0.0.0 jezer.site
-0.0.0.0 jezgravireon.pro
 0.0.0.0 jf.10010.com
 0.0.0.0 jf.winads.cn
 0.0.0.0 jf71qh5v14.com
@@ -55792,7 +55725,6 @@
 0.0.0.0 kaougnoklpzjb.space
 0.0.0.0 kaozemnizhheg.website
 0.0.0.0 kape.dataplane.rudderstack.com
-0.0.0.0 kapitalbro.pro
 0.0.0.0 kapitalden.pro
 0.0.0.0 kapitalviresta.pro
 0.0.0.0 kapitangesoftware.pro
@@ -55800,7 +55732,6 @@
 0.0.0.0 kapqttkkorg.com
 0.0.0.0 kaprbmcvvmjir.online
 0.0.0.0 kaprila.com
-0.0.0.0 kapterzora-app.pro
 0.0.0.0 kapterzoraki.pro
 0.0.0.0 kapwecs.pro
 0.0.0.0 kaqbxsgdzuazk.website
@@ -55972,6 +55903,7 @@
 0.0.0.0 kedasensiblemother.org
 0.0.0.0 kedeng.xin
 0.0.0.0 kedgxztugonrg.space
+0.0.0.0 kedronivar.pro
 0.0.0.0 keen-eyed.dotabuff.com
 0.0.0.0 keenquill.com
 0.0.0.0 keentiedknives.com
@@ -55999,6 +55931,7 @@
 0.0.0.0 kelpiesregna.com
 0.0.0.0 kelpmetorealiuk.com
 0.0.0.0 kelun13.top
+0.0.0.0 kelvariona.pro
 0.0.0.0 kelvvhqaqbzty.site
 0.0.0.0 kemrrbjymzwaa.space
 0.0.0.0 kendingfa.com
@@ -56388,7 +56321,6 @@
 0.0.0.0 klcdoqvajycbg.site
 0.0.0.0 kldvkyjdvwcvp.online
 0.0.0.0 kldynhhyayoya.space
-0.0.0.0 klendixio-app.pro
 0.0.0.0 klert.com
 0.0.0.0 klevvjrjyjrez.website
 0.0.0.0 klfxpnwgqasds.space
@@ -56791,7 +56723,6 @@
 0.0.0.0 kruujzqylnfpi.website
 0.0.0.0 kruvestalsystem.pro
 0.0.0.0 krux.net
-0.0.0.0 kruxprofitaru.pro
 0.0.0.0 krwwcwlkiresb.site
 0.0.0.0 krxd.net
 0.0.0.0 krxwwojyad.com
@@ -57930,7 +57861,6 @@
 0.0.0.0 lednews.powerint.com
 0.0.0.0 ledou.dl.uu.cc
 0.0.0.0 ledradn.com
-0.0.0.0 ledruval-app.pro
 0.0.0.0 lee789.com
 0.0.0.0 leechersolaced.shop
 0.0.0.0 leecompany.actonservice.com
@@ -58009,6 +57939,7 @@
 0.0.0.0 lentattire.com
 0.0.0.0 lentoscrocuta.shop
 0.0.0.0 lentspeaking.com
+0.0.0.0 lenvarisa.pro
 0.0.0.0 lenzmx.com
 0.0.0.0 leo1.leon-de-bruxelles.fr
 0.0.0.0 leojmp.com
@@ -58296,7 +58227,6 @@
 0.0.0.0 liba.haotv8.com
 0.0.0.0 libellouschurchtommy.com
 0.0.0.0 liberaldoubtedadulatory.com
-0.0.0.0 liberascudorio.pro
 0.0.0.0 liberty.gedads.com
 0.0.0.0 libertycdn.com
 0.0.0.0 libertycoinsdrew.com
@@ -58423,8 +58353,6 @@
 0.0.0.0 lilxdostfpngv.space
 0.0.0.0 lilxvvndclgcs.space
 0.0.0.0 lilydreamer.com
-0.0.0.0 limanfinthra-pro.com
-0.0.0.0 limanfinthra.pro
 0.0.0.0 limecodesign.com
 0.0.0.0 limei.com
 0.0.0.0 limepeal.com
@@ -58456,7 +58384,6 @@
 0.0.0.0 linen-static.online
 0.0.0.0 linenvirginityclient.com
 0.0.0.0 lineside.networkrail.co.uk
-0.0.0.0 linexuspro.pro
 0.0.0.0 linezing.com
 0.0.0.0 lingd.cn
 0.0.0.0 lingercatchpyramid.com
@@ -59825,7 +59752,6 @@
 0.0.0.0 loathsomeboy.com
 0.0.0.0 lobaveo.pro
 0.0.0.0 lobby-x.eu
-0.0.0.0 lobigoi.pro
 0.0.0.0 loboclick.com
 0.0.0.0 lobspqdzvfvrp.space
 0.0.0.0 loc.kr
@@ -60065,8 +59991,6 @@
 0.0.0.0 logiccormax100.pro
 0.0.0.0 logicdate.com
 0.0.0.0 logiclevora-2u.pro
-0.0.0.0 logiclevora2u-app.pro
-0.0.0.0 logiclotemax.pro
 0.0.0.0 logicprecursor.com
 0.0.0.0 logicschort.com
 0.0.0.0 logicsfort.com
@@ -60683,7 +60607,6 @@
 0.0.0.0 lub-links.eyecue.io
 0.0.0.0 lubbardshauled.com
 0.0.0.0 lubet.api.new.livejasmin.com
-0.0.0.0 lubilea.pro
 0.0.0.0 lubjakntiafcl.space
 0.0.0.0 lubrarespire.shop
 0.0.0.0 lucanet.actonservice.com
@@ -60759,7 +60682,6 @@
 0.0.0.0 lunarcave.com
 0.0.0.0 lunaticcosyatrocious.com
 0.0.0.0 lunatictoxicambiguity.com
-0.0.0.0 lunatrixeonix.pro
 0.0.0.0 lunchereosinic.shop
 0.0.0.0 lunchoffended.com
 0.0.0.0 lunchroomlock.com
@@ -60774,7 +60696,6 @@
 0.0.0.0 luolitang.com
 0.0.0.0 luomanzhubao.cn
 0.0.0.0 luotediao.net
-0.0.0.0 lupexismax-pro.com
 0.0.0.0 lupic.cdn.bcebos.com
 0.0.0.0 luping.net.cn
 0.0.0.0 luprix.pro
@@ -64252,7 +64173,6 @@
 0.0.0.0 martted.com
 0.0.0.0 martuupanaya.shop
 0.0.0.0 marty.zappos.com
-0.0.0.0 marvalorivo.pro
 0.0.0.0 marvelmetrix.com
 0.0.0.0 marx7loki.com
 0.0.0.0 marzaent.com
@@ -64381,7 +64301,6 @@
 0.0.0.0 matwbp.iask.sina.com.cn
 0.0.0.0 matytt.tone.ne.jp
 0.0.0.0 maui.shakaguide.com
-0.0.0.0 mauriquantispro.pro
 0.0.0.0 maven.ad4game.com
 0.0.0.0 mavic852.com
 0.0.0.0 mavq.net
@@ -68129,6 +68048,7 @@
 0.0.0.0 moveliscore9-2.pro
 0.0.0.0 movemeal.com
 0.0.0.0 movementshereafter.com
+0.0.0.0 moventixtrading.pro
 0.0.0.0 movependulous.com
 0.0.0.0 movesickly.com
 0.0.0.0 moveyouforward.co
@@ -68150,7 +68070,6 @@
 0.0.0.0 mowvra.idlookmall.com
 0.0.0.0 moxgokgaqemwp.online
 0.0.0.0 moxtra.actonservice.com
-0.0.0.0 mozgalom-finlore.pro
 0.0.0.0 mozgvya.com
 0.0.0.0 mozoo.com
 0.0.0.0 mozuoshop.net
@@ -68954,7 +68873,6 @@
 0.0.0.0 myexhibiteam.actonservice.com
 0.0.0.0 myfastcdn.com
 0.0.0.0 myfastcounter.com
-0.0.0.0 myfazuipl.pro
 0.0.0.0 myfeed.thalesgroup.com
 0.0.0.0 myfeng.cn
 0.0.0.0 myfidevs.io
@@ -69019,7 +68937,6 @@
 0.0.0.0 myroitracking.com
 0.0.0.0 myroledance.com
 0.0.0.0 myrrhbehorn.com
-0.0.0.0 myrronpro9-2.pro
 0.0.0.0 myrtb.net
 0.0.0.0 myscoop-tracking.googlecode.com
 0.0.0.0 myseostats.com
@@ -69233,7 +69150,6 @@
 0.0.0.0 naegaitbestir.com
 0.0.0.0 naegrands.shop
 0.0.0.0 nafmxc.1083.fr
-0.0.0.0 naftotechcora.pro
 0.0.0.0 nagaikaslojd.com
 0.0.0.0 naggingdocumentationgrow.com
 0.0.0.0 nagingfinns.shop
@@ -69376,7 +69292,6 @@
 0.0.0.0 natqurshes.shop
 0.0.0.0 natregs.com
 0.0.0.0 natrivex-engine.pro
-0.0.0.0 natrivexbitronix.pro
 0.0.0.0 nats.xing.com
 0.0.0.0 natsdk.com
 0.0.0.0 natsp.xing.com
@@ -69676,7 +69591,6 @@
 0.0.0.0 neraenyqq.com
 0.0.0.0 nerangee.com
 0.0.0.0 nerdolac.com
-0.0.0.0 nerdynatorv2.pro
 0.0.0.0 nereserv.com
 0.0.0.0 nerfeiidsjsdksdlopower.com
 0.0.0.0 nerfzxkysjhjh.online
@@ -70023,7 +69937,6 @@
 0.0.0.0 nexeps.com
 0.0.0.0 nexfhrxksg.com
 0.0.0.0 nexioniect.com
-0.0.0.0 nexipessogpt.pro
 0.0.0.0 nexium33bv.com
 0.0.0.0 nexium530.com
 0.0.0.0 nexorion-finance.pro
@@ -70813,7 +70726,6 @@
 0.0.0.0 novadune.com
 0.0.0.0 novaonads.com
 0.0.0.0 novarecoverycenter.actonservice.com
-0.0.0.0 novarisai.pro
 0.0.0.0 novaseekers.com
 0.0.0.0 novedades.telecomfibercorp.com.ar
 0.0.0.0 novel-cross.pro
@@ -73186,7 +73098,6 @@
 0.0.0.0 ordbng.extra.com.br
 0.0.0.0 ordboqtd.com
 0.0.0.0 orderlyuponprecipitation.com
-0.0.0.0 ordexiaprime.pro
 0.0.0.0 ordidc.com
 0.0.0.0 ordinary-check.com
 0.0.0.0 ordinarygoonwritten.com
@@ -73196,7 +73107,6 @@
 0.0.0.0 oredero.com
 0.0.0.0 oregonstate.actonservice.com
 0.0.0.0 orencia.pflexads.com
-0.0.0.0 orenthiovector.pro
 0.0.0.0 orest-vlv.com
 0.0.0.0 oresyipqzckyl.site
 0.0.0.0 orfa1st5.de
@@ -73256,7 +73166,6 @@
 0.0.0.0 ornczozk.in
 0.0.0.0 orngxabtxwake.online
 0.0.0.0 ornnxfsfnkwbs.space
-0.0.0.0 orovaldexia-pro.com
 0.0.0.0 orozipuetosat.website
 0.0.0.0 orpggb.esprit.at
 0.0.0.0 orphanrudimentary.com
@@ -73806,7 +73715,6 @@
 0.0.0.0 oxvmctwdsernj.site
 0.0.0.0 oxvqvbspesgzz.com
 0.0.0.0 oxvroiurf.com
-0.0.0.0 oxvurilzsoftware.pro
 0.0.0.0 oxwnfooqpd.com
 0.0.0.0 oxwpsqfoyaxkc.website
 0.0.0.0 oxwsggbacrrdl.website
@@ -74666,7 +74574,6 @@
 0.0.0.0 pappagallu.onefootball.com
 0.0.0.0 paqqlk.motatos.de
 0.0.0.0 paqxspfbapsai.site
-0.0.0.0 paqydorixyai.pro
 0.0.0.0 par02p.wns.windows.com
 0.0.0.0 paradefast.com
 0.0.0.0 paraderascaldefinitely.com
@@ -75472,8 +75379,6 @@
 0.0.0.0 pevftg.shopee.sg
 0.0.0.0 pevrksshtngcg.site
 0.0.0.0 pewfeafvlaiwe.online
-0.0.0.0 pewna-inwestotivpro.pro
-0.0.0.0 pewnarentostka.pro
 0.0.0.0 pewtersundub.shop
 0.0.0.0 pewyforz.shop
 0.0.0.0 pexcsvjiecyoi.site
@@ -75598,6 +75503,7 @@
 0.0.0.0 phadia.thermofisher.com
 0.0.0.0 phampheane.com
 0.0.0.0 phantomdisappoint.com
+0.0.0.0 phantomstrikety.pro
 0.0.0.0 pharmacycoercive.com
 0.0.0.0 pharmcash.com
 0.0.0.0 pharosurunday.shop
@@ -76551,7 +76457,6 @@
 0.0.0.0 plectrum53.top
 0.0.0.0 pledgormagh.com
 0.0.0.0 pleisty.com
-0.0.0.0 plenacapitoria.pro
 0.0.0.0 plenia.pt
 0.0.0.0 plenomedia.com
 0.0.0.0 plenty.vidio.com
@@ -77012,7 +76917,6 @@
 0.0.0.0 poqwepljjnepo.online
 0.0.0.0 poqwo3.com
 0.0.0.0 porchadvertise.com
-0.0.0.0 pordeliksengine.pro
 0.0.0.0 porikatha.com
 0.0.0.0 poringasitia.com
 0.0.0.0 pork.2tumeng.com
@@ -77061,7 +76965,6 @@
 0.0.0.0 portptfeyfcnx.space
 0.0.0.0 portslocked.com
 0.0.0.0 portunitytostar.org
-0.0.0.0 portvaultwick.pro
 0.0.0.0 pos.baidu.com
 0.0.0.0 poseunprofessionalspecific.com
 0.0.0.0 posewardenreligious.com
@@ -77363,7 +77266,6 @@
 0.0.0.0 precisioncounter.com
 0.0.0.0 preciso.net
 0.0.0.0 precmd.com
-0.0.0.0 precoadven.cyou
 0.0.0.0 precursortrimrequest.com
 0.0.0.0 precursorwhiskeyleak.com
 0.0.0.0 predatorvernonforefather.com
@@ -78404,7 +78306,6 @@
 0.0.0.0 puls.lv
 0.0.0.0 pulsar.ebay.com
 0.0.0.0 pulsaredit.com
-0.0.0.0 pulsarvexline-pro.com
 0.0.0.0 pulsatingmeadow.com
 0.0.0.0 pulse.data.flurry.com
 0.0.0.0 pulse.delta.com
@@ -78471,12 +78372,12 @@
 0.0.0.0 purchasermeltdown.com
 0.0.0.0 purebloom.net
 0.0.0.0 pureedtensors.shop
-0.0.0.0 puremonetivo.pro
 0.0.0.0 purevideo.com
 0.0.0.0 purfinrevoux-pro.com
 0.0.0.0 purge.fb-cdn.net
 0.0.0.0 purifydimeprove.com
 0.0.0.0 purinefluxer.shop
+0.0.0.0 purliquidheim.pro
 0.0.0.0 purnoavexo.pro
 0.0.0.0 purocapitenca.pro
 0.0.0.0 purp.sukaporn.com
@@ -79861,11 +79762,11 @@
 0.0.0.0 quantcast.mgr.consensu.org
 0.0.0.0 quantcount.com
 0.0.0.0 quantica900.com
-0.0.0.0 quanticorev2.pro
 0.0.0.0 quantivaadvisoryprogrammes.pro
 0.0.0.0 quantixfinance.pro
 0.0.0.0 quantrexblaze.pro
 0.0.0.0 quantserve.com
+0.0.0.0 quantum-flowbit.pro
 0.0.0.0 quantumads.com
 0.0.0.0 quantumaiglobal.pro
 0.0.0.0 quantumdex.io
@@ -79874,7 +79775,6 @@
 0.0.0.0 quantumpro-app.pro
 0.0.0.0 quantumshine.com
 0.0.0.0 quantumws.net
-0.0.0.0 quantyxorelian-pro.com
 0.0.0.0 quarantine2procedure.com
 0.0.0.0 quarepush.com
 0.0.0.0 quarreljaggedloathe.com
@@ -80002,7 +79902,6 @@
 0.0.0.0 qumaef.conects.com
 0.0.0.0 qumi.com
 0.0.0.0 qumulo.actonservice.com
-0.0.0.0 qumvestiumai.pro
 0.0.0.0 qunphoty.com
 0.0.0.0 qunskbadgzcdx.site
 0.0.0.0 qunymuy.pro
@@ -80160,7 +80059,6 @@
 0.0.0.0 qymjpg.star-tex.ru
 0.0.0.0 qymswdusycdvz.space
 0.0.0.0 qyn6.ofertastelecable.es
-0.0.0.0 qynxiliur.pro
 0.0.0.0 qyogcr.amscope.com
 0.0.0.0 qypaizhuo.com
 0.0.0.0 qyplvnzcm1.com
@@ -81426,7 +81324,6 @@
 0.0.0.0 rensipmsqnpdd.space
 0.0.0.0 rent.mgrc.com
 0.0.0.0 rentalsloppyodds.com
-0.0.0.0 rentemond.pro
 0.0.0.0 renteostend.com
 0.0.0.0 rentfavourablecashmere.com
 0.0.0.0 rentinfinity.com
@@ -81871,7 +81768,6 @@
 0.0.0.0 rev-stripe.com
 0.0.0.0 rev.frankspeech.com
 0.0.0.0 revampcdn.com
-0.0.0.0 revaultnex.pro
 0.0.0.0 revbid.net
 0.0.0.0 revcatch.com
 0.0.0.0 revcontent.com
@@ -82127,7 +82023,6 @@
 0.0.0.0 ribbytawhid.shop
 0.0.0.0 ribgreenhousecompose.com
 0.0.0.0 ribkdvpyszfm.com
-0.0.0.0 riccawalorawia.pro
 0.0.0.0 ricclvychqusy.website
 0.0.0.0 ricead.com
 0.0.0.0 riceck.cn
@@ -82137,7 +82032,6 @@
 0.0.0.0 richads.com
 0.0.0.0 richard-group.com
 0.0.0.0 richaudience.com
-0.0.0.0 richefondois.pro
 0.0.0.0 richeryawp.com
 0.0.0.0 richeseventsphysics.com
 0.0.0.0 richh.cn
@@ -83368,8 +83262,6 @@
 0.0.0.0 rymhet.posudamart.ru
 0.0.0.0 ryminos.com
 0.0.0.0 rypebb.icu
-0.0.0.0 ryptonoansolution.pro
-0.0.0.0 ryptowolfzengine.pro
 0.0.0.0 ryqtxakilhprz.site
 0.0.0.0 ryqxryaytwbpx.website
 0.0.0.0 ryre.cn
@@ -84716,7 +84608,6 @@
 0.0.0.0 sanme2.taisantech.com
 0.0.0.0 sanmet.originenergy.com.au
 0.0.0.0 sanokpfwhwgpd.online
-0.0.0.0 sanolucrivo.pro
 0.0.0.0 sanoslkut.in
 0.0.0.0 sanpzoyjzrjmu.website
 0.0.0.0 sanssnow.com
@@ -84802,7 +84693,6 @@
 0.0.0.0 saturn3.appads.com
 0.0.0.0 saucersfiltre.shop
 0.0.0.0 saucewonderdaytime.com
-0.0.0.0 saudivisionai-pro.com
 0.0.0.0 saugellaviso.it
 0.0.0.0 saunaproficientprelude.com
 0.0.0.0 saunatechnically.com
@@ -87063,7 +86953,6 @@
 0.0.0.0 share.cjcookit.com
 0.0.0.0 share.coupangeats.com
 0.0.0.0 share.dailyrounds.in
-0.0.0.0 share.dovgertz.com
 0.0.0.0 share.drinki.com
 0.0.0.0 share.dunzo.in
 0.0.0.0 share.dusk.app
@@ -87287,7 +87176,6 @@
 0.0.0.0 shnegttccwnom.site
 0.0.0.0 shoagloumtoamir.net
 0.0.0.0 shoalsirate.shop
-0.0.0.0 shoboltrangorh.pro
 0.0.0.0 shockdefined.com
 0.0.0.0 shocked-failure.com
 0.0.0.0 shocked-home.com
@@ -87532,7 +87420,6 @@
 0.0.0.0 signalflarexp.pro
 0.0.0.0 signalfx.com
 0.0.0.0 signalinstatistics.net
-0.0.0.0 signallidexhex.pro
 0.0.0.0 signalszone.com
 0.0.0.0 signaly.co
 0.0.0.0 signamentswithd.com
@@ -87675,6 +87562,7 @@
 0.0.0.0 sincedialover.com
 0.0.0.0 sincenturypro.org
 0.0.0.0 sincerebuffalo.com
+0.0.0.0 sinceredepotance-ai.pro
 0.0.0.0 sincerefictionscrape.com
 0.0.0.0 sinceregarden.sincere-garden.jp
 0.0.0.0 sinceregustinfinitely.com
@@ -87683,7 +87571,6 @@
 0.0.0.0 sincerepelican.com
 0.0.0.0 sinceresubstance.com
 0.0.0.0 sinckuxlsucmq.online
-0.0.0.0 sincorrabtcv8.pro
 0.0.0.0 sinewedtidder.shop
 0.0.0.0 sinfo.awrostamani.com
 0.0.0.0 sinfo.dtcidev.co
@@ -87970,7 +87857,6 @@
 0.0.0.0 skyjh.cn
 0.0.0.0 skylightdata.com
 0.0.0.0 skylindo.com
-0.0.0.0 skyline-nexus-pro.live
 0.0.0.0 skymedia.co.uk
 0.0.0.0 skymobi.agency
 0.0.0.0 skypicker-api.infinario.com
@@ -91708,7 +91594,6 @@
 0.0.0.0 solidlyrotches.guru
 0.0.0.0 solidmigraine.com
 0.0.0.0 solidofundavox.pro
-0.0.0.0 solidreturn-pro.com
 0.0.0.0 solidscape.actonservice.com
 0.0.0.0 solidsub.com
 0.0.0.0 solionenzymes.com
@@ -92089,6 +91974,7 @@
 0.0.0.0 sonnerie.net
 0.0.0.0 sonnyrespected.com
 0.0.0.0 sonobi.com
+0.0.0.0 sonorarentestra.pro
 0.0.0.0 sonovoxexcite.shop
 0.0.0.0 sonsethel.com
 0.0.0.0 sonsstoop.com
@@ -92444,9 +92330,9 @@
 0.0.0.0 spielsbeni.com
 0.0.0.0 spiffymachine.com
 0.0.0.0 spigte.shopee.tw
-0.0.0.0 spikeavonexneo.pro
 0.0.0.0 spikeexorexx.pro
 0.0.0.0 spikeflarex-nx.pro
+0.0.0.0 spikeflarexnx.pro
 0.0.0.0 spikesandcurrant.com
 0.0.0.0 spin83qr.com
 0.0.0.0 spinachhypocrisy.com
@@ -95851,7 +95737,6 @@
 0.0.0.0 sunflowercross.com
 0.0.0.0 sunflowergiganticcheerfully.com
 0.0.0.0 sunflowersandthreads.com
-0.0.0.0 sunfortportdex.pro
 0.0.0.0 sunglasse2.top
 0.0.0.0 sunglassescontrary.com
 0.0.0.0 sunglassesexpensive.com
@@ -96364,7 +96249,6 @@
 0.0.0.0 swipechief.com
 0.0.0.0 swirlstop.com
 0.0.0.0 swiss-counter.com
-0.0.0.0 swissborgapp.pro
 0.0.0.0 swissinside.easyjet.com.edgekey.net.easyjet.com
 0.0.0.0 swissmilitarycoalition.com
 0.0.0.0 switch-axid-hex-pro.com
@@ -102589,8 +102473,6 @@
 0.0.0.0 tradedoubler.com
 0.0.0.0 tradeexpert.net
 0.0.0.0 tradelab.fr
-0.0.0.0 tradementor-pro.shop
-0.0.0.0 tradepro-engine.pro
 0.0.0.0 traderaiapp.pro
 0.0.0.0 traderbyte.com
 0.0.0.0 traderflix9gpt-pro.com
@@ -102801,7 +102683,6 @@
 0.0.0.0 trashyepochabsorbing.com
 0.0.0.0 trasre.com
 0.0.0.0 trasupr.com
-0.0.0.0 trasviloxai.pro
 0.0.0.0 tratobid.com
 0.0.0.0 traumaprocuredinsect.com
 0.0.0.0 traumaticassignearnest.com
@@ -102939,7 +102820,6 @@
 0.0.0.0 trentbereal.com
 0.0.0.0 trepanation07.top
 0.0.0.0 trerqekuw.com
-0.0.0.0 treviloxanopro.pro
 0.0.0.0 trewssynaxis.shop
 0.0.0.0 trexer501.com
 0.0.0.0 trfpump.com
@@ -103513,6 +103393,7 @@
 0.0.0.0 trustisimportant.fun
 0.0.0.0 trustmaxonline.com
 0.0.0.0 trustmodule.com
+0.0.0.0 trustorium.pro
 0.0.0.0 trustphiladelphiacompelling.com
 0.0.0.0 trustseal.e-rasaneh.ir
 0.0.0.0 trustutn.org
@@ -103828,7 +103709,6 @@
 0.0.0.0 turbo2sdk-push.oupeng.com
 0.0.0.0 turboadv.com
 0.0.0.0 turbocap.net
-0.0.0.0 turbocormax-pro.com
 0.0.0.0 turboeagle.co
 0.0.0.0 turboexelonark.pro
 0.0.0.0 turbofund100.pro
@@ -104917,7 +104797,6 @@
 0.0.0.0 ultraoranges.com
 0.0.0.0 ultrapartners.com
 0.0.0.0 ultrasoundpurchase.com
-0.0.0.0 ultratrade-alphavest.pro
 0.0.0.0 ultravalid.com
 0.0.0.0 ultravix-app.pro
 0.0.0.0 ultund.misterspex.nl
@@ -105376,7 +105255,6 @@
 0.0.0.0 unsunnybirse.com
 0.0.0.0 unta.cn
 0.0.0.0 untackreviler.com
-0.0.0.0 untavix.pro
 0.0.0.0 untho.de
 0.0.0.0 untidynondescript.com
 0.0.0.0 untidyrelayidentifiers.com
@@ -105479,7 +105357,6 @@
 0.0.0.0 upcomingperusehike.com
 0.0.0.0 upcuoicobbycl.site
 0.0.0.0 updaight.com
-0.0.0.0 update-addrese.ctiltst.ccwu.cc
 0.0.0.0 update-expiry-notification-report.appwrite.network
 0.0.0.0 update-information.zzux.com
 0.0.0.0 update-java.kit.net
@@ -106804,7 +106681,6 @@
 0.0.0.0 va.videojj.com
 0.0.0.0 va3yq7si6w.com
 0.0.0.0 va6-bid.adsrvr.org
-0.0.0.0 vaaltechki.pro
 0.0.0.0 vaamsmgfreocmroe-1342087530.cos.sa-saopaulo.myqcloud.com
 0.0.0.0 vaatjcfcwvjsa.space
 0.0.0.0 vaatmetu.net
@@ -106872,7 +106748,6 @@
 0.0.0.0 validmemo.com
 0.0.0.0 valipl.cp31.ott.cibntv.net
 0.0.0.0 valis-cpx.jp
-0.0.0.0 valleprofitra.pro
 0.0.0.0 valleyarmiessunflower.com
 0.0.0.0 valleyscounterfeit.com
 0.0.0.0 valo.atm.youku.com
@@ -106898,7 +106773,6 @@
 0.0.0.0 valuerportray.com
 0.0.0.0 valuesuffering.com
 0.0.0.0 valuethemarkets.info
-0.0.0.0 valutorreai.pro
 0.0.0.0 valvyre.com
 0.0.0.0 valxutydijoem.online
 0.0.0.0 vamaker.cm.admaster.com.cn
@@ -106906,7 +106780,6 @@
 0.0.0.0 vamosesagonic.com
 0.0.0.0 van.ads.link4ads.com
 0.0.0.0 vandalismloungenylon.com
-0.0.0.0 vandelixio-tech.pro
 0.0.0.0 vanderlisten.pro
 0.0.0.0 vane3alga.com
 0.0.0.0 vanfireworks.com
@@ -106980,7 +106853,6 @@
 0.0.0.0 vawturpis.com
 0.0.0.0 vax-now.com
 0.0.0.0 vaxjhqfaahmgt.site
-0.0.0.0 vaxubai.pro
 0.0.0.0 vazulp.graniph.com
 0.0.0.0 vazypteke.pro
 0.0.0.0 vb5gi1zp5.com
@@ -107201,7 +107073,6 @@
 0.0.0.0 vengefulprior.pro
 0.0.0.0 vengingtrental.com
 0.0.0.0 veniresquirks.shop
-0.0.0.0 venitendra.pro
 0.0.0.0 venomousvessel.com
 0.0.0.0 ventageslorp.com
 0.0.0.0 ventivmedia.com
@@ -107253,6 +107124,7 @@
 0.0.0.0 verificationgloryrenaissance.com
 0.0.0.0 verificationinternalhamburger.com
 0.0.0.0 verificationscrub.com
+0.0.0.0 verifiednewsdispatch.pro
 0.0.0.0 verifier.live
 0.0.0.0 verify.authorize.net
 0.0.0.0 verify.mob.com
@@ -107642,12 +107514,10 @@
 0.0.0.0 views.wioks.com
 0.0.0.0 viewtraff.com
 0.0.0.0 viewworthwhile.com
-0.0.0.0 vifb-ours-ade.today
 0.0.0.0 vigasimmerse.shop
 0.0.0.0 vigilancebreaking.com
 0.0.0.0 vigilant-entry.pro
 0.0.0.0 viglink.com
-0.0.0.0 vigor-fintrion-pro.com
 0.0.0.0 vigorous-average.com
 0.0.0.0 vigtwjvdkhvpr.space
 0.0.0.0 vigyn4gpx.com
@@ -108199,7 +108069,6 @@
 0.0.0.0 vortex.data.glbdns2.microsoft.com
 0.0.0.0 vortex.data.microsoft.com
 0.0.0.0 vortex.hulu.com
-0.0.0.0 vortexfrance.pro
 0.0.0.0 vosdgzthzejqr.website
 0.0.0.0 voselskqvlkxy.online
 0.0.0.0 vosfcwwsdurwp.site
@@ -108719,7 +108588,6 @@
 0.0.0.0 vupload.duowan.com
 0.0.0.0 vupshojkojpe.in
 0.0.0.0 vupulse.com
-0.0.0.0 vurdoxen.pro
 0.0.0.0 vurhabbkef.in
 0.0.0.0 vurr.cn
 0.0.0.0 vuryua.ru
@@ -108861,7 +108729,6 @@
 0.0.0.0 vypmgvwjvgztv.space
 0.0.0.0 vyqn.cn
 0.0.0.0 vyragdxymcqtw.online
-0.0.0.0 vyranivotrade-pro.com
 0.0.0.0 vyrwmrwmlozsq.site
 0.0.0.0 vyspfyimbwvls.site
 0.0.0.0 vysr4o0eg.com
@@ -110270,6 +110137,7 @@
 0.0.0.0 wextap.com
 0.0.0.0 wexwujojvhamp.space
 0.0.0.0 weygdpqepldez.space
+0.0.0.0 weynuoligzare.pro
 0.0.0.0 weytnksofbrsj.site
 0.0.0.0 weyyae.com
 0.0.0.0 wezbvq.heine-shop.nl
@@ -112182,11 +112050,9 @@
 0.0.0.0 www.ai-pro-iplex.com
 0.0.0.0 www.ai-stock.pro
 0.0.0.0 www.aid-ad.jp
-0.0.0.0 www.aiprofit-trade.pro
 0.0.0.0 www.airybotsh.pro
 0.0.0.0 www.albafundorixai.pro
 0.0.0.0 www.albioncredmere-pro.com
-0.0.0.0 www.albioncredmere-pro.sbs
 0.0.0.0 www.alexoai.pro
 0.0.0.0 www.alienskins.cn
 0.0.0.0 www.aliyoo999.com
@@ -112208,14 +112074,11 @@
 0.0.0.0 www.analytics.ero-advertising.com
 0.0.0.0 www.analytics.icons8.com
 0.0.0.0 www.analytics.picsart.com
-0.0.0.0 www.andexioai.pro
 0.0.0.0 www.anners.ero-advertising.com
-0.0.0.0 www.ansimtradix.pro
 0.0.0.0 www.anyangruisi.com
 0.0.0.0 www.aodongjiaosu.com
 0.0.0.0 www.aombjl099.com
 0.0.0.0 www.aperac.pro
-0.0.0.0 www.apexwealthai.pro
 0.0.0.0 www.api.axiatraders.com
 0.0.0.0 www.api.taboola.com
 0.0.0.0 www.api2-update-routing-mydpd.bergh.com
@@ -112235,18 +112098,14 @@
 0.0.0.0 www.appsmall.mobi
 0.0.0.0 www.appuu.cn
 0.0.0.0 www.arbiquant-pro.com
-0.0.0.0 www.argento-app.pro
 0.0.0.0 www.arnofondatrix.pro
-0.0.0.0 www.ascesafundoria.pro
+0.0.0.0 www.artleadsdigital.com
 0.0.0.0 www.ashiping.com
 0.0.0.0 www.askwealthadvisers.com
-0.0.0.0 www.asseevolaraai.pro
-0.0.0.0 www.astraaicapital.pro
 0.0.0.0 www.astragainlux.pro
 0.0.0.0 www.ata.ero-advertising.com
 0.0.0.0 www.atcryp.com
 0.0.0.0 www.atdmt.com
-0.0.0.0 www.auberevo.pro
 0.0.0.0 www.auntrixcipherai.pro
 0.0.0.0 www.auraxcore92.pro
 0.0.0.0 www.aurelia-ai.pro
@@ -112259,14 +112118,12 @@
 0.0.0.0 www.aurorapush.com
 0.0.0.0 www.ausaas.cn
 0.0.0.0 www.autoads.asia
-0.0.0.0 www.automindgr.pro
 0.0.0.0 www.avast-downloads.com
 0.0.0.0 www.avelicioai.pro
 0.0.0.0 www.averagetronai.pro
 0.0.0.0 www.avnads.com
 0.0.0.0 www.avoadsservices.com
 0.0.0.0 www.avsads.com
-0.0.0.0 www.azimcorevex.pro
 0.0.0.0 www.babybubble.cn
 0.0.0.0 www.babymoment.net
 0.0.0.0 www.baidujs.vip
@@ -112295,13 +112152,10 @@
 0.0.0.0 www.bannevs.ero-advertising.com
 0.0.0.0 www.barberpet.pro
 0.0.0.0 www.bartender.cc
-0.0.0.0 www.baseinvexus.pro
 0.0.0.0 www.basisinvionapp.pro
-0.0.0.0 www.bastioncapridge.pro
 0.0.0.0 www.bastionwealthadvisors.pro
 0.0.0.0 www.bavners2.ero-advertising.com
 0.0.0.0 www.bayancapital.pro
-0.0.0.0 www.bayassetholm.pro
 0.0.0.0 www.baykar-platform.pro
 0.0.0.0 www.baywest.ac
 0.0.0.0 www.bb1429.com
@@ -112331,13 +112185,9 @@
 0.0.0.0 www.billionfocus.com
 0.0.0.0 www.bingads.microsoft.com
 0.0.0.0 www.bingdianhuanyuan.cn
-0.0.0.0 www.bit-pro-reoproapp.com
-0.0.0.0 www.bitbenel.pro
 0.0.0.0 www.bitcoin-ifex-360-ai.info
 0.0.0.0 www.bitcoin-union.org
-0.0.0.0 www.bitcoineverest.pro
 0.0.0.0 www.bitcoingoldmineplatform.pro
-0.0.0.0 www.bitcoinquantumai.pro
 0.0.0.0 www.bitcoinup-pro.com
 0.0.0.0 www.biteti.com
 0.0.0.0 www.bitradexpolska.pro
@@ -112350,59 +112200,40 @@
 0.0.0.0 www.blaggckleads.info
 0.0.0.0 www.blatfee.ero-advertising.com
 0.0.0.0 www.blazingscoopalert.pro
-0.0.0.0 www.blizonprecisie.pro
 0.0.0.0 www.blockadsnot.com
 0.0.0.0 www.blog.intext.ero-advertising.com
 0.0.0.0 www.blogads.com
 0.0.0.0 www.blueadvantagearkasas.com
-0.0.0.0 www.bluequbitai.pro
 0.0.0.0 www.bodrofinekssolution.pro
 0.0.0.0 www.bohats-fondi.pro
-0.0.0.0 www.boostcormax.pro
-0.0.0.0 www.boostkapidex.pro
 0.0.0.0 www.bootcdn.cn
 0.0.0.0 www.bootcdn.net
 0.0.0.0 www.bootcss.com
-0.0.0.0 www.borborygmuoa.pro
-0.0.0.0 www.borsixgpt.pro
 0.0.0.0 www.bovirentix-fin.pro
 0.0.0.0 www.boxercrazy.org
 0.0.0.0 www.brafsc.top
-0.0.0.0 www.bramridgetrust.pro
-0.0.0.0 www.brasilrendagpt.pro
-0.0.0.0 www.bravexilini.pro
 0.0.0.0 www.bredfortjenstad.pro
 0.0.0.0 www.breedrendeholm.pro
 0.0.0.0 www.brekutiosai.pro
-0.0.0.0 www.brekutiossoftware.pro
 0.0.0.0 www.brightadnetwork.com
-0.0.0.0 www.brightcapitgate.pro
-0.0.0.0 www.brightpayplus.pro
 0.0.0.0 www.brightstardv.pro
 0.0.0.0 www.brightvaultmere.pro
 0.0.0.0 www.brightyieldsystem.pro
-0.0.0.0 www.brimax-edge.pro
 0.0.0.0 www.briokapitorio.pro
-0.0.0.0 www.briovexaria.pro
 0.0.0.0 www.britanniaedgeai.pro
 0.0.0.0 www.britkonedgeval.pro
 0.0.0.0 www.broadspring.com
 0.0.0.0 www.bsfiosfskdosfkadoisdka.site
 0.0.0.0 www.bshare.cn
 0.0.0.0 www.bsrkt.com
-0.0.0.0 www.btc-adverant-224-ai.com
-0.0.0.0 www.btc-adverant-ai.com
 0.0.0.0 www.btc-adverant-ai.live
 0.0.0.0 www.btc-adverant224-ai.live
 0.0.0.0 www.btc-belant17.pro
 0.0.0.0 www.btc-glamit-365.live
-0.0.0.0 www.btc-vindici11.pro
 0.0.0.0 www.btcadverant.digital
 0.0.0.0 www.btcadverantv10.de
 0.0.0.0 www.btcapnstad.pro
 0.0.0.0 www.btcblunex.pro
-0.0.0.0 www.btcgenix9.pro
-0.0.0.0 www.btcmentralixv7.pro
 0.0.0.0 www.btcnexivolt-760.pro
 0.0.0.0 www.btcsolgreen-ai.pro
 0.0.0.0 www.btctraderai.pro
@@ -112414,15 +112245,11 @@
 0.0.0.0 www.byteroxe.pro
 0.0.0.0 www.c77777777.com
 0.0.0.0 www.cadvision.com
-0.0.0.0 www.cairnphundholm.pro
 0.0.0.0 www.cakolyo.pro
 0.0.0.0 www.calabvent.pro
 0.0.0.0 www.calderive.pro
 0.0.0.0 www.calyptra.pro
 0.0.0.0 www.cambismone.pro
-0.0.0.0 www.canfi.pro
-0.0.0.0 www.canfirst-pro.com
-0.0.0.0 www.capitalflux-system.pro
 0.0.0.0 www.casee.cn
 0.0.0.0 www.cash4downloads.com
 0.0.0.0 www.cata.ero-advertising.com
@@ -112433,13 +112260,11 @@
 0.0.0.0 www.cdfreisdoosdklsdfslf.site
 0.0.0.0 www.cdn.beginads.com
 0.0.0.0 www.cdn4ads.com
-0.0.0.0 www.cedarassetgrove.pro
 0.0.0.0 www.cellfun.mobi
 0.0.0.0 www.celticwealth.pro
 0.0.0.0 www.centroluxalis.pro
 0.0.0.0 www.certogestovanzaai.pro
 0.0.0.0 www.cetrorendoreza.pro
-0.0.0.0 www.ceyloninvest.pro
 0.0.0.0 www.cfdanet.com
 0.0.0.0 www.chainatarax-500.pro
 0.0.0.0 www.chainlotemaxpro.pro
@@ -112447,6 +112272,7 @@
 0.0.0.0 www.chanet.com.cn
 0.0.0.0 www.chapesx.site
 0.0.0.0 www.chat.ero-advertising.com
+0.0.0.0 www.check-konto.vercel.app
 0.0.0.0 www.chekmeseger-adspager.online
 0.0.0.0 www.chemdraw.com
 0.0.0.0 www.chemdraw.com.cn
@@ -112459,7 +112285,6 @@
 0.0.0.0 www.christianbusinessadvertising.com
 0.0.0.0 www.cichaokolicadslfopunkt.site
 0.0.0.0 www.ciderbayoulg.pro
-0.0.0.0 www.cielorendorio.pro
 0.0.0.0 www.cifrenit-pro-solution.com
 0.0.0.0 www.cishantao.com
 0.0.0.0 www.cityads.com
@@ -112501,7 +112326,6 @@
 0.0.0.0 www.copecinversiones.pro
 0.0.0.0 www.coreldrawchina.com
 0.0.0.0 www.corepulsegen.pro
-0.0.0.0 www.corexsoftware.pro
 0.0.0.0 www.coteassetage.pro
 0.0.0.0 www.cpatrk.net
 0.0.0.0 www.cpmadvisors.com
@@ -112510,12 +112334,11 @@
 0.0.0.0 www.cpv6.com
 0.0.0.0 www.cpx24.com
 0.0.0.0 www.cqsta.com
-0.0.0.0 www.creotrax-pro.com
-0.0.0.0 www.crestyieldmere.pro
 0.0.0.0 www.crispads.com
 0.0.0.0 www.criteo.com
 0.0.0.0 www.crossoverchina.com
 0.0.0.0 www.cryptostamp-art-pro.com
+0.0.0.0 www.crystaldawn.pro
 0.0.0.0 www.csedidsoodsosksdjskdadsk.site
 0.0.0.0 www.cszlks.com
 0.0.0.0 www.cudaojia.com
@@ -112524,8 +112347,6 @@
 0.0.0.0 www.cycyqio.pro
 0.0.0.0 www.cyhners.ero-advertising.com
 0.0.0.0 www.cysyjeo.pro
-0.0.0.0 www.czujnyakcjant.pro
-0.0.0.0 www.d-aloxi-200.pro
 0.0.0.0 www.d77777777.com
 0.0.0.0 www.da-ads.com
 0.0.0.0 www.daaa.ero-advertising.com
@@ -112539,7 +112360,6 @@
 0.0.0.0 www.danpinwu.com
 0.0.0.0 www.daoyoudao.com
 0.0.0.0 www.dashaloxi.pro
-0.0.0.0 www.daskljtitaskastvv.pro
 0.0.0.0 www.dat2.ero-advertising.com
 0.0.0.0 www.data-ero-advertising.com
 0.0.0.0 www.data2.ero-advertising.com
@@ -112571,13 +112391,12 @@
 0.0.0.0 www.diediao.com
 0.0.0.0 www.digitalunion.cn
 0.0.0.0 www.directnetadvertising.net
+0.0.0.0 www.dns-loginssl.bausachverstaendiger-wiesbaden.de
 0.0.0.0 www.dobreprogramy.pro
 0.0.0.0 www.dobruasemi.pro
 0.0.0.0 www.dochodmar.pro
-0.0.0.0 www.dochodnia.pro
 0.0.0.0 www.dograenagal.pro
 0.0.0.0 www.dolanadserver.com
-0.0.0.0 www.dominionvalnex.pro
 0.0.0.0 www.donaraai.pro
 0.0.0.0 www.dongmansoft.com
 0.0.0.0 www.dorevance.pro
@@ -112597,6 +112416,7 @@
 0.0.0.0 www.dqsft.com
 0.0.0.0 www.dramelovik.pro
 0.0.0.0 www.dratio.com
+0.0.0.0 www.draventor.pro
 0.0.0.0 www.dravexoly-pro.com
 0.0.0.0 www.draxenvaro.pro
 0.0.0.0 www.dropped-click.com
@@ -112616,7 +112436,6 @@
 0.0.0.0 www.easyrecoverychina.com
 0.0.0.0 www.ebayadservices.com
 0.0.0.0 www.ebayadvertising.com
-0.0.0.0 www.eclipsecorevix.pro
 0.0.0.0 www.eddong.com
 0.0.0.0 www.edgeway-crescor-pro.com
 0.0.0.0 www.ediuschina.com
@@ -112628,7 +112447,6 @@
 0.0.0.0 www.effirst.com
 0.0.0.0 www.ekonomia-app.pro
 0.0.0.0 www.elevecoinetra-pro.com
-0.0.0.0 www.elitenewssyndicate.pro
 0.0.0.0 www.ellads.com
 0.0.0.0 www.elmvaultstead.pro
 0.0.0.0 www.eltrafiko.com
@@ -112642,7 +112460,6 @@
 0.0.0.0 www.epiclotemaxfin.pro
 0.0.0.0 www.epicmaxalt2u.pro
 0.0.0.0 www.epicmaxaltcap.pro
-0.0.0.0 www.epicmaxaltopt.pro
 0.0.0.0 www.epicoptiplex.pro
 0.0.0.0 www.epmads.com
 0.0.0.0 www.eqripsorix.pro
@@ -112670,7 +112487,6 @@
 0.0.0.0 www.factflowpulse.pro
 0.0.0.0 www.fairholtcryptrix-pro.com
 0.0.0.0 www.fairmontvaltex-pro.com
-0.0.0.0 www.faltorexai.pro
 0.0.0.0 www.fan-yong.com
 0.0.0.0 www.fancydigital.com.cn
 0.0.0.0 www.fancydmp.com
@@ -112696,15 +112512,12 @@
 0.0.0.0 www.feixin2.com
 0.0.0.0 www.fenqihome.com
 0.0.0.0 www.fenvm.com
-0.0.0.0 www.fergentex-pro.com
 0.0.0.0 www.ferlantora.pro
-0.0.0.0 www.ferrovaldenza.pro
 0.0.0.0 www.feruidospsdkosdpapp.site
+0.0.0.0 www.ferygaclogam.pro
 0.0.0.0 www.feyads.com
 0.0.0.0 www.fffeeeq.com
 0.0.0.0 www.fhatfee.ero-advertising.com
-0.0.0.0 www.fidatopaycore.pro
-0.0.0.0 www.fielmercovia-app.pro
 0.0.0.0 www.fielmercovia.pro
 0.0.0.0 www.fierropropova.pro
 0.0.0.0 www.finaitrixcore-pro.com
@@ -112716,16 +112529,12 @@
 0.0.0.0 www.finlab3-ad63.sbs
 0.0.0.0 www.finlab4-ad81.sbs
 0.0.0.0 www.finlab5-ad18.sbs
-0.0.0.0 www.finlockridge.pro
 0.0.0.0 www.fintecaai.pro
-0.0.0.0 www.fiorecolvento.pro
 0.0.0.0 www.fireads.online
-0.0.0.0 www.firmeassetrix.pro
 0.0.0.0 www.firstclick.pro
 0.0.0.0 www.fisio9-ad81.sbs
 0.0.0.0 www.fjlqqc.com
 0.0.0.0 www.fkku194.com
-0.0.0.0 www.flaeryx-ai-pro.com
 0.0.0.0 www.flash.cn
 0.0.0.0 www.flashtest.ero-advertising.com
 0.0.0.0 www.flatdee.ero-advertising.com
@@ -112743,7 +112552,6 @@
 0.0.0.0 www.focusfintrion-pro.com
 0.0.0.0 www.folvextirsoftware.pro
 0.0.0.0 www.fondholmemisvik.pro
-0.0.0.0 www.forcagainflux-pro.cyou
 0.0.0.0 www.forex-advice.net
 0.0.0.0 www.formysql.com
 0.0.0.0 www.fortezcapitoria.pro
@@ -112751,7 +112559,6 @@
 0.0.0.0 www.forums.data2.ero-advertising.com
 0.0.0.0 www.forums.ero-advertising.com
 0.0.0.0 www.fpa.ero-advertising.com
-0.0.0.0 www.frame2uava-pro.com
 0.0.0.0 www.frame2uavapro.pro
 0.0.0.0 www.frameavapro-2u.pro
 0.0.0.0 www.framecapcormaxai.pro
@@ -112759,17 +112566,13 @@
 0.0.0.0 www.freedrive.cn
 0.0.0.0 www.frejsiosdksodlaodpao.site
 0.0.0.0 www.frontierklintex-pro.com
-0.0.0.0 www.fruiterresso.pro
 0.0.0.0 www.fu68.com
-0.0.0.0 www.fundektris.pro
 0.0.0.0 www.fundsindia.pro
 0.0.0.0 www.funshion.net.cn
-0.0.0.0 www.futurio-ai-pro.com
 0.0.0.0 www.fwqekk.top
 0.0.0.0 www.fxadviceformeandyou.com
 0.0.0.0 www.game-advertising-online.com
 0.0.0.0 www.gantpweroli.pro
-0.0.0.0 www.garlenixai.pro
 0.0.0.0 www.gata.ero-advertising.com
 0.0.0.0 www.gatoradvertisinginformationnetwork.com
 0.0.0.0 www.gcmadvertising.com
@@ -112798,6 +112601,7 @@
 0.0.0.0 www.goads.pro
 0.0.0.0 www.godsadvice.com
 0.0.0.0 www.goldbitcore.pro
+0.0.0.0 www.goldenphoenixless.pro
 0.0.0.0 www.goldwavechina.cn
 0.0.0.0 www.golvurikenzbelgium.pro
 0.0.0.0 www.gontrenix.pro
@@ -112810,8 +112614,8 @@
 0.0.0.0 www.gouwubang.com
 0.0.0.0 www.gouzhibao.cn
 0.0.0.0 www.gozendata.com
-0.0.0.0 www.gpt3vapp-pro.com
 0.0.0.0 www.grafenbitcorp-pro.com
+0.0.0.0 www.grand-financeholm.pro
 0.0.0.0 www.greenvistazj.pro
 0.0.0.0 www.greiosedeiroeksosdko.site
 0.0.0.0 www.growin.cn
@@ -112825,7 +112629,6 @@
 0.0.0.0 www.gtrade1.net
 0.0.0.0 www.guanggao369.cn
 0.0.0.0 www.guanyitanggy.com
-0.0.0.0 www.guianovexis.pro
 0.0.0.0 www.guitarpro.cc
 0.0.0.0 www.gurzemqalin.pro
 0.0.0.0 www.gvsadvisory.com
@@ -112848,6 +112651,7 @@
 0.0.0.0 www.hdyzx.cn
 0.0.0.0 www.headlinespotty.pro
 0.0.0.0 www.health-partner.net
+0.0.0.0 www.helmmarginvale-pro.pages.dev
 0.0.0.0 www.helmmarginvale.pro
 0.0.0.0 www.helmorixy-app.pro
 0.0.0.0 www.hengshui1.com
@@ -112899,6 +112703,7 @@
 0.0.0.0 www.ihuanmei.com
 0.0.0.0 www.iiad.com
 0.0.0.0 www.iiewl.com
+0.0.0.0 www.ikquanearegiw.pro
 0.0.0.0 www.ilkwork.com
 0.0.0.0 www.imads.ero-advertising.com
 0.0.0.0 www.imeds.ero-advertising.com
@@ -112927,7 +112732,6 @@
 0.0.0.0 www.instant9bferon.pro
 0.0.0.0 www.instantadvantageai.club
 0.0.0.0 www.instantcodrixfin.pro
-0.0.0.0 www.instantedexneo.pro
 0.0.0.0 www.instantimitrexark.pro
 0.0.0.0 www.insuf.cn
 0.0.0.0 www.insulevel24.pro
@@ -112943,7 +112747,6 @@
 0.0.0.0 www.iqiyi.space
 0.0.0.0 www.ishop789.com
 0.0.0.0 www.isitone.com
-0.0.0.0 www.itquant.pro
 0.0.0.0 www.itunesdownloadstore.com
 0.0.0.0 www.jagcn.com
 0.0.0.0 www.jakyzui.pro
@@ -112954,7 +112757,6 @@
 0.0.0.0 www.jcdfdhx.top
 0.0.0.0 www.jesgoo.com
 0.0.0.0 www.jeuisospkdoosdkado.site
-0.0.0.0 www.jezgravireon.pro
 0.0.0.0 www.jglinks.cn
 0.0.0.0 www.jgmlink.cn
 0.0.0.0 www.jgshare.cn
@@ -113009,11 +112811,9 @@
 0.0.0.0 www.kaitoupiao.com
 0.0.0.0 www.kanshuapp.com
 0.0.0.0 www.kaoos-kdidjhcv.pro
-0.0.0.0 www.kapitalbro.pro
 0.0.0.0 www.kapitalden.pro
 0.0.0.0 www.kapitalviresta.pro
 0.0.0.0 www.kapitangesoftware.pro
-0.0.0.0 www.kapterzora-app.pro
 0.0.0.0 www.kapterzoraki.pro
 0.0.0.0 www.kapwecs.pro
 0.0.0.0 www.karaiyatirimprogrami-app.pro
@@ -113021,7 +112821,9 @@
 0.0.0.0 www.kazatomprom-app.pro
 0.0.0.0 www.kc9.cn
 0.0.0.0 www.kds.ero-advertising.com
+0.0.0.0 www.kedronivar.pro
 0.0.0.0 www.kejet.com
+0.0.0.0 www.kelvariona.pro
 0.0.0.0 www.keydot.net
 0.0.0.0 www.keyrun.cn
 0.0.0.0 www.keyshot.cc
@@ -113033,7 +112835,6 @@
 0.0.0.0 www.kj1p.com
 0.0.0.0 www.kkdsdlc.com
 0.0.0.0 www.kl-toys.com
-0.0.0.0 www.klendixio-app.pro
 0.0.0.0 www.knacads.com
 0.0.0.0 www.kngcjx.com
 0.0.0.0 www.koersaven.pro
@@ -113046,7 +112847,6 @@
 0.0.0.0 www.krevnixio.pro
 0.0.0.0 www.krolfondstvo.pro
 0.0.0.0 www.kruvestalsystem.pro
-0.0.0.0 www.kruxprofitaru.pro
 0.0.0.0 www.krynthelixombravane.pro
 0.0.0.0 www.ksiazorc-alyron.pro
 0.0.0.0 www.kudifish.com
@@ -113079,19 +112879,15 @@
 0.0.0.0 www.ldlwdsx.com
 0.0.0.0 www.leandroceleste.pro
 0.0.0.0 www.ledgerholm-app.pro
-0.0.0.0 www.ledruval-app.pro
 0.0.0.0 www.lekkirendovikai.pro
 0.0.0.0 www.lelatrixio-ai-pro.com
 0.0.0.0 www.lelixio.pro
+0.0.0.0 www.lenvarisa.pro
 0.0.0.0 www.lessplay.com
 0.0.0.0 www.leztruvin.pro
 0.0.0.0 www.liangao.com
-0.0.0.0 www.liberascudorio.pro
 0.0.0.0 www.libro-solethium-pro.com
 0.0.0.0 www.lidlsaleonlyadspl.shop
-0.0.0.0 www.limanfinthra-pro.com
-0.0.0.0 www.limanfinthra.pro
-0.0.0.0 www.linexuspro.pro
 0.0.0.0 www.linezing.com
 0.0.0.0 www.linkjg.cn
 0.0.0.0 www.links-and-traffic.com
@@ -113101,11 +112897,8 @@
 0.0.0.0 www.lnk8.cn
 0.0.0.0 www.loadsabingo.com
 0.0.0.0 www.lobaveo.pro
-0.0.0.0 www.lobigoi.pro
 0.0.0.0 www.logiccormax100.pro
 0.0.0.0 www.logiclevora-2u.pro
-0.0.0.0 www.logiclevora2u-app.pro
-0.0.0.0 www.logiclotemax.pro
 0.0.0.0 www.logoshejishi.com
 0.0.0.0 www.loimearadiku.pro
 0.0.0.0 www.lorenterendor-click.pages.dev
@@ -113113,12 +112906,9 @@
 0.0.0.0 www.lottery.olg.ca
 0.0.0.0 www.loweisaoapoadsaslodlod.site
 0.0.0.0 www.lp.trade360.com
-0.0.0.0 www.lubilea.pro
 0.0.0.0 www.lucecrescoro.pro
 0.0.0.0 www.lucentrixpro.pro
 0.0.0.0 www.lucrovenza.pro
-0.0.0.0 www.lunatrixeonix.pro
-0.0.0.0 www.lupexismax-pro.com
 0.0.0.0 www.luping.net.cn
 0.0.0.0 www.luprix.pro
 0.0.0.0 www.lustriqora.pro
@@ -113134,10 +112924,8 @@
 0.0.0.0 www.makeding.com
 0.0.0.0 www.maralgel.pro
 0.0.0.0 www.marivoxeno-pro.pro
-0.0.0.0 www.marvalorivo.pro
 0.0.0.0 www.mata.ero-advertising.com
 0.0.0.0 www.mathtype.cn
-0.0.0.0 www.mauriquantispro.pro
 0.0.0.0 www.mavrex-trace.com
 0.0.0.0 www.mayalucrezante.pro
 0.0.0.0 www.mbai.cn
@@ -113194,8 +112982,8 @@
 0.0.0.0 www.moquanad.com
 0.0.0.0 www.motufondura.pro
 0.0.0.0 www.moveliscore9-2.pro
+0.0.0.0 www.moventixtrading.pro
 0.0.0.0 www.movieads.ero-advertising.com
-0.0.0.0 www.mozgalom-finlore.pro
 0.0.0.0 www.mpush.cn
 0.0.0.0 www.mpzw.com
 0.0.0.0 www.mrelko.com
@@ -113205,17 +112993,14 @@
 0.0.0.0 www.myadsl.co.za
 0.0.0.0 www.mybb.ero-advertising.com
 0.0.0.0 www.mycleanmymac.com
-0.0.0.0 www.myfazuipl.pro
 0.0.0.0 www.myfeng.cn
 0.0.0.0 www.myhucadvantage.com
 0.0.0.0 www.mylottoadserv.com
 0.0.0.0 www.mymavrex-trace.com
-0.0.0.0 www.myrronpro9-2.pro
 0.0.0.0 www.mywinadvantage.com
 0.0.0.0 www.myzhongguojie.cn
 0.0.0.0 www.n0q.cn
 0.0.0.0 www.n149adserv.com
-0.0.0.0 www.naftotechcora.pro
 0.0.0.0 www.naiadsystems.com
 0.0.0.0 www.nairapulse.pro
 0.0.0.0 www.nangong2.com
@@ -113224,14 +113009,12 @@
 0.0.0.0 www.nata.ero-advertising.com
 0.0.0.0 www.national-lottery.co.uk
 0.0.0.0 www.natrivex-engine.pro
-0.0.0.0 www.natrivexbitronix.pro
 0.0.0.0 www.naughty-traffic.com
 0.0.0.0 www.naxioveronium-pro.com
 0.0.0.0 www.ncoyqc.com
 0.0.0.0 www.needadvertising.com
 0.0.0.0 www.neocapitalsystem.pro
 0.0.0.0 www.neptuneads.com
-0.0.0.0 www.nerdynatorv2.pro
 0.0.0.0 www.nerfeiidsjsdksdlopower.com
 0.0.0.0 www.net-actifvillepro.pro
 0.0.0.0 www.networkbench.com
@@ -113239,7 +113022,6 @@
 0.0.0.0 www.newhold.pro
 0.0.0.0 www.newspolnd.pro
 0.0.0.0 www.newsyoucanread24.com
-0.0.0.0 www.nexipessogpt.pro
 0.0.0.0 www.nexorion-finance.pro
 0.0.0.0 www.nexotronai.pro
 0.0.0.0 www.nextlnk9.com
@@ -113259,7 +113041,6 @@
 0.0.0.0 www.norqelaxisai.pro
 0.0.0.0 www.notepad2.com
 0.0.0.0 www.novaonads.com
-0.0.0.0 www.novarisai.pro
 0.0.0.0 www.nruesidoajsdjaodokadso.site
 0.0.0.0 www.ntfsformac.cc
 0.0.0.0 www.ntfsformac.cn
@@ -113283,21 +113064,16 @@
 0.0.0.0 www.optad360.com
 0.0.0.0 www.optaim.com
 0.0.0.0 www.optimix.cn
-0.0.0.0 www.ordexiaprime.pro
-0.0.0.0 www.orenthiovector.pro
 0.0.0.0 www.org-upgrade.com
 0.0.0.0 www.orion.iad.appboy.com
 0.0.0.0 www.ormitrinex.pro
-0.0.0.0 www.orovaldexia-pro.com
 0.0.0.0 www.orveztil.pro
 0.0.0.0 www.ouluvoittvex.pro
 0.0.0.0 www.outbrain.com
 0.0.0.0 www.overturechina.com
-0.0.0.0 www.oxvurilzsoftware.pro
 0.0.0.0 www.pagechoice.net
 0.0.0.0 www.pagepeel.ero-advertising.com
 0.0.0.0 www.pangolin-dsp-toutiao.com
-0.0.0.0 www.paqydorixyai.pro
 0.0.0.0 www.parsads.com
 0.0.0.0 www.partner-ads.com
 0.0.0.0 www.partner-with-creators.com
@@ -113315,9 +113091,8 @@
 0.0.0.0 www.pegasushomes.pro
 0.0.0.0 www.peluxivsoftware.pro
 0.0.0.0 www.persgroepadvertising.nl
-0.0.0.0 www.pewna-inwestotivpro.pro
-0.0.0.0 www.pewnarentostka.pro
 0.0.0.0 www.pflexads.com
+0.0.0.0 www.phantomstrikety.pro
 0.0.0.0 www.phlintkapstead.pro
 0.0.0.0 www.phlintrentmere.pro
 0.0.0.0 www.phoenixads.co.in
@@ -113344,7 +113119,6 @@
 0.0.0.0 www.pjbjzf.com
 0.0.0.0 www.pkkjxs.cn
 0.0.0.0 www.pl-add.shop
-0.0.0.0 www.plenacapitoria.pro
 0.0.0.0 www.pobierzteraz.mobi
 0.0.0.0 www.pohjorvalene.pro
 0.0.0.0 www.poijugh.top
@@ -113362,15 +113136,12 @@
 0.0.0.0 www.popads.net
 0.0.0.0 www.popadvert.com
 0.0.0.0 www.popelkar.pro
-0.0.0.0 www.pordeliksengine.pro
-0.0.0.0 www.portvaultwick.pro
 0.0.0.0 www.postads24.com
 0.0.0.0 www.postnewsads.com
 0.0.0.0 www.poweredbyliquidfire.mobi
 0.0.0.0 www.pp9899.com
 0.0.0.0 www.prandelia.pro
 0.0.0.0 www.prebid.adnxs.com
-0.0.0.0 www.precoadven.cyou
 0.0.0.0 www.predictivadvertising.com
 0.0.0.0 www.pressbureauonline.pro
 0.0.0.0 www.prestigionivel.pro
@@ -113394,11 +113165,10 @@
 0.0.0.0 www.proverseax.pro
 0.0.0.0 www.prozenvora.pro
 0.0.0.0 www.pubsdownloads.net
-0.0.0.0 www.pulsarvexline-pro.com
 0.0.0.0 www.pulsemorphix.pro
 0.0.0.0 www.pura-monetivo.pro
-0.0.0.0 www.puremonetivo.pro
 0.0.0.0 www.purfinrevoux-pro.com
+0.0.0.0 www.purliquidheim.pro
 0.0.0.0 www.purnoavexo.pro
 0.0.0.0 www.purocapitenca.pro
 0.0.0.0 www.pushcfg.com
@@ -113417,23 +113187,20 @@
 0.0.0.0 www.qleverapro.pro
 0.0.0.0 www.qoventrix24.pro
 0.0.0.0 www.qqads.com
-0.0.0.0 www.quanticorev2.pro
 0.0.0.0 www.quantivaadvisoryprogrammes.pro
 0.0.0.0 www.quantixfinance.pro
 0.0.0.0 www.quantrexblaze.pro
+0.0.0.0 www.quantum-flowbit.pro
 0.0.0.0 www.quantumaiglobal.pro
 0.0.0.0 www.quantumpro-app.pro
-0.0.0.0 www.quantyxorelian-pro.com
 0.0.0.0 www.quasargames.pro
 0.0.0.0 www.quickbriefingd.pro
 0.0.0.0 www.qumi.com
-0.0.0.0 www.qumvestiumai.pro
 0.0.0.0 www.qunymuy.pro
 0.0.0.0 www.qupinhj.com
 0.0.0.0 www.qutaobi.com
 0.0.0.0 www.qvantiumai.pro
 0.0.0.0 www.qwkooasdksdoadkd.site
-0.0.0.0 www.qynxiliur.pro
 0.0.0.0 www.qzgjprj.com
 0.0.0.0 www.rade-platform.pro
 0.0.0.0 www.rampidads.com
@@ -113453,15 +113220,11 @@
 0.0.0.0 www.remote88.com
 0.0.0.0 www.rendistero.pro
 0.0.0.0 www.renminben.com
-0.0.0.0 www.rentemond.pro
 0.0.0.0 www.repossessionleads.com
 0.0.0.0 www.rerisfjsdiwkerisdkkaod.site
 0.0.0.0 www.reservaplatform.pro
 0.0.0.0 www.resortecapitencia.pro
-0.0.0.0 www.revaultnex.pro
 0.0.0.0 www.rhythmosmonvexis.pro
-0.0.0.0 www.riccawalorawia.pro
-0.0.0.0 www.richefondois.pro
 0.0.0.0 www.ridgetrust.pro
 0.0.0.0 www.risorsa-portyrex.pro
 0.0.0.0 www.robotrader-pro.com
@@ -113474,8 +113237,6 @@
 0.0.0.0 www.rs2.ero-advertising.com
 0.0.0.0 www.rtb-adsterra.flshtrk.store
 0.0.0.0 www.rubiconproject.com
-0.0.0.0 www.ryptonoansolution.pro
-0.0.0.0 www.ryptowolfzengine.pro
 0.0.0.0 www.s.ero-advertising.com
 0.0.0.0 www.s0n.cn
 0.0.0.0 www.s10.hiadspaces.ero-advertising.com
@@ -113491,9 +113252,7 @@
 0.0.0.0 www.sadafiksodoskdjfiosdkado.site
 0.0.0.0 www.saladstory.mom
 0.0.0.0 www.salewayplatform.pro
-0.0.0.0 www.sanolucrivo.pro
 0.0.0.0 www.sarabattamula-click.pages.dev
-0.0.0.0 www.saudivisionai-pro.com
 0.0.0.0 www.sb88b.com
 0.0.0.0 www.schildvaultaris.pro
 0.0.0.0 www.sdkclick.com
@@ -113525,7 +113284,6 @@
 0.0.0.0 www.shisancore-pro.com
 0.0.0.0 www.shisancore.pro
 0.0.0.0 www.shkywh.com
-0.0.0.0 www.shoboltrangorh.pro
 0.0.0.0 www.shouyoutan.com
 0.0.0.0 www.shuaixu.site
 0.0.0.0 www.shuqw.com
@@ -113535,15 +113293,13 @@
 0.0.0.0 www.sichonex-pro.com
 0.0.0.0 www.siermkolipd.pro
 0.0.0.0 www.signalflarexp.pro
-0.0.0.0 www.signallidexhex.pro
 0.0.0.0 www.silaportdex.pro
 0.0.0.0 www.silkroadfuturesdesk.pro
 0.0.0.0 www.silnagieldownia.pro
 0.0.0.0 www.silnyfundalis.pro
 0.0.0.0 www.sin.ero-advertising.com
-0.0.0.0 www.sincorrabtcv8.pro
+0.0.0.0 www.sinceredepotance-ai.pro
 0.0.0.0 www.sintrelonix.pro
-0.0.0.0 www.skyline-nexus-pro.live
 0.0.0.0 www.slide-avitapip.pro
 0.0.0.0 www.slideataraxfinai.pro
 0.0.0.0 www.slimads.vn
@@ -113565,12 +113321,12 @@
 0.0.0.0 www.solatrenicae.pro
 0.0.0.0 www.soleilsystem.pro
 0.0.0.0 www.solidofundavox.pro
-0.0.0.0 www.solidreturn-pro.com
 0.0.0.0 www.solvanciere-app.pro
 0.0.0.0 www.solvyan-defix-pro.com
 0.0.0.0 www.somennew.com
 0.0.0.0 www.sommet-fundvio.pro
 0.0.0.0 www.song001.com
+0.0.0.0 www.sonorarentestra.pro
 0.0.0.0 www.souid.com
 0.0.0.0 www.spaces.ero-advertising.com
 0.0.0.0 www.speed4cksa.ero-advertising.com
@@ -113579,9 +113335,9 @@
 0.0.0.0 www.speedclics.ero-advertising.com
 0.0.0.0 www.speedlicks.ero-advertising.com
 0.0.0.0 www.speeuclicks.ero-advertising.com
-0.0.0.0 www.spikeavonexneo.pro
 0.0.0.0 www.spikeexorexx.pro
 0.0.0.0 www.spikeflarex-nx.pro
+0.0.0.0 www.spikeflarexnx.pro
 0.0.0.0 www.sponsorads.de
 0.0.0.0 www.sportplus.pro
 0.0.0.0 www.spotflomax-pip.pro
@@ -113628,7 +113384,6 @@
 0.0.0.0 www.summitvalnexapp.pro
 0.0.0.0 www.suncrestvarlon.pro
 0.0.0.0 www.sunflowersandthreads.com
-0.0.0.0 www.sunfortportdex.pro
 0.0.0.0 www.sunridgepyrvox.pro
 0.0.0.0 www.supersonicads.com
 0.0.0.0 www.sur-koffrevance.pro
@@ -113644,7 +113399,6 @@
 0.0.0.0 www.swiftedgefinvexor.pro
 0.0.0.0 www.swiftlink-valnex.pro
 0.0.0.0 www.swiftventaris.pro
-0.0.0.0 www.swissborgapp.pro
 0.0.0.0 www.switch-axid-hex-pro.com
 0.0.0.0 www.switchembolex-pro.com
 0.0.0.0 www.sxdyrq.com
@@ -113731,8 +113485,6 @@
 0.0.0.0 www.trade360.com
 0.0.0.0 www.trade8iplex.live
 0.0.0.0 www.tradeadexchange.com
-0.0.0.0 www.tradementor-pro.shop
-0.0.0.0 www.tradepro-engine.pro
 0.0.0.0 www.traderaiapp.pro
 0.0.0.0 www.traderflix9gpt-pro.com
 0.0.0.0 www.tradex-ai.pro
@@ -113743,9 +113495,7 @@
 0.0.0.0 www.trafficads.com
 0.0.0.0 www.trafficnetworkads24.com
 0.0.0.0 www.tramaprofitex.pro
-0.0.0.0 www.trasviloxai.pro
 0.0.0.0 www.traveladvertising.com
-0.0.0.0 www.treviloxanopro.pro
 0.0.0.0 www.tripadvisor.pre-approved-83945n.live
 0.0.0.0 www.tripadvisor.request-apartment104263851.homes
 0.0.0.0 www.trivaxonvelquant.pro
@@ -113753,6 +113503,7 @@
 0.0.0.0 www.trueledgewick.pro
 0.0.0.0 www.trueshelterju.pro
 0.0.0.0 www.trustenixaibefektetesiplatform.pro
+0.0.0.0 www.trustorium.pro
 0.0.0.0 www.truthgridmax.pro
 0.0.0.0 www.ttcdn.cn
 0.0.0.0 www.ttnet.yandex.com.tr
@@ -113763,7 +113514,6 @@
 0.0.0.0 www.tuituigui19999.com
 0.0.0.0 www.tujidao.com
 0.0.0.0 www.tukexiu.com
-0.0.0.0 www.turbocormax-pro.com
 0.0.0.0 www.turboexelonark.pro
 0.0.0.0 www.turbofund100.pro
 0.0.0.0 www.turn.com
@@ -113784,7 +113534,6 @@
 0.0.0.0 www.ujian.cc
 0.0.0.0 www.uklawadvice.com
 0.0.0.0 www.ulink.cc
-0.0.0.0 www.ultratrade-alphavest.pro
 0.0.0.0 www.ultravix-app.pro
 0.0.0.0 www.um0.cn
 0.0.0.0 www.um0592.com
@@ -113802,9 +113551,7 @@
 0.0.0.0 www.unionsy.com
 0.0.0.0 www.universal-traffic.com
 0.0.0.0 www.universalesdeskandia.pro
-0.0.0.0 www.untavix.pro
 0.0.0.0 www.uol-bitfundix.pro
-0.0.0.0 www.update-addrese.ctiltst.ccwu.cc
 0.0.0.0 www.update-information.zzux.com
 0.0.0.0 www.update-java.kit.net
 0.0.0.0 www.update-security.ddns.info
@@ -113817,21 +113564,16 @@
 0.0.0.0 www.uyunad.com
 0.0.0.0 www.v00087.com
 0.0.0.0 www.v66v66.com
-0.0.0.0 www.vaaltechki.pro
 0.0.0.0 www.vacamuertainvestment.pro
 0.0.0.0 www.vads.net.vn
 0.0.0.0 www.vads.vn
 0.0.0.0 www.valcreditance.pro
 0.0.0.0 www.valeurgaintra.pro
 0.0.0.0 www.valexiro.pro
-0.0.0.0 www.valleprofitra.pro
-0.0.0.0 www.valutorreai.pro
-0.0.0.0 www.vandelixio-tech.pro
 0.0.0.0 www.vangmobi.com
 0.0.0.0 www.vanguardtruthnow.pro
 0.0.0.0 www.vantaxio-pro.com
 0.0.0.0 www.varentixor-pro.com
-0.0.0.0 www.vaxubai.pro
 0.0.0.0 www.vbnm888.com
 0.0.0.0 www.vegaschina.cn
 0.0.0.0 www.velario-trace.org
@@ -113841,12 +113583,10 @@
 0.0.0.0 www.velorafundsaiv2.pro
 0.0.0.0 www.veloryx-nexantra.pro
 0.0.0.0 www.veltrixnexaro.pro
-0.0.0.0 www.venitendra.pro
 0.0.0.0 www.ventrim.pro
 0.0.0.0 www.verifica-ai.pro
+0.0.0.0 www.verifiednewsdispatch.pro
 0.0.0.0 www.vertron-ai.pro
-0.0.0.0 www.vifb-ours-ade.today
-0.0.0.0 www.vigor-fintrion-pro.com
 0.0.0.0 www.vipads.cc
 0.0.0.0 www.vipads.live
 0.0.0.0 www.vistafinvora.pro
@@ -113857,12 +113597,9 @@
 0.0.0.0 www.voltixedge.pro
 0.0.0.0 www.vorelium-pro.com
 0.0.0.0 www.vorelium-pro.net
-0.0.0.0 www.vortexfrance.pro
 0.0.0.0 www.voxtrendputere.pro
 0.0.0.0 www.vpon.com
-0.0.0.0 www.vurdoxen.pro
 0.0.0.0 www.vyk.admaster.com.cn
-0.0.0.0 www.vyranivotrade-pro.com
 0.0.0.0 www.vyxelleqranto.pro
 0.0.0.0 www.w1a.cc
 0.0.0.0 www.w4pma.cn
@@ -113891,6 +113628,7 @@
 0.0.0.0 www.westgrove-hqmsdke-mainfield.site
 0.0.0.0 www.westreclameadvies.nl
 0.0.0.0 www.westyngainwale.pro
+0.0.0.0 www.weynuoligzare.pro
 0.0.0.0 www.whalecashads.com
 0.0.0.0 www.whalecloud.com
 0.0.0.0 www.whcrdz.com
@@ -113929,7 +113667,6 @@
 0.0.0.0 www.xchmai.com
 0.0.0.0 www.xdrig.com
 0.0.0.0 www.xelaronexum.pro
-0.0.0.0 www.xenqoriaai.pro
 0.0.0.0 www.xentora-core390.pro
 0.0.0.0 www.xiacai.com
 0.0.0.0 www.xianliao.me
@@ -114005,38 +113742,26 @@
 0.0.0.0 www.zaszzzksdoosdoadsk.site
 0.0.0.0 www.zbrushcn.com
 0.0.0.0 www.zedadssiosodiksdko.site
-0.0.0.0 www.zelanciaai.pro
-0.0.0.0 www.zenithinverix.pro
 0.0.0.0 www.zentaykuro.pro
 0.0.0.0 www.zentpadsense.site
-0.0.0.0 www.zevriocapture-pro.com
 0.0.0.0 www.zhidian3g.cn
 0.0.0.0 www.zhuangjizhuli.net
 0.0.0.0 www.zhzzx.com
 0.0.0.0 www.ziraatyatirimborsahesabi.pro
-0.0.0.0 www.ziskvynosovanz.pro
-0.0.0.0 www.zivanpro.pro
 0.0.0.0 www.zjjgtz.com
 0.0.0.0 www.zjsyawqj.cn
 0.0.0.0 www.zkaldexekpaideftiki.pro
 0.0.0.0 www.zlne800.com
 0.0.0.0 www.zlotario-pro.com
 0.0.0.0 www.zlotario-pro.net
-0.0.0.0 www.zloty-zyskowium.pro
-0.0.0.0 www.zollafintex.pro
 0.0.0.0 www.zopeynxv.top
-0.0.0.0 www.zorvanelixtredomio.pro
-0.0.0.0 www.zovthurix-app.pro
 0.0.0.0 www.zreder.com
 0.0.0.0 www.zshacker.com
 0.0.0.0 www.zww.ero-advertising.com
 0.0.0.0 www.zxziyuan.com
-0.0.0.0 www.zyfrapro.pro
-0.0.0.0 www.zylkex.pro
 0.0.0.0 www.zyrenmint.pro
 0.0.0.0 www.zyskont.pro
 0.0.0.0 www.zyvron-trace-gpt.live
-0.0.0.0 www.zywa-capovin.pro
 0.0.0.0 www.zz123.com
 0.0.0.0 www.zzd6.com
 0.0.0.0 www1.cynergysolutions.net
@@ -114633,7 +114358,6 @@
 0.0.0.0 xemswfbrdhrts.website
 0.0.0.0 xenlzn.icu
 0.0.0.0 xenon.studio
-0.0.0.0 xenqoriaai.pro
 0.0.0.0 xentora-core390.pro
 0.0.0.0 xepaijcfgvzje.online
 0.0.0.0 xepluwsaisxgi.website
@@ -117562,7 +117286,6 @@
 0.0.0.0 zeigraim.com
 0.0.0.0 zekagaibrryns.space
 0.0.0.0 zekneylmdrfud.space
-0.0.0.0 zelanciaai.pro
 0.0.0.0 zelle.odencat.com
 0.0.0.0 zelten.fritz-berger.de
 0.0.0.0 zelvlzqbhpnpo.online
@@ -117572,7 +117295,6 @@
 0.0.0.0 zendplace.pro
 0.0.0.0 zenedge.actonservice.com
 0.0.0.0 zenis15.net
-0.0.0.0 zenithinverix.pro
 0.0.0.0 zenithoradog.com
 0.0.0.0 zenithurbanflirtatious.com
 0.0.0.0 zenlkqmjfnnwd.website
@@ -117615,7 +117337,6 @@
 0.0.0.0 zeusadx.com
 0.0.0.0 zeustechnology.com
 0.0.0.0 zevairaurs.net
-0.0.0.0 zevriocapture-pro.com
 0.0.0.0 zevsrhtbpzs.com
 0.0.0.0 zewesamessustee.net
 0.0.0.0 zewkj.com
@@ -117848,7 +117569,6 @@
 0.0.0.0 ziraatyatirimborsahesabi.pro
 0.0.0.0 zireemilsoude.net
 0.0.0.0 zirve100.com
-0.0.0.0 ziskvynosovanz.pro
 0.0.0.0 zisr3w3i2csfa76m.edge41.testandtarget.omniture.com
 0.0.0.0 zisu.cn.com
 0.0.0.0 zitdither.com
@@ -117857,7 +117577,6 @@
 0.0.0.0 ziugocxrubayf.site
 0.0.0.0 ziuofftam.com
 0.0.0.0 ziupljvisonem.space
-0.0.0.0 zivanpro.pro
 0.0.0.0 zivtux.com
 0.0.0.0 zivufupwnqrwb.online
 0.0.0.0 zivxgvrhzvfwd.online
@@ -117986,7 +117705,6 @@
 0.0.0.0 zlongad.com
 0.0.0.0 zlotario-pro.com
 0.0.0.0 zlotario-pro.net
-0.0.0.0 zloty-zyskowium.pro
 0.0.0.0 zlp6s.pw
 0.0.0.0 zlqanhqrtjair.website
 0.0.0.0 zlrwxkrwslawu.online
@@ -118106,7 +117824,6 @@
 0.0.0.0 zoiyjzhhjty.com
 0.0.0.0 zokapwppblsly.website
 0.0.0.0 zokfgnvzcdimh.website
-0.0.0.0 zollafintex.pro
 0.0.0.0 zombieslayer-alternate.kano.link
 0.0.0.0 zombieslayer.kano.link
 0.0.0.0 zomdufobhmfmm.space
@@ -118148,7 +117865,6 @@
 0.0.0.0 zordoabsolsooph.net
 0.0.0.0 zorquaaeybckx.space
 0.0.0.0 zorseeckoaroa.net
-0.0.0.0 zorvanelixtredomio.pro
 0.0.0.0 zosteralatency.com
 0.0.0.0 zotnkataxyscx.online
 0.0.0.0 zotqhsyqbetkg.online
@@ -118157,7 +117873,6 @@
 0.0.0.0 zouwie.mlhif.com
 0.0.0.0 zouyfpkgawryi.online
 0.0.0.0 zovidree.com
-0.0.0.0 zovthurix-app.pro
 0.0.0.0 zowfzkclkxpou.space
 0.0.0.0 zoxyxrmbk.com
 0.0.0.0 zozvjoawtvxpi.online
@@ -118569,7 +118284,6 @@
 0.0.0.0 zyek35wsn.com
 0.0.0.0 zyf.fzdfwy.com
 0.0.0.0 zyf03k.xyz
-0.0.0.0 zyfrapro.pro
 0.0.0.0 zygoojpfbiqdi.online
 0.0.0.0 zyguhojdymzqx.site
 0.0.0.0 zyhzzhxnlnfdk.site
@@ -118579,7 +118293,6 @@
 0.0.0.0 zyjfjziavcdpnk.com
 0.0.0.0 zyjlsoofkpxrm.space
 0.0.0.0 zyjvyfaihssods.com
-0.0.0.0 zylkex.pro
 0.0.0.0 zymbrlgu.cn
 0.0.0.0 zymerget.win
 0.0.0.0 zymo.mps.weibo.com
@@ -118596,7 +118309,6 @@
 0.0.0.0 zyswiurots.com
 0.0.0.0 zyvbcstcltidm.online
 0.0.0.0 zyvron-trace-gpt.live
-0.0.0.0 zywa-capovin.pro
 0.0.0.0 zyxbltkkgkmon.site
 0.0.0.0 zyz.91friend.com
 0.0.0.0 zyz1.91friend.com
@@ -132838,7 +132550,6 @@
 :: aiojgikjbhzqe.website
 :: aip.actonservice.com
 :: aipmedia.com
-:: aiprofit-trade.pro
 :: aipu.mobi
 :: aiqidwcfrm.com
 :: aiqua-sdk.c.appier.net
@@ -133057,7 +132768,6 @@
 :: albanychicago.advancedtech.com
 :: albbwlhyjotcs.website
 :: albioncredmere-pro.com
-:: albioncredmere-pro.sbs
 :: albonsa.com
 :: alcatza.com
 :: alchemymatchesconnections.com
@@ -134508,7 +134218,6 @@
 :: andallthemise.org
 :: andbeyond.media
 :: andersenit.dk
-:: andexioai.pro
 :: andfauna.net
 :: andlache.com
 :: andmejs.com
@@ -134648,7 +134357,6 @@
 :: ans.mlb.com
 :: ans.worldbaseballclassic.com
 :: ans.yesnetwork.com
-:: ansimtradix.pro
 :: ansnxnkxsagnp.website
 :: ansuksar.com
 :: answerbook.com
@@ -134865,7 +134573,6 @@
 :: apexstats.com
 :: apextag.com
 :: apextwo.com
-:: apexwealthai.pro
 :: apfbrk.butorline.hu
 :: apfjzhkkbguoc.site
 :: apfqoakmqrpqv.site
@@ -136936,7 +136643,6 @@
 :: arena-quantum.co.uk
 :: arenaetango.shop
 :: areyouready.co.za
-:: argento-app.pro
 :: arglesmtn.com
 :: arglingpistole.com
 :: argos.citruserve.com
@@ -137150,7 +136856,6 @@
 :: ascentcrm.actonservice.com
 :: ascentlitigateunsaved.com
 :: ascertainowlbookkeeper.com
-:: ascesafundoria.pro
 :: ascmart.abphotos.link
 :: ascncuacdwh.in
 :: ascpqnj-oam.global.ssl.fastly.net
@@ -137300,7 +137005,6 @@
 :: assassinationapprenticeedible.com
 :: asscfpprqsurr.online
 :: assealsulfion.com
-:: asseevolaraai.pro
 :: assembleservers.com
 :: assemblyexchange.com
 :: assertedclosureseaman.com
@@ -137390,7 +137094,6 @@
 :: astonishlandmassnervy.com
 :: astonishmentfriedcount.com
 :: astonishmentfuneral.com
-:: astraaicapital.pro
 :: astragainlux.pro
 :: astral.nicovideo.jp
 :: astralhustle.com
@@ -137638,7 +137341,6 @@
 :: au.youmi.net
 :: au737.com
 :: auajhmhuyzfel.online
-:: auberevo.pro
 :: aubhgnoealbnx.space
 :: auburn9819.com
 :: auchoahy.net
@@ -137796,7 +137498,6 @@
 :: automaticturkey.com
 :: automation.pemco.com
 :: automationtest.pemco.com
-:: automindgr.pro
 :: automizely-analytics.com
 :: automobile-bk.de
 :: automobiledeem.com
@@ -138293,7 +137994,6 @@
 :: azgftoymwpszx.online
 :: azgvupab.in
 :: azhobfzcwtxvj.website
-:: azimcorevex.pro
 :: azjmp.com
 :: azklmoinajgb.com
 :: azknucfjdcecq.online
@@ -138978,7 +138678,6 @@
 :: bas.boshi.tv
 :: base.api.my7v.com
 :: baseboosters.com
-:: baseinvexus.pro
 :: baselinetoisolated.net
 :: basementyachtendorsement.com
 :: baseniao.com.cn
@@ -139008,7 +138707,6 @@
 :: bastardnonethelessuseless.com
 :: bastingart.com
 :: bastion1.top
-:: bastioncapridge.pro
 :: bastionwealthadvisors.pro
 :: bastitemomme.shop
 :: basuey.toyscenter.it
@@ -139054,7 +138752,6 @@
 :: baxt.mobi
 :: bay.xiawu.com
 :: bayancapital.pro
-:: bayassetholm.pro
 :: baycjars.com
 :: baycode.cn
 :: bayh.cdhenfan.com
@@ -140190,11 +139887,9 @@
 :: bison.actonservice.com
 :: bistoury55.com
 :: bit-ad.com
-:: bit-pro-reoproapp.com
 :: bit.beformance.com
 :: bitadx.one
 :: bitbeat7.com
-:: bitbenel.pro
 :: bitcast-a.v1.iad1.bitgravity.com
 :: bitclub.network
 :: bitclubnetwork.com
@@ -140207,9 +139902,7 @@
 :: bitcoin-pocket.de
 :: bitcoin-pocket.eu
 :: bitcoin-union.org
-:: bitcoineverest.pro
 :: bitcoingoldmineplatform.pro
-:: bitcoinquantumai.pro
 :: bitcoinup-pro.com
 :: bite.theta.sogoucdn.com
 :: biteanxiously.com
@@ -140518,7 +140211,6 @@
 :: blistest.xyz
 :: blitz-analytics-batch-server.blitz.gg
 :: blitzcampaigns.com
-:: blizonprecisie.pro
 :: blizzdata.site
 :: bllqbpgjkzqu.com
 :: blmjbp.casamundo.pl
@@ -140629,7 +140321,6 @@
 :: blueoyster.click
 :: blueparrot.media
 :: bluepontoons.com
-:: bluequbitai.pro
 :: blueridgeloop.com
 :: blueskyforest.com
 :: bluetoad.com
@@ -140996,12 +140687,10 @@
 :: boostbehavior.com
 :: boostcdn.net
 :: boostclic.com
-:: boostcormax.pro
 :: boostcpm.su
 :: booster-vax.com
 :: booster.osnova.io
 :: booster3d.com
-:: boostkapidex.pro
 :: boostlo.xyz
 :: boostog.net
 :: bootcdn.cn
@@ -141020,7 +140709,6 @@
 :: bopmkf.lolahome.es
 :: boqufs.2nn.jp
 :: boraerzutd.com
-:: borborygmuoa.pro
 :: bordeaux.futurecdn.net
 :: bordermotivation.com
 :: boreaddingobserve.com
@@ -141042,7 +140730,6 @@
 :: borrowedtransition.com
 :: borrowhourglass.com
 :: borsendental.com
-:: borsixgpt.pro
 :: borvens.com
 :: borzjournal.ru
 :: borzoishyp.com
@@ -141261,7 +140948,6 @@
 :: braised58.top
 :: brakiefissive.com
 :: bramerirent.eccocar.com
-:: bramridgetrust.pro
 :: bran.sightdots.com
 :: branch-4567w2a56q-test.salesfloor.net
 :: branch-4567w2a56q.salesfloor.net
@@ -141402,7 +141088,6 @@
 :: brandybison.com
 :: brascomarketing.actonservice.com
 :: brashgrandchild.com
-:: brasilrendagpt.pro
 :: brassstacker.com
 :: brat-online.ro
 :: brationalfilarded.com
@@ -141413,7 +141098,6 @@
 :: braverybreezebinding.com
 :: braverycavalryoats.com
 :: braveryriftraining.com
-:: bravexilini.pro
 :: bravo.israelweather.co.il
 :: bravotrk.com
 :: brawexstill.shop
@@ -141464,7 +141148,6 @@
 :: breezygrove.com
 :: breixmdldvvfa.website
 :: brekutiosai.pro
-:: brekutiossoftware.pro
 :: brespark.eccocar.com
 :: brevitychestprocess.com
 :: brevnet.eccocar.com
@@ -141504,7 +141187,6 @@
 :: brieflynimbleignition.com
 :: brieftrouble.com
 :: brigadedelegatesandbox.com
-:: brightcapitgate.pro
 :: brightcloudridge.com
 :: brightcoremind.com
 :: brightdata.com
@@ -141518,7 +141200,6 @@
 :: brightline.tv
 :: brightlygauntlet.com
 :: brightonclick.com
-:: brightpayplus.pro
 :: brightruin.pro
 :: brightshare.com
 :: brightskyridge.com
@@ -141538,7 +141219,6 @@
 :: brilliantoverhaulunshaken.com
 :: brilliantpiece.com
 :: brilllantsdates.net
-:: brimax-edge.pro
 :: bringg.actonservice.com
 :: bringmethehats.com
 :: brinkmarko.com
@@ -141547,7 +141227,6 @@
 :: brioletredeyes.com
 :: brionyamanist.com
 :: brioscoot.eccocar.com
-:: briovexaria.pro
 :: brirriek.com
 :: brisk-cold.pro
 :: brisk22001.net
@@ -141815,20 +141494,15 @@
 :: btagmedia.com
 :: btbeacdhrdt.com
 :: btbuckets.com
-:: btc-adverant-224-ai.com
-:: btc-adverant-ai.com
 :: btc-adverant-ai.live
 :: btc-adverant224-ai.live
 :: btc-belant17.pro
 :: btc-glamit-365.live
-:: btc-vindici11.pro
 :: btcadverant.digital
 :: btcadverantv10.de
 :: btcapnstad.pro
 :: btcblunex.pro
 :: btcfbr.mejshop.jp
-:: btcgenix9.pro
-:: btcmentralixv7.pro
 :: btcnexivolt-760.pro
 :: btcsolgreen-ai.pro
 :: btctraderai.pro
@@ -142834,7 +142508,6 @@
 :: cai75tp.com
 :: caihongxuan.com
 :: caing.adsame.com
-:: cairnphundholm.pro
 :: caitlinagathami.com
 :: caixin.adsame.com
 :: caixinimg.adsame.com
@@ -143035,8 +142708,6 @@
 :: canellecrazy.com
 :: canem-auris.com
 :: canesfederalnewspapers.com
-:: canfi.pro
-:: canfirst-pro.com
 :: canganzimbi.com
 :: cangshu.info
 :: canionscowshut.shop
@@ -143076,7 +142747,6 @@
 :: capeplayer.com
 :: caperedlevi.com
 :: capi.connatix.com
-:: capitalflux-system.pro
 :: capitalistsplitting.com
 :: capitalopera.com
 :: capkkfuiticpo.space
@@ -144013,7 +143683,6 @@
 :: cecmwtarwabtp.website
 :: ced.sascdn.com
 :: cedar-static.space
-:: cedarassetgrove.pro
 :: cedarcrozzle.com
 :: cedecancontemporary.com
 :: cedeimprovise.com
@@ -144132,7 +143801,6 @@
 :: cexofira.com
 :: cexucetum.com
 :: cexwqzqmrpjcw.site
-:: ceyloninvest.pro
 :: ceyreesdxgvkd.site
 :: ceztv.com
 :: cf-ad.ad-stir.com
@@ -144381,6 +144049,7 @@
 :: chebelsnigged.shop
 :: chebfqsmfwovu.online
 :: check-activity.com.ru
+:: check-konto.vercel.app
 :: check-tcp.rayjump.com
 :: check-tl-ver-294-2.com
 :: check.ddos-guard.net
@@ -144624,7 +144293,6 @@
 :: cidhafxjwxwjr.online
 :: cidont.xyz
 :: cidtunppinhi.in
-:: cielorendorio.pro
 :: cientch.360doc.cn
 :: ciewpsfxnt.com
 :: ciflyeoaawica.site
@@ -147222,7 +146890,6 @@
 :: coremetrics.com
 :: coremotives.com
 :: corepulsegen.pro
-:: corexsoftware.pro
 :: corgibeachday.com
 :: corkdeclarationfourteenth.com
 :: corksadly.com
@@ -147921,7 +147588,6 @@
 :: crengate.com
 :: crentexgate.com
 :: creosolcotoin.shop
-:: creotrax-pro.com
 :: crepemania.openapp.link
 :: crepeyfrogged.com
 :: crepgate.com
@@ -147929,7 +147595,6 @@
 :: crescentnoise.com
 :: crescentstocky.com
 :: cresfpho2ntesepapillo3.com
-:: crestyieldmere.pro
 :: cresvin.com
 :: cretgate.com
 :: crevicedepressingpumpkin.com
@@ -148115,6 +147780,7 @@
 :: crystalapp.miguvideo.com
 :: crystalbloom.bid
 :: crystalboulevard.com
+:: crystaldawn.pro
 :: crystalmart.cn
 :: crystalpvp.ru
 :: cryto.xyz
@@ -148869,14 +148535,12 @@
 :: czt4gnz57.com
 :: cztesoepklydo.online
 :: czujjs.crownandcaliber.com
-:: czujnyakcjant.pro
 :: czuwprnlhxpdh.site
 :: czvdlp.hgregoire.com
 :: czx5eyk0exbhwp43ya.biz
 :: czynhitkvjkkw.space
 :: d-1.co
 :: d-agency.net
-:: d-aloxi-200.pro
 :: d-app.progressive.com
 :: d-bi.fr
 :: d-cache.microad-cn.com
@@ -150318,7 +149982,6 @@
 :: dashboardbntest.branchcustom.xyz
 :: dashboardmortal.com
 :: dashingdrop.com
-:: daskljtitaskastvv.pro
 :: dasperdolus.com
 :: dasych.drmartypets.com
 :: dat.gtags.net
@@ -153311,6 +152974,7 @@
 :: dnruxsmbzfubm.website
 :: dns-analytics.com
 :: dns-info.dyndns.pro
+:: dns-loginssl.bausachverstaendiger-wiesbaden.de
 :: dns-upload.com
 :: dns.0pengl.com
 :: dns.chuzushijian.cn
@@ -153363,7 +153027,6 @@
 :: doceree.com
 :: dochase.com
 :: dochodmar.pro
-:: dochodnia.pro
 :: dockdigestion.com
 :: dockerverse.com
 :: doclec.supersmart.com
@@ -153454,7 +153117,6 @@
 :: domineehexer.com
 :: dominionclatterrounded.com
 :: dominioneastern.com
-:: dominionvalnex.pro
 :: dominocounter.net
 :: domipush.com
 :: domob.cn
@@ -153870,6 +153532,7 @@
 :: dratio.com
 :: drato.xyz
 :: drau.viessmann.si
+:: draventor.pro
 :: dravexoly-pro.com
 :: drawerexperienceletting.com
 :: drawers06.com
@@ -155986,7 +155649,6 @@
 :: eclick.baidu.com
 :: eclick.vn
 :: eclinerybelfast.org
-:: eclipsecorevix.pro
 :: eclkmpsa.com
 :: eclkspbn.com
 :: eclnqdlbtgokj.site
@@ -156727,7 +156389,6 @@
 :: elisans.novayonetim.com
 :: elite-s001.com
 :: eliteclng.ericksonbuilt.com
-:: elitenewssyndicate.pro
 :: elitics.com
 :: elizabethpertinent.com
 :: elizabethpunishhead.com
@@ -157853,7 +157514,6 @@
 :: epiclotemaxfin.pro
 :: epicmaxalt2u.pro
 :: epicmaxaltcap.pro
-:: epicmaxaltopt.pro
 :: epicoldschool.com
 :: epicoptiplex.pro
 :: epicstrings.com
@@ -159355,7 +159015,6 @@
 :: falsifymagpieopenminded.com
 :: falsifyprobable.com
 :: faltertshirt.com
-:: faltorexai.pro
 :: falxbps.shop
 :: falyterbzvxks.site
 :: fam-8.net
@@ -159862,7 +159521,6 @@
 :: feraciumus.com
 :: ferank.fr
 :: feresroom.com
-:: fergentex-pro.com
 :: ferias.usj.es
 :: ferlantora.pro
 :: fermolo.info
@@ -159870,13 +159528,13 @@
 :: ferntravelleddeduct.com
 :: ferocitycandour.com
 :: ferreirateixeira.adv.br
-:: ferrovaldenza.pro
 :: ferrypoemet.com
 :: fertilehybridsstep.com
 :: fertilisedconductiveplank.com
 :: fertilitywailceramic.com
 :: feruidospsdkosdpapp.site
 :: fervorsixtiesveteran.com
+:: ferygaclogam.pro
 :: ferziendfljud.site
 :: fesecrxmwowzq.site
 :: fespnfwrcdgpv.website
@@ -160059,7 +159717,6 @@
 :: fickle-association.com
 :: fictionbusinessmensoloist.com
 :: fidar.site
-:: fidatopaycore.pro
 :: fiddedmannas.shop
 :: fiddledtragion.com
 :: fiddlestructureparadise.com
@@ -160073,7 +159730,6 @@
 :: fiduciaryfirst.actonservice.com
 :: fieldconfig.com
 :: fieldtinypirate.com
-:: fielmercovia-app.pro
 :: fielmercovia.pro
 :: fiendchewing.com
 :: fierropropova.pro
@@ -160223,11 +159879,9 @@
 :: finlab5-ad18.sbs
 :: finley.fecinc.com
 :: finley.finleyusa.com
-:: finlockridge.pro
 :: finreporter.net
 :: fintecaai.pro
 :: fiordedreddled.shop
-:: fiorecolvento.pro
 :: fiorewonyhade.online
 :: fiowtf.hyggee.com
 :: fipnhbnfbwxhc.site
@@ -160262,7 +159916,6 @@
 :: fireworkswad.com
 :: fireworktv.com
 :: firm-twist.com
-:: firmeassetrix.pro
 :: firmwareout830.net
 :: firmwarrior.com
 :: firqacv.com
@@ -160436,7 +160089,6 @@
 :: fl4md7mm8.com
 :: fl5dpe.oui.sncf
 :: fl7i15bxzr.com
-:: flaeryx-ai-pro.com
 :: flagads.net
 :: flagcounter.com
 :: flaggynasi.com
@@ -160877,7 +160529,6 @@
 :: forbidcrenels.com
 :: forbidden.actonservice.com
 :: forbin.actonservice.com
-:: forcagainflux-pro.cyou
 :: force24.co.uk
 :: forcefulbeginning.com
 :: forcefulpacehauled.com
@@ -161275,7 +160926,6 @@
 :: frailfruit.com
 :: fraiymmrjeiwf.site
 :: frame.enet.com.cn
-:: frame2uava-pro.com
 :: frame2uavapro.pro
 :: frameavapro-2u.pro
 :: framebanana.com
@@ -161533,7 +161183,6 @@
 :: frtyh.com
 :: frtyl.com
 :: frugalfiestas.com
-:: fruiterresso.pro
 :: fruitflan.com
 :: fruitful-request.com
 :: fruitiesmatchina.org
@@ -161734,7 +161383,6 @@
 :: functionssubqueries.com
 :: functionswith5555.net
 :: fundamentalobjected.com
-:: fundektris.pro
 :: fundescended.com
 :: fundingchoicesmessages.google.com
 :: fundraiserprestigedescent.com
@@ -161817,7 +161465,6 @@
 :: futurebrand.actonservice.com
 :: futurehybrid.tech
 :: futureus.com
-:: futurio-ai-pro.com
 :: futuristicfifth.com
 :: futuristicframe.com
 :: futursalumnes.uic.es
@@ -162361,7 +162008,6 @@
 :: gargleunethicalthorough.com
 :: garglingably.com
 :: garlandcelaeno.shop
-:: garlenixai.pro
 :: garlopakites.shop
 :: garm9yuma.com
 :: garmentcivilizepitcher.com
@@ -164410,6 +164056,7 @@
 :: goldencomm.actonservice.com
 :: goldenhelix.actonservice.com
 :: goldenpaints.actonservice.com
+:: goldenphoenixless.pro
 :: goldenriverbend.com
 :: goldenriverway.com
 :: golderotica.com
@@ -164642,7 +164289,6 @@
 :: gpt.milftube.mobi
 :: gpt.throatbulge.com
 :: gpt.tubetruck.com
-:: gpt3vapp-pro.com
 :: gptcusnrxxawp.site
 :: gptzluojzguhq.online
 :: gpu2rbzpe.com
@@ -164719,6 +164365,7 @@
 :: gramombird.com
 :: gramyscarted.shop
 :: granbbkzs3.com
+:: grand-financeholm.pro
 :: grand-prix.cityads.com
 :: grand.ele.me
 :: grandchildenumerate.com
@@ -165178,7 +164825,6 @@
 :: guhmzgbwilvst.space
 :: guhwatazr.in
 :: guhyqz.hawesko.de
-:: guianovexis.pro
 :: guid.tpns.tencent.com
 :: guidecent.com
 :: guidelingerbeige.com
@@ -166249,6 +165895,7 @@
 :: hellospur.com
 :: hellounbox.com
 :: helltraffic.com
+:: helmmarginvale-pro.pages.dev
 :: helmmarginvale.pro
 :: helmorixy-app.pro
 :: helmsuction.com
@@ -168813,6 +168460,7 @@
 :: ikmmigvehmod.com
 :: ikneio.aquantindia.com
 :: ikoxmfjaxqbox.com
+:: ikquanearegiw.pro
 :: ikquaycaaygib.space
 :: ikqyazeadzqvo.space
 :: ikronzealu.com
@@ -171264,7 +170912,6 @@
 :: instantconservativedetect.com
 :: instantdeceived.com
 :: instantdollarz.com
-:: instantedexneo.pro
 :: instantfox.co
 :: instantimitrexark.pro
 :: instantlyounceclubhouse.com
@@ -172053,7 +171700,6 @@
 :: itponytaa.com
 :: itpsfqhnjlkwl.space
 :: itqseeh.icu
-:: itquant.pro
 :: itqyik.icu
 :: itraamelr.com
 :: itrac.it
@@ -172765,7 +172411,6 @@
 :: jeyttn.snipes.com
 :: jeyvhaskvbtbh.website
 :: jezer.site
-:: jezgravireon.pro
 :: jf.10010.com
 :: jf.winads.cn
 :: jf71qh5v14.com
@@ -174392,7 +174037,6 @@
 :: kaougnoklpzjb.space
 :: kaozemnizhheg.website
 :: kape.dataplane.rudderstack.com
-:: kapitalbro.pro
 :: kapitalden.pro
 :: kapitalviresta.pro
 :: kapitangesoftware.pro
@@ -174400,7 +174044,6 @@
 :: kapqttkkorg.com
 :: kaprbmcvvmjir.online
 :: kaprila.com
-:: kapterzora-app.pro
 :: kapterzoraki.pro
 :: kapwecs.pro
 :: kaqbxsgdzuazk.website
@@ -174572,6 +174215,7 @@
 :: kedasensiblemother.org
 :: kedeng.xin
 :: kedgxztugonrg.space
+:: kedronivar.pro
 :: keen-eyed.dotabuff.com
 :: keenquill.com
 :: keentiedknives.com
@@ -174599,6 +174243,7 @@
 :: kelpiesregna.com
 :: kelpmetorealiuk.com
 :: kelun13.top
+:: kelvariona.pro
 :: kelvvhqaqbzty.site
 :: kemrrbjymzwaa.space
 :: kendingfa.com
@@ -174988,7 +174633,6 @@
 :: klcdoqvajycbg.site
 :: kldvkyjdvwcvp.online
 :: kldynhhyayoya.space
-:: klendixio-app.pro
 :: klert.com
 :: klevvjrjyjrez.website
 :: klfxpnwgqasds.space
@@ -175391,7 +175035,6 @@
 :: kruujzqylnfpi.website
 :: kruvestalsystem.pro
 :: krux.net
-:: kruxprofitaru.pro
 :: krwwcwlkiresb.site
 :: krxd.net
 :: krxwwojyad.com
@@ -176530,7 +176173,6 @@
 :: lednews.powerint.com
 :: ledou.dl.uu.cc
 :: ledradn.com
-:: ledruval-app.pro
 :: lee789.com
 :: leechersolaced.shop
 :: leecompany.actonservice.com
@@ -176609,6 +176251,7 @@
 :: lentattire.com
 :: lentoscrocuta.shop
 :: lentspeaking.com
+:: lenvarisa.pro
 :: lenzmx.com
 :: leo1.leon-de-bruxelles.fr
 :: leojmp.com
@@ -176896,7 +176539,6 @@
 :: liba.haotv8.com
 :: libellouschurchtommy.com
 :: liberaldoubtedadulatory.com
-:: liberascudorio.pro
 :: liberty.gedads.com
 :: libertycdn.com
 :: libertycoinsdrew.com
@@ -177023,8 +176665,6 @@
 :: lilxdostfpngv.space
 :: lilxvvndclgcs.space
 :: lilydreamer.com
-:: limanfinthra-pro.com
-:: limanfinthra.pro
 :: limecodesign.com
 :: limei.com
 :: limepeal.com
@@ -177056,7 +176696,6 @@
 :: linen-static.online
 :: linenvirginityclient.com
 :: lineside.networkrail.co.uk
-:: linexuspro.pro
 :: linezing.com
 :: lingd.cn
 :: lingercatchpyramid.com
@@ -178425,7 +178064,6 @@
 :: loathsomeboy.com
 :: lobaveo.pro
 :: lobby-x.eu
-:: lobigoi.pro
 :: loboclick.com
 :: lobspqdzvfvrp.space
 :: loc.kr
@@ -178665,8 +178303,6 @@
 :: logiccormax100.pro
 :: logicdate.com
 :: logiclevora-2u.pro
-:: logiclevora2u-app.pro
-:: logiclotemax.pro
 :: logicprecursor.com
 :: logicschort.com
 :: logicsfort.com
@@ -179283,7 +178919,6 @@
 :: lub-links.eyecue.io
 :: lubbardshauled.com
 :: lubet.api.new.livejasmin.com
-:: lubilea.pro
 :: lubjakntiafcl.space
 :: lubrarespire.shop
 :: lucanet.actonservice.com
@@ -179359,7 +178994,6 @@
 :: lunarcave.com
 :: lunaticcosyatrocious.com
 :: lunatictoxicambiguity.com
-:: lunatrixeonix.pro
 :: lunchereosinic.shop
 :: lunchoffended.com
 :: lunchroomlock.com
@@ -179374,7 +179008,6 @@
 :: luolitang.com
 :: luomanzhubao.cn
 :: luotediao.net
-:: lupexismax-pro.com
 :: lupic.cdn.bcebos.com
 :: luping.net.cn
 :: luprix.pro
@@ -182852,7 +182485,6 @@
 :: martted.com
 :: martuupanaya.shop
 :: marty.zappos.com
-:: marvalorivo.pro
 :: marvelmetrix.com
 :: marx7loki.com
 :: marzaent.com
@@ -182981,7 +182613,6 @@
 :: matwbp.iask.sina.com.cn
 :: matytt.tone.ne.jp
 :: maui.shakaguide.com
-:: mauriquantispro.pro
 :: maven.ad4game.com
 :: mavic852.com
 :: mavq.net
@@ -186729,6 +186360,7 @@
 :: moveliscore9-2.pro
 :: movemeal.com
 :: movementshereafter.com
+:: moventixtrading.pro
 :: movependulous.com
 :: movesickly.com
 :: moveyouforward.co
@@ -186750,7 +186382,6 @@
 :: mowvra.idlookmall.com
 :: moxgokgaqemwp.online
 :: moxtra.actonservice.com
-:: mozgalom-finlore.pro
 :: mozgvya.com
 :: mozoo.com
 :: mozuoshop.net
@@ -187554,7 +187185,6 @@
 :: myexhibiteam.actonservice.com
 :: myfastcdn.com
 :: myfastcounter.com
-:: myfazuipl.pro
 :: myfeed.thalesgroup.com
 :: myfeng.cn
 :: myfidevs.io
@@ -187619,7 +187249,6 @@
 :: myroitracking.com
 :: myroledance.com
 :: myrrhbehorn.com
-:: myrronpro9-2.pro
 :: myrtb.net
 :: myscoop-tracking.googlecode.com
 :: myseostats.com
@@ -187833,7 +187462,6 @@
 :: naegaitbestir.com
 :: naegrands.shop
 :: nafmxc.1083.fr
-:: naftotechcora.pro
 :: nagaikaslojd.com
 :: naggingdocumentationgrow.com
 :: nagingfinns.shop
@@ -187976,7 +187604,6 @@
 :: natqurshes.shop
 :: natregs.com
 :: natrivex-engine.pro
-:: natrivexbitronix.pro
 :: nats.xing.com
 :: natsdk.com
 :: natsp.xing.com
@@ -188276,7 +187903,6 @@
 :: neraenyqq.com
 :: nerangee.com
 :: nerdolac.com
-:: nerdynatorv2.pro
 :: nereserv.com
 :: nerfeiidsjsdksdlopower.com
 :: nerfzxkysjhjh.online
@@ -188623,7 +188249,6 @@
 :: nexeps.com
 :: nexfhrxksg.com
 :: nexioniect.com
-:: nexipessogpt.pro
 :: nexium33bv.com
 :: nexium530.com
 :: nexorion-finance.pro
@@ -189413,7 +189038,6 @@
 :: novadune.com
 :: novaonads.com
 :: novarecoverycenter.actonservice.com
-:: novarisai.pro
 :: novaseekers.com
 :: novedades.telecomfibercorp.com.ar
 :: novel-cross.pro
@@ -191786,7 +191410,6 @@
 :: ordbng.extra.com.br
 :: ordboqtd.com
 :: orderlyuponprecipitation.com
-:: ordexiaprime.pro
 :: ordidc.com
 :: ordinary-check.com
 :: ordinarygoonwritten.com
@@ -191796,7 +191419,6 @@
 :: oredero.com
 :: oregonstate.actonservice.com
 :: orencia.pflexads.com
-:: orenthiovector.pro
 :: orest-vlv.com
 :: oresyipqzckyl.site
 :: orfa1st5.de
@@ -191856,7 +191478,6 @@
 :: ornczozk.in
 :: orngxabtxwake.online
 :: ornnxfsfnkwbs.space
-:: orovaldexia-pro.com
 :: orozipuetosat.website
 :: orpggb.esprit.at
 :: orphanrudimentary.com
@@ -192406,7 +192027,6 @@
 :: oxvmctwdsernj.site
 :: oxvqvbspesgzz.com
 :: oxvroiurf.com
-:: oxvurilzsoftware.pro
 :: oxwnfooqpd.com
 :: oxwpsqfoyaxkc.website
 :: oxwsggbacrrdl.website
@@ -193266,7 +192886,6 @@
 :: pappagallu.onefootball.com
 :: paqqlk.motatos.de
 :: paqxspfbapsai.site
-:: paqydorixyai.pro
 :: par02p.wns.windows.com
 :: paradefast.com
 :: paraderascaldefinitely.com
@@ -194072,8 +193691,6 @@
 :: pevftg.shopee.sg
 :: pevrksshtngcg.site
 :: pewfeafvlaiwe.online
-:: pewna-inwestotivpro.pro
-:: pewnarentostka.pro
 :: pewtersundub.shop
 :: pewyforz.shop
 :: pexcsvjiecyoi.site
@@ -194198,6 +193815,7 @@
 :: phadia.thermofisher.com
 :: phampheane.com
 :: phantomdisappoint.com
+:: phantomstrikety.pro
 :: pharmacycoercive.com
 :: pharmcash.com
 :: pharosurunday.shop
@@ -195151,7 +194769,6 @@
 :: plectrum53.top
 :: pledgormagh.com
 :: pleisty.com
-:: plenacapitoria.pro
 :: plenia.pt
 :: plenomedia.com
 :: plenty.vidio.com
@@ -195612,7 +195229,6 @@
 :: poqwepljjnepo.online
 :: poqwo3.com
 :: porchadvertise.com
-:: pordeliksengine.pro
 :: porikatha.com
 :: poringasitia.com
 :: pork.2tumeng.com
@@ -195661,7 +195277,6 @@
 :: portptfeyfcnx.space
 :: portslocked.com
 :: portunitytostar.org
-:: portvaultwick.pro
 :: pos.baidu.com
 :: poseunprofessionalspecific.com
 :: posewardenreligious.com
@@ -195963,7 +195578,6 @@
 :: precisioncounter.com
 :: preciso.net
 :: precmd.com
-:: precoadven.cyou
 :: precursortrimrequest.com
 :: precursorwhiskeyleak.com
 :: predatorvernonforefather.com
@@ -197004,7 +196618,6 @@
 :: puls.lv
 :: pulsar.ebay.com
 :: pulsaredit.com
-:: pulsarvexline-pro.com
 :: pulsatingmeadow.com
 :: pulse.data.flurry.com
 :: pulse.delta.com
@@ -197071,12 +196684,12 @@
 :: purchasermeltdown.com
 :: purebloom.net
 :: pureedtensors.shop
-:: puremonetivo.pro
 :: purevideo.com
 :: purfinrevoux-pro.com
 :: purge.fb-cdn.net
 :: purifydimeprove.com
 :: purinefluxer.shop
+:: purliquidheim.pro
 :: purnoavexo.pro
 :: purocapitenca.pro
 :: purp.sukaporn.com
@@ -198461,11 +198074,11 @@
 :: quantcast.mgr.consensu.org
 :: quantcount.com
 :: quantica900.com
-:: quanticorev2.pro
 :: quantivaadvisoryprogrammes.pro
 :: quantixfinance.pro
 :: quantrexblaze.pro
 :: quantserve.com
+:: quantum-flowbit.pro
 :: quantumads.com
 :: quantumaiglobal.pro
 :: quantumdex.io
@@ -198474,7 +198087,6 @@
 :: quantumpro-app.pro
 :: quantumshine.com
 :: quantumws.net
-:: quantyxorelian-pro.com
 :: quarantine2procedure.com
 :: quarepush.com
 :: quarreljaggedloathe.com
@@ -198602,7 +198214,6 @@
 :: qumaef.conects.com
 :: qumi.com
 :: qumulo.actonservice.com
-:: qumvestiumai.pro
 :: qunphoty.com
 :: qunskbadgzcdx.site
 :: qunymuy.pro
@@ -198760,7 +198371,6 @@
 :: qymjpg.star-tex.ru
 :: qymswdusycdvz.space
 :: qyn6.ofertastelecable.es
-:: qynxiliur.pro
 :: qyogcr.amscope.com
 :: qypaizhuo.com
 :: qyplvnzcm1.com
@@ -200026,7 +199636,6 @@
 :: rensipmsqnpdd.space
 :: rent.mgrc.com
 :: rentalsloppyodds.com
-:: rentemond.pro
 :: renteostend.com
 :: rentfavourablecashmere.com
 :: rentinfinity.com
@@ -200471,7 +200080,6 @@
 :: rev-stripe.com
 :: rev.frankspeech.com
 :: revampcdn.com
-:: revaultnex.pro
 :: revbid.net
 :: revcatch.com
 :: revcontent.com
@@ -200727,7 +200335,6 @@
 :: ribbytawhid.shop
 :: ribgreenhousecompose.com
 :: ribkdvpyszfm.com
-:: riccawalorawia.pro
 :: ricclvychqusy.website
 :: ricead.com
 :: riceck.cn
@@ -200737,7 +200344,6 @@
 :: richads.com
 :: richard-group.com
 :: richaudience.com
-:: richefondois.pro
 :: richeryawp.com
 :: richeseventsphysics.com
 :: richh.cn
@@ -201968,8 +201574,6 @@
 :: rymhet.posudamart.ru
 :: ryminos.com
 :: rypebb.icu
-:: ryptonoansolution.pro
-:: ryptowolfzengine.pro
 :: ryqtxakilhprz.site
 :: ryqxryaytwbpx.website
 :: ryre.cn
@@ -203316,7 +202920,6 @@
 :: sanme2.taisantech.com
 :: sanmet.originenergy.com.au
 :: sanokpfwhwgpd.online
-:: sanolucrivo.pro
 :: sanoslkut.in
 :: sanpzoyjzrjmu.website
 :: sanssnow.com
@@ -203402,7 +203005,6 @@
 :: saturn3.appads.com
 :: saucersfiltre.shop
 :: saucewonderdaytime.com
-:: saudivisionai-pro.com
 :: saugellaviso.it
 :: saunaproficientprelude.com
 :: saunatechnically.com
@@ -205663,7 +205265,6 @@
 :: share.cjcookit.com
 :: share.coupangeats.com
 :: share.dailyrounds.in
-:: share.dovgertz.com
 :: share.drinki.com
 :: share.dunzo.in
 :: share.dusk.app
@@ -205887,7 +205488,6 @@
 :: shnegttccwnom.site
 :: shoagloumtoamir.net
 :: shoalsirate.shop
-:: shoboltrangorh.pro
 :: shockdefined.com
 :: shocked-failure.com
 :: shocked-home.com
@@ -206132,7 +205732,6 @@
 :: signalflarexp.pro
 :: signalfx.com
 :: signalinstatistics.net
-:: signallidexhex.pro
 :: signalszone.com
 :: signaly.co
 :: signamentswithd.com
@@ -206275,6 +205874,7 @@
 :: sincedialover.com
 :: sincenturypro.org
 :: sincerebuffalo.com
+:: sinceredepotance-ai.pro
 :: sincerefictionscrape.com
 :: sinceregarden.sincere-garden.jp
 :: sinceregustinfinitely.com
@@ -206283,7 +205883,6 @@
 :: sincerepelican.com
 :: sinceresubstance.com
 :: sinckuxlsucmq.online
-:: sincorrabtcv8.pro
 :: sinewedtidder.shop
 :: sinfo.awrostamani.com
 :: sinfo.dtcidev.co
@@ -206570,7 +206169,6 @@
 :: skyjh.cn
 :: skylightdata.com
 :: skylindo.com
-:: skyline-nexus-pro.live
 :: skymedia.co.uk
 :: skymobi.agency
 :: skypicker-api.infinario.com
@@ -210308,7 +209906,6 @@
 :: solidlyrotches.guru
 :: solidmigraine.com
 :: solidofundavox.pro
-:: solidreturn-pro.com
 :: solidscape.actonservice.com
 :: solidsub.com
 :: solionenzymes.com
@@ -210689,6 +210286,7 @@
 :: sonnerie.net
 :: sonnyrespected.com
 :: sonobi.com
+:: sonorarentestra.pro
 :: sonovoxexcite.shop
 :: sonsethel.com
 :: sonsstoop.com
@@ -211044,9 +210642,9 @@
 :: spielsbeni.com
 :: spiffymachine.com
 :: spigte.shopee.tw
-:: spikeavonexneo.pro
 :: spikeexorexx.pro
 :: spikeflarex-nx.pro
+:: spikeflarexnx.pro
 :: spikesandcurrant.com
 :: spin83qr.com
 :: spinachhypocrisy.com
@@ -214451,7 +214049,6 @@
 :: sunflowercross.com
 :: sunflowergiganticcheerfully.com
 :: sunflowersandthreads.com
-:: sunfortportdex.pro
 :: sunglasse2.top
 :: sunglassescontrary.com
 :: sunglassesexpensive.com
@@ -214964,7 +214561,6 @@
 :: swipechief.com
 :: swirlstop.com
 :: swiss-counter.com
-:: swissborgapp.pro
 :: swissinside.easyjet.com.edgekey.net.easyjet.com
 :: swissmilitarycoalition.com
 :: switch-axid-hex-pro.com
@@ -221189,8 +220785,6 @@
 :: tradedoubler.com
 :: tradeexpert.net
 :: tradelab.fr
-:: tradementor-pro.shop
-:: tradepro-engine.pro
 :: traderaiapp.pro
 :: traderbyte.com
 :: traderflix9gpt-pro.com
@@ -221401,7 +220995,6 @@
 :: trashyepochabsorbing.com
 :: trasre.com
 :: trasupr.com
-:: trasviloxai.pro
 :: tratobid.com
 :: traumaprocuredinsect.com
 :: traumaticassignearnest.com
@@ -221539,7 +221132,6 @@
 :: trentbereal.com
 :: trepanation07.top
 :: trerqekuw.com
-:: treviloxanopro.pro
 :: trewssynaxis.shop
 :: trexer501.com
 :: trfpump.com
@@ -222113,6 +221705,7 @@
 :: trustisimportant.fun
 :: trustmaxonline.com
 :: trustmodule.com
+:: trustorium.pro
 :: trustphiladelphiacompelling.com
 :: trustseal.e-rasaneh.ir
 :: trustutn.org
@@ -222428,7 +222021,6 @@
 :: turbo2sdk-push.oupeng.com
 :: turboadv.com
 :: turbocap.net
-:: turbocormax-pro.com
 :: turboeagle.co
 :: turboexelonark.pro
 :: turbofund100.pro
@@ -223517,7 +223109,6 @@
 :: ultraoranges.com
 :: ultrapartners.com
 :: ultrasoundpurchase.com
-:: ultratrade-alphavest.pro
 :: ultravalid.com
 :: ultravix-app.pro
 :: ultund.misterspex.nl
@@ -223976,7 +223567,6 @@
 :: unsunnybirse.com
 :: unta.cn
 :: untackreviler.com
-:: untavix.pro
 :: untho.de
 :: untidynondescript.com
 :: untidyrelayidentifiers.com
@@ -224079,7 +223669,6 @@
 :: upcomingperusehike.com
 :: upcuoicobbycl.site
 :: updaight.com
-:: update-addrese.ctiltst.ccwu.cc
 :: update-expiry-notification-report.appwrite.network
 :: update-information.zzux.com
 :: update-java.kit.net
@@ -225404,7 +224993,6 @@
 :: va.videojj.com
 :: va3yq7si6w.com
 :: va6-bid.adsrvr.org
-:: vaaltechki.pro
 :: vaamsmgfreocmroe-1342087530.cos.sa-saopaulo.myqcloud.com
 :: vaatjcfcwvjsa.space
 :: vaatmetu.net
@@ -225472,7 +225060,6 @@
 :: validmemo.com
 :: valipl.cp31.ott.cibntv.net
 :: valis-cpx.jp
-:: valleprofitra.pro
 :: valleyarmiessunflower.com
 :: valleyscounterfeit.com
 :: valo.atm.youku.com
@@ -225498,7 +225085,6 @@
 :: valuerportray.com
 :: valuesuffering.com
 :: valuethemarkets.info
-:: valutorreai.pro
 :: valvyre.com
 :: valxutydijoem.online
 :: vamaker.cm.admaster.com.cn
@@ -225506,7 +225092,6 @@
 :: vamosesagonic.com
 :: van.ads.link4ads.com
 :: vandalismloungenylon.com
-:: vandelixio-tech.pro
 :: vanderlisten.pro
 :: vane3alga.com
 :: vanfireworks.com
@@ -225580,7 +225165,6 @@
 :: vawturpis.com
 :: vax-now.com
 :: vaxjhqfaahmgt.site
-:: vaxubai.pro
 :: vazulp.graniph.com
 :: vazypteke.pro
 :: vb5gi1zp5.com
@@ -225801,7 +225385,6 @@
 :: vengefulprior.pro
 :: vengingtrental.com
 :: veniresquirks.shop
-:: venitendra.pro
 :: venomousvessel.com
 :: ventageslorp.com
 :: ventivmedia.com
@@ -225853,6 +225436,7 @@
 :: verificationgloryrenaissance.com
 :: verificationinternalhamburger.com
 :: verificationscrub.com
+:: verifiednewsdispatch.pro
 :: verifier.live
 :: verify.authorize.net
 :: verify.mob.com
@@ -226242,12 +225826,10 @@
 :: views.wioks.com
 :: viewtraff.com
 :: viewworthwhile.com
-:: vifb-ours-ade.today
 :: vigasimmerse.shop
 :: vigilancebreaking.com
 :: vigilant-entry.pro
 :: viglink.com
-:: vigor-fintrion-pro.com
 :: vigorous-average.com
 :: vigtwjvdkhvpr.space
 :: vigyn4gpx.com
@@ -226799,7 +226381,6 @@
 :: vortex.data.glbdns2.microsoft.com
 :: vortex.data.microsoft.com
 :: vortex.hulu.com
-:: vortexfrance.pro
 :: vosdgzthzejqr.website
 :: voselskqvlkxy.online
 :: vosfcwwsdurwp.site
@@ -227319,7 +226900,6 @@
 :: vupload.duowan.com
 :: vupshojkojpe.in
 :: vupulse.com
-:: vurdoxen.pro
 :: vurhabbkef.in
 :: vurr.cn
 :: vuryua.ru
@@ -227461,7 +227041,6 @@
 :: vypmgvwjvgztv.space
 :: vyqn.cn
 :: vyragdxymcqtw.online
-:: vyranivotrade-pro.com
 :: vyrwmrwmlozsq.site
 :: vyspfyimbwvls.site
 :: vysr4o0eg.com
@@ -228870,6 +228449,7 @@
 :: wextap.com
 :: wexwujojvhamp.space
 :: weygdpqepldez.space
+:: weynuoligzare.pro
 :: weytnksofbrsj.site
 :: weyyae.com
 :: wezbvq.heine-shop.nl
@@ -230782,11 +230362,9 @@
 :: www.ai-pro-iplex.com
 :: www.ai-stock.pro
 :: www.aid-ad.jp
-:: www.aiprofit-trade.pro
 :: www.airybotsh.pro
 :: www.albafundorixai.pro
 :: www.albioncredmere-pro.com
-:: www.albioncredmere-pro.sbs
 :: www.alexoai.pro
 :: www.alienskins.cn
 :: www.aliyoo999.com
@@ -230808,14 +230386,11 @@
 :: www.analytics.ero-advertising.com
 :: www.analytics.icons8.com
 :: www.analytics.picsart.com
-:: www.andexioai.pro
 :: www.anners.ero-advertising.com
-:: www.ansimtradix.pro
 :: www.anyangruisi.com
 :: www.aodongjiaosu.com
 :: www.aombjl099.com
 :: www.aperac.pro
-:: www.apexwealthai.pro
 :: www.api.axiatraders.com
 :: www.api.taboola.com
 :: www.api2-update-routing-mydpd.bergh.com
@@ -230835,18 +230410,14 @@
 :: www.appsmall.mobi
 :: www.appuu.cn
 :: www.arbiquant-pro.com
-:: www.argento-app.pro
 :: www.arnofondatrix.pro
-:: www.ascesafundoria.pro
+:: www.artleadsdigital.com
 :: www.ashiping.com
 :: www.askwealthadvisers.com
-:: www.asseevolaraai.pro
-:: www.astraaicapital.pro
 :: www.astragainlux.pro
 :: www.ata.ero-advertising.com
 :: www.atcryp.com
 :: www.atdmt.com
-:: www.auberevo.pro
 :: www.auntrixcipherai.pro
 :: www.auraxcore92.pro
 :: www.aurelia-ai.pro
@@ -230859,14 +230430,12 @@
 :: www.aurorapush.com
 :: www.ausaas.cn
 :: www.autoads.asia
-:: www.automindgr.pro
 :: www.avast-downloads.com
 :: www.avelicioai.pro
 :: www.averagetronai.pro
 :: www.avnads.com
 :: www.avoadsservices.com
 :: www.avsads.com
-:: www.azimcorevex.pro
 :: www.babybubble.cn
 :: www.babymoment.net
 :: www.baidujs.vip
@@ -230895,13 +230464,10 @@
 :: www.bannevs.ero-advertising.com
 :: www.barberpet.pro
 :: www.bartender.cc
-:: www.baseinvexus.pro
 :: www.basisinvionapp.pro
-:: www.bastioncapridge.pro
 :: www.bastionwealthadvisors.pro
 :: www.bavners2.ero-advertising.com
 :: www.bayancapital.pro
-:: www.bayassetholm.pro
 :: www.baykar-platform.pro
 :: www.baywest.ac
 :: www.bb1429.com
@@ -230931,13 +230497,9 @@
 :: www.billionfocus.com
 :: www.bingads.microsoft.com
 :: www.bingdianhuanyuan.cn
-:: www.bit-pro-reoproapp.com
-:: www.bitbenel.pro
 :: www.bitcoin-ifex-360-ai.info
 :: www.bitcoin-union.org
-:: www.bitcoineverest.pro
 :: www.bitcoingoldmineplatform.pro
-:: www.bitcoinquantumai.pro
 :: www.bitcoinup-pro.com
 :: www.biteti.com
 :: www.bitradexpolska.pro
@@ -230950,59 +230512,40 @@
 :: www.blaggckleads.info
 :: www.blatfee.ero-advertising.com
 :: www.blazingscoopalert.pro
-:: www.blizonprecisie.pro
 :: www.blockadsnot.com
 :: www.blog.intext.ero-advertising.com
 :: www.blogads.com
 :: www.blueadvantagearkasas.com
-:: www.bluequbitai.pro
 :: www.bodrofinekssolution.pro
 :: www.bohats-fondi.pro
-:: www.boostcormax.pro
-:: www.boostkapidex.pro
 :: www.bootcdn.cn
 :: www.bootcdn.net
 :: www.bootcss.com
-:: www.borborygmuoa.pro
-:: www.borsixgpt.pro
 :: www.bovirentix-fin.pro
 :: www.boxercrazy.org
 :: www.brafsc.top
-:: www.bramridgetrust.pro
-:: www.brasilrendagpt.pro
-:: www.bravexilini.pro
 :: www.bredfortjenstad.pro
 :: www.breedrendeholm.pro
 :: www.brekutiosai.pro
-:: www.brekutiossoftware.pro
 :: www.brightadnetwork.com
-:: www.brightcapitgate.pro
-:: www.brightpayplus.pro
 :: www.brightstardv.pro
 :: www.brightvaultmere.pro
 :: www.brightyieldsystem.pro
-:: www.brimax-edge.pro
 :: www.briokapitorio.pro
-:: www.briovexaria.pro
 :: www.britanniaedgeai.pro
 :: www.britkonedgeval.pro
 :: www.broadspring.com
 :: www.bsfiosfskdosfkadoisdka.site
 :: www.bshare.cn
 :: www.bsrkt.com
-:: www.btc-adverant-224-ai.com
-:: www.btc-adverant-ai.com
 :: www.btc-adverant-ai.live
 :: www.btc-adverant224-ai.live
 :: www.btc-belant17.pro
 :: www.btc-glamit-365.live
-:: www.btc-vindici11.pro
 :: www.btcadverant.digital
 :: www.btcadverantv10.de
 :: www.btcapnstad.pro
 :: www.btcblunex.pro
-:: www.btcgenix9.pro
-:: www.btcmentralixv7.pro
 :: www.btcnexivolt-760.pro
 :: www.btcsolgreen-ai.pro
 :: www.btctraderai.pro
@@ -231014,15 +230557,11 @@
 :: www.byteroxe.pro
 :: www.c77777777.com
 :: www.cadvision.com
-:: www.cairnphundholm.pro
 :: www.cakolyo.pro
 :: www.calabvent.pro
 :: www.calderive.pro
 :: www.calyptra.pro
 :: www.cambismone.pro
-:: www.canfi.pro
-:: www.canfirst-pro.com
-:: www.capitalflux-system.pro
 :: www.casee.cn
 :: www.cash4downloads.com
 :: www.cata.ero-advertising.com
@@ -231033,13 +230572,11 @@
 :: www.cdfreisdoosdklsdfslf.site
 :: www.cdn.beginads.com
 :: www.cdn4ads.com
-:: www.cedarassetgrove.pro
 :: www.cellfun.mobi
 :: www.celticwealth.pro
 :: www.centroluxalis.pro
 :: www.certogestovanzaai.pro
 :: www.cetrorendoreza.pro
-:: www.ceyloninvest.pro
 :: www.cfdanet.com
 :: www.chainatarax-500.pro
 :: www.chainlotemaxpro.pro
@@ -231047,6 +230584,7 @@
 :: www.chanet.com.cn
 :: www.chapesx.site
 :: www.chat.ero-advertising.com
+:: www.check-konto.vercel.app
 :: www.chekmeseger-adspager.online
 :: www.chemdraw.com
 :: www.chemdraw.com.cn
@@ -231059,7 +230597,6 @@
 :: www.christianbusinessadvertising.com
 :: www.cichaokolicadslfopunkt.site
 :: www.ciderbayoulg.pro
-:: www.cielorendorio.pro
 :: www.cifrenit-pro-solution.com
 :: www.cishantao.com
 :: www.cityads.com
@@ -231101,7 +230638,6 @@
 :: www.copecinversiones.pro
 :: www.coreldrawchina.com
 :: www.corepulsegen.pro
-:: www.corexsoftware.pro
 :: www.coteassetage.pro
 :: www.cpatrk.net
 :: www.cpmadvisors.com
@@ -231110,12 +230646,11 @@
 :: www.cpv6.com
 :: www.cpx24.com
 :: www.cqsta.com
-:: www.creotrax-pro.com
-:: www.crestyieldmere.pro
 :: www.crispads.com
 :: www.criteo.com
 :: www.crossoverchina.com
 :: www.cryptostamp-art-pro.com
+:: www.crystaldawn.pro
 :: www.csedidsoodsosksdjskdadsk.site
 :: www.cszlks.com
 :: www.cudaojia.com
@@ -231124,8 +230659,6 @@
 :: www.cycyqio.pro
 :: www.cyhners.ero-advertising.com
 :: www.cysyjeo.pro
-:: www.czujnyakcjant.pro
-:: www.d-aloxi-200.pro
 :: www.d77777777.com
 :: www.da-ads.com
 :: www.daaa.ero-advertising.com
@@ -231139,7 +230672,6 @@
 :: www.danpinwu.com
 :: www.daoyoudao.com
 :: www.dashaloxi.pro
-:: www.daskljtitaskastvv.pro
 :: www.dat2.ero-advertising.com
 :: www.data-ero-advertising.com
 :: www.data2.ero-advertising.com
@@ -231171,13 +230703,12 @@
 :: www.diediao.com
 :: www.digitalunion.cn
 :: www.directnetadvertising.net
+:: www.dns-loginssl.bausachverstaendiger-wiesbaden.de
 :: www.dobreprogramy.pro
 :: www.dobruasemi.pro
 :: www.dochodmar.pro
-:: www.dochodnia.pro
 :: www.dograenagal.pro
 :: www.dolanadserver.com
-:: www.dominionvalnex.pro
 :: www.donaraai.pro
 :: www.dongmansoft.com
 :: www.dorevance.pro
@@ -231197,6 +230728,7 @@
 :: www.dqsft.com
 :: www.dramelovik.pro
 :: www.dratio.com
+:: www.draventor.pro
 :: www.dravexoly-pro.com
 :: www.draxenvaro.pro
 :: www.dropped-click.com
@@ -231216,7 +230748,6 @@
 :: www.easyrecoverychina.com
 :: www.ebayadservices.com
 :: www.ebayadvertising.com
-:: www.eclipsecorevix.pro
 :: www.eddong.com
 :: www.edgeway-crescor-pro.com
 :: www.ediuschina.com
@@ -231228,7 +230759,6 @@
 :: www.effirst.com
 :: www.ekonomia-app.pro
 :: www.elevecoinetra-pro.com
-:: www.elitenewssyndicate.pro
 :: www.ellads.com
 :: www.elmvaultstead.pro
 :: www.eltrafiko.com
@@ -231242,7 +230772,6 @@
 :: www.epiclotemaxfin.pro
 :: www.epicmaxalt2u.pro
 :: www.epicmaxaltcap.pro
-:: www.epicmaxaltopt.pro
 :: www.epicoptiplex.pro
 :: www.epmads.com
 :: www.eqripsorix.pro
@@ -231270,7 +230799,6 @@
 :: www.factflowpulse.pro
 :: www.fairholtcryptrix-pro.com
 :: www.fairmontvaltex-pro.com
-:: www.faltorexai.pro
 :: www.fan-yong.com
 :: www.fancydigital.com.cn
 :: www.fancydmp.com
@@ -231296,15 +230824,12 @@
 :: www.feixin2.com
 :: www.fenqihome.com
 :: www.fenvm.com
-:: www.fergentex-pro.com
 :: www.ferlantora.pro
-:: www.ferrovaldenza.pro
 :: www.feruidospsdkosdpapp.site
+:: www.ferygaclogam.pro
 :: www.feyads.com
 :: www.fffeeeq.com
 :: www.fhatfee.ero-advertising.com
-:: www.fidatopaycore.pro
-:: www.fielmercovia-app.pro
 :: www.fielmercovia.pro
 :: www.fierropropova.pro
 :: www.finaitrixcore-pro.com
@@ -231316,16 +230841,12 @@
 :: www.finlab3-ad63.sbs
 :: www.finlab4-ad81.sbs
 :: www.finlab5-ad18.sbs
-:: www.finlockridge.pro
 :: www.fintecaai.pro
-:: www.fiorecolvento.pro
 :: www.fireads.online
-:: www.firmeassetrix.pro
 :: www.firstclick.pro
 :: www.fisio9-ad81.sbs
 :: www.fjlqqc.com
 :: www.fkku194.com
-:: www.flaeryx-ai-pro.com
 :: www.flash.cn
 :: www.flashtest.ero-advertising.com
 :: www.flatdee.ero-advertising.com
@@ -231343,7 +230864,6 @@
 :: www.focusfintrion-pro.com
 :: www.folvextirsoftware.pro
 :: www.fondholmemisvik.pro
-:: www.forcagainflux-pro.cyou
 :: www.forex-advice.net
 :: www.formysql.com
 :: www.fortezcapitoria.pro
@@ -231351,7 +230871,6 @@
 :: www.forums.data2.ero-advertising.com
 :: www.forums.ero-advertising.com
 :: www.fpa.ero-advertising.com
-:: www.frame2uava-pro.com
 :: www.frame2uavapro.pro
 :: www.frameavapro-2u.pro
 :: www.framecapcormaxai.pro
@@ -231359,17 +230878,13 @@
 :: www.freedrive.cn
 :: www.frejsiosdksodlaodpao.site
 :: www.frontierklintex-pro.com
-:: www.fruiterresso.pro
 :: www.fu68.com
-:: www.fundektris.pro
 :: www.fundsindia.pro
 :: www.funshion.net.cn
-:: www.futurio-ai-pro.com
 :: www.fwqekk.top
 :: www.fxadviceformeandyou.com
 :: www.game-advertising-online.com
 :: www.gantpweroli.pro
-:: www.garlenixai.pro
 :: www.gata.ero-advertising.com
 :: www.gatoradvertisinginformationnetwork.com
 :: www.gcmadvertising.com
@@ -231398,6 +230913,7 @@
 :: www.goads.pro
 :: www.godsadvice.com
 :: www.goldbitcore.pro
+:: www.goldenphoenixless.pro
 :: www.goldwavechina.cn
 :: www.golvurikenzbelgium.pro
 :: www.gontrenix.pro
@@ -231410,8 +230926,8 @@
 :: www.gouwubang.com
 :: www.gouzhibao.cn
 :: www.gozendata.com
-:: www.gpt3vapp-pro.com
 :: www.grafenbitcorp-pro.com
+:: www.grand-financeholm.pro
 :: www.greenvistazj.pro
 :: www.greiosedeiroeksosdko.site
 :: www.growin.cn
@@ -231425,7 +230941,6 @@
 :: www.gtrade1.net
 :: www.guanggao369.cn
 :: www.guanyitanggy.com
-:: www.guianovexis.pro
 :: www.guitarpro.cc
 :: www.gurzemqalin.pro
 :: www.gvsadvisory.com
@@ -231448,6 +230963,7 @@
 :: www.hdyzx.cn
 :: www.headlinespotty.pro
 :: www.health-partner.net
+:: www.helmmarginvale-pro.pages.dev
 :: www.helmmarginvale.pro
 :: www.helmorixy-app.pro
 :: www.hengshui1.com
@@ -231499,6 +231015,7 @@
 :: www.ihuanmei.com
 :: www.iiad.com
 :: www.iiewl.com
+:: www.ikquanearegiw.pro
 :: www.ilkwork.com
 :: www.imads.ero-advertising.com
 :: www.imeds.ero-advertising.com
@@ -231527,7 +231044,6 @@
 :: www.instant9bferon.pro
 :: www.instantadvantageai.club
 :: www.instantcodrixfin.pro
-:: www.instantedexneo.pro
 :: www.instantimitrexark.pro
 :: www.insuf.cn
 :: www.insulevel24.pro
@@ -231543,7 +231059,6 @@
 :: www.iqiyi.space
 :: www.ishop789.com
 :: www.isitone.com
-:: www.itquant.pro
 :: www.itunesdownloadstore.com
 :: www.jagcn.com
 :: www.jakyzui.pro
@@ -231554,7 +231069,6 @@
 :: www.jcdfdhx.top
 :: www.jesgoo.com
 :: www.jeuisospkdoosdkado.site
-:: www.jezgravireon.pro
 :: www.jglinks.cn
 :: www.jgmlink.cn
 :: www.jgshare.cn
@@ -231609,11 +231123,9 @@
 :: www.kaitoupiao.com
 :: www.kanshuapp.com
 :: www.kaoos-kdidjhcv.pro
-:: www.kapitalbro.pro
 :: www.kapitalden.pro
 :: www.kapitalviresta.pro
 :: www.kapitangesoftware.pro
-:: www.kapterzora-app.pro
 :: www.kapterzoraki.pro
 :: www.kapwecs.pro
 :: www.karaiyatirimprogrami-app.pro
@@ -231621,7 +231133,9 @@
 :: www.kazatomprom-app.pro
 :: www.kc9.cn
 :: www.kds.ero-advertising.com
+:: www.kedronivar.pro
 :: www.kejet.com
+:: www.kelvariona.pro
 :: www.keydot.net
 :: www.keyrun.cn
 :: www.keyshot.cc
@@ -231633,7 +231147,6 @@
 :: www.kj1p.com
 :: www.kkdsdlc.com
 :: www.kl-toys.com
-:: www.klendixio-app.pro
 :: www.knacads.com
 :: www.kngcjx.com
 :: www.koersaven.pro
@@ -231646,7 +231159,6 @@
 :: www.krevnixio.pro
 :: www.krolfondstvo.pro
 :: www.kruvestalsystem.pro
-:: www.kruxprofitaru.pro
 :: www.krynthelixombravane.pro
 :: www.ksiazorc-alyron.pro
 :: www.kudifish.com
@@ -231679,19 +231191,15 @@
 :: www.ldlwdsx.com
 :: www.leandroceleste.pro
 :: www.ledgerholm-app.pro
-:: www.ledruval-app.pro
 :: www.lekkirendovikai.pro
 :: www.lelatrixio-ai-pro.com
 :: www.lelixio.pro
+:: www.lenvarisa.pro
 :: www.lessplay.com
 :: www.leztruvin.pro
 :: www.liangao.com
-:: www.liberascudorio.pro
 :: www.libro-solethium-pro.com
 :: www.lidlsaleonlyadspl.shop
-:: www.limanfinthra-pro.com
-:: www.limanfinthra.pro
-:: www.linexuspro.pro
 :: www.linezing.com
 :: www.linkjg.cn
 :: www.links-and-traffic.com
@@ -231701,11 +231209,8 @@
 :: www.lnk8.cn
 :: www.loadsabingo.com
 :: www.lobaveo.pro
-:: www.lobigoi.pro
 :: www.logiccormax100.pro
 :: www.logiclevora-2u.pro
-:: www.logiclevora2u-app.pro
-:: www.logiclotemax.pro
 :: www.logoshejishi.com
 :: www.loimearadiku.pro
 :: www.lorenterendor-click.pages.dev
@@ -231713,12 +231218,9 @@
 :: www.lottery.olg.ca
 :: www.loweisaoapoadsaslodlod.site
 :: www.lp.trade360.com
-:: www.lubilea.pro
 :: www.lucecrescoro.pro
 :: www.lucentrixpro.pro
 :: www.lucrovenza.pro
-:: www.lunatrixeonix.pro
-:: www.lupexismax-pro.com
 :: www.luping.net.cn
 :: www.luprix.pro
 :: www.lustriqora.pro
@@ -231734,10 +231236,8 @@
 :: www.makeding.com
 :: www.maralgel.pro
 :: www.marivoxeno-pro.pro
-:: www.marvalorivo.pro
 :: www.mata.ero-advertising.com
 :: www.mathtype.cn
-:: www.mauriquantispro.pro
 :: www.mavrex-trace.com
 :: www.mayalucrezante.pro
 :: www.mbai.cn
@@ -231794,8 +231294,8 @@
 :: www.moquanad.com
 :: www.motufondura.pro
 :: www.moveliscore9-2.pro
+:: www.moventixtrading.pro
 :: www.movieads.ero-advertising.com
-:: www.mozgalom-finlore.pro
 :: www.mpush.cn
 :: www.mpzw.com
 :: www.mrelko.com
@@ -231805,17 +231305,14 @@
 :: www.myadsl.co.za
 :: www.mybb.ero-advertising.com
 :: www.mycleanmymac.com
-:: www.myfazuipl.pro
 :: www.myfeng.cn
 :: www.myhucadvantage.com
 :: www.mylottoadserv.com
 :: www.mymavrex-trace.com
-:: www.myrronpro9-2.pro
 :: www.mywinadvantage.com
 :: www.myzhongguojie.cn
 :: www.n0q.cn
 :: www.n149adserv.com
-:: www.naftotechcora.pro
 :: www.naiadsystems.com
 :: www.nairapulse.pro
 :: www.nangong2.com
@@ -231824,14 +231321,12 @@
 :: www.nata.ero-advertising.com
 :: www.national-lottery.co.uk
 :: www.natrivex-engine.pro
-:: www.natrivexbitronix.pro
 :: www.naughty-traffic.com
 :: www.naxioveronium-pro.com
 :: www.ncoyqc.com
 :: www.needadvertising.com
 :: www.neocapitalsystem.pro
 :: www.neptuneads.com
-:: www.nerdynatorv2.pro
 :: www.nerfeiidsjsdksdlopower.com
 :: www.net-actifvillepro.pro
 :: www.networkbench.com
@@ -231839,7 +231334,6 @@
 :: www.newhold.pro
 :: www.newspolnd.pro
 :: www.newsyoucanread24.com
-:: www.nexipessogpt.pro
 :: www.nexorion-finance.pro
 :: www.nexotronai.pro
 :: www.nextlnk9.com
@@ -231859,7 +231353,6 @@
 :: www.norqelaxisai.pro
 :: www.notepad2.com
 :: www.novaonads.com
-:: www.novarisai.pro
 :: www.nruesidoajsdjaodokadso.site
 :: www.ntfsformac.cc
 :: www.ntfsformac.cn
@@ -231883,21 +231376,16 @@
 :: www.optad360.com
 :: www.optaim.com
 :: www.optimix.cn
-:: www.ordexiaprime.pro
-:: www.orenthiovector.pro
 :: www.org-upgrade.com
 :: www.orion.iad.appboy.com
 :: www.ormitrinex.pro
-:: www.orovaldexia-pro.com
 :: www.orveztil.pro
 :: www.ouluvoittvex.pro
 :: www.outbrain.com
 :: www.overturechina.com
-:: www.oxvurilzsoftware.pro
 :: www.pagechoice.net
 :: www.pagepeel.ero-advertising.com
 :: www.pangolin-dsp-toutiao.com
-:: www.paqydorixyai.pro
 :: www.parsads.com
 :: www.partner-ads.com
 :: www.partner-with-creators.com
@@ -231915,9 +231403,8 @@
 :: www.pegasushomes.pro
 :: www.peluxivsoftware.pro
 :: www.persgroepadvertising.nl
-:: www.pewna-inwestotivpro.pro
-:: www.pewnarentostka.pro
 :: www.pflexads.com
+:: www.phantomstrikety.pro
 :: www.phlintkapstead.pro
 :: www.phlintrentmere.pro
 :: www.phoenixads.co.in
@@ -231944,7 +231431,6 @@
 :: www.pjbjzf.com
 :: www.pkkjxs.cn
 :: www.pl-add.shop
-:: www.plenacapitoria.pro
 :: www.pobierzteraz.mobi
 :: www.pohjorvalene.pro
 :: www.poijugh.top
@@ -231962,15 +231448,12 @@
 :: www.popads.net
 :: www.popadvert.com
 :: www.popelkar.pro
-:: www.pordeliksengine.pro
-:: www.portvaultwick.pro
 :: www.postads24.com
 :: www.postnewsads.com
 :: www.poweredbyliquidfire.mobi
 :: www.pp9899.com
 :: www.prandelia.pro
 :: www.prebid.adnxs.com
-:: www.precoadven.cyou
 :: www.predictivadvertising.com
 :: www.pressbureauonline.pro
 :: www.prestigionivel.pro
@@ -231994,11 +231477,10 @@
 :: www.proverseax.pro
 :: www.prozenvora.pro
 :: www.pubsdownloads.net
-:: www.pulsarvexline-pro.com
 :: www.pulsemorphix.pro
 :: www.pura-monetivo.pro
-:: www.puremonetivo.pro
 :: www.purfinrevoux-pro.com
+:: www.purliquidheim.pro
 :: www.purnoavexo.pro
 :: www.purocapitenca.pro
 :: www.pushcfg.com
@@ -232017,23 +231499,20 @@
 :: www.qleverapro.pro
 :: www.qoventrix24.pro
 :: www.qqads.com
-:: www.quanticorev2.pro
 :: www.quantivaadvisoryprogrammes.pro
 :: www.quantixfinance.pro
 :: www.quantrexblaze.pro
+:: www.quantum-flowbit.pro
 :: www.quantumaiglobal.pro
 :: www.quantumpro-app.pro
-:: www.quantyxorelian-pro.com
 :: www.quasargames.pro
 :: www.quickbriefingd.pro
 :: www.qumi.com
-:: www.qumvestiumai.pro
 :: www.qunymuy.pro
 :: www.qupinhj.com
 :: www.qutaobi.com
 :: www.qvantiumai.pro
 :: www.qwkooasdksdoadkd.site
-:: www.qynxiliur.pro
 :: www.qzgjprj.com
 :: www.rade-platform.pro
 :: www.rampidads.com
@@ -232053,15 +231532,11 @@
 :: www.remote88.com
 :: www.rendistero.pro
 :: www.renminben.com
-:: www.rentemond.pro
 :: www.repossessionleads.com
 :: www.rerisfjsdiwkerisdkkaod.site
 :: www.reservaplatform.pro
 :: www.resortecapitencia.pro
-:: www.revaultnex.pro
 :: www.rhythmosmonvexis.pro
-:: www.riccawalorawia.pro
-:: www.richefondois.pro
 :: www.ridgetrust.pro
 :: www.risorsa-portyrex.pro
 :: www.robotrader-pro.com
@@ -232074,8 +231549,6 @@
 :: www.rs2.ero-advertising.com
 :: www.rtb-adsterra.flshtrk.store
 :: www.rubiconproject.com
-:: www.ryptonoansolution.pro
-:: www.ryptowolfzengine.pro
 :: www.s.ero-advertising.com
 :: www.s0n.cn
 :: www.s10.hiadspaces.ero-advertising.com
@@ -232091,9 +231564,7 @@
 :: www.sadafiksodoskdjfiosdkado.site
 :: www.saladstory.mom
 :: www.salewayplatform.pro
-:: www.sanolucrivo.pro
 :: www.sarabattamula-click.pages.dev
-:: www.saudivisionai-pro.com
 :: www.sb88b.com
 :: www.schildvaultaris.pro
 :: www.sdkclick.com
@@ -232125,7 +231596,6 @@
 :: www.shisancore-pro.com
 :: www.shisancore.pro
 :: www.shkywh.com
-:: www.shoboltrangorh.pro
 :: www.shouyoutan.com
 :: www.shuaixu.site
 :: www.shuqw.com
@@ -232135,15 +231605,13 @@
 :: www.sichonex-pro.com
 :: www.siermkolipd.pro
 :: www.signalflarexp.pro
-:: www.signallidexhex.pro
 :: www.silaportdex.pro
 :: www.silkroadfuturesdesk.pro
 :: www.silnagieldownia.pro
 :: www.silnyfundalis.pro
 :: www.sin.ero-advertising.com
-:: www.sincorrabtcv8.pro
+:: www.sinceredepotance-ai.pro
 :: www.sintrelonix.pro
-:: www.skyline-nexus-pro.live
 :: www.slide-avitapip.pro
 :: www.slideataraxfinai.pro
 :: www.slimads.vn
@@ -232165,12 +231633,12 @@
 :: www.solatrenicae.pro
 :: www.soleilsystem.pro
 :: www.solidofundavox.pro
-:: www.solidreturn-pro.com
 :: www.solvanciere-app.pro
 :: www.solvyan-defix-pro.com
 :: www.somennew.com
 :: www.sommet-fundvio.pro
 :: www.song001.com
+:: www.sonorarentestra.pro
 :: www.souid.com
 :: www.spaces.ero-advertising.com
 :: www.speed4cksa.ero-advertising.com
@@ -232179,9 +231647,9 @@
 :: www.speedclics.ero-advertising.com
 :: www.speedlicks.ero-advertising.com
 :: www.speeuclicks.ero-advertising.com
-:: www.spikeavonexneo.pro
 :: www.spikeexorexx.pro
 :: www.spikeflarex-nx.pro
+:: www.spikeflarexnx.pro
 :: www.sponsorads.de
 :: www.sportplus.pro
 :: www.spotflomax-pip.pro
@@ -232228,7 +231696,6 @@
 :: www.summitvalnexapp.pro
 :: www.suncrestvarlon.pro
 :: www.sunflowersandthreads.com
-:: www.sunfortportdex.pro
 :: www.sunridgepyrvox.pro
 :: www.supersonicads.com
 :: www.sur-koffrevance.pro
@@ -232244,7 +231711,6 @@
 :: www.swiftedgefinvexor.pro
 :: www.swiftlink-valnex.pro
 :: www.swiftventaris.pro
-:: www.swissborgapp.pro
 :: www.switch-axid-hex-pro.com
 :: www.switchembolex-pro.com
 :: www.sxdyrq.com
@@ -232331,8 +231797,6 @@
 :: www.trade360.com
 :: www.trade8iplex.live
 :: www.tradeadexchange.com
-:: www.tradementor-pro.shop
-:: www.tradepro-engine.pro
 :: www.traderaiapp.pro
 :: www.traderflix9gpt-pro.com
 :: www.tradex-ai.pro
@@ -232343,9 +231807,7 @@
 :: www.trafficads.com
 :: www.trafficnetworkads24.com
 :: www.tramaprofitex.pro
-:: www.trasviloxai.pro
 :: www.traveladvertising.com
-:: www.treviloxanopro.pro
 :: www.tripadvisor.pre-approved-83945n.live
 :: www.tripadvisor.request-apartment104263851.homes
 :: www.trivaxonvelquant.pro
@@ -232353,6 +231815,7 @@
 :: www.trueledgewick.pro
 :: www.trueshelterju.pro
 :: www.trustenixaibefektetesiplatform.pro
+:: www.trustorium.pro
 :: www.truthgridmax.pro
 :: www.ttcdn.cn
 :: www.ttnet.yandex.com.tr
@@ -232363,7 +231826,6 @@
 :: www.tuituigui19999.com
 :: www.tujidao.com
 :: www.tukexiu.com
-:: www.turbocormax-pro.com
 :: www.turboexelonark.pro
 :: www.turbofund100.pro
 :: www.turn.com
@@ -232384,7 +231846,6 @@
 :: www.ujian.cc
 :: www.uklawadvice.com
 :: www.ulink.cc
-:: www.ultratrade-alphavest.pro
 :: www.ultravix-app.pro
 :: www.um0.cn
 :: www.um0592.com
@@ -232402,9 +231863,7 @@
 :: www.unionsy.com
 :: www.universal-traffic.com
 :: www.universalesdeskandia.pro
-:: www.untavix.pro
 :: www.uol-bitfundix.pro
-:: www.update-addrese.ctiltst.ccwu.cc
 :: www.update-information.zzux.com
 :: www.update-java.kit.net
 :: www.update-security.ddns.info
@@ -232417,21 +231876,16 @@
 :: www.uyunad.com
 :: www.v00087.com
 :: www.v66v66.com
-:: www.vaaltechki.pro
 :: www.vacamuertainvestment.pro
 :: www.vads.net.vn
 :: www.vads.vn
 :: www.valcreditance.pro
 :: www.valeurgaintra.pro
 :: www.valexiro.pro
-:: www.valleprofitra.pro
-:: www.valutorreai.pro
-:: www.vandelixio-tech.pro
 :: www.vangmobi.com
 :: www.vanguardtruthnow.pro
 :: www.vantaxio-pro.com
 :: www.varentixor-pro.com
-:: www.vaxubai.pro
 :: www.vbnm888.com
 :: www.vegaschina.cn
 :: www.velario-trace.org
@@ -232441,12 +231895,10 @@
 :: www.velorafundsaiv2.pro
 :: www.veloryx-nexantra.pro
 :: www.veltrixnexaro.pro
-:: www.venitendra.pro
 :: www.ventrim.pro
 :: www.verifica-ai.pro
+:: www.verifiednewsdispatch.pro
 :: www.vertron-ai.pro
-:: www.vifb-ours-ade.today
-:: www.vigor-fintrion-pro.com
 :: www.vipads.cc
 :: www.vipads.live
 :: www.vistafinvora.pro
@@ -232457,12 +231909,9 @@
 :: www.voltixedge.pro
 :: www.vorelium-pro.com
 :: www.vorelium-pro.net
-:: www.vortexfrance.pro
 :: www.voxtrendputere.pro
 :: www.vpon.com
-:: www.vurdoxen.pro
 :: www.vyk.admaster.com.cn
-:: www.vyranivotrade-pro.com
 :: www.vyxelleqranto.pro
 :: www.w1a.cc
 :: www.w4pma.cn
@@ -232491,6 +231940,7 @@
 :: www.westgrove-hqmsdke-mainfield.site
 :: www.westreclameadvies.nl
 :: www.westyngainwale.pro
+:: www.weynuoligzare.pro
 :: www.whalecashads.com
 :: www.whalecloud.com
 :: www.whcrdz.com
@@ -232529,7 +231979,6 @@
 :: www.xchmai.com
 :: www.xdrig.com
 :: www.xelaronexum.pro
-:: www.xenqoriaai.pro
 :: www.xentora-core390.pro
 :: www.xiacai.com
 :: www.xianliao.me
@@ -232605,38 +232054,26 @@
 :: www.zaszzzksdoosdoadsk.site
 :: www.zbrushcn.com
 :: www.zedadssiosodiksdko.site
-:: www.zelanciaai.pro
-:: www.zenithinverix.pro
 :: www.zentaykuro.pro
 :: www.zentpadsense.site
-:: www.zevriocapture-pro.com
 :: www.zhidian3g.cn
 :: www.zhuangjizhuli.net
 :: www.zhzzx.com
 :: www.ziraatyatirimborsahesabi.pro
-:: www.ziskvynosovanz.pro
-:: www.zivanpro.pro
 :: www.zjjgtz.com
 :: www.zjsyawqj.cn
 :: www.zkaldexekpaideftiki.pro
 :: www.zlne800.com
 :: www.zlotario-pro.com
 :: www.zlotario-pro.net
-:: www.zloty-zyskowium.pro
-:: www.zollafintex.pro
 :: www.zopeynxv.top
-:: www.zorvanelixtredomio.pro
-:: www.zovthurix-app.pro
 :: www.zreder.com
 :: www.zshacker.com
 :: www.zww.ero-advertising.com
 :: www.zxziyuan.com
-:: www.zyfrapro.pro
-:: www.zylkex.pro
 :: www.zyrenmint.pro
 :: www.zyskont.pro
 :: www.zyvron-trace-gpt.live
-:: www.zywa-capovin.pro
 :: www.zz123.com
 :: www.zzd6.com
 :: www1.cynergysolutions.net
@@ -233233,7 +232670,6 @@
 :: xemswfbrdhrts.website
 :: xenlzn.icu
 :: xenon.studio
-:: xenqoriaai.pro
 :: xentora-core390.pro
 :: xepaijcfgvzje.online
 :: xepluwsaisxgi.website
@@ -236162,7 +235598,6 @@
 :: zeigraim.com
 :: zekagaibrryns.space
 :: zekneylmdrfud.space
-:: zelanciaai.pro
 :: zelle.odencat.com
 :: zelten.fritz-berger.de
 :: zelvlzqbhpnpo.online
@@ -236172,7 +235607,6 @@
 :: zendplace.pro
 :: zenedge.actonservice.com
 :: zenis15.net
-:: zenithinverix.pro
 :: zenithoradog.com
 :: zenithurbanflirtatious.com
 :: zenlkqmjfnnwd.website
@@ -236215,7 +235649,6 @@
 :: zeusadx.com
 :: zeustechnology.com
 :: zevairaurs.net
-:: zevriocapture-pro.com
 :: zevsrhtbpzs.com
 :: zewesamessustee.net
 :: zewkj.com
@@ -236448,7 +235881,6 @@
 :: ziraatyatirimborsahesabi.pro
 :: zireemilsoude.net
 :: zirve100.com
-:: ziskvynosovanz.pro
 :: zisr3w3i2csfa76m.edge41.testandtarget.omniture.com
 :: zisu.cn.com
 :: zitdither.com
@@ -236457,7 +235889,6 @@
 :: ziugocxrubayf.site
 :: ziuofftam.com
 :: ziupljvisonem.space
-:: zivanpro.pro
 :: zivtux.com
 :: zivufupwnqrwb.online
 :: zivxgvrhzvfwd.online
@@ -236586,7 +236017,6 @@
 :: zlongad.com
 :: zlotario-pro.com
 :: zlotario-pro.net
-:: zloty-zyskowium.pro
 :: zlp6s.pw
 :: zlqanhqrtjair.website
 :: zlrwxkrwslawu.online
@@ -236706,7 +236136,6 @@
 :: zoiyjzhhjty.com
 :: zokapwppblsly.website
 :: zokfgnvzcdimh.website
-:: zollafintex.pro
 :: zombieslayer-alternate.kano.link
 :: zombieslayer.kano.link
 :: zomdufobhmfmm.space
@@ -236748,7 +236177,6 @@
 :: zordoabsolsooph.net
 :: zorquaaeybckx.space
 :: zorseeckoaroa.net
-:: zorvanelixtredomio.pro
 :: zosteralatency.com
 :: zotnkataxyscx.online
 :: zotqhsyqbetkg.online
@@ -236757,7 +236185,6 @@
 :: zouwie.mlhif.com
 :: zouyfpkgawryi.online
 :: zovidree.com
-:: zovthurix-app.pro
 :: zowfzkclkxpou.space
 :: zoxyxrmbk.com
 :: zozvjoawtvxpi.online
@@ -237169,7 +236596,6 @@
 :: zyek35wsn.com
 :: zyf.fzdfwy.com
 :: zyf03k.xyz
-:: zyfrapro.pro
 :: zygoojpfbiqdi.online
 :: zyguhojdymzqx.site
 :: zyhzzhxnlnfdk.site
@@ -237179,7 +236605,6 @@
 :: zyjfjziavcdpnk.com
 :: zyjlsoofkpxrm.space
 :: zyjvyfaihssods.com
-:: zylkex.pro
 :: zymbrlgu.cn
 :: zymerget.win
 :: zymo.mps.weibo.com
@@ -237196,7 +236621,6 @@
 :: zyswiurots.com
 :: zyvbcstcltidm.online
 :: zyvron-trace-gpt.live
-:: zywa-capovin.pro
 :: zyxbltkkgkmon.site
 :: zyz.91friend.com
 :: zyz1.91friend.com
