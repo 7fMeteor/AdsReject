@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 230449
-# Update time: 2026-09-08 12:07:12 UTC+8
+# Total lines: 230495
+# Update time: 2026-09-09 12:14:02 UTC+8
 
 # [Custom IPv4 / Localhost]
+118.193.240.41 github.global.ssl.fastly.net
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.18 github.community
-140.82.112.22 education.github.com
-140.82.112.26 live.github.com
-140.82.113.22 api.individual.githubcopilot.com
-140.82.114.21 central.github.com
+140.82.113.17 github.community
+140.82.113.21 central.github.com
+140.82.113.22 education.github.com
+140.82.113.25 live.github.com
+140.82.113.26 alive.github.com
+140.82.114.21 api.individual.githubcopilot.com
 140.82.114.22 collector.github.com
-140.82.114.26 alive.github.com
-159.106.121.75 gist.github.com
-16.15.214.161 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.244.17 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.245.163 github-production-release-asset-2e65be.s3.amazonaws.com
-185.199.108.133 avatars.githubusercontent.com
-185.199.108.133 avatars0.githubusercontent.com
-185.199.108.133 avatars1.githubusercontent.com
-185.199.108.133 avatars2.githubusercontent.com
-185.199.108.133 avatars3.githubusercontent.com
-185.199.108.133 avatars4.githubusercontent.com
-185.199.108.133 avatars5.githubusercontent.com
-185.199.108.133 camo.githubusercontent.com
-185.199.108.133 cloud.githubusercontent.com
-185.199.108.133 desktop.githubusercontent.com
-185.199.108.133 favicons.githubusercontent.com
-185.199.108.133 github.map.fastly.net
-185.199.108.133 media.githubusercontent.com
-185.199.108.133 objects.githubusercontent.com
-185.199.108.133 private-user-images.githubusercontent.com
-185.199.108.133 raw.githubusercontent.com
-185.199.108.133 user-images.githubusercontent.com
-185.199.108.153 github.io
-185.199.108.153 githubstatus.com
+16.15.207.28 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.214.161 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.229.191 github-production-release-asset-2e65be.s3.amazonaws.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
+185.199.109.133 avatars1.githubusercontent.com
+185.199.109.133 avatars2.githubusercontent.com
+185.199.109.133 avatars3.githubusercontent.com
+185.199.109.133 avatars4.githubusercontent.com
+185.199.109.133 avatars5.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
+185.199.109.133 cloud.githubusercontent.com
+185.199.109.133 desktop.githubusercontent.com
+185.199.109.133 favicons.githubusercontent.com
+185.199.109.133 github.map.fastly.net
+185.199.109.133 media.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.109.133 private-user-images.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
 185.199.109.215 github.githubassets.com
+185.199.110.153 github.io
+185.199.110.153 githubstatus.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
+20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-52.217.116.65 github-com.s3.amazonaws.com
-52.217.37.116 github-cloud.s3.amazonaws.com
-65.49.26.98 github.global.ssl.fastly.net
+52.217.134.241 github-cloud.s3.amazonaws.com
+54.231.164.73 github-com.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -8165,6 +8165,7 @@
 0.0.0.0 ad-android.51wnl.com
 0.0.0.0 ad-apac.doubleclick.net
 0.0.0.0 ad-api-v01.uliza.jp
+0.0.0.0 ad-api.4pyun.com
 0.0.0.0 ad-api.ad-stir.com
 0.0.0.0 ad-api.adn-plus.com.cn
 0.0.0.0 ad-api.cnblogs.com
@@ -8212,6 +8213,7 @@
 0.0.0.0 ad-fam.com
 0.0.0.0 ad-feed.com
 0.0.0.0 ad-feeds.com
+0.0.0.0 ad-files.4pyun.com
 0.0.0.0 ad-flow.com
 0.0.0.0 ad-formats.advertising.aol.com
 0.0.0.0 ad-g.doubleclick.net
@@ -8423,6 +8425,7 @@
 0.0.0.0 ad.bitmedia.io
 0.0.0.0 ad.bizo.com
 0.0.0.0 ad.bloggerads.net
+0.0.0.0 ad.bn.netease.com
 0.0.0.0 ad.bnmla.com
 0.0.0.0 ad.bobi.tw
 0.0.0.0 ad.bondage.com
@@ -8663,6 +8666,7 @@
 0.0.0.0 ad.mail.ru
 0.0.0.0 ad.mail.sohu.com
 0.0.0.0 ad.mangareader.net
+0.0.0.0 ad.maoyan.com
 0.0.0.0 ad.mastermedia.ru
 0.0.0.0 ad.media-servers.net
 0.0.0.0 ad.mediamixer.co.kr
@@ -9393,6 +9397,7 @@
 0.0.0.0 adcalm.com
 0.0.0.0 adcannyads.com
 0.0.0.0 adcannyxml.com
+0.0.0.0 adcanvas.com
 0.0.0.0 adcash.com
 0.0.0.0 adcast.deviantart.com
 0.0.0.0 adcccc.com
@@ -9874,6 +9879,7 @@
 0.0.0.0 admapp.com
 0.0.0.0 admarket.21cn.com
 0.0.0.0 admarket.mobi
+0.0.0.0 admarketing.yahoo.net
 0.0.0.0 admaru.com
 0.0.0.0 admarvel.com
 0.0.0.0 admarvel.s3.amazonaws.com
@@ -10815,6 +10821,7 @@
 0.0.0.0 ads.fiat-bg.org
 0.0.0.0 ads.fileindexer.com
 0.0.0.0 ads.filmup.com
+0.0.0.0 ads.finance.yahoo.com
 0.0.0.0 ads.financialcontent.com
 0.0.0.0 ads.fingersoft.net
 0.0.0.0 ads.first-response.be
@@ -14463,6 +14470,7 @@
 0.0.0.0 allstarfg.actonservice.com
 0.0.0.0 allstat-pp.ru
 0.0.0.0 allsunflowers.com
+0.0.0.0 alltbcsp2p.baidu.com
 0.0.0.0 allthelogs.com
 0.0.0.0 alltracked.com
 0.0.0.0 alltypo.com
@@ -39247,6 +39255,7 @@
 0.0.0.0 eventsproxy.gargantuan.futureplc.com
 0.0.0.0 eventsquiteclick.com
 0.0.0.0 eventstream.dodopizza.com
+0.0.0.0 eventv1.leidong.rayenergytech.com
 0.0.0.0 eventweepinghoarse.com
 0.0.0.0 ever-track-51.com
 0.0.0.0 ever8trk.com
@@ -45658,6 +45667,7 @@
 0.0.0.0 gw.flurry.com
 0.0.0.0 gw100-10.com
 0.0.0.0 gw5.push.mcp.weibo.cn
+0.0.0.0 gw6.push.mcp.weibo.cn
 0.0.0.0 gw7jpuouik.com
 0.0.0.0 gwallet.com
 0.0.0.0 gwaqanrpzkknt.website
@@ -48044,7 +48054,9 @@
 0.0.0.0 hunterindustries.actonservice.com
 0.0.0.0 hunterlead.com
 0.0.0.0 hunzlj.icu
+0.0.0.0 huodong.ios.shouji.360.cn
 0.0.0.0 huodong.mobilem.360.cn
+0.0.0.0 huodong.weibo.cn
 0.0.0.0 huodonghezi.cn
 0.0.0.0 huohuo.huamuwo.com
 0.0.0.0 huomob.com
@@ -48492,10 +48504,12 @@
 0.0.0.0 iad7.ipromote.com
 0.0.0.0 iad8.ipromote.com
 0.0.0.0 iadbsntna.com
+0.0.0.0 iadcontent.apple.com
 0.0.0.0 iadctest.qwapi.com
 0.0.0.0 iadmat.nosdn.127.net
 0.0.0.0 iadmatapk.nosdn.127.net
 0.0.0.0 iadmatvideo.nosdn.127.net
+0.0.0.0 iadmoo.apple.com
 0.0.0.0 iadmusicmat.music.126.net
 0.0.0.0 iadmusicmatvideo.music.126.net
 0.0.0.0 iadmusicpic.music.126.net
@@ -51220,6 +51234,7 @@
 0.0.0.0 inncreasukedrev.info
 0.0.0.0 innedroxane.shop
 0.0.0.0 inner-active.mobi
+0.0.0.0 inner-hw.huazirc.com
 0.0.0.0 inneractive-assets.s3.amazonaws.com
 0.0.0.0 innerskinresearch.com
 0.0.0.0 innertrends.com
@@ -55612,6 +55627,7 @@
 0.0.0.0 kwn91x0jke.top
 0.0.0.0 kwpgeebopaqpn.site
 0.0.0.0 kwphbfgfhehbm.online
+0.0.0.0 kwpush.kuwo.cn
 0.0.0.0 kwqpix.ravenna.gr
 0.0.0.0 kwrbryjcespcp.online
 0.0.0.0 kws.holdmybeerconsulting.com
@@ -58625,6 +58641,7 @@
 0.0.0.0 logrcv.yunxish.com
 0.0.0.0 logrocket.io
 0.0.0.0 logs-api.shoprunner.com
+0.0.0.0 logs-bigdata.yeehaw.com.cn
 0.0.0.0 logs-collect.ziniao.com
 0.0.0.0 logs-partners.coupang.com
 0.0.0.0 logs.51cto.com
@@ -58670,6 +58687,7 @@
 0.0.0.0 logtj.kugou.com
 0.0.0.0 logua.com
 0.0.0.0 logupdate.avlyun.sec.miui.com
+0.0.0.0 logv2.ireader.com
 0.0.0.0 logwebs.kugou.com
 0.0.0.0 logx-experimentation.iherb.com
 0.0.0.0 logx.optimizely.com
@@ -58733,6 +58751,7 @@
 0.0.0.0 lookmy.info
 0.0.0.0 looksmart.com
 0.0.0.0 looktotheright.com
+0.0.0.0 lookup.api.bsb.baidu.com
 0.0.0.0 loom3otto.com
 0.0.0.0 loomi-prod.xyz
 0.0.0.0 loonykenyans.shop
@@ -75942,6 +75961,7 @@
 0.0.0.0 projectwonderful.com
 0.0.0.0 projetodegente.com
 0.0.0.0 prologue23.com
+0.0.0.0 prom-sdkv2.jysper.net
 0.0.0.0 prom.gome.com.cn
 0.0.0.0 promdamagecomplain.com
 0.0.0.0 promdidna.com
@@ -79476,6 +79496,7 @@
 0.0.0.0 report.appmetrica.yandex.net
 0.0.0.0 report.appmetrica.yandex.net.iberostar.com
 0.0.0.0 report.cms.qq.com
+0.0.0.0 report.dxunion.cn
 0.0.0.0 report.hb.brainlyads.com
 0.0.0.0 report.meeting.tencent.com
 0.0.0.0 report.meituan.com
@@ -99263,6 +99284,7 @@
 0.0.0.0 tracker-beam.tempo.co
 0.0.0.0 tracker-dot-dfty-optimeeze-leroymerlinfr.appspot.com
 0.0.0.0 tracker-dot-optimeeze.appspot.com
+0.0.0.0 tracker-prd.aldi.com.cn
 0.0.0.0 tracker-rec.smart-bdash.com
 0.0.0.0 tracker-remp.premiumtimesng.com
 0.0.0.0 tracker-server.high-cdn.com
@@ -102687,6 +102709,7 @@
 0.0.0.0 unimhk.com
 0.0.0.0 uninterestedquarter.com
 0.0.0.0 union-mlog.bigda.com
+0.0.0.0 union-record.oss-cn-zhangjiakou.aliyuncs.com
 0.0.0.0 union-wifi.com
 0.0.0.0 union.56.com
 0.0.0.0 union.6.cn
@@ -123369,6 +123392,7 @@
 :: ad-android.51wnl.com
 :: ad-apac.doubleclick.net
 :: ad-api-v01.uliza.jp
+:: ad-api.4pyun.com
 :: ad-api.ad-stir.com
 :: ad-api.adn-plus.com.cn
 :: ad-api.cnblogs.com
@@ -123416,6 +123440,7 @@
 :: ad-fam.com
 :: ad-feed.com
 :: ad-feeds.com
+:: ad-files.4pyun.com
 :: ad-flow.com
 :: ad-formats.advertising.aol.com
 :: ad-g.doubleclick.net
@@ -123627,6 +123652,7 @@
 :: ad.bitmedia.io
 :: ad.bizo.com
 :: ad.bloggerads.net
+:: ad.bn.netease.com
 :: ad.bnmla.com
 :: ad.bobi.tw
 :: ad.bondage.com
@@ -123867,6 +123893,7 @@
 :: ad.mail.ru
 :: ad.mail.sohu.com
 :: ad.mangareader.net
+:: ad.maoyan.com
 :: ad.mastermedia.ru
 :: ad.media-servers.net
 :: ad.mediamixer.co.kr
@@ -124597,6 +124624,7 @@
 :: adcalm.com
 :: adcannyads.com
 :: adcannyxml.com
+:: adcanvas.com
 :: adcash.com
 :: adcast.deviantart.com
 :: adcccc.com
@@ -125078,6 +125106,7 @@
 :: admapp.com
 :: admarket.21cn.com
 :: admarket.mobi
+:: admarketing.yahoo.net
 :: admaru.com
 :: admarvel.com
 :: admarvel.s3.amazonaws.com
@@ -126019,6 +126048,7 @@
 :: ads.fiat-bg.org
 :: ads.fileindexer.com
 :: ads.filmup.com
+:: ads.finance.yahoo.com
 :: ads.financialcontent.com
 :: ads.fingersoft.net
 :: ads.first-response.be
@@ -129667,6 +129697,7 @@
 :: allstarfg.actonservice.com
 :: allstat-pp.ru
 :: allsunflowers.com
+:: alltbcsp2p.baidu.com
 :: allthelogs.com
 :: alltracked.com
 :: alltypo.com
@@ -154451,6 +154482,7 @@
 :: eventsproxy.gargantuan.futureplc.com
 :: eventsquiteclick.com
 :: eventstream.dodopizza.com
+:: eventv1.leidong.rayenergytech.com
 :: eventweepinghoarse.com
 :: ever-track-51.com
 :: ever8trk.com
@@ -160862,6 +160894,7 @@
 :: gw.flurry.com
 :: gw100-10.com
 :: gw5.push.mcp.weibo.cn
+:: gw6.push.mcp.weibo.cn
 :: gw7jpuouik.com
 :: gwallet.com
 :: gwaqanrpzkknt.website
@@ -163248,7 +163281,9 @@
 :: hunterindustries.actonservice.com
 :: hunterlead.com
 :: hunzlj.icu
+:: huodong.ios.shouji.360.cn
 :: huodong.mobilem.360.cn
+:: huodong.weibo.cn
 :: huodonghezi.cn
 :: huohuo.huamuwo.com
 :: huomob.com
@@ -163696,10 +163731,12 @@
 :: iad7.ipromote.com
 :: iad8.ipromote.com
 :: iadbsntna.com
+:: iadcontent.apple.com
 :: iadctest.qwapi.com
 :: iadmat.nosdn.127.net
 :: iadmatapk.nosdn.127.net
 :: iadmatvideo.nosdn.127.net
+:: iadmoo.apple.com
 :: iadmusicmat.music.126.net
 :: iadmusicmatvideo.music.126.net
 :: iadmusicpic.music.126.net
@@ -166424,6 +166461,7 @@
 :: inncreasukedrev.info
 :: innedroxane.shop
 :: inner-active.mobi
+:: inner-hw.huazirc.com
 :: inneractive-assets.s3.amazonaws.com
 :: innerskinresearch.com
 :: innertrends.com
@@ -170816,6 +170854,7 @@
 :: kwn91x0jke.top
 :: kwpgeebopaqpn.site
 :: kwphbfgfhehbm.online
+:: kwpush.kuwo.cn
 :: kwqpix.ravenna.gr
 :: kwrbryjcespcp.online
 :: kws.holdmybeerconsulting.com
@@ -173829,6 +173868,7 @@
 :: logrcv.yunxish.com
 :: logrocket.io
 :: logs-api.shoprunner.com
+:: logs-bigdata.yeehaw.com.cn
 :: logs-collect.ziniao.com
 :: logs-partners.coupang.com
 :: logs.51cto.com
@@ -173874,6 +173914,7 @@
 :: logtj.kugou.com
 :: logua.com
 :: logupdate.avlyun.sec.miui.com
+:: logv2.ireader.com
 :: logwebs.kugou.com
 :: logx-experimentation.iherb.com
 :: logx.optimizely.com
@@ -173937,6 +173978,7 @@
 :: lookmy.info
 :: looksmart.com
 :: looktotheright.com
+:: lookup.api.bsb.baidu.com
 :: loom3otto.com
 :: loomi-prod.xyz
 :: loonykenyans.shop
@@ -191146,6 +191188,7 @@
 :: projectwonderful.com
 :: projetodegente.com
 :: prologue23.com
+:: prom-sdkv2.jysper.net
 :: prom.gome.com.cn
 :: promdamagecomplain.com
 :: promdidna.com
@@ -194680,6 +194723,7 @@
 :: report.appmetrica.yandex.net
 :: report.appmetrica.yandex.net.iberostar.com
 :: report.cms.qq.com
+:: report.dxunion.cn
 :: report.hb.brainlyads.com
 :: report.meeting.tencent.com
 :: report.meituan.com
@@ -214467,6 +214511,7 @@
 :: tracker-beam.tempo.co
 :: tracker-dot-dfty-optimeeze-leroymerlinfr.appspot.com
 :: tracker-dot-optimeeze.appspot.com
+:: tracker-prd.aldi.com.cn
 :: tracker-rec.smart-bdash.com
 :: tracker-remp.premiumtimesng.com
 :: tracker-server.high-cdn.com
@@ -217891,6 +217936,7 @@
 :: unimhk.com
 :: uninterestedquarter.com
 :: union-mlog.bigda.com
+:: union-record.oss-cn-zhangjiakou.aliyuncs.com
 :: union-wifi.com
 :: union.56.com
 :: union.6.cn
