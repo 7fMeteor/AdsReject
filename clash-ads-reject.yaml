@@ -2,7 +2,7 @@
 # Description: Combined and deduplicated ad-blocking rules for Clash Meta or Premium.
 # --------------------------------------
 # Total lines: 214048
-# Update time: 2026-09-17 12:30:11 UTC+8
+# Update time: 2026-09-18 12:14:49 UTC+8
 
 payload:
   - '+.0.avmarket.rs'
