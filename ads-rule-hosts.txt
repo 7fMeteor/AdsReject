@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 244947
-# Update time: 2026-10-27 12:35:57 UTC+8
+# Total lines: 244925
+# Update time: 2026-10-28 13:08:55 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
+128.121.146.235 github.global.ssl.fastly.net
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.113.17 github.community
-140.82.113.21 api.individual.githubcopilot.com
-140.82.113.25 live.github.com
-140.82.114.21 central.github.com
-140.82.114.22 collector.github.com
-140.82.114.22 education.github.com
-140.82.114.25 alive.github.com
-157.240.0.35 github.global.ssl.fastly.net
-16.15.212.211 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.213.74 github-cloud.s3.amazonaws.com
-16.15.229.30 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.244.109 github-com.s3.amazonaws.com
-16.15.255.47 github-production-repository-file-5c1aeb.s3.amazonaws.com
-185.199.109.153 github.io
-185.199.109.153 githubstatus.com
-185.199.109.215 github.githubassets.com
-185.199.111.133 avatars.githubusercontent.com
-185.199.111.133 avatars0.githubusercontent.com
-185.199.111.133 avatars1.githubusercontent.com
-185.199.111.133 avatars2.githubusercontent.com
-185.199.111.133 avatars3.githubusercontent.com
-185.199.111.133 avatars4.githubusercontent.com
-185.199.111.133 avatars5.githubusercontent.com
-185.199.111.133 camo.githubusercontent.com
-185.199.111.133 cloud.githubusercontent.com
-185.199.111.133 desktop.githubusercontent.com
-185.199.111.133 favicons.githubusercontent.com
-185.199.111.133 github.map.fastly.net
-185.199.111.133 media.githubusercontent.com
-185.199.111.133 objects.githubusercontent.com
-185.199.111.133 private-user-images.githubusercontent.com
-185.199.111.133 raw.githubusercontent.com
-185.199.111.133 user-images.githubusercontent.com
+140.82.112.21 collector.github.com
+140.82.113.22 central.github.com
+140.82.113.22 education.github.com
+140.82.113.26 live.github.com
+140.82.114.18 github.community
+140.82.114.21 api.individual.githubcopilot.com
+140.82.114.26 alive.github.com
+159.24.3.173 gist.github.com
+16.15.158.22 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.162.205 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.167.133 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.213.23 github-cloud.s3.amazonaws.com
+16.15.252.137 github-com.s3.amazonaws.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
+185.199.109.133 avatars1.githubusercontent.com
+185.199.109.133 avatars2.githubusercontent.com
+185.199.109.133 avatars3.githubusercontent.com
+185.199.109.133 avatars4.githubusercontent.com
+185.199.109.133 avatars5.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
+185.199.109.133 cloud.githubusercontent.com
+185.199.109.133 desktop.githubusercontent.com
+185.199.109.133 favicons.githubusercontent.com
+185.199.109.133 github.map.fastly.net
+185.199.109.133 media.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.109.133 private-user-images.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
+185.199.110.215 github.githubassets.com
+185.199.111.153 github.io
+185.199.111.153 githubstatus.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-59.24.3.173 gist.github.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -7997,6 +7997,7 @@
 0.0.0.0 accountsdoor.com
 0.0.0.0 accountsgraphicsincriminate.com
 0.0.0.0 accoybrava.com
+0.0.0.0 accruewell.pro
 0.0.0.0 accscdn.m.taobao.com
 0.0.0.0 accumula.actonservice.com
 0.0.0.0 accumulatecarefullysuction.com
@@ -13165,6 +13166,7 @@
 0.0.0.0 advack.net
 0.0.0.0 advally.com
 0.0.0.0 advalo.com
+0.0.0.0 advanced-reserv8283.com
 0.0.0.0 advanced-web-analytics.com
 0.0.0.0 advancedadblocker.pro
 0.0.0.0 advancedcleaner.com
@@ -16984,7 +16986,6 @@
 0.0.0.0 api.qvpublish.com
 0.0.0.0 api.radar.io
 0.0.0.0 api.ranking.rakuten.co.jp
-0.0.0.0 api.recapcha.fun
 0.0.0.0 api.receptivity.io
 0.0.0.0 api.red88.club
 0.0.0.0 api.red88.com
@@ -19326,8 +19327,6 @@
 0.0.0.0 auroraveil.bid
 0.0.0.0 aurousroseola.com
 0.0.0.0 aurum.tirto.id
-0.0.0.0 aurvenixt-click.pages.dev
-0.0.0.0 aurvenixtplateforme-click.pages.dev
 0.0.0.0 aus.amexforbusiness.com.au
 0.0.0.0 ausaas.cn
 0.0.0.0 auschtpdyijht.site
@@ -21119,6 +21118,7 @@
 0.0.0.0 beacon.wikia-services.com
 0.0.0.0 beaconadnetwork.com
 0.0.0.0 beaconcdn.qq.com
+0.0.0.0 beaconfundamoren.pro
 0.0.0.0 beacons.digital.disneyadvertising.com
 0.0.0.0 beacons.gcp.gvt2.com
 0.0.0.0 beacons.gvt2.com
@@ -26463,7 +26463,6 @@
 0.0.0.0 chuantu.biz
 0.0.0.0 chubbycreature.com
 0.0.0.0 chubbyexemplaryhardiness.com
-0.0.0.0 chuguadventures.co.tz
 0.0.0.0 chujstkfubpix.space
 0.0.0.0 chukchipias.com
 0.0.0.0 chunfuxie.cn
@@ -29894,7 +29893,6 @@
 0.0.0.0 cringezonearistocracy.com
 0.0.0.0 crinukpd.com
 0.0.0.0 crippletouret.com
-0.0.0.0 criptoinvest-click.pages.dev
 0.0.0.0 crirzaitai.com
 0.0.0.0 crisisinanehalted.com
 0.0.0.0 crisistuesdayartillery.com
@@ -41141,7 +41139,6 @@
 0.0.0.0 exmeqy.smartbuyglasses.de
 0.0.0.0 exmwfltxyxwmr.website
 0.0.0.0 exmycalnvqolp.site
-0.0.0.0 exo-api.tf
 0.0.0.0 exoclick.com
 0.0.0.0 exodtsamansys.online
 0.0.0.0 exodusjailhousetarantula.com
@@ -42477,6 +42474,7 @@
 0.0.0.0 finalyticsdata.com
 0.0.0.0 finance.cityads.com
 0.0.0.0 financefear.com
+0.0.0.0 financeforum-click.pages.dev
 0.0.0.0 financialeducation-info.uchicago.edu
 0.0.0.0 financialfadinglobster.com
 0.0.0.0 financialgobetweendancer.com
@@ -42532,6 +42530,7 @@
 0.0.0.0 finzy6-ad28.sbs
 0.0.0.0 finzy6-ad33.sbs
 0.0.0.0 finzy7-ad0.sbs
+0.0.0.0 finzy7-ad49.sbs
 0.0.0.0 finzy7-ad53.sbs
 0.0.0.0 fiorecolvento-pro.pages.dev
 0.0.0.0 fiorewonyhade.online
@@ -42816,7 +42815,6 @@
 0.0.0.0 flhqfdjmltoue.site
 0.0.0.0 flhtfxbakyelu.space
 0.0.0.0 flhvpswfkgjj.com
-0.0.0.0 flick-edge-pro.pages.dev
 0.0.0.0 flickerbridge.com
 0.0.0.0 flickerfailing.com
 0.0.0.0 flickering-bed.com
@@ -46056,12 +46054,10 @@
 0.0.0.0 globalinteractive.com
 0.0.0.0 globallearningsystems.actonservice.com
 0.0.0.0 globalmed.actonservice.com
-0.0.0.0 globalmeshix.pro
 0.0.0.0 globaloffers.link
 0.0.0.0 globalorders.net
 0.0.0.0 globalsiteanalytics.com
 0.0.0.0 globalsolutions.risk.lexisnexis.com
-0.0.0.0 globalstackis.pro
 0.0.0.0 globaltraffico.com
 0.0.0.0 globalwebads.com
 0.0.0.0 globalwebindex.net
@@ -48197,7 +48193,6 @@
 0.0.0.0 haiwvszcsfrfu.website
 0.0.0.0 haizhangs.com
 0.0.0.0 hajiawakens.com
-0.0.0.0 hajicai.pro
 0.0.0.0 hajolxtoruvvps.com
 0.0.0.0 hakbgofalvjbs.space
 0.0.0.0 hakvzygpdpnbx.online
@@ -52852,6 +52847,7 @@
 0.0.0.0 indulgenceslangringer.com
 0.0.0.0 indulinrayful.com
 0.0.0.0 indus.iad-01.braze.com
+0.0.0.0 induscapitalplatform-pro.pages.dev
 0.0.0.0 induscapitalplatform.pro
 0.0.0.0 industries78.net
 0.0.0.0 industriesfrominvisible.net
@@ -54012,7 +54008,6 @@
 0.0.0.0 instances360.net
 0.0.0.0 instancesin45.net
 0.0.0.0 instant4ck.com
-0.0.0.0 instant9bferon-pro.pages.dev
 0.0.0.0 instantbannercreator.com
 0.0.0.0 instantconservativedetect.com
 0.0.0.0 instantdeceived.com
@@ -56973,6 +56968,7 @@
 0.0.0.0 junkraggedtoothache.com
 0.0.0.0 junkyyolden.com
 0.0.0.0 junshizhanlue.com
+0.0.0.0 junvexa.pro
 0.0.0.0 juokkbdsqxgak.site
 0.0.0.0 jupfpdiuxepep.online
 0.0.0.0 juphaufaigna.net
@@ -61745,7 +61741,6 @@
 0.0.0.0 local-analytics.uberinternal.com
 0.0.0.0 local-download.com
 0.0.0.0 local-shares.ri.la
-0.0.0.0 local-update.com
 0.0.0.0 localaffectrecipe.com
 0.0.0.0 localedgemedia.com
 0.0.0.0 localglobaldates.com
@@ -69891,6 +69886,7 @@
 0.0.0.0 moimczcuqzkxc.website
 0.0.0.0 moisturelibellous.com
 0.0.0.0 moistword.com
+0.0.0.0 moj-bonus-check.top
 0.0.0.0 mojiva.com
 0.0.0.0 mojkwcdgbyauy.website
 0.0.0.0 mojoaffiliates.com
@@ -75470,7 +75466,6 @@
 0.0.0.0 optionascertained.com
 0.0.0.0 optionen.hager.de
 0.0.0.0 optionsnomad.com
-0.0.0.0 optipay-click.pages.dev
 0.0.0.0 optis-world.actonservice.com
 0.0.0.0 optistats.ovh
 0.0.0.0 optkit.com
@@ -78826,7 +78821,6 @@
 0.0.0.0 planebasin.com
 0.0.0.0 planet7links.com
 0.0.0.0 planetarium-planet.com
-0.0.0.0 planetportix.pro
 0.0.0.0 planharnesssuperintendent.com
 0.0.0.0 plankjunkjoseph.com
 0.0.0.0 plannedclinical.com
@@ -110589,7 +110583,6 @@
 0.0.0.0 vena.native-ad.net
 0.0.0.0 vendexo.com
 0.0.0.0 vendigamus.com
-0.0.0.0 vendortrust-click.pages.dev
 0.0.0.0 vendri.io
 0.0.0.0 veneeringhystericalreward.com
 0.0.0.0 venetia.iad.appboy.com
@@ -115653,6 +115646,7 @@
 0.0.0.0 www.abeacon.com
 0.0.0.0 www.abogad.pro
 0.0.0.0 www.accidentadvicehelpline.co.uk
+0.0.0.0 www.accruewell.pro
 0.0.0.0 www.acint.net
 0.0.0.0 www.acloud.com
 0.0.0.0 www.acspaces.ero-advertising.com
@@ -115779,6 +115773,7 @@
 0.0.0.0 www.adups.cn
 0.0.0.0 www.adv.axiatraders.com
 0.0.0.0 www.advaliant.com
+0.0.0.0 www.advanced-reserv8283.com
 0.0.0.0 www.advancedcleaner.com
 0.0.0.0 www.advancedmactools.com
 0.0.0.0 www.advancedsoftwaresupport.com
@@ -115865,8 +115860,6 @@
 0.0.0.0 www.aurora-capital.pro
 0.0.0.0 www.aurorapush.cn
 0.0.0.0 www.aurorapush.com
-0.0.0.0 www.aurvenixt-click.pages.dev
-0.0.0.0 www.aurvenixtplateforme-click.pages.dev
 0.0.0.0 www.ausaas.cn
 0.0.0.0 www.autoads.asia
 0.0.0.0 www.autodealeradvertising.com
@@ -115905,6 +115898,7 @@
 0.0.0.0 www.bavners2.ero-advertising.com
 0.0.0.0 www.baywest.ac
 0.0.0.0 www.bb1429.com
+0.0.0.0 www.beaconfundamoren.pro
 0.0.0.0 www.beathhification.pro
 0.0.0.0 www.beginads.com
 0.0.0.0 www.behe.com
@@ -116040,7 +116034,6 @@
 0.0.0.0 www.cpv6.com
 0.0.0.0 www.cpx24.com
 0.0.0.0 www.cqsta.com
-0.0.0.0 www.criptoinvest-click.pages.dev
 0.0.0.0 www.crispads.com
 0.0.0.0 www.criteo.com
 0.0.0.0 www.croft-tradstead.org
@@ -116188,6 +116181,7 @@
 0.0.0.0 www.feyads.com
 0.0.0.0 www.fffeeeq.com
 0.0.0.0 www.fhatfee.ero-advertising.com
+0.0.0.0 www.financeforum-click.pages.dev
 0.0.0.0 www.finsy2-ad81.cyou
 0.0.0.0 www.finsy3-ad45.cfd
 0.0.0.0 www.finsy5-ad64.cfd
@@ -116196,6 +116190,7 @@
 0.0.0.0 www.finzy6-ad28.sbs
 0.0.0.0 www.finzy6-ad33.sbs
 0.0.0.0 www.finzy7-ad0.sbs
+0.0.0.0 www.finzy7-ad49.sbs
 0.0.0.0 www.finzy7-ad53.sbs
 0.0.0.0 www.fiorecolvento-pro.pages.dev
 0.0.0.0 www.fipuvye.pro
@@ -116210,7 +116205,6 @@
 0.0.0.0 www.flatfae.ero-advertising.com
 0.0.0.0 www.flatfea.ero-advertising.com
 0.0.0.0 www.flatfee.ero-advertising.com
-0.0.0.0 www.flick-edge-pro.pages.dev
 0.0.0.0 www.flipf.cn
 0.0.0.0 www.flstudiochina.com
 0.0.0.0 www.flurry.com
@@ -116261,8 +116255,6 @@
 0.0.0.0 www.gj500.com
 0.0.0.0 www.gl.ink
 0.0.0.0 www.glassygrovefy.pro
-0.0.0.0 www.globalmeshix.pro
-0.0.0.0 www.globalstackis.pro
 0.0.0.0 www.glorven.pro
 0.0.0.0 www.gmads.net
 0.0.0.0 www.go2cloud.org
@@ -116296,7 +116288,6 @@
 0.0.0.0 www.gzhctryy.com
 0.0.0.0 www.gzxnlk.com
 0.0.0.0 www.habyzuo.pro
-0.0.0.0 www.hajicai.pro
 0.0.0.0 www.haldenorixa.pro
 0.0.0.0 www.haloapps.com
 0.0.0.0 www.hao934.com
@@ -116357,6 +116348,7 @@
 0.0.0.0 www.imeds.ero-advertising.com
 0.0.0.0 www.imindmap.cc
 0.0.0.0 www.indiads.com
+0.0.0.0 www.induscapitalplatform-pro.pages.dev
 0.0.0.0 www.induscapitalplatform.pro
 0.0.0.0 www.infinite-ads.com
 0.0.0.0 www.infinityads.com
@@ -116365,7 +116357,6 @@
 0.0.0.0 www.inmobi.com
 0.0.0.0 www.inoprosport.su
 0.0.0.0 www.inpmone.pro
-0.0.0.0 www.instant9bferon-pro.pages.dev
 0.0.0.0 www.insuf.cn
 0.0.0.0 www.insulevel24.pro
 0.0.0.0 www.intext.ero-advertising.com
@@ -116416,6 +116407,7 @@
 0.0.0.0 www.jsurvey.cn
 0.0.0.0 www.juiceadv.com
 0.0.0.0 www.juicyads.com
+0.0.0.0 www.junvexa.pro
 0.0.0.0 www.juremavolix.pro
 0.0.0.0 www.juren0.com
 0.0.0.0 www.justasolvendaria-pro.pages.dev
@@ -116634,7 +116626,6 @@
 0.0.0.0 www.optad360.com
 0.0.0.0 www.optaim.com
 0.0.0.0 www.optimix.cn
-0.0.0.0 www.optipay-click.pages.dev
 0.0.0.0 www.org-upgrade.com
 0.0.0.0 www.orion.iad.appboy.com
 0.0.0.0 www.orvelix.pro
@@ -116690,7 +116681,6 @@
 0.0.0.0 www.pj550077.com
 0.0.0.0 www.pjbjzf.com
 0.0.0.0 www.pkkjxs.cn
-0.0.0.0 www.planetportix.pro
 0.0.0.0 www.plexion.pro
 0.0.0.0 www.pmmresumptions.pro
 0.0.0.0 www.pobierzteraz.mobi
@@ -117035,7 +117025,6 @@
 0.0.0.0 www.vegaschina.cn
 0.0.0.0 www.veltronaxis-click.pages.dev
 0.0.0.0 www.velvixkentromintspectrum.pro
-0.0.0.0 www.vendortrust-click.pages.dev
 0.0.0.0 www.verificaitalia-click.pages.dev
 0.0.0.0 www.vibestop.pro
 0.0.0.0 www.victoriaexecutive.pro
@@ -130450,6 +130439,7 @@
 :: accountsdoor.com
 :: accountsgraphicsincriminate.com
 :: accoybrava.com
+:: accruewell.pro
 :: accscdn.m.taobao.com
 :: accumula.actonservice.com
 :: accumulatecarefullysuction.com
@@ -135618,6 +135608,7 @@
 :: advack.net
 :: advally.com
 :: advalo.com
+:: advanced-reserv8283.com
 :: advanced-web-analytics.com
 :: advancedadblocker.pro
 :: advancedcleaner.com
@@ -139437,7 +139428,6 @@
 :: api.qvpublish.com
 :: api.radar.io
 :: api.ranking.rakuten.co.jp
-:: api.recapcha.fun
 :: api.receptivity.io
 :: api.red88.club
 :: api.red88.com
@@ -141779,8 +141769,6 @@
 :: auroraveil.bid
 :: aurousroseola.com
 :: aurum.tirto.id
-:: aurvenixt-click.pages.dev
-:: aurvenixtplateforme-click.pages.dev
 :: aus.amexforbusiness.com.au
 :: ausaas.cn
 :: auschtpdyijht.site
@@ -143572,6 +143560,7 @@
 :: beacon.wikia-services.com
 :: beaconadnetwork.com
 :: beaconcdn.qq.com
+:: beaconfundamoren.pro
 :: beacons.digital.disneyadvertising.com
 :: beacons.gcp.gvt2.com
 :: beacons.gvt2.com
@@ -148916,7 +148905,6 @@
 :: chuantu.biz
 :: chubbycreature.com
 :: chubbyexemplaryhardiness.com
-:: chuguadventures.co.tz
 :: chujstkfubpix.space
 :: chukchipias.com
 :: chunfuxie.cn
@@ -152347,7 +152335,6 @@
 :: cringezonearistocracy.com
 :: crinukpd.com
 :: crippletouret.com
-:: criptoinvest-click.pages.dev
 :: crirzaitai.com
 :: crisisinanehalted.com
 :: crisistuesdayartillery.com
@@ -163594,7 +163581,6 @@
 :: exmeqy.smartbuyglasses.de
 :: exmwfltxyxwmr.website
 :: exmycalnvqolp.site
-:: exo-api.tf
 :: exoclick.com
 :: exodtsamansys.online
 :: exodusjailhousetarantula.com
@@ -164930,6 +164916,7 @@
 :: finalyticsdata.com
 :: finance.cityads.com
 :: financefear.com
+:: financeforum-click.pages.dev
 :: financialeducation-info.uchicago.edu
 :: financialfadinglobster.com
 :: financialgobetweendancer.com
@@ -164985,6 +164972,7 @@
 :: finzy6-ad28.sbs
 :: finzy6-ad33.sbs
 :: finzy7-ad0.sbs
+:: finzy7-ad49.sbs
 :: finzy7-ad53.sbs
 :: fiorecolvento-pro.pages.dev
 :: fiorewonyhade.online
@@ -165269,7 +165257,6 @@
 :: flhqfdjmltoue.site
 :: flhtfxbakyelu.space
 :: flhvpswfkgjj.com
-:: flick-edge-pro.pages.dev
 :: flickerbridge.com
 :: flickerfailing.com
 :: flickering-bed.com
@@ -168509,12 +168496,10 @@
 :: globalinteractive.com
 :: globallearningsystems.actonservice.com
 :: globalmed.actonservice.com
-:: globalmeshix.pro
 :: globaloffers.link
 :: globalorders.net
 :: globalsiteanalytics.com
 :: globalsolutions.risk.lexisnexis.com
-:: globalstackis.pro
 :: globaltraffico.com
 :: globalwebads.com
 :: globalwebindex.net
@@ -170650,7 +170635,6 @@
 :: haiwvszcsfrfu.website
 :: haizhangs.com
 :: hajiawakens.com
-:: hajicai.pro
 :: hajolxtoruvvps.com
 :: hakbgofalvjbs.space
 :: hakvzygpdpnbx.online
@@ -175305,6 +175289,7 @@
 :: indulgenceslangringer.com
 :: indulinrayful.com
 :: indus.iad-01.braze.com
+:: induscapitalplatform-pro.pages.dev
 :: induscapitalplatform.pro
 :: industries78.net
 :: industriesfrominvisible.net
@@ -176465,7 +176450,6 @@
 :: instances360.net
 :: instancesin45.net
 :: instant4ck.com
-:: instant9bferon-pro.pages.dev
 :: instantbannercreator.com
 :: instantconservativedetect.com
 :: instantdeceived.com
@@ -179426,6 +179410,7 @@
 :: junkraggedtoothache.com
 :: junkyyolden.com
 :: junshizhanlue.com
+:: junvexa.pro
 :: juokkbdsqxgak.site
 :: jupfpdiuxepep.online
 :: juphaufaigna.net
@@ -184198,7 +184183,6 @@
 :: local-analytics.uberinternal.com
 :: local-download.com
 :: local-shares.ri.la
-:: local-update.com
 :: localaffectrecipe.com
 :: localedgemedia.com
 :: localglobaldates.com
@@ -192344,6 +192328,7 @@
 :: moimczcuqzkxc.website
 :: moisturelibellous.com
 :: moistword.com
+:: moj-bonus-check.top
 :: mojiva.com
 :: mojkwcdgbyauy.website
 :: mojoaffiliates.com
@@ -197923,7 +197908,6 @@
 :: optionascertained.com
 :: optionen.hager.de
 :: optionsnomad.com
-:: optipay-click.pages.dev
 :: optis-world.actonservice.com
 :: optistats.ovh
 :: optkit.com
@@ -201279,7 +201263,6 @@
 :: planebasin.com
 :: planet7links.com
 :: planetarium-planet.com
-:: planetportix.pro
 :: planharnesssuperintendent.com
 :: plankjunkjoseph.com
 :: plannedclinical.com
@@ -233042,7 +233025,6 @@
 :: vena.native-ad.net
 :: vendexo.com
 :: vendigamus.com
-:: vendortrust-click.pages.dev
 :: vendri.io
 :: veneeringhystericalreward.com
 :: venetia.iad.appboy.com
@@ -238106,6 +238088,7 @@
 :: www.abeacon.com
 :: www.abogad.pro
 :: www.accidentadvicehelpline.co.uk
+:: www.accruewell.pro
 :: www.acint.net
 :: www.acloud.com
 :: www.acspaces.ero-advertising.com
@@ -238232,6 +238215,7 @@
 :: www.adups.cn
 :: www.adv.axiatraders.com
 :: www.advaliant.com
+:: www.advanced-reserv8283.com
 :: www.advancedcleaner.com
 :: www.advancedmactools.com
 :: www.advancedsoftwaresupport.com
@@ -238318,8 +238302,6 @@
 :: www.aurora-capital.pro
 :: www.aurorapush.cn
 :: www.aurorapush.com
-:: www.aurvenixt-click.pages.dev
-:: www.aurvenixtplateforme-click.pages.dev
 :: www.ausaas.cn
 :: www.autoads.asia
 :: www.autodealeradvertising.com
@@ -238358,6 +238340,7 @@
 :: www.bavners2.ero-advertising.com
 :: www.baywest.ac
 :: www.bb1429.com
+:: www.beaconfundamoren.pro
 :: www.beathhification.pro
 :: www.beginads.com
 :: www.behe.com
@@ -238493,7 +238476,6 @@
 :: www.cpv6.com
 :: www.cpx24.com
 :: www.cqsta.com
-:: www.criptoinvest-click.pages.dev
 :: www.crispads.com
 :: www.criteo.com
 :: www.croft-tradstead.org
@@ -238641,6 +238623,7 @@
 :: www.feyads.com
 :: www.fffeeeq.com
 :: www.fhatfee.ero-advertising.com
+:: www.financeforum-click.pages.dev
 :: www.finsy2-ad81.cyou
 :: www.finsy3-ad45.cfd
 :: www.finsy5-ad64.cfd
@@ -238649,6 +238632,7 @@
 :: www.finzy6-ad28.sbs
 :: www.finzy6-ad33.sbs
 :: www.finzy7-ad0.sbs
+:: www.finzy7-ad49.sbs
 :: www.finzy7-ad53.sbs
 :: www.fiorecolvento-pro.pages.dev
 :: www.fipuvye.pro
@@ -238663,7 +238647,6 @@
 :: www.flatfae.ero-advertising.com
 :: www.flatfea.ero-advertising.com
 :: www.flatfee.ero-advertising.com
-:: www.flick-edge-pro.pages.dev
 :: www.flipf.cn
 :: www.flstudiochina.com
 :: www.flurry.com
@@ -238714,8 +238697,6 @@
 :: www.gj500.com
 :: www.gl.ink
 :: www.glassygrovefy.pro
-:: www.globalmeshix.pro
-:: www.globalstackis.pro
 :: www.glorven.pro
 :: www.gmads.net
 :: www.go2cloud.org
@@ -238749,7 +238730,6 @@
 :: www.gzhctryy.com
 :: www.gzxnlk.com
 :: www.habyzuo.pro
-:: www.hajicai.pro
 :: www.haldenorixa.pro
 :: www.haloapps.com
 :: www.hao934.com
@@ -238810,6 +238790,7 @@
 :: www.imeds.ero-advertising.com
 :: www.imindmap.cc
 :: www.indiads.com
+:: www.induscapitalplatform-pro.pages.dev
 :: www.induscapitalplatform.pro
 :: www.infinite-ads.com
 :: www.infinityads.com
@@ -238818,7 +238799,6 @@
 :: www.inmobi.com
 :: www.inoprosport.su
 :: www.inpmone.pro
-:: www.instant9bferon-pro.pages.dev
 :: www.insuf.cn
 :: www.insulevel24.pro
 :: www.intext.ero-advertising.com
@@ -238869,6 +238849,7 @@
 :: www.jsurvey.cn
 :: www.juiceadv.com
 :: www.juicyads.com
+:: www.junvexa.pro
 :: www.juremavolix.pro
 :: www.juren0.com
 :: www.justasolvendaria-pro.pages.dev
@@ -239087,7 +239068,6 @@
 :: www.optad360.com
 :: www.optaim.com
 :: www.optimix.cn
-:: www.optipay-click.pages.dev
 :: www.org-upgrade.com
 :: www.orion.iad.appboy.com
 :: www.orvelix.pro
@@ -239143,7 +239123,6 @@
 :: www.pj550077.com
 :: www.pjbjzf.com
 :: www.pkkjxs.cn
-:: www.planetportix.pro
 :: www.plexion.pro
 :: www.pmmresumptions.pro
 :: www.pobierzteraz.mobi
@@ -239488,7 +239467,6 @@
 :: www.vegaschina.cn
 :: www.veltronaxis-click.pages.dev
 :: www.velvixkentromintspectrum.pro
-:: www.vendortrust-click.pages.dev
 :: www.verificaitalia-click.pages.dev
 :: www.vibestop.pro
 :: www.victoriaexecutive.pro
