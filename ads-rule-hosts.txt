@@ -1,27 +1,23 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 235791
-# Update time: 2026-10-29 13:20:45 UTC+8
+# Total lines: 235779
+# Update time: 2026-10-30 13:20:31 UTC+8
 
 # [Custom IPv4 / Localhost]
-104.244.43.231 github.global.ssl.fastly.net
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.112.21 api.individual.githubcopilot.com
-140.82.112.21 central.github.com
-140.82.112.22 education.github.com
-140.82.113.22 collector.github.com
+140.82.113.17 github.community
+140.82.113.21 central.github.com
 140.82.113.25 alive.github.com
-140.82.113.25 live.github.com
-140.82.114.18 github.community
-159.106.121.75 gist.github.com
-16.15.171.55 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.212.234 github-com.s3.amazonaws.com
-16.15.213.64 github-cloud.s3.amazonaws.com
-16.15.236.248 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.246.16 github-production-release-asset-2e65be.s3.amazonaws.com
-185.199.109.215 github.githubassets.com
+140.82.114.21 api.individual.githubcopilot.com
+140.82.114.22 collector.github.com
+140.82.114.22 education.github.com
+140.82.114.25 live.github.com
+16.15.207.93 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.229.31 github-com.s3.amazonaws.com
+16.15.247.141 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.254.77 github-production-user-asset-6210df.s3.amazonaws.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -41,10 +37,14 @@
 185.199.110.133 user-images.githubusercontent.com
 185.199.111.153 github.io
 185.199.111.153 githubstatus.com
+185.199.111.215 github.githubassets.com
 192.0.66.2 github.blog
+199.59.149.208 github.global.ssl.fastly.net
 20.205.243.165 codeload.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
+243.185.187.39 gist.github.com
+54.231.166.170 github-cloud.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -13276,7 +13276,6 @@
 0.0.0.0 advnet.xyz
 0.0.0.0 advnt.com
 0.0.0.0 advocaado.com
-0.0.0.0 advolink.org
 0.0.0.0 advombat.ru
 0.0.0.0 advon.net
 0.0.0.0 advoncommerce.com
@@ -27817,6 +27816,7 @@
 0.0.0.0 confinementroguerecital.com
 0.0.0.0 confirm.aon.com
 0.0.0.0 confirm.ptvgroup.com
+0.0.0.0 confirmation-advanced-reserv538926.com
 0.0.0.0 confirmational.com
 0.0.0.0 confirmglobal.com
 0.0.0.0 confirmit.com
@@ -32953,6 +32953,7 @@
 0.0.0.0 delta-static.shop
 0.0.0.0 deltabehavioralhealth.org
 0.0.0.0 deltadigs.com
+0.0.0.0 deltanzio-pro-760.com
 0.0.0.0 deltraff.com
 0.0.0.0 delugerefluxunpinned.com
 0.0.0.0 delusionalrevolt.com
@@ -59212,7 +59213,6 @@
 0.0.0.0 livecounter.dk
 0.0.0.0 livecounter.theyosh.nl
 0.0.0.0 livedjeopardizeemotion.com
-0.0.0.0 liveflashdaily.pro
 0.0.0.0 liveintent.com
 0.0.0.0 livejasmin.com
 0.0.0.0 livejasmin.tv
@@ -77088,7 +77088,6 @@
 0.0.0.0 pranmcpkx.com
 0.0.0.0 prassas.openapp.link
 0.0.0.0 prasserie.openapp.link
-0.0.0.0 pratolivodonna-click.pages.dev
 0.0.0.0 prawnyattorns.com
 0.0.0.0 prayersoriginate.com
 0.0.0.0 prbxckwtajncq.space
@@ -77406,7 +77405,6 @@
 0.0.0.0 pro-accesssoires.fr
 0.0.0.0 pro-adblocker.com
 0.0.0.0 pro-advert.de
-0.0.0.0 pro-aiapp-plsolution.com
 0.0.0.0 pro-factory.com
 0.0.0.0 pro-gift.com
 0.0.0.0 pro-market.net
@@ -86772,7 +86770,6 @@
 0.0.0.0 share.coupangeats.com
 0.0.0.0 share.dailyrounds.in
 0.0.0.0 share.drinki.com
-0.0.0.0 share.dropstab-trust.com
 0.0.0.0 share.dunzo.in
 0.0.0.0 share.dusk.app
 0.0.0.0 share.eleph.app
@@ -111685,7 +111682,6 @@
 0.0.0.0 www.adview.cn
 0.0.0.0 www.advmedialine.online
 0.0.0.0 www.advocaado.com
-0.0.0.0 www.advolink.org
 0.0.0.0 www.adw.ero-advertising.com
 0.0.0.0 www.adwo.com
 0.0.0.0 www.adwpaces.ero-advertising.com
@@ -111897,6 +111893,7 @@
 0.0.0.0 www.coin-ad.com
 0.0.0.0 www.coinhive.com
 0.0.0.0 www.comuzen.pro
+0.0.0.0 www.confirmation-advanced-reserv538926.com
 0.0.0.0 www.contextuads.com
 0.0.0.0 www.cooguo.com
 0.0.0.0 www.cool-downloads.com
@@ -111958,6 +111955,7 @@
 0.0.0.0 www.dcimei.tw
 0.0.0.0 www.dctrk.datedeskads.com
 0.0.0.0 www.deliginess.pro
+0.0.0.0 www.deltanzio-pro-760.com
 0.0.0.0 www.dermalentesog.pro
 0.0.0.0 www.destinisayments.pro
 0.0.0.0 www.deta.ero-advertising.com
@@ -112366,7 +112364,6 @@
 0.0.0.0 www.linksjg.cn
 0.0.0.0 www.linthermands.pro
 0.0.0.0 www.liquidstorse.pro
-0.0.0.0 www.liveflashdaily.pro
 0.0.0.0 www.lm.cccab.club
 0.0.0.0 www.lnk0.com
 0.0.0.0 www.lnk8.cn
@@ -112574,12 +112571,10 @@
 0.0.0.0 www.postnewsads.com
 0.0.0.0 www.poweredbyliquidfire.mobi
 0.0.0.0 www.pp9899.com
-0.0.0.0 www.pratolivodonna-click.pages.dev
 0.0.0.0 www.prebid.adnxs.com
 0.0.0.0 www.predictivadvertising.com
 0.0.0.0 www.preexemptsbroadswppord.info
 0.0.0.0 www.prizefestival.mobi
-0.0.0.0 www.pro-aiapp-plsolution.com
 0.0.0.0 www.pro-factory.com
 0.0.0.0 www.pro-gift.com
 0.0.0.0 www.pro-partners.nl
@@ -112684,7 +112679,6 @@
 0.0.0.0 www.sexyads.net
 0.0.0.0 www.shankejingling.com
 0.0.0.0 www.share-server.com
-0.0.0.0 www.share.dropstab-trust.com
 0.0.0.0 www.sharesdk.cn
 0.0.0.0 www.shglegle.com
 0.0.0.0 www.shkywh.com
@@ -131151,7 +131145,6 @@
 :: advnet.xyz
 :: advnt.com
 :: advocaado.com
-:: advolink.org
 :: advombat.ru
 :: advon.net
 :: advoncommerce.com
@@ -145692,6 +145685,7 @@
 :: confinementroguerecital.com
 :: confirm.aon.com
 :: confirm.ptvgroup.com
+:: confirmation-advanced-reserv538926.com
 :: confirmational.com
 :: confirmglobal.com
 :: confirmit.com
@@ -150828,6 +150822,7 @@
 :: delta-static.shop
 :: deltabehavioralhealth.org
 :: deltadigs.com
+:: deltanzio-pro-760.com
 :: deltraff.com
 :: delugerefluxunpinned.com
 :: delusionalrevolt.com
@@ -177087,7 +177082,6 @@
 :: livecounter.dk
 :: livecounter.theyosh.nl
 :: livedjeopardizeemotion.com
-:: liveflashdaily.pro
 :: liveintent.com
 :: livejasmin.com
 :: livejasmin.tv
@@ -194963,7 +194957,6 @@
 :: pranmcpkx.com
 :: prassas.openapp.link
 :: prasserie.openapp.link
-:: pratolivodonna-click.pages.dev
 :: prawnyattorns.com
 :: prayersoriginate.com
 :: prbxckwtajncq.space
@@ -195281,7 +195274,6 @@
 :: pro-accesssoires.fr
 :: pro-adblocker.com
 :: pro-advert.de
-:: pro-aiapp-plsolution.com
 :: pro-factory.com
 :: pro-gift.com
 :: pro-market.net
@@ -204647,7 +204639,6 @@
 :: share.coupangeats.com
 :: share.dailyrounds.in
 :: share.drinki.com
-:: share.dropstab-trust.com
 :: share.dunzo.in
 :: share.dusk.app
 :: share.eleph.app
@@ -229560,7 +229551,6 @@
 :: www.adview.cn
 :: www.advmedialine.online
 :: www.advocaado.com
-:: www.advolink.org
 :: www.adw.ero-advertising.com
 :: www.adwo.com
 :: www.adwpaces.ero-advertising.com
@@ -229772,6 +229762,7 @@
 :: www.coin-ad.com
 :: www.coinhive.com
 :: www.comuzen.pro
+:: www.confirmation-advanced-reserv538926.com
 :: www.contextuads.com
 :: www.cooguo.com
 :: www.cool-downloads.com
@@ -229833,6 +229824,7 @@
 :: www.dcimei.tw
 :: www.dctrk.datedeskads.com
 :: www.deliginess.pro
+:: www.deltanzio-pro-760.com
 :: www.dermalentesog.pro
 :: www.destinisayments.pro
 :: www.deta.ero-advertising.com
@@ -230241,7 +230233,6 @@
 :: www.linksjg.cn
 :: www.linthermands.pro
 :: www.liquidstorse.pro
-:: www.liveflashdaily.pro
 :: www.lm.cccab.club
 :: www.lnk0.com
 :: www.lnk8.cn
@@ -230449,12 +230440,10 @@
 :: www.postnewsads.com
 :: www.poweredbyliquidfire.mobi
 :: www.pp9899.com
-:: www.pratolivodonna-click.pages.dev
 :: www.prebid.adnxs.com
 :: www.predictivadvertising.com
 :: www.preexemptsbroadswppord.info
 :: www.prizefestival.mobi
-:: www.pro-aiapp-plsolution.com
 :: www.pro-factory.com
 :: www.pro-gift.com
 :: www.pro-partners.nl
@@ -230559,7 +230548,6 @@
 :: www.sexyads.net
 :: www.shankejingling.com
 :: www.share-server.com
-:: www.share.dropstab-trust.com
 :: www.sharesdk.cn
 :: www.shglegle.com
 :: www.shkywh.com
