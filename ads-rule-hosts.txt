@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 235779
-# Update time: 2026-10-30 13:20:31 UTC+8
+# Total lines: 235765
+# Update time: 2026-10-31 13:03:29 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.82.113.17 github.community
-140.82.113.21 central.github.com
-140.82.113.25 alive.github.com
-140.82.114.21 api.individual.githubcopilot.com
-140.82.114.22 collector.github.com
+130.211.15.150 github.global.ssl.fastly.net
+140.82.112.21 api.individual.githubcopilot.com
+140.82.112.21 central.github.com
+140.82.112.21 collector.github.com
+140.82.113.26 alive.github.com
+140.82.113.26 live.github.com
+140.82.114.17 github.community
 140.82.114.22 education.github.com
-140.82.114.25 live.github.com
-16.15.207.93 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.229.31 github-com.s3.amazonaws.com
-16.15.247.141 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.254.77 github-production-user-asset-6210df.s3.amazonaws.com
-185.199.110.133 avatars.githubusercontent.com
-185.199.110.133 avatars0.githubusercontent.com
-185.199.110.133 avatars1.githubusercontent.com
-185.199.110.133 avatars2.githubusercontent.com
-185.199.110.133 avatars3.githubusercontent.com
-185.199.110.133 avatars4.githubusercontent.com
-185.199.110.133 avatars5.githubusercontent.com
-185.199.110.133 camo.githubusercontent.com
-185.199.110.133 cloud.githubusercontent.com
-185.199.110.133 desktop.githubusercontent.com
-185.199.110.133 favicons.githubusercontent.com
-185.199.110.133 github.map.fastly.net
-185.199.110.133 media.githubusercontent.com
-185.199.110.133 objects.githubusercontent.com
-185.199.110.133 private-user-images.githubusercontent.com
-185.199.110.133 raw.githubusercontent.com
-185.199.110.133 user-images.githubusercontent.com
-185.199.111.153 github.io
-185.199.111.153 githubstatus.com
-185.199.111.215 github.githubassets.com
+159.106.121.75 gist.github.com
+16.15.171.161 github-com.s3.amazonaws.com
+16.15.228.11 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.253.29 github-cloud.s3.amazonaws.com
+185.199.108.133 avatars.githubusercontent.com
+185.199.108.133 avatars0.githubusercontent.com
+185.199.108.133 avatars1.githubusercontent.com
+185.199.108.133 avatars2.githubusercontent.com
+185.199.108.133 avatars3.githubusercontent.com
+185.199.108.133 avatars4.githubusercontent.com
+185.199.108.133 avatars5.githubusercontent.com
+185.199.108.133 camo.githubusercontent.com
+185.199.108.133 cloud.githubusercontent.com
+185.199.108.133 desktop.githubusercontent.com
+185.199.108.133 favicons.githubusercontent.com
+185.199.108.133 github.map.fastly.net
+185.199.108.133 media.githubusercontent.com
+185.199.108.133 objects.githubusercontent.com
+185.199.108.133 private-user-images.githubusercontent.com
+185.199.108.133 raw.githubusercontent.com
+185.199.108.133 user-images.githubusercontent.com
+185.199.110.153 github.io
+185.199.110.153 githubstatus.com
+185.199.110.215 github.githubassets.com
 192.0.66.2 github.blog
-199.59.149.208 github.global.ssl.fastly.net
 20.205.243.165 codeload.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
-243.185.187.39 gist.github.com
-54.231.166.170 github-cloud.s3.amazonaws.com
+52.217.168.34 github-production-repository-file-5c1aeb.s3.amazonaws.com
+54.231.163.202 github-production-release-asset-2e65be.s3.amazonaws.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -32195,7 +32195,6 @@
 0.0.0.0 datadog-service.mvfglobal.com
 0.0.0.0 datadoghq-browser-agent.com
 0.0.0.0 datadoghq.eu
-0.0.0.0 datadome.co
 0.0.0.0 datadome.maisonsdumonde.com
 0.0.0.0 datadsk.com
 0.0.0.0 dataf.ads.oppomobile.com
@@ -38902,7 +38901,6 @@
 0.0.0.0 ens.tagblatt.ch
 0.0.0.0 ensealplaners.com
 0.0.0.0 enseq50a.xyz
-0.0.0.0 ensighten.com
 0.0.0.0 ensmwonhtzpdh.space
 0.0.0.0 ensosignal.com
 0.0.0.0 enstatenewark.com
@@ -43798,7 +43796,6 @@
 0.0.0.0 gemcandock.com
 0.0.0.0 gemini.yahoo.com
 0.0.0.0 geminisailingzillion.com
-0.0.0.0 gemius.pl
 0.0.0.0 gemlithium.com
 0.0.0.0 gemorganic.com
 0.0.0.0 gemutiwheeped.com
@@ -59170,7 +59167,6 @@
 0.0.0.0 literally-analytics.appspot.com
 0.0.0.0 literallycircumscribetome.com
 0.0.0.0 literallyflickercomplaints.com
-0.0.0.0 litix.io
 0.0.0.0 litpzshqdkjvn.online
 0.0.0.0 litrujsxxymfn.website
 0.0.0.0 litterarenadisembroildisembroil.com
@@ -72359,7 +72355,6 @@
 0.0.0.0 omtrdc.jobstreet.com.ph
 0.0.0.0 omtrdc.jobstreet.com.sg
 0.0.0.0 omtrdc.jobstreet.vn
-0.0.0.0 omtrdc.net
 0.0.0.0 omtrns.sstats.q8.dk
 0.0.0.0 omvzcq.vidaxl.be
 0.0.0.0 omwvapmytccsc.online
@@ -76085,7 +76080,6 @@
 0.0.0.0 placidityelite.com
 0.0.0.0 placiditylever.com
 0.0.0.0 placidperson.com
-0.0.0.0 pladform.ru
 0.0.0.0 plain-plane.com
 0.0.0.0 plaincapsize.com
 0.0.0.0 plainplayground.com
@@ -86036,7 +86030,6 @@
 0.0.0.0 segment-api.humann.com
 0.0.0.0 segment-api.inrix.com
 0.0.0.0 segment.api.useinsider.com
-0.0.0.0 segment.com
 0.0.0.0 segment.io
 0.0.0.0 segment.lalr.co
 0.0.0.0 segmenthub.com
@@ -150064,7 +150057,6 @@
 :: datadog-service.mvfglobal.com
 :: datadoghq-browser-agent.com
 :: datadoghq.eu
-:: datadome.co
 :: datadome.maisonsdumonde.com
 :: datadsk.com
 :: dataf.ads.oppomobile.com
@@ -156771,7 +156763,6 @@
 :: ens.tagblatt.ch
 :: ensealplaners.com
 :: enseq50a.xyz
-:: ensighten.com
 :: ensmwonhtzpdh.space
 :: ensosignal.com
 :: enstatenewark.com
@@ -161667,7 +161658,6 @@
 :: gemcandock.com
 :: gemini.yahoo.com
 :: geminisailingzillion.com
-:: gemius.pl
 :: gemlithium.com
 :: gemorganic.com
 :: gemutiwheeped.com
@@ -177039,7 +177029,6 @@
 :: literally-analytics.appspot.com
 :: literallycircumscribetome.com
 :: literallyflickercomplaints.com
-:: litix.io
 :: litpzshqdkjvn.online
 :: litrujsxxymfn.website
 :: litterarenadisembroildisembroil.com
@@ -190228,7 +190217,6 @@
 :: omtrdc.jobstreet.com.ph
 :: omtrdc.jobstreet.com.sg
 :: omtrdc.jobstreet.vn
-:: omtrdc.net
 :: omtrns.sstats.q8.dk
 :: omvzcq.vidaxl.be
 :: omwvapmytccsc.online
@@ -193954,7 +193942,6 @@
 :: placidityelite.com
 :: placiditylever.com
 :: placidperson.com
-:: pladform.ru
 :: plain-plane.com
 :: plaincapsize.com
 :: plainplayground.com
@@ -203905,7 +203892,6 @@
 :: segment-api.humann.com
 :: segment-api.inrix.com
 :: segment.api.useinsider.com
-:: segment.com
 :: segment.io
 :: segment.lalr.co
 :: segmenthub.com
