@@ -1,50 +1,50 @@
 # Title: Waster Ads Hosts
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
-# Total lines: 239769
-# Update time: 2026-11-14 13:53:44 UTC+8
+# Total lines: 239787
+# Update time: 2026-11-15 13:55:07 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.248.165.194 github.global.ssl.fastly.net
-140.82.112.17 github.community
-140.82.112.22 central.github.com
-140.82.112.22 collector.github.com
-140.82.112.25 live.github.com
+140.82.112.18 github.community
+140.82.112.22 education.github.com
 140.82.112.26 alive.github.com
-140.82.113.21 education.github.com
-140.82.114.21 api.individual.githubcopilot.com
-16.15.161.161 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.229.171 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.237.128 github-cloud.s3.amazonaws.com
-185.199.108.153 github.io
-185.199.108.153 githubstatus.com
-185.199.109.133 avatars.githubusercontent.com
-185.199.109.133 avatars0.githubusercontent.com
-185.199.109.133 avatars1.githubusercontent.com
-185.199.109.133 avatars2.githubusercontent.com
-185.199.109.133 avatars3.githubusercontent.com
-185.199.109.133 avatars4.githubusercontent.com
-185.199.109.133 avatars5.githubusercontent.com
-185.199.109.133 camo.githubusercontent.com
-185.199.109.133 cloud.githubusercontent.com
-185.199.109.133 desktop.githubusercontent.com
-185.199.109.133 favicons.githubusercontent.com
-185.199.109.133 github.map.fastly.net
-185.199.109.133 media.githubusercontent.com
-185.199.109.133 objects.githubusercontent.com
-185.199.109.133 private-user-images.githubusercontent.com
-185.199.109.133 raw.githubusercontent.com
-185.199.109.133 user-images.githubusercontent.com
-185.199.109.215 github.githubassets.com
+140.82.113.22 api.individual.githubcopilot.com
+140.82.113.22 central.github.com
+140.82.113.22 collector.github.com
+140.82.113.26 live.github.com
+146.75.45.194 github.global.ssl.fastly.net
+16.15.161.100 github-cloud.s3.amazonaws.com
+16.15.191.131 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.229.145 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.245.139 github-com.s3.amazonaws.com
+16.15.253.29 github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.110.133 avatars.githubusercontent.com
+185.199.110.133 avatars0.githubusercontent.com
+185.199.110.133 avatars1.githubusercontent.com
+185.199.110.133 avatars2.githubusercontent.com
+185.199.110.133 avatars3.githubusercontent.com
+185.199.110.133 avatars4.githubusercontent.com
+185.199.110.133 avatars5.githubusercontent.com
+185.199.110.133 camo.githubusercontent.com
+185.199.110.133 cloud.githubusercontent.com
+185.199.110.133 desktop.githubusercontent.com
+185.199.110.133 favicons.githubusercontent.com
+185.199.110.133 github.map.fastly.net
+185.199.110.133 media.githubusercontent.com
+185.199.110.133 objects.githubusercontent.com
+185.199.110.133 private-user-images.githubusercontent.com
+185.199.110.133 raw.githubusercontent.com
+185.199.110.133 user-images.githubusercontent.com
+185.199.110.153 github.io
+185.199.110.153 githubstatus.com
+185.199.110.215 github.githubassets.com
 192.0.66.2 github.blog
 20.205.243.165 codeload.github.com
-20.205.243.166 github.com
+20.205.243.166 gist.github.com
 20.205.243.168 api.github.com
-20.6.7.17 gist.github.com
-52.217.140.10 github-production-release-asset-2e65be.s3.amazonaws.com
-54.231.171.218 github-com.s3.amazonaws.com
+57.155.223.240 github.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
@@ -10511,6 +10511,7 @@
 0.0.0.0 ads-i3.xhscdn.com
 0.0.0.0 ads-i4.xhscdn.com
 0.0.0.0 ads-img-al.xhscdn.com
+0.0.0.0 ads-img-bak.xhscdn.com
 0.0.0.0 ads-img-qc.xhscdn.com
 0.0.0.0 ads-img.mozilla.org
 0.0.0.0 ads-integration.rustore.ru
@@ -10561,6 +10562,7 @@
 0.0.0.0 ads-verify.flurry.com
 0.0.0.0 ads-video-al.xhscdn.com
 0.0.0.0 ads-video-qc.xhscdn.com
+0.0.0.0 ads-vp5.xhscdn.com
 0.0.0.0 ads-wc.adaptv.advertising.com
 0.0.0.0 ads-yallo-production.imgix.net
 0.0.0.0 ads.1thegioi.vn
@@ -26931,6 +26933,7 @@
 0.0.0.0 client-logger.salemove.com
 0.0.0.0 client-logs-a.wbx2.com
 0.0.0.0 client-metrics.chess.com
+0.0.0.0 client-upload.cn-shanghai.log.aliyuncs.com
 0.0.0.0 client.perimeterx.net
 0.0.0.0 client.rave-api.com
 0.0.0.0 client.sidesearch.lycos.com
@@ -36180,6 +36183,7 @@
 0.0.0.0 dtzrrz.green-japan.com
 0.0.0.0 dtzvavrnbzemd.space
 0.0.0.0 dtzwxa.com
+0.0.0.0 du-app.cn-hangzhou.log.aliyuncs.com
 0.0.0.0 du.biqukan.com
 0.0.0.0 du.jd.com
 0.0.0.0 du002iv2rxh4h.cloudfront.net
@@ -58874,6 +58878,7 @@
 0.0.0.0 lezntf.heydudeshoesusa.com
 0.0.0.0 lezplamgzs.com
 0.0.0.0 lf-ad-ies.bytecdn.cn
+0.0.0.0 lf-event-manager.oceanengine.com
 0.0.0.0 lf0-common-ckv-tos.pstatp.com
 0.0.0.0 lf1-common-ckv-tos.pstatp.com
 0.0.0.0 lf10-common-ckv-tos.pstatp.com
@@ -60683,6 +60688,7 @@
 0.0.0.0 log-api.huxiu.com
 0.0.0.0 log-api.pangolin-sdk-toutiao-b.com
 0.0.0.0 log-api.pangolin-sdk-toutiao.com
+0.0.0.0 log-auth.zztfly.com
 0.0.0.0 log-dmp.suishenyun.cn
 0.0.0.0 log-gateway.zoom.us
 0.0.0.0 log-h5.imdada.cn
@@ -88469,6 +88475,8 @@
 0.0.0.0 shieldload.neoseeker.com
 0.0.0.0 shiersgilling.com
 0.0.0.0 shieryuefajkix.com
+0.0.0.0 shihuo-new.log.shihuocdn.cn
+0.0.0.0 shihuo.log.shihuocdn.cn
 0.0.0.0 shijuezhongguo.cdn.bcebos.com
 0.0.0.0 shilian168.cn
 0.0.0.0 shillivee.pro
@@ -106697,6 +106705,7 @@
 0.0.0.0 upbeatspring.com
 0.0.0.0 upbindsswythe.com
 0.0.0.0 upboresoutar.com
+0.0.0.0 upc.zztfly.com
 0.0.0.0 upchemicals.co.in
 0.0.0.0 upcityarles.com
 0.0.0.0 upcomingperusehike.com
@@ -130375,6 +130384,7 @@
 :: ads-i3.xhscdn.com
 :: ads-i4.xhscdn.com
 :: ads-img-al.xhscdn.com
+:: ads-img-bak.xhscdn.com
 :: ads-img-qc.xhscdn.com
 :: ads-img.mozilla.org
 :: ads-integration.rustore.ru
@@ -130425,6 +130435,7 @@
 :: ads-verify.flurry.com
 :: ads-video-al.xhscdn.com
 :: ads-video-qc.xhscdn.com
+:: ads-vp5.xhscdn.com
 :: ads-wc.adaptv.advertising.com
 :: ads-yallo-production.imgix.net
 :: ads.1thegioi.vn
@@ -146795,6 +146806,7 @@
 :: client-logger.salemove.com
 :: client-logs-a.wbx2.com
 :: client-metrics.chess.com
+:: client-upload.cn-shanghai.log.aliyuncs.com
 :: client.perimeterx.net
 :: client.rave-api.com
 :: client.sidesearch.lycos.com
@@ -156044,6 +156056,7 @@
 :: dtzrrz.green-japan.com
 :: dtzvavrnbzemd.space
 :: dtzwxa.com
+:: du-app.cn-hangzhou.log.aliyuncs.com
 :: du.biqukan.com
 :: du.jd.com
 :: du002iv2rxh4h.cloudfront.net
@@ -178738,6 +178751,7 @@
 :: lezntf.heydudeshoesusa.com
 :: lezplamgzs.com
 :: lf-ad-ies.bytecdn.cn
+:: lf-event-manager.oceanengine.com
 :: lf0-common-ckv-tos.pstatp.com
 :: lf1-common-ckv-tos.pstatp.com
 :: lf10-common-ckv-tos.pstatp.com
@@ -180547,6 +180561,7 @@
 :: log-api.huxiu.com
 :: log-api.pangolin-sdk-toutiao-b.com
 :: log-api.pangolin-sdk-toutiao.com
+:: log-auth.zztfly.com
 :: log-dmp.suishenyun.cn
 :: log-gateway.zoom.us
 :: log-h5.imdada.cn
@@ -208333,6 +208348,8 @@
 :: shieldload.neoseeker.com
 :: shiersgilling.com
 :: shieryuefajkix.com
+:: shihuo-new.log.shihuocdn.cn
+:: shihuo.log.shihuocdn.cn
 :: shijuezhongguo.cdn.bcebos.com
 :: shilian168.cn
 :: shillivee.pro
@@ -226561,6 +226578,7 @@
 :: upbeatspring.com
 :: upbindsswythe.com
 :: upboresoutar.com
+:: upc.zztfly.com
 :: upchemicals.co.in
 :: upcityarles.com
 :: upcomingperusehike.com
