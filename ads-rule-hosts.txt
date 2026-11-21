@@ -2,22 +2,23 @@
 # Description: Modified hosts file for system-wide ad blocking & GitHub acceleration.
 # --------------------------------------
 # Total lines: 239895
-# Update time: 2026-11-20 14:47:48 UTC+8
+# Update time: 2026-11-21 14:41:32 UTC+8
 
 # [Custom IPv4 / Localhost]
 127.0.0.1 localhost
 13.107.42.16 pipelines.actions.githubusercontent.com
-140.248.129.194 github.global.ssl.fastly.net
-140.82.112.21 api.individual.githubcopilot.com
-140.82.112.21 collector.github.com
-140.82.112.22 central.github.com
 140.82.112.22 education.github.com
+140.82.113.18 github.community
+140.82.113.22 collector.github.com
 140.82.113.25 alive.github.com
-140.82.114.18 github.community
+140.82.114.22 api.individual.githubcopilot.com
+140.82.114.22 central.github.com
 140.82.114.26 live.github.com
-185.199.108.153 github.io
-185.199.108.153 githubstatus.com
-185.199.110.215 github.githubassets.com
+146.75.45.194 github.global.ssl.fastly.net
+16.182.33.74 github-production-release-asset-2e65be.s3.amazonaws.com
+185.199.109.215 github.githubassets.com
+185.199.110.153 github.io
+185.199.110.153 githubstatus.com
 185.199.111.133 avatars.githubusercontent.com
 185.199.111.133 avatars0.githubusercontent.com
 185.199.111.133 avatars1.githubusercontent.com
@@ -38,13 +39,12 @@
 192.0.66.2 github.blog
 20.205.243.168 api.github.com
 20.247.166.64 gist.github.com
-20.6.7.16 codeload.github.com
-20.6.7.17 github.com
-52.216.51.66 github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.217.167.226 github-com.s3.amazonaws.com
-52.217.170.146 github-production-user-asset-6210df.s3.amazonaws.com
-52.217.200.138 github-production-release-asset-2e65be.s3.amazonaws.com
-54.231.171.18 github-cloud.s3.amazonaws.com
+20.247.166.64 github.com
+52.217.137.218 github-cloud.s3.amazonaws.com
+52.217.201.226 github-production-repository-file-5c1aeb.s3.amazonaws.com
+54.231.132.66 github-production-user-asset-6210df.s3.amazonaws.com
+54.231.139.210 github-com.s3.amazonaws.com
+57.155.223.241 codeload.github.com
 
 # [Blocklist / 0.0.0.0 & ::]
 0.0.0.0 0.myikas.com
